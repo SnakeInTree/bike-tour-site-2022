@@ -1,0 +1,19 @@
+{
+    "MAP_SETTINGS": {
+        "START_LAT_LNG": [48.864716, 2.349],
+        "START_ZOOM": 6,
+        "MAX_ZOOM": 10,
+        "MIN_ZOOM": 5
+    },    
+    "SEGMENT_SETTINGS": {
+        "DEFAULT_WIDTH": 5,
+        "HOVER_WIDTH": 7,
+        "DEFAULT_OPACITY": 0.5,
+        "ACTIVE_OPACITY": 1
+    },
+    "DEFAULT_TEXT": {
+        "poiDrawerHeaderText": "Trip Segments"
+    },
+    "TILE_LAYER_URL": "https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}'",
+    "HTML_IMG_BUFFER_TAG": "data:image/jpeg;base64,"
+}
