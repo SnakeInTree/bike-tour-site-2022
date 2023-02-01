@@ -15,25 +15,23 @@ const Map = () => {
     //MapContainer needs an explicitly defined height
     const mapStyle = { height: "100vh" };
     return (
-        <div>
-            <MapContainer
-                center={config.MAP_SETTINGS.START_LAT_LNG as LatLngExpression}
-                zoom={config.MAP_SETTINGS.START_ZOOM}
-                maxZoom={config.MAP_SETTINGS.MAX_ZOOM}
-                minZoom={config.MAP_SETTINGS.MIN_ZOOM}
-                scrollWheelZoom={true}
-                style={mapStyle}
-                zoomControl={false}
-            >  
-                <TileLayer url={config.TILE_LAYER_URL} />     
-                {segments.map((segment: Segment) => (
-                    <PathSegment 
-                        key={segment.name} 
-                        segmentData={segment}
-                    />
-                ))}               
-            </MapContainer>
-        </div>
+        <MapContainer
+            center={config.MAP_SETTINGS.START_LAT_LNG as LatLngExpression}
+            zoom={config.MAP_SETTINGS.START_ZOOM}
+            maxZoom={config.MAP_SETTINGS.MAX_ZOOM}
+            minZoom={config.MAP_SETTINGS.MIN_ZOOM}
+            scrollWheelZoom={true}
+            style={mapStyle}
+            zoomControl={false}
+        >  
+            <TileLayer url={config.TILE_LAYER_URL} />     
+            {segments.map((segment: Segment) => (
+                <PathSegment 
+                    key={segment.name} 
+                    segmentData={segment}
+                />
+            ))}               
+        </MapContainer>
     );
 };
 
