@@ -9,6 +9,7 @@ Now that I’m back in North America, I needed to make something to commemorate 
 Tech Stack:
 - NextJS [Framework]
 - Redux/Redux Toolkit + React Query [State Management]
+- Tailwind [Styling]
 - React Leaflet [Mapping]
 - ChartJS [Elevation Charts]
 
