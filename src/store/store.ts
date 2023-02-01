@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import segmentReducer from "./reducers/segmentList";
+import displayReducer from "./reducers/uiDisplay";
 
 export const store = configureStore({
   reducer: {
-    segmentList: segmentReducer
+    segmentList: segmentReducer,
+    uiDisplay: displayReducer
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware({
     immutableCheck: {ignoredPaths: ["segmentList.segments"]},

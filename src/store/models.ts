@@ -1,5 +1,9 @@
 import { LatLngBoundsExpression, LatLngExpression } from "leaflet";
 
+export interface UIDisplay {
+    showDrawer: boolean;
+}
+
 export interface SegmentList {
     segments: Segment[]; 
     activeSegmentId: number;

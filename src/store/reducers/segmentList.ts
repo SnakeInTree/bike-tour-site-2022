@@ -118,7 +118,7 @@ const segmentData = [
  ] as Segment[];
 
 
- const initialState : SegmentList = {
+const initialState : SegmentList = {
   segments: segmentData, 
   activeSegmentId: -1,
 };
@@ -134,5 +134,4 @@ export const segmentSlice = createSlice({
 });
 
 export const { updateActiveSegment } = segmentSlice.actions;
-
 export default segmentSlice.reducer;
