@@ -12,15 +12,14 @@ import config from "../../../config/default.json";
 
 const Drawer = ({ segmentData } : { segmentData: Segment[] }) => {
     
-    const [headerText, setHeaderText] = useState<string>(config.DEFAULT_TEXT.drawerHeaderText);    
     const activeSegmentId = useSelector((state:RootState) => state.segmentList.activeSegmentId);
+    const [headerText, setHeaderText] = useState<string>(config.DEFAULT_TEXT.drawerHeaderText);    
+    const [prevActiveSegment, setPrevActiveSegment] = useState<number>(activeSegmentId);
 
-    useEffect(() => {
-        if (activeSegmentId > 0 && activeSegmentId < segmentData.length) {
-            const activeSegment = segmentData[activeSegmentId];
-            setHeaderText(activeSegment.name);
-        }
-    }, [segmentData, activeSegmentId]);
+    if (prevActiveSegment !== activeSegmentId && activeSegmentId >= 0 && activeSegmentId < segmentData.length) {
+        setPrevActiveSegment(activeSegmentId);
+        setHeaderText(segmentData[activeSegmentId].name);
+    }
 
     return (
         <div className="absolute top-0 right-0 z-450 h-full w-2/5 bg-red-100">
