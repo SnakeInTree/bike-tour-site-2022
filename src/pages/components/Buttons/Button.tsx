@@ -5,14 +5,14 @@ import { GrSettingsOption } from "react-icons/gr";
 
 import { toggleDrawerDisplay } from "@/store/reducers/uiDisplay";
 
-type onClickFn = () => void;
+type handleClickFn = () => void;
 
-const Button = ({Icon, iconSize, position, onClick}: {Icon: IconType,iconSize: number, position: string, onClick: onClickFn }) => {
+const Button = ({Icon, iconSize, position, handleClick}: {Icon: IconType,iconSize: number, position: string, handleClick: handleClickFn }) => {
     const size = {size: `${iconSize}rem`};
     return (
         <IconContext.Provider value={size}>
             <div className={`fixed ${position} p-2 z-450 cursor-pointer rounded-xl transition-colors ease-in-out duration-300 hover:bg-red-100`}>
-                <Icon onClick={onClick}/>
+                <Icon onClick={handleClick}/>
             </div>
         </IconContext.Provider>  
     );
@@ -21,29 +21,29 @@ const Button = ({Icon, iconSize, position, onClick}: {Icon: IconType,iconSize: n
 const HomeButton = () => {
   const position = "top-3 left-3";
   const iconSize = 4.5;
-  const onClick = () => null;
+  const handleClick = () => null;
   return (
-    <Button Icon={GiDutchBike} iconSize={iconSize} position={position} onClick={onClick} />
+    <Button Icon={GiDutchBike} iconSize={iconSize} position={position} handleClick={handleClick} />
   );
 };
 
 const DrawerButton = () => {
   const dispatch = useDispatch();
-  const onClick = () => dispatch(toggleDrawerDisplay(true));
+  const handleClick = () => dispatch(toggleDrawerDisplay(true));
   
   const position = "top-6 right-6";
   const iconSize = 3;
   return (
-    <Button Icon={GiHamburgerMenu} iconSize={iconSize} position={position} onClick={onClick} />
+    <Button Icon={GiHamburgerMenu} iconSize={iconSize} position={position} handleClick={handleClick} />
   );
 };
 
 const SettingsButton = () => {
   const position = "bottom-6 left-6";
   const iconSize = 3;
-  const onClick = () => null;
+  const handleClick = () => null;
   return (
-    <Button Icon={GrSettingsOption} iconSize={iconSize} position={position} onClick={onClick} />
+    <Button Icon={GrSettingsOption} iconSize={iconSize} position={position} handleClick={handleClick} />
   );
 };
 
