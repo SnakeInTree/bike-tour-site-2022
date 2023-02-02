@@ -8,11 +8,11 @@ import { updateActiveSegment } from "../../../store/reducers/segmentList";
 
 import config from "../../../config/default.json";
 
-const PathSegment = ({ segmentData } : { segmentData: Segment }) => {
+const PathSegment = ({ segment } : { segment: Segment }) => {
     
     const dispatch = useDispatch();
     const activeSegmentId: number = useSelector((state:RootState) => state.segmentList.activeSegmentId);
-    const isActiveSegment = segmentData.segmentId === activeSegmentId;
+    const isActiveSegment = segment.segmentId === activeSegmentId;
     
     const [segmentOpacity, setSegmentOpacity] = useState<number>(config.SEGMENT_SETTINGS.DEFAULT_OPACITY);
 
@@ -24,7 +24,7 @@ const PathSegment = ({ segmentData } : { segmentData: Segment }) => {
         mouseover: () => (!isActiveSegment) ? setSegmentOpacity(config.SEGMENT_SETTINGS.ACTIVE_OPACITY) : null,
         mouseout: () => (!isActiveSegment) ? setSegmentOpacity(config.SEGMENT_SETTINGS.DEFAULT_OPACITY) : null,
         click: () => {
-            if (!isActiveSegment) dispatch(updateActiveSegment(segmentData.segmentId));
+            if (!isActiveSegment) dispatch(updateActiveSegment(segment.segmentId));
         }    
     };
 
@@ -35,7 +35,7 @@ const PathSegment = ({ segmentData } : { segmentData: Segment }) => {
     };
 
     return (
-        <Polyline positions={segmentData.gpx} pathOptions={polyLineOptions} eventHandlers={eventHandlers} />
+        <Polyline positions={segment.gpx} pathOptions={polyLineOptions} eventHandlers={eventHandlers} />
     );
 };
 

@@ -6,11 +6,7 @@ export const store = configureStore({
   reducer: {
     segmentList: segmentReducer,
     uiDisplay: displayReducer
-  },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware({
-    immutableCheck: {ignoredPaths: ["segmentList.segments"]},
-    serializableCheck: { ignoredPaths: ["segmentList.segments"] }
-  })
+  }
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

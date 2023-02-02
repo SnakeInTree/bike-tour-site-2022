@@ -1,16 +1,11 @@
 import { LatLngExpression } from "leaflet";
 import { MapContainer, TileLayer } from "react-leaflet";
-import { useSelector } from "react-redux";
 
 import PathSegment from "../PathSegment/PathSegment";
-
-import { RootState } from "@/store/store";
 import { Segment } from "@/store/models";
 import config from "../../../config/default.json";
 
-const Map = () => {    
-
-    const segments:Segment[] = useSelector((state:RootState) => state.segmentList.segments);
+const Map = ({ segmentData } : { segmentData: Segment[] }) => {    
 
     //MapContainer needs an explicitly defined height
     const mapStyle = { height: "100vh" };
@@ -25,10 +20,10 @@ const Map = () => {
             zoomControl={false}
         >  
             <TileLayer url={config.TILE_LAYER_URL} />     
-            {segments.map((segment: Segment) => (
+            {segmentData.map((segment: Segment) => (
                 <PathSegment 
                     key={segment.name} 
-                    segmentData={segment}
+                    segment={segment}
                 />
             ))}               
         </MapContainer>

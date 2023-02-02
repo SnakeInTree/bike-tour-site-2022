@@ -5,7 +5,6 @@ export interface UIDisplay {
 }
 
 export interface SegmentList {
-    segments: Segment[]; 
     activeSegmentId: number;
 }
 

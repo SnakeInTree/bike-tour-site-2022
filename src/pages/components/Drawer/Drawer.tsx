@@ -7,22 +7,20 @@ import {AiOutlineArrowLeft} from "react-icons/ai";
 import { useSelector } from "react-redux";
 
 import { RootState } from "@/store/store";
+import { Segment } from "@/store/models";
 import config from "../../../config/default.json";
 
-const Drawer = () => {
+const Drawer = ({ segmentData } : { segmentData: Segment[] }) => {
     
-    const [headerText, setHeaderText] = useState<string>(config.DEFAULT_TEXT.drawerHeaderText);
-    
-    
-    const segments = useSelector((state:RootState) => state.segmentList.segments);
+    const [headerText, setHeaderText] = useState<string>(config.DEFAULT_TEXT.drawerHeaderText);    
     const activeSegmentId = useSelector((state:RootState) => state.segmentList.activeSegmentId);
 
     useEffect(() => {
-        if (activeSegmentId > 0 && activeSegmentId < segments.length) {
-            const activeSegment = segments[activeSegmentId];
+        if (activeSegmentId > 0 && activeSegmentId < segmentData.length) {
+            const activeSegment = segmentData[activeSegmentId];
             setHeaderText(activeSegment.name);
         }
-    }, [segments, activeSegmentId]);
+    }, [segmentData, activeSegmentId]);
 
     return (
         <div className="absolute top-0 right-0 z-450 h-full w-2/5 bg-red-100">

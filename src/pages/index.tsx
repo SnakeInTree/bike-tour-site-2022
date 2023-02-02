@@ -3,6 +3,8 @@ import { LazyMap } from "./components/Map/index";
 import Buttons from "./components/Buttons/Button";
 import Drawer from "./components/Drawer/Drawer";
 
+import segmentData from "@/data/gpx";
+
 const Home = () => {
   return (
     <>
@@ -14,8 +16,8 @@ const Home = () => {
       </Head>
       <main>
         <Buttons />
-        <LazyMap />
-        <Drawer />
+        <LazyMap segmentData={segmentData} />
+        <Drawer segmentData={segmentData} />
       </main>
     </>
   );
