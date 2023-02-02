@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {LeafletEventHandlerFnMap} from "leaflet";
 import { Polyline } from "react-leaflet";
@@ -19,7 +19,8 @@ const PathSegment = ({ segment } : { segment: Segment }) => {
 
     if (prevActiveSegment !== activeSegmentId) {
         setPrevActiveSegment(activeSegmentId);
-        setSegmentOpacity(config.SEGMENT_SETTINGS.DEFAULT_OPACITY);
+        if (isActiveSegment) setSegmentOpacity(config.SEGMENT_SETTINGS.ACTIVE_OPACITY);
+        else setSegmentOpacity(config.SEGMENT_SETTINGS.DEFAULT_OPACITY);
     }
 
     const eventHandlers = {

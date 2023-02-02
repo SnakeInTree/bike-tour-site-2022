@@ -1,11 +1,15 @@
+import { useSelector } from "react-redux";
 import Head from "next/head";
 import { LazyMap } from "./components/Map/index";
 import Buttons from "./components/Buttons/Button";
 import Drawer from "./components/Drawer/Drawer";
 
-import segmentData from "@/data/gpx";
+import { RootState } from "@/store/store";
 
 const Home = () => {
+  
+  const { showDrawer } = useSelector((state:RootState) => state.uiDisplay);
+  
   return (
     <>
       <Head>
@@ -16,8 +20,8 @@ const Home = () => {
       </Head>
       <main>
         <Buttons />
-        <LazyMap segmentData={segmentData} />
-        <Drawer segmentData={segmentData} />
+        <LazyMap />
+        {showDrawer && <Drawer />}
       </main>
     </>
   );

@@ -4,8 +4,9 @@ import { MapContainer, TileLayer } from "react-leaflet";
 import PathSegment from "../PathSegment/PathSegment";
 import { Segment } from "@/store/models";
 import config from "../../../config/default.json";
+import segmentData from "@/data/gpx";
 
-const Map = ({ segmentData } : { segmentData: Segment[] }) => {    
+const Map = () => {    
 
     //MapContainer needs an explicitly defined height
     const mapStyle = { height: "100vh" };
