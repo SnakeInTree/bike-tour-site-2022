@@ -18,7 +18,7 @@ const Button = ({Icon, iconSize, position, onClick}: {Icon: IconType,iconSize: n
     );
 };
 
-export const HomeButton = () => {
+const HomeButton = () => {
   const position = "top-3 left-3";
   const iconSize = 4.5;
   const onClick = () => null;
@@ -27,7 +27,7 @@ export const HomeButton = () => {
   );
 };
 
-export const DrawerButton = () => {
+const DrawerButton = () => {
   const dispatch = useDispatch();
   const onClick = () => dispatch(toggleDrawerDisplay(true));
   
@@ -38,7 +38,7 @@ export const DrawerButton = () => {
   );
 };
 
-export const SettingsButton = () => {
+const SettingsButton = () => {
   const position = "bottom-6 left-6";
   const iconSize = 3;
   const onClick = () => null;
@@ -46,3 +46,15 @@ export const SettingsButton = () => {
     <Button Icon={GrSettingsOption} iconSize={iconSize} position={position} onClick={onClick} />
   );
 };
+
+const Buttons = () => {
+  return (
+    <>
+      <HomeButton />
+      <DrawerButton />
+      <SettingsButton />
+    </>
+  );
+};
+
+export default Buttons;

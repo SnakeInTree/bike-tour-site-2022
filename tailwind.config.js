@@ -2,7 +2,6 @@
 // eslint-disable-next-line no-undef
 module.exports = {
   content: [
-    "./src/pages/components/Buttons/Button.tsx",
     "./src/pages/**/*.{ts,tsx,html,js}",
     "./src/pages/components/**/*.{ts,tsx,html,js}",
     "./src/styles/globals.css"
@@ -331,6 +330,9 @@ module.exports = {
         "\"Courier New\"",
         "monospace",
       ],
+      cursive: [
+        "Caveat", "cursive"
+      ]
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],

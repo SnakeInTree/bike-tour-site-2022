@@ -21,7 +21,7 @@ import south_balkans from "../../data/gpx/south_balkans.json";
 const segmentData = [
    {
     name: "Holland",
-    segmentId: 1,
+    segmentId: 0,
     desc: "",
     gpx: holland.gpx as unknown as [LatLngExpression],
     kdTree: holland.kdTree,
@@ -29,7 +29,7 @@ const segmentData = [
   },
   {
     name: "Belgium",
-    segmentId: 2,
+    segmentId: 1,
     gpx: belgium.gpx as unknown as [LatLngExpression],
     kdTree: belgium.kdTree,
     zoomCoords: [[51.39, 2.62], [50.72, 4.62]] as LatLngBoundsExpression,
@@ -37,7 +37,7 @@ const segmentData = [
   },
   {
     name: "Normandie",
-    segmentId: 3,
+    segmentId: 2,
     gpx: normandy.gpx as unknown as [LatLngExpression],
     kdTree: normandy.kdTree,
     zoomCoords: [[50.74, -2.46], [48.61, 4.95]] as LatLngBoundsExpression,
@@ -45,7 +45,7 @@ const segmentData = [
   },
   {
     name: "Pays de la Loire",
-    segmentId: 4,
+    segmentId: 3,
     gpx: loire.gpx as unknown as [LatLngExpression],
     kdTree: loire.kdTree,
     zoomCoords: [[49.45, -4.24], [47.01, 2.41]] as LatLngBoundsExpression,
@@ -53,7 +53,7 @@ const segmentData = [
   },
   {
     name: "Alsace",
-    segmentId: 5,
+    segmentId: 4,
     gpx: alsace.gpx as unknown as [LatLngExpression],
     kdTree: alsace.kdTree,
     zoomCoords: [[47.00, 6.44], [49.43, 8.14]] as LatLngBoundsExpression,
@@ -61,7 +61,7 @@ const segmentData = [
   },
   {
     name: "Bernese Lowlands",
-    segmentId: 6,
+    segmentId: 5,
     gpx: forest_switzerland.gpx as unknown as [LatLngExpression],
     kdTree: forest_switzerland.kdTree,
     zoomCoords: [[47.59, 9.37], [46.45, 6.76]] as LatLngBoundsExpression,
@@ -69,7 +69,7 @@ const segmentData = [
   },
   {
     name: "Alpine Switzerland",
-    segmentId: 7,
+    segmentId: 6,
     gpx: alpine_switzerland.gpx as unknown as [LatLngExpression],
     kdTree: alpine_switzerland.kdTree,
     zoomCoords: [[46.55, 7.01], [46.17, 9.94]] as LatLngBoundsExpression,
@@ -77,7 +77,7 @@ const segmentData = [
  },
   {
     name: "Lombardy",
-    segmentId: 8,
+    segmentId: 7,
     gpx: lombardy.gpx as unknown as [LatLngExpression],
     kdTree: lombardy.kdTree,
     zoomCoords: [[46.29, 7.98], [45.22, 11.66]] as LatLngBoundsExpression,
@@ -85,7 +85,7 @@ const segmentData = [
   },
   {
     name: "Veneto",
-    segmentId: 9,
+    segmentId: 8,
     gpx: veneto.gpx as unknown as [LatLngExpression],
     kdTree: veneto.kdTree,
     zoomCoords: [[46.26, 10.50], [44.96, 14.39]] as LatLngBoundsExpression,
@@ -93,7 +93,7 @@ const segmentData = [
   },
   {
     name: "Slovenia",
-    segmentId: 10,
+    segmentId: 9,
     gpx: slovenia.gpx as unknown as [LatLngExpression],
     kdTree: slovenia.kdTree,
     zoomCoords: [[46.51, 12.18], [45.21, 16.53]] as LatLngBoundsExpression,
@@ -101,7 +101,7 @@ const segmentData = [
   },
   {
     name: "Croatia",
-    segmentId: 11,
+    segmentId: 10,
     gpx: croatia.gpx as unknown as [LatLngExpression],
     kdTree: croatia.kdTree,
     zoomCoords: [[45.76, 12.87], [43.24, 19.99]] as LatLngBoundsExpression,
@@ -109,7 +109,7 @@ const segmentData = [
   },
   {
     name: "Montenegro and Albania",
-    segmentId: 12,
+    segmentId: 11,
     gpx: south_balkans.gpx as unknown as [LatLngExpression],
     kdTree: south_balkans.kdTree,
     zoomCoords: [[43.00, 17.14], [39.26, 25.86]] as LatLngBoundsExpression,

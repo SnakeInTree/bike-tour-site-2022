@@ -1,5 +1,5 @@
 /**
- * Reducer to handle display of UI elements (PoiDrawer, Settings etc.)
+ * Reducer to handle display of UI elements (Drawer, Settings etc.)
  */
 
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";

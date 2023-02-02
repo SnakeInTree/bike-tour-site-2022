@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { LazyMap } from "./components/Map/index";
-import { HomeButton, DrawerButton, SettingsButton } from "./components/Buttons/Button";
+import Buttons from "./components/Buttons/Button";
+import Drawer from "./components/Drawer/Drawer";
 
 const Home = () => {
   return (
@@ -12,10 +13,9 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <HomeButton />
-        <DrawerButton />
-        <SettingsButton />
+        <Buttons />
         <LazyMap />
+        <Drawer />
       </main>
     </>
   );

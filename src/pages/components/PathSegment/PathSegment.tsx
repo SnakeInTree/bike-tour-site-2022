@@ -18,7 +18,7 @@ const PathSegment = ({ segmentData } : { segmentData: Segment }) => {
 
     useEffect(() => {
         if (!isActiveSegment) setSegmentOpacity(config.SEGMENT_SETTINGS.DEFAULT_OPACITY);
-    }, [activeSegmentId]);
+    }, [isActiveSegment, activeSegmentId]);
 
     const eventHandlers = {
         mouseover: () => (!isActiveSegment) ? setSegmentOpacity(config.SEGMENT_SETTINGS.ACTIVE_OPACITY) : null,
