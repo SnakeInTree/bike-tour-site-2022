@@ -4,7 +4,7 @@ import { MapContainer, TileLayer } from "react-leaflet";
 import PathSegment from "../PathSegment/PathSegment";
 import { Segment } from "@/store/models";
 import config from "../../../config/default.json";
-import segmentData from "@/data/gpx";
+import segmentData from "@/data";
 
 const Map = () => {    
 

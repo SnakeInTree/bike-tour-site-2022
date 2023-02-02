@@ -2,15 +2,15 @@
  * Drawer is responsible for showing off any info - SegmentInfo, Poi Info etc. 
  */
 import { useState } from "react";
-import { IconContext } from "react-icons";
-import {AiOutlineArrowLeft} from "react-icons/ai";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
+
+import BackButton from "./BackButton";
+import SegmentSelectList from "./SegmentSelectList";
 
 import { RootState } from "@/store/store";
-import { toggleDrawerDisplay } from "@/store/reducers/uiDisplay";
-import segmentData from "@/data/gpx";
+import segmentData from "@/data";
 import config from "../../../config/default.json";
-import { updateActiveSegment } from "@/store/reducers/segmentList";
+
 
 const Drawer = () => {
     
@@ -26,29 +26,12 @@ const Drawer = () => {
 
     return (
         <div className="absolute top-0 right-0 z-450 h-full w-2/5 bg-red-100">
-            <div className="fixed flex flex-row justify-start w-full py-5 pl-4 mb-5 text-5xl font-cursive font-bold shadow-md">
+            <div className="fixed h-24 flex flex-row justify-start w-full py-5 pl-4 mb-5 text-4xl font-cursive font-bold shadow-md">
                 <BackButton activeSegmentId={activeSegmentId} />
                 <span className="ml-4">{headerText}</span>
             </div>
+            <SegmentSelectList />
         </div>
-    );
-};
-
-const BackButton = ({ activeSegmentId } :{ activeSegmentId: number }) => {
-    
-    const dispatch = useDispatch();
-    const size = {size: "3rem"};
-
-    //if no active segment is selected, close drawer, otherwise revert showing to segment list
-    const handleClick = () => {
-        if (activeSegmentId === -1) dispatch(toggleDrawerDisplay(false));
-        else dispatch(updateActiveSegment(-1));
-    };
-
-    return (
-        <IconContext.Provider value={size}>
-            <AiOutlineArrowLeft className="cursor-pointer" onClick={handleClick} />
-        </IconContext.Provider>
     );
 };
 

@@ -293,6 +293,7 @@ module.exports = {
       "10/12": "83.333333%",
       "11/12": "91.666667%",
       full: "100%",
+      inherit: "inherit"
     }),
     flexGrow: {
       0: "0",
@@ -619,6 +620,7 @@ module.exports = {
     }),
     minHeight: {
       0: "0px",
+      50: "50%",
       full: "100%",
       screen: "100vh",
       min: "min-content",
@@ -627,6 +629,7 @@ module.exports = {
     },
     minWidth: {
       0: "0px",
+      40: "40%",
       full: "100%",
       min: "min-content",
       max: "max-content",
@@ -811,6 +814,7 @@ module.exports = {
       72: "18rem",
       80: "20rem",
       96: "24rem",
+      102: "40rem"
     },
     stroke: ({ theme }) => ({
       none: "none",
@@ -905,6 +909,7 @@ module.exports = {
       "1/4": "25%",
       "2/4": "50%",
       "3/4": "75%",
+      "1/5": "20",
       full: "100%",
     }),
     width: ({ theme }) => ({
@@ -941,6 +946,7 @@ module.exports = {
       min: "min-content",
       max: "max-content",
       fit: "fit-content",
+      inherit: "inherit"
     }),
     willChange: {
       auto: "auto",

@@ -20,4 +20,22 @@ export interface Segment {
     gpx: [LatLngExpression];
     zoomCoords: LatLngBoundsExpression,
     kdTree: KDTree;
+    pois: Poi[];
+    stats: SegmentStats;
+}
+
+export interface SegmentStats {
+    totalDist: number;
+    elevGain: number;
+    elevLost: number;
+}
+
+export interface Poi {
+    title: string;
+    desc: string;
+    date: string;
+    locationTown: string;
+    locationCountry: string;
+    cloudflareId: string;
+    position: LatLngExpression;
 }
