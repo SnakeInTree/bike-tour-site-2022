@@ -27,11 +27,12 @@ const Drawer = () => {
     //handle activeSegmentId change
     if (prevActiveSegment !== activeSegmentId && activeSegmentId >= 0 && activeSegmentId < segmentData.length) {
         setPrevActiveSegment(activeSegmentId);
-        setHeaderText(segmentData[activeSegmentId].name);
+        if (activeSegmentId === -1) setHeaderText(config.DEFAULT_TEXT.drawerHeaderText);
+        else setHeaderText(segmentData[activeSegmentId].name);
     }
 
      //onload, get the header images for all segments
-     const { isLoading, isError, data } = useQuery({
+    const { isLoading, isError, data } = useQuery({
         queryKey: ["fetchImages", headerCloudflareIds],
         queryFn: () => fetchImages(headerCloudflareIds)
     });

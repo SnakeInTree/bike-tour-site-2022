@@ -3,12 +3,13 @@ import Head from "next/head";
 import { LazyMap } from "./components/Map/index";
 import Buttons from "./components/Buttons/Button";
 import Drawer from "./components/Drawer/Drawer";
+import Carousel from "./components/Carousel/Carousel";
 
 import { RootState } from "@/store/store";
 
 const Home = () => {
   
-  const { showDrawer } = useSelector((state:RootState) => state.uiDisplay);
+  const { showDrawer, showCarousel } = useSelector((state:RootState) => state.uiDisplay);
   
   return (
     <>
@@ -22,6 +23,7 @@ const Home = () => {
         <Buttons />
         <LazyMap />
         {showDrawer && <Drawer />}
+        {showCarousel && <Carousel />}
       </main>
     </>
   );

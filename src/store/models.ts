@@ -2,6 +2,7 @@ import { LatLngBoundsExpression, LatLngExpression } from "leaflet";
 
 export interface UIDisplay {
     showDrawer: boolean;
+    showCarousel: boolean;
 }
 
 export interface SegmentList {

@@ -6,7 +6,8 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { UIDisplay } from "../models";
 
 const initialState : UIDisplay = {
-    showDrawer: false
+    showDrawer: false,
+    showCarousel: false
 };
   
 export const displaySlice = createSlice({
@@ -16,8 +17,11 @@ export const displaySlice = createSlice({
         toggleDrawerDisplay: (state: UIDisplay, action: PayloadAction<boolean>) => {
             return {...state, showDrawer: action.payload};
         },
+        toggleCarouselDisplay: (state: UIDisplay, action: PayloadAction<boolean>) => {
+            return {...state, showCarousel: action.payload};
+        },
     },
 });
 
-export const { toggleDrawerDisplay } = displaySlice.actions;
+export const { toggleDrawerDisplay, toggleCarouselDisplay } = displaySlice.actions;
 export default displaySlice.reducer;

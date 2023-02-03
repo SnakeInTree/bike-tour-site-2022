@@ -12,6 +12,7 @@ Tech Stack:
 - Tailwind [Styling]
 - React Leaflet [Mapping]
 - ChartJS [Elevation Charts]
+- Image CDN [Cloudflare]
 
 All images were captured by my unsteady hands. 
 
