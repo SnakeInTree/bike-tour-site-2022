@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Polyline } from "react-leaflet";
+import {LeafletEventHandlerFnMap} from "leaflet";
+import { Polyline, useMap } from "react-leaflet";
 
 import { RootState } from "@/store/store";
 import { Segment } from "@/store/models";
@@ -8,25 +9,32 @@ import { updateActiveSegment } from "../../../store/reducers/segmentList";
 
 import config from "../../../config/default.json";
 
-const PathSegment = ({ segmentData } : { segmentData: Segment }) => {
+const PathSegment = ({ segment } : { segment: Segment }) => {
     
+    const map = useMap();
     const dispatch = useDispatch();
-    const activeSegmentId: number = useSelector((state:RootState) => state.segmentList.activeSegmentId);
-    const isActiveSegment = segmentData.segmentId === activeSegmentId;
-    
+    const activeSegmentId = useSelector((state:RootState) => state.segmentList.activeSegmentId);
+    const isActiveSegment: boolean = segment.segmentId === activeSegmentId;
+    const [prevActiveSegment, setPrevActiveSegment] = useState<number>(activeSegmentId);
     const [segmentOpacity, setSegmentOpacity] = useState<number>(config.SEGMENT_SETTINGS.DEFAULT_OPACITY);
 
-    useEffect(() => {
-        if (!isActiveSegment) setSegmentOpacity(config.SEGMENT_SETTINGS.DEFAULT_OPACITY);
-    }, [activeSegmentId]);
+    //if activeSegmentId changes, update opacity so that only active segment is solid 
+    if (prevActiveSegment !== activeSegmentId) {
+        setPrevActiveSegment(activeSegmentId);
+        if (isActiveSegment) {
+            setSegmentOpacity(config.SEGMENT_SETTINGS.ACTIVE_OPACITY);
+            map.fitBounds(segment.zoomCoords);
+        }
+        else setSegmentOpacity(config.SEGMENT_SETTINGS.DEFAULT_OPACITY);
+    }
 
     const eventHandlers = {
         mouseover: () => (!isActiveSegment) ? setSegmentOpacity(config.SEGMENT_SETTINGS.ACTIVE_OPACITY) : null,
         mouseout: () => (!isActiveSegment) ? setSegmentOpacity(config.SEGMENT_SETTINGS.DEFAULT_OPACITY) : null,
         click: () => {
-            if (!isActiveSegment) dispatch(updateActiveSegment(segmentData.segmentId));
+            if (!isActiveSegment) dispatch(updateActiveSegment(segment.segmentId));
         }    
-    };
+    } as LeafletEventHandlerFnMap;
 
     const polyLineOptions = {
         weight: config.SEGMENT_SETTINGS.DEFAULT_WIDTH,
@@ -35,7 +43,7 @@ const PathSegment = ({ segmentData } : { segmentData: Segment }) => {
     };
 
     return (
-        <Polyline positions={segmentData.gpx} pathOptions={polyLineOptions} eventHandlers={eventHandlers} />
+        <Polyline positions={segment.gpx} pathOptions={polyLineOptions} eventHandlers={eventHandlers} />
     );
 };
 

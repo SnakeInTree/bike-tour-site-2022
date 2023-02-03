@@ -1,14 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import segmentReducer from "./reducers/segmentList";
+import displayReducer from "./reducers/uiDisplay";
 
 export const store = configureStore({
   reducer: {
-    segmentList: segmentReducer
-  },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware({
-    immutableCheck: {ignoredPaths: ["segmentList.segments"]},
-    serializableCheck: { ignoredPaths: ["segmentList.segments"] }
-  })
+    segmentList: segmentReducer,
+    uiDisplay: displayReducer
+  }
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
