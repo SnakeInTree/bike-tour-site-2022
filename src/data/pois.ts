@@ -4,7 +4,7 @@ import { Poi } from "@/store/models";
 const PoiList: Poi[][] = [[
     {
         title: "Header",
-        desc: "",
+        desc: "The Schermerhorn Windmills, built in the 17th century to drain the peat bogs of northern Holland.",
         locationTown: "",
         locationCountry: "",
         cloudflareId: "fbf8b0ef-1628-4a22-4de8-c2060ce8c100",
