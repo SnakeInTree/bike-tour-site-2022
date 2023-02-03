@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { store } from "../store/store";
 
 import "@/styles/globals.css";
+import "@/styles/cyclist.css";
 import "leaflet/dist/leaflet.css";
 
 const queryClient = new QueryClient();
