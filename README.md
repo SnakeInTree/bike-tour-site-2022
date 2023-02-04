@@ -18,7 +18,8 @@ All images were captured by my unsteady hands.
 
 [Vid of website progress circa January 2023](https://www.loom.com/share/ac601d7900ec45658d822c8668dc2b10)
 
+[Loading Animation (2/4/2023)](https://www.loom.com/share/02b87235e9d0400babd6f4168b82b97a)
+
 Upcoming Features:
-- Animated Intro Screen ([Progress Vid](https://www.loom.com/share/bbf306189ff24bfc8186b60af0463cfc))
 - Better Integration of Elevation Graphs
 - Improved Reactivity
