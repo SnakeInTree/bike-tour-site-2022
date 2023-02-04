@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux";
 import { IconContext, IconType } from "react-icons";
 import { GiDutchBike, GiHamburgerMenu } from "react-icons/gi";
 import { GrSettingsOption } from "react-icons/gr";
+import Link from "next/link";
 
 import { toggleDrawerDisplay } from "@/store/reducers/uiDisplay";
 
@@ -23,7 +24,9 @@ const HomeButton = () => {
   const iconSize = 4.5;
   const handleClick = () => null;
   return (
-    <Button Icon={GiDutchBike} iconSize={iconSize} position={position} handleClick={handleClick} />
+    <Link href={"/"}>
+      <Button Icon={GiDutchBike} iconSize={iconSize} position={position} handleClick={handleClick} />
+    </Link>
   );
 };
 

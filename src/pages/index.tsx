@@ -1,16 +1,8 @@
-import { useSelector } from "react-redux";
 import Head from "next/head";
-import { LazyMap } from "./components/Map/index";
-import Buttons from "./components/Buttons/Button";
-import Drawer from "./components/Drawer/Drawer";
-import Carousel from "./components/Carousel/Carousel";
-
-import { RootState } from "@/store/store";
+import LandingPage from "./components/Intro/LandingPage";
 
 const Home = () => {
-  
-  const { showDrawer, showCarousel } = useSelector((state:RootState) => state.uiDisplay);
-  
+    
   return (
     <>
       <Head>
@@ -20,10 +12,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Buttons />
-        <LazyMap />
-        {showDrawer && <Drawer />}
-        {showCarousel && <Carousel />}
+        <LandingPage />
       </main>
     </>
   );

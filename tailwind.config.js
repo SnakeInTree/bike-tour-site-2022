@@ -17,6 +17,10 @@ module.exports = {
       ping: "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite",
       pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       bounce: "bounce 1s infinite",
+      landingPageBubble: "landingPageBubble 2s ease-in-out forwards",
+      landingPageBikeRotate: "landingPageBikeRotate 2s ease-in-out forwards",
+      landingPageBikeRide: "landingPageBikeRide 1s linear infinite",
+      landingPageLoading: "landingPageLoading 2s ease-in-out forwards"
     },
     aria: {
       checked: "checked=\"true\"",
@@ -557,6 +561,41 @@ module.exports = {
           animationTimingFunction: "cubic-bezier(0,0,0.2,1)",
         },
       },
+      landingPageBubble: {
+        from: {
+          right: "6rem"
+        },
+        to: {
+          right: "-45rem"
+        }
+      },
+      landingPageBikeRotate: {
+        from: {
+          transform: "rotate(0deg)",
+          top: "3rem",
+          left: "-20rem"
+        },
+        to: {
+          transform: "rotate(-12deg)",
+          top: "-5rem",
+          left: "0rem"
+        }
+      },
+      landingPageBikeRide: {
+        "0%": {transform: "scaleY(1)"},
+        "25%": {transform: "scaleY(1.02)"},
+        "50%": {transform: "scaleY(1)"},
+        "75%": {transform: "scaleY(1.02)"},
+        "100%": {transform: "scaleY(1)"},
+      },
+      landingPageLoading: {
+        from: {
+          top: "24rem"
+        },
+        to: {
+          top: "12rem"
+        }
+      }
     },
     letterSpacing: {
       tighter: "-0.05em",
@@ -816,7 +855,11 @@ module.exports = {
       72: "18rem",
       80: "20rem",
       96: "24rem",
-      102: "40rem"
+      102: "40rem",
+      160: "42rem",
+      172: "43rem",
+      180: "45rem",
+      200: "50rem"
     },
     stroke: ({ theme }) => ({
       none: "none",

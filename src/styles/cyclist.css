@@ -1,0 +1,343 @@
+
+  .cyclist {
+    position: relative;
+    top:3rem;
+    left: -20rem;
+    animation: ride 1s linear infinite;
+    z-index: 2;
+  }
+  
+  .topTube {
+    position: relative;
+    background-color: #88806f;
+    width:12.5rem;
+    height: 0.625rem;
+    border-radius:0.625rem;
+    box-shadow: inset 3px -3px rgba(0,0,0,0.1);
+  }
+  
+  .seatpost {
+    position: absolute;
+    background-color: #88806f;
+    width:11.25rem;
+    height: 0.625rem;
+    border-radius:0.625rem;
+    box-shadow: inset 3px -3px rgba(0,0,0,0.1);
+    transform: rotate(73deg);
+    top: 3rem;
+    left: -4.5rem;
+  }
+  
+  .leftTyre, .rightTyre {
+    width:9.375rem;
+    height:9.375rem;
+    position: absolute;
+    border: 10px solid #333;
+    border-radius:50%;
+    z-index:1;
+    top:1.875rem;
+  }
+  
+  .leftTyre {
+    left:-9.7rem;
+  }
+  
+  .rightTyre {
+    left: 9.7rem;
+  }
+  
+  .leftTyre:before, .rightTyre:before {
+    content:"";
+    position: absolute;
+    width:135px;
+    height:135px;
+    border-radius:50%;
+    border: 8px solid #D2B48C;
+  }
+  
+  .leftTyre:after, .rightTyre:after {
+    content:"";
+    position: absolute;
+    width:2px;
+    height: 145px;
+    left:75px;
+    top:0;
+    background-color: #fcfffc;
+    animation: spin 1s linear infinite;
+  }
+  
+  .spokes {
+    position: absolute;
+    width:145px;
+    height: 2px;
+    background-color: #fcfffc;
+    top:75px;
+      animation: spin 1s linear infinite;
+  }
+  
+  .spokes:before, .spokes:after {
+    content:"";
+    position: absolute;
+     width:145px;
+    height: 2px;
+    background-color: #fcfffc;  
+    left:3px;
+  }
+  
+  .spokes:before {
+    transform: rotate(45deg);
+  }
+  
+  .spokes:after {
+    transform: rotate(-45deg);
+  }
+  
+  .pedals {
+    position: relative;
+    z-index:7;
+    width:3rem;
+    height:3rem;
+    border: 5px solid black; 
+    border-radius:50%;
+    top:6.25rem;
+    left:0.9rem;
+  }
+  
+  .fork {
+    position: absolute;
+    background-color: #88806f;
+    width:9rem;
+    height: 0.625rem;
+    border-radius:0.625rem;
+    box-shadow: inset 3px -3px rgba(0,0,0,0.1);
+    transform: rotate(70deg);
+    top: 3rem;
+    left: 9.15rem;
+    z-index: 10;
+  }
+  
+  .downtube {
+    position: absolute;
+    background-color: #88806f;
+    width:13rem;
+    height: 0.625rem;
+    border-radius:0.625rem;
+    box-shadow: inset 3px -3px rgba(0,0,0,0.1);
+    top: 4.5rem;
+    left: 1.25rem;
+    transform: rotate(-35deg)
+  }
+  
+  .chainstay {
+    position: absolute;
+    background-color: #88806f;
+    width:7.5rem;
+    height: 0.5rem;
+    border-radius:0.625rem;
+    box-shadow: inset 3px -3px rgba(0,0,0,0.1);
+    top: 7.75rem;
+    left: -4.5rem;
+    transform: rotate(10deg);
+    z-index: 10;
+  }
+  
+  .seatstay {
+  position: absolute;
+    background-color: #88806f;
+    width:8.5rem;
+    height: 0.5rem;
+    border-radius:0.625rem;
+    box-shadow: inset 3px -3px rgba(0,0,0,0.1);
+    top: 3.75rem;
+    left: -6.5rem;
+    transform: rotate(-55deg);
+    z-index: 5;  
+  }
+  
+  .headset {
+  position: absolute;
+    background-color: black;
+    width:2.5rem;
+    height: 0.75rem;
+    border-radius:0.625rem;
+    box-shadow: inset 3px -3px rgba(0,0,0,0.1);
+    top: -1rem;
+    right: -2rem;
+    z-index: 10;  
+  }
+  
+  .handlebars {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-right: 0.75rem solid;
+    border-bottom: 8px solid transparent;
+    top:-2.85rem;
+    right:-3.5rem;
+    transform: rotate(90deg);
+  }
+  
+  .lowerbars {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius:60%;
+    border-top: 0.7rem solid black;
+    border-left: 0.7rem solid black;
+    border-bottom: 0.7rem solid transparent;
+    border-right: 0.7rem solid transparent;
+    transform: rotate(190deg);
+    top:-1.7rem;
+    right:-3.7rem;
+  }
+  
+  .seat {
+    position: absolute;
+    width: 4rem;
+    height: 0.75rem; 
+    top:-2.25rem;
+    left:-1.5rem;
+    position: absolute;
+    background-color: black;
+    border-radius:0.625rem;
+    box-shadow: inset 3px -3px rgba(0,0,0,0.1);
+    z-index: 10;  
+  }
+  
+  .chainTop {
+    position: absolute;
+    background-color: #333;
+    width:7rem;
+    height:2px;
+    top:7rem;
+    left:-4.5rem;
+    transform: rotate(-3deg);
+    z-index: 3;
+  }
+  
+  .chainBottom {
+    position: absolute;
+    background-color: #333;
+    width:7.5rem;
+    height:2px;
+    top:8.9rem;
+    left:-5rem;
+    transform: rotate(23deg);
+    z-index: 3;
+  }
+  
+  .pannier {
+    position: absolute;
+    width: 6rem;
+    height: 8rem;
+    background-color: #989181;
+    z-index: 11;
+    border-radius: 1rem;
+    left: -7.75rem;
+    top: 1rem;
+      box-shadow: inset 3px -3px rgba(0,0,0,0.1);
+  }
+  
+  .stick {
+    position: absolute;
+    width: 6.75rem;
+    height: 0.7rem;
+    background-color: #563d2d;
+    z-index: 11;
+    border-radius: 1rem;
+    left: -8.075rem;
+    top: 5.5rem;
+  }
+  
+  .rackStay {
+    position: absolute;
+    width: 2rem;
+    height: 0.4rem;
+    background-color: black;
+    z-index: 7;
+    border-radius: 1rem;
+    left: -2.75rem;
+    top: 1.5rem;
+    transform: rotate(30deg);
+      box-shadow: inset 3px -3px rgba(0,0,0,0.1);
+  }
+  
+  .trunk {
+    position: absolute;
+    width: 6rem;
+    height: 2.5rem;
+    background-color: #563d2d;
+    z-index: 7;
+    border-radius: 1rem;
+    left: -7.75rem;
+    top: -1.5rem;
+      box-shadow: inset 3px -3px rgba(0,0,0,0.1);
+  }
+  
+  .trunkClasp {
+    position: absolute;
+    width:2.4rem;
+    height: 0.7rem;
+    z-index: 0;
+    border-radius: 1rem;
+    left: -2.6rem;
+    top: -1.75rem;
+      border-radius:60%;
+    border-bottom: 0.6rem solid #Af9471;
+    border-left: 0.7rem solid transparent;
+    border-top: 0.7rem solid transparent;
+    border-right: 0.7rem solid transparent;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes ride {
+    0% {transform: scaleY(1);}
+    25% {transform: scaleY(1.02);}
+    50% {transform: scaleY(1);}
+    75% {transform: scaleY(1.02);}
+    100% {transform: scaleY(1);}
+  }
+  
+  .shadow {
+    position: absolute;
+    width:32.5rem;
+    height:1rem;
+    background-color: rgba(0,0,0,0.2);
+    top:12rem;
+    left: -11rem;
+    border-radius:10px;
+    animation: scale 2s linear infinite;
+  }
+  
+  @keyframes scale {
+    0% {transform: scaleX(1);}
+    25% {transform: scaleX(0.9);}
+    50% {transform: scaleX(1);}
+    75% {transform: scaleX(0.9);}
+    100% {transform: scaleX(1);}
+  }
+  
+  .clouds {
+    position: absolute;
+    width:130px;
+    height:30px;
+    border-radius:20px;
+    background-color: rgba(255,255,255,0.5);
+    top:250px;
+    animation: clouds 2.7s linear infinite reverse;
+  }
+  
+  
+  
+  @keyframes clouds {  
+    from{ 
+      left:-600px; 
+    }
+    to{ 
+      left: 600px; 
+    }
+  }

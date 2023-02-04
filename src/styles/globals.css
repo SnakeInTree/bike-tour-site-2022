@@ -6,9 +6,13 @@
 @tailwind utilities;
 
 * {
-  box-sizing: border-box;
+  box-sizing: initial;
   padding: 0;
   margin: 0;
+}
+
+*::after, ::before {
+  box-sizing: initial;
 }
 
 html,
