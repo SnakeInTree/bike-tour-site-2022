@@ -19,7 +19,8 @@ module.exports = {
       bounce: "bounce 1s infinite",
       landingPageBubble: "landingPageBubble 2s ease-in-out forwards",
       landingPageBikeRotate: "landingPageBikeRotate 2s ease-in-out forwards",
-      landingPageBikeRide: "landingPageBikeRide 1s linear infinite"
+      landingPageBikeRide: "landingPageBikeRide 1s linear infinite",
+      landingPageLoading: "landingPageLoading 2s ease-in-out forwards"
     },
     aria: {
       checked: "checked=\"true\"",
@@ -576,7 +577,7 @@ module.exports = {
         },
         to: {
           transform: "rotate(-12deg)",
-          top: "0rem",
+          top: "-5rem",
           left: "0rem"
         }
       },
@@ -586,6 +587,14 @@ module.exports = {
         "50%": {transform: "scaleY(1)"},
         "75%": {transform: "scaleY(1.02)"},
         "100%": {transform: "scaleY(1)"},
+      },
+      landingPageLoading: {
+        from: {
+          top: "24rem"
+        },
+        to: {
+          top: "12rem"
+        }
       }
     },
     letterSpacing: {
