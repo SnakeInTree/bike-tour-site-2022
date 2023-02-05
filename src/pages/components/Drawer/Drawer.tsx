@@ -21,11 +21,11 @@ const headerCloudflareIds = segmentData.map((segment: Segment) => segment.pois[0
 const Drawer = () => {
     
     const activeSegmentId = useSelector((state:RootState) => state.segmentList.activeSegmentId);
-    const [headerText, setHeaderText] = useState<string>(config.DEFAULT_TEXT.drawerHeaderText);    
+    const [headerText, setHeaderText] = useState<string>(activeSegmentId > -1 ? segmentData[activeSegmentId].name : config.DEFAULT_TEXT.drawerHeaderText);    
     const [prevActiveSegment, setPrevActiveSegment] = useState<number>(activeSegmentId);
 
     //handle activeSegmentId change
-    if (prevActiveSegment !== activeSegmentId && activeSegmentId >= 0 && activeSegmentId < segmentData.length) {
+    if (prevActiveSegment !== activeSegmentId) {
         setPrevActiveSegment(activeSegmentId);
         if (activeSegmentId === -1) setHeaderText(config.DEFAULT_TEXT.drawerHeaderText);
         else setHeaderText(segmentData[activeSegmentId].name);
@@ -39,7 +39,7 @@ const Drawer = () => {
 
     return (
         <div className="absolute top-0 right-0 z-450 h-full w-2/5 bg-red-100">
-            <div className="fixed h-24 flex flex-row justify-start w-full py-5 pl-4 mb-5 text-4xl font-cursive font-bold shadow-md">
+            <div className="fixed h-12 flex flex-row justify-start w-full py-5 pl-4 mb-5 text-4xl font-cursive font-bold shadow-md">
                 <BackButton activeSegmentId={activeSegmentId} />
                 <span className="ml-4">{headerText}</span>
             </div>
@@ -62,7 +62,7 @@ const Drawer = () => {
                 </div>)
             : 
                 (
-                    <div className="fixed top-24 h-102 flex flex-col overflow-y-scroll">
+                    <div className="fixed top-22 h-102 flex flex-col overflow-y-scroll">
                         {(activeSegmentId === -1) ? 
                             (<SegmentSelectList imageData={data} />) :
                             (<SegmentInfoPanel segment={segmentData[activeSegmentId]} imageString={data[activeSegmentId]} />)}

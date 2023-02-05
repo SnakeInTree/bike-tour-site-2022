@@ -1,7 +1,7 @@
 {
     "MAP_SETTINGS": {
-        "START_LAT_LNG": [48.864716, 2.349],
-        "START_ZOOM": 6,
+        "START_LAT_LNG": [46.9, 7.4],
+        "START_ZOOM": 5,
         "MAX_ZOOM": 10,
         "MIN_ZOOM": 5
     },    
