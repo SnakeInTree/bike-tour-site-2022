@@ -6,10 +6,10 @@ import { store } from "../store/store";
 
 import "@/styles/globals.css";
 import "@/styles/cyclist.css";
+import "@/styles/leaflet_overrides.css";
 import "leaflet/dist/leaflet.css";
 
 const queryClient = new QueryClient();
-
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

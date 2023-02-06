@@ -7,6 +7,7 @@ export interface UIDisplay {
 
 export interface SegmentList {
     activeSegmentId: number;
+    hoverSegmentId: number;
 }
 
 export interface KDTree {
@@ -23,6 +24,7 @@ export interface Segment {
     kdTree: KDTree;
     pois: Poi[];
     stats: SegmentStats;
+    color: string;
 }
 
 export interface SegmentStats {

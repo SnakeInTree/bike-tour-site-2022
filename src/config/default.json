@@ -8,7 +8,7 @@
     "SEGMENT_SETTINGS": {
         "DEFAULT_WIDTH": 5,
         "HOVER_WIDTH": 7,
-        "DEFAULT_OPACITY": 0.5,
+        "INACTIVE_OPACITY": 0.5,
         "ACTIVE_OPACITY": 1
     },
     "DEFAULT_TEXT": {

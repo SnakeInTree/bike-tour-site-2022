@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {LeafletEventHandlerFnMap} from "leaflet";
-import { Polyline, useMap } from "react-leaflet";
+import { Polyline, Tooltip, useMap } from "react-leaflet";
 
 import { RootState } from "@/store/store";
 import { Segment } from "@/store/models";
-import { updateActiveSegment } from "../../../store/reducers/segmentList";
+import { updateActiveSegment, updateHoverSegment } from "../../../store/reducers/segmentList";
 
 import config from "../../../config/default.json";
 
@@ -14,9 +14,16 @@ const PathSegment = ({ segment } : { segment: Segment }) => {
     const map = useMap();
     const dispatch = useDispatch();
     const activeSegmentId = useSelector((state:RootState) => state.segmentList.activeSegmentId);
+    const hoverSegmentId = useSelector((state:RootState) => state.segmentList.hoverSegmentId);
+    
     const isActiveSegment: boolean = segment.segmentId === activeSegmentId;
+    const isHoverSegment:boolean = segment.segmentId === hoverSegmentId;
+    
     const [prevActiveSegment, setPrevActiveSegment] = useState<number>(activeSegmentId);
-    const [segmentOpacity, setSegmentOpacity] = useState<number>(config.SEGMENT_SETTINGS.DEFAULT_OPACITY);
+    const [prevHoverSegment, setPrevHoverSegment] = useState<number>(hoverSegmentId);
+    const [segmentOpacity, setSegmentOpacity] = useState<number>(config.SEGMENT_SETTINGS.ACTIVE_OPACITY);
+
+    const tooltipText = `(S${segment.segmentId + 1}) : ${segment.name}`;
 
     //if activeSegmentId changes, update opacity so that only active segment is solid 
     if (prevActiveSegment !== activeSegmentId) {
@@ -25,12 +32,21 @@ const PathSegment = ({ segment } : { segment: Segment }) => {
             setSegmentOpacity(config.SEGMENT_SETTINGS.ACTIVE_OPACITY);
             map.fitBounds(segment.zoomCoords);
         }
-        else setSegmentOpacity(config.SEGMENT_SETTINGS.DEFAULT_OPACITY);
+        else setSegmentOpacity(config.SEGMENT_SETTINGS.ACTIVE_OPACITY);
+    }
+
+    //if hoverSegmentId changes, ensure only hover segment has solid opacity
+    if (prevHoverSegment !== hoverSegmentId) {
+        setPrevHoverSegment(hoverSegmentId);
+        if (isHoverSegment || hoverSegmentId === -1) {
+            setSegmentOpacity(config.SEGMENT_SETTINGS.ACTIVE_OPACITY);
+        }
+        else setSegmentOpacity(config.SEGMENT_SETTINGS.INACTIVE_OPACITY);
     }
 
     const eventHandlers = {
-        mouseover: () => (!isActiveSegment) ? setSegmentOpacity(config.SEGMENT_SETTINGS.ACTIVE_OPACITY) : null,
-        mouseout: () => (!isActiveSegment) ? setSegmentOpacity(config.SEGMENT_SETTINGS.DEFAULT_OPACITY) : null,
+        mouseover: () => dispatch(updateHoverSegment(segment.segmentId)),
+        mouseout: () => dispatch(updateHoverSegment(-1)),
         click: () => {
             if (!isActiveSegment) dispatch(updateActiveSegment(segment.segmentId));
         }    
@@ -39,11 +55,13 @@ const PathSegment = ({ segment } : { segment: Segment }) => {
     const polyLineOptions = {
         weight: config.SEGMENT_SETTINGS.DEFAULT_WIDTH,
         opacity: segmentOpacity, 
-        color: "brown"
+        color: segment.color
     };
 
     return (
-        <Polyline positions={segment.gpx} pathOptions={polyLineOptions} eventHandlers={eventHandlers} />
+        <Polyline positions={segment.gpx} pathOptions={polyLineOptions} eventHandlers={eventHandlers} >
+            <Tooltip sticky>{tooltipText}</Tooltip>
+        </Polyline>
     );
 };
 
