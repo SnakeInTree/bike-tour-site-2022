@@ -41,4 +41,7 @@ export interface Poi {
     locationCountry: string;
     cloudflareId: string;
     position: LatLngExpression;
+    iconType: iconType;
 }
+
+type iconType = "monument" | "nature" | "animal" | "journal" | "mountain" | "camp";
