@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {LeafletEventHandlerFnMap, Icon} from "leaflet";
-import { Polyline, Tooltip, Marker, useMap } from "react-leaflet";
+import {LeafletEventHandlerFnMap} from "leaflet";
+import { Polyline, Tooltip, useMap } from "react-leaflet";
+
+import Pois from "./Pois";
 
 import { RootState } from "@/store/store";
-import { Segment, Poi } from "@/store/models";
+import { Segment } from "@/store/models";
 import { updateActiveSegment, updateHoverSegment } from "../../../store/reducers/segmentList";
 
 import config from "../../../config/default.json";
@@ -58,23 +60,12 @@ const PathSegment = ({ segment } : { segment: Segment }) => {
         color: segment.color
     };
 
-    const markerIcon = new Icon({
-        iconUrl: "/static/marker-icon.png",
-        iconRetinaUrl: "/static/marker-icon.png",
-        iconSize: [30, 40],
-        iconAnchor: [12, 24],
-        shadowUrl: "/static/marker-shadow.png",
-        shadowRetinaUrl: "/static/marker-shadow.png",
-        shadowSize: [41, 41],
-        shadowAnchor: [12, 41],
-    });
-
     return (
         <>
             <Polyline positions={segment.gpx} pathOptions={polyLineOptions} eventHandlers={eventHandlers} >
                 <Tooltip sticky>{tooltipText}</Tooltip>
             </Polyline>
-            {isActiveSegment ? segment.pois.map((poi: Poi) => (<Marker position={poi.position} icon={markerIcon} />)) : null}
+            {isActiveSegment ? <Pois pois={segment.pois} /> : null}
         </>
     );
 };
