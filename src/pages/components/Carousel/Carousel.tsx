@@ -7,7 +7,7 @@ import {AiOutlineLeft, AiOutlineRight, AiOutlineClose} from "react-icons/ai";
 
 
 import { fetchImages } from "@/apiUtil/cloudflare";
-import segmentData from "@/data";
+import segmentData from "@/data/segments";
 import { Poi } from "@/store/models";
 import { RootState } from "@/store/store";
 import { toggleCarouselDisplay } from "@/store/reducers/uiDisplay";

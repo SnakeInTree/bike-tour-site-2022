@@ -13,7 +13,7 @@ import SegmentInfoPanel from "./SegmentInfoPanel";
 import { fetchImages } from "@/apiUtil/cloudflare";
 import { RootState } from "@/store/store";
 import { Segment } from "@/store/models";
-import segmentData from "@/data";
+import segmentData from "@/data/segments";
 import config from "../../../config/default.json";
 
 const headerCloudflareIds = segmentData.map((segment: Segment) => segment.pois[0].cloudflareId);

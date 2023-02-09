@@ -4,7 +4,7 @@
 import { useDispatch } from "react-redux";
 import { BsArrowUpRight, BsArrowDownRight } from "react-icons/bs";
 
-import segmentData from "@/data";
+import segmentData from "@/data/segments";
 import { Segment } from "@/store/models";
 import config from "../../../config/default.json";
 import { updateActiveSegment } from "@/store/reducers/segmentList";
