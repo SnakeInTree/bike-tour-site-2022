@@ -57,7 +57,7 @@ const PathSegment = ({ segment } : { segment: Segment }) => {
     const polyLineOptions = {
         weight: config.SEGMENT_SETTINGS.DEFAULT_WIDTH,
         opacity: segmentOpacity, 
-        color: segment.color
+        color: "brown"
     };
 
     return (

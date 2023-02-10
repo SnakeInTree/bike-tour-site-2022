@@ -165,6 +165,8 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      tan: "#f2ebeb",
+      statgreen: "#BED3CA"
     }),
     columns: {
       auto: "auto",
@@ -337,6 +339,9 @@ module.exports = {
       ],
       cursive: [
         "Caveat", "cursive"
+      ],
+      mapheader: [
+        "Inter", "sans-serif"
       ]
     },
     fontSize: {
