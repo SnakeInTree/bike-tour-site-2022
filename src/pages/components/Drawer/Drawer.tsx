@@ -3,6 +3,7 @@
  */
 import { useQuery } from "react-query";
 import { Oval } from "react-loader-spinner";
+import { MdLocationOn } from "react-icons/md";
 
 import StatsBlock from "./Stats";
 
@@ -22,12 +23,13 @@ const Drawer = () => {
     });
 
     return (
-        <div className="absolute top-0 right-0 z-450 h-full w-1/2 bg-tan overflow-scroll">
+        <div className="absolute top-0 right-0 z-450 h-full w-1/2 bg-statgreen overflow-scroll">
             {(isLoading || !data) ? 
                 <Loader />
                 :
                 <div>
                     <img src={config.HTML_IMG_BUFFER_TAG + data[0]} />
+                    <Chevron />
                     <Header />
                     <StatsBlock />
                 </div>
@@ -63,6 +65,19 @@ const Loader = () => {
                     strokeWidthSecondary={2}
                 />
             </div>
+        </div>
+    );
+};
+
+const Chevron = () => {
+    const after = "after:content-[''] after:border-y-16 after:border-l-16 after:border-l-transparent after:border-y-transparent after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0";
+    const before = "before:content-[''] before:border-y-16 before:border-l-16 before:border-l-slate-600 before:border-y-transparent before:absolute before:-right-4 before:bottom-0 before:w-0 before:h-0";
+    const text = "font-mapheader text-slate-50";
+    const content = "EUROPE, VARIOUS COUNTRIES";
+    return (
+        <div className={`w-5/12 h-8 bg-slate-600 -translate-y-4 translate-x-6 flex flex-row justify-center items-center ${text} ${before} ${after}`}>
+            <MdLocationOn />
+            <span className="ml-4">{content}</span>
         </div>
     );
 };
