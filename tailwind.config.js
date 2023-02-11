@@ -110,8 +110,12 @@ module.exports = {
       0: "0px",
       2: "2px",
       4: "4px",
+      6: "6px",
       8: "8px",
-      16: "16px"
+      12: "12px",
+      16: "16px",
+      42: "42px",
+      70: "70px"
     },
     boxShadow: {
       sm: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
@@ -167,7 +171,12 @@ module.exports = {
       pink: colors.pink,
       rose: colors.rose,
       tan: "#f2ebeb",
-      statgreen: "#BED3CA"
+      statgreen: "#BED3CA",
+      statgrey: "#848581",
+      statblack: "#1A1C18",
+      statgreenborder: "#a9b69c",
+      headshotChevronBg: "#DDDEDA",
+      contributeborder: "#70D259"
     }),
     columns: {
       auto: "auto",
@@ -343,6 +352,9 @@ module.exports = {
       ],
       mapheader: [
         "Inter", "sans-serif"
+      ],
+      playfair: [
+        "Playfair Display", "serif"
       ]
     },
     fontSize: {
@@ -647,6 +659,7 @@ module.exports = {
     maxWidth: ({ theme, breakpoints }) => ({
       none: "none",
       0: "0rem",
+      xxs: "10rem",
       xs: "20rem",
       sm: "24rem",
       md: "28rem",
