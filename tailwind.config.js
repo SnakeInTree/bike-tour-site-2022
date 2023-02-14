@@ -176,7 +176,8 @@ module.exports = {
       statblack: "#1A1C18",
       statgreenborder: "#a9b69c",
       headshotChevronBg: "#DDDEDA",
-      contributeborder: "#70D259"
+      contributeborder: "#70D259",
+      segmentHoverBg: "#A23D3B"
     }),
     columns: {
       auto: "auto",
@@ -680,6 +681,7 @@ module.exports = {
     }),
     minHeight: {
       0: "0px",
+      20: "20%",
       50: "50%",
       full: "100%",
       screen: "100vh",

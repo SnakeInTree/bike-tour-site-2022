@@ -6,6 +6,7 @@ import { Oval } from "react-loader-spinner";
 
 import StatsBlock from "./Stats";
 import { Chevron, HeadshotChevron } from "./Chevrons";
+import SegmentMenu from "./SegmentMenu";
 
 import { fetchImages } from "@/apiUtil/cloudflare";
 import { Segment } from "@/store/models";
@@ -34,6 +35,7 @@ const Drawer = () => {
                     <Header />
                     <StatsBlock />
                     <IntroParagraph headshotString={data[1]} />
+                    <SegmentMenu segments={segmentData} imgStrings={data.slice(2)} />
                 </div>
             }
         </div>
@@ -48,7 +50,10 @@ const IntroParagraph = ({ headshotString }: { headshotString:string }) => {
                     <p className="pl-4 pr-12 w-3/4 text-2xl font-playfair font-semibold border-l-statgreenborder border-l-6">{text.intro.para1}</p>
                     <HeadshotChevron headshotString={headshotString} />
                 </div>
-                <p className="text-lg font-playfair">{text.intro.para2}</p>
+                <p className="text-lg font-playfair mb-10">{text.intro.para2}</p>
+                <h1 className="text-3xl font-semibold mb-10">SEGMENTS</h1>
+                <p className="text-lg font-playfair">{text.intro.para3}</p>
+
             </div>
         </div>
     );
