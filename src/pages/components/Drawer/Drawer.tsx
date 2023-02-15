@@ -5,8 +5,9 @@ import { useQuery } from "react-query";
 import { Oval } from "react-loader-spinner";
 
 import StatsBlock from "./Stats";
-import { Chevron, HeadshotChevron } from "./Chevrons";
+import { HeadshotChevron } from "./Chevrons";
 import SegmentMenu from "./SegmentMenu";
+import Header from "./Header";
 
 import { fetchImages } from "@/apiUtil/cloudflare";
 import { Segment } from "@/store/models";
@@ -31,7 +32,6 @@ const Drawer = () => {
                 :
                 <div>
                     <img className="relative" src={config.HTML_IMG_BUFFER_TAG + data[0]}/>
-                    <Chevron />
                     <Header />
                     <StatsBlock />
                     <IntroParagraph headshotString={data[1]} />
@@ -44,7 +44,7 @@ const Drawer = () => {
 
 const IntroParagraph = ({ headshotString }: { headshotString:string }) => {
     return (
-        <div className="flex flex-row justify-center w-full -translate-y-48 py-10 bg-tan">
+        <div className="flex flex-row justify-center w-full py-10 bg-tan sm:-translate-y-12 md:-translate-y-12 lg:-translate-y-48">
             <div className="flex flex-col w-10/12">
                 <div className="flex flex-row mb-10">
                     <p className="pl-4 pr-12 w-3/4 text-2xl font-playfair font-semibold border-l-statgreenborder border-l-6">{text.intro.para1}</p>
@@ -55,17 +55,6 @@ const IntroParagraph = ({ headshotString }: { headshotString:string }) => {
                 <p className="text-lg font-playfair">{text.intro.para3}</p>
 
             </div>
-        </div>
-    );
-};
-
-
-const Header = () => {
-    return (
-        <div className="flex flex-col text-7xl font-mapheader font-medium text-center text-tan -translate-y-72 pl-80">
-            <span>BIKE</span>
-            <span>TOUR</span>
-            <span>2022</span>
         </div>
     );
 };

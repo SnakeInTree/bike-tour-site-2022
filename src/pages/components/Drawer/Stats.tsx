@@ -40,7 +40,7 @@ const stats = {
 const StatsBlock = () => {
     return (
         <IconContext.Provider value={{size: "3.5rem", color: "#fff5f5"}}>
-            <div className="w-full bg-statgreen -translate-y-52 flex flex-row justify-center items-center">
+            <div className="w-full bg-statgreen flex flex-row justify-center items-center sm:-translate-y-0 md:-translate-y-0 lg:-translate-y-52">
                 <div className="w-10/12 inline-flex flex-wrap justify-evenly">
                     <Stat statType={stats.distance} />
                     <Stat statType={stats.days} />

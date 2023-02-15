@@ -177,7 +177,8 @@ module.exports = {
       statgreenborder: "#a9b69c",
       headshotChevronBg: "#DDDEDA",
       contributeborder: "#70D259",
-      segmentHoverBg: "#A23D3B"
+      segmentHoverBg: "#A23D3B",
+      titleGrey: "#31312F"
     }),
     columns: {
       auto: "auto",
@@ -815,9 +816,10 @@ module.exports = {
       150: "1.5",
     },
     screens: {
+      nil: "0px",
       sm: "640px",
       md: "768px",
-      lg: "1024px",
+      lg: "1150px",
       xl: "1280px",
       "2xl": "1536px",
     },
