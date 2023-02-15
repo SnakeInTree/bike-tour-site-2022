@@ -55,7 +55,6 @@ const Buttons = () => {
     <>
       <HomeButton />
       <DrawerButton />
-      <SettingsButton />
     </>
   );
 };
