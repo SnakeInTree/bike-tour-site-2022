@@ -13,19 +13,8 @@ import config from "../../../config/default.json";
 const SegmentMenu = ({segments, imgStrings}: {segments: Segment[], imgStrings: string[]}) => {
 
     return (    
-        <div className="flex flex-col -translate-y-48">
-            <div className="flex flex-row">
-                {segments.slice(0, 3).map((segment: Segment, index: number) => <SegmentSquare key={segment.name} segment={segment} imgString={imgStrings[index]} />)}
-            </div>
-            <div className="flex flex-row">
-                {segments.slice(3, 6).map((segment: Segment, index: number) => <SegmentSquare key={segment.name} segment={segment} imgString={imgStrings[index+3]} />)}
-            </div>
-            <div className="flex flex-row">
-                {segments.slice(6, 9).map((segment: Segment, index: number) => <SegmentSquare key={segment.name} segment={segment} imgString={imgStrings[index+6]} />)}
-            </div>
-            <div className="flex flex-row">
-                {segments.slice(9, 12).map((segment: Segment, index: number) => <SegmentSquare key={segment.name} segment={segment} imgString={imgStrings[index+9]} />)}
-            </div>
+        <div className="flex flex-wrap md:-translate-y-0 lg:-translate-y-48">
+            {segments.map((segment: Segment, index: number) => <SegmentSquare key={segment.name} segment={segment} imgString={imgStrings[index]} />)}
         </div>
     );
 };
@@ -33,7 +22,7 @@ const SegmentMenu = ({segments, imgStrings}: {segments: Segment[], imgStrings: s
 const SegmentSquare = ({segment, imgString}: {segment: Segment, imgString: string}) => {
 
     return (
-        <div className="w-1/3 h-1/3 flex flex-col items-center justify-around font-mapheader cursor-pointer bg-tan">
+        <div className="nil:w-full nil:h-full sm:w-full sm:h-full md:w-1/2 md:h-1/2 lg:w-1/3 lg:h-1/3 flex flex-col items-center justify-around font-mapheader cursor-pointer bg-tan">
             <img className="h-52 w-full" src={config.HTML_IMG_BUFFER_TAG + imgString}/>
             <h1 className="h-1/5 font-semibold text-xl text-center py-4">{segment.name.toUpperCase()}</h1>
         </div>
