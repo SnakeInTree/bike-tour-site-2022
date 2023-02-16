@@ -7,7 +7,7 @@ import Loader from "./Loading";
 import InfoPanel from "./InfoPanel";
 
 import segmentData from "@/data/segments";
-import text from "@/data/text";
+import { text } from "@/data/text";
 import { Segment } from "@/store/models";
 import { fetchImages } from "@/apiUtil/cloudflare";
 import config from "@/config/default.json";

@@ -1,4 +1,5 @@
 import { LatLngBoundsExpression, LatLngExpression } from "leaflet";
+import { IconType } from "react-icons";
 
 export interface UIDisplay {
     showDrawer: boolean;
@@ -45,3 +46,15 @@ export interface Poi {
 }
 
 type iconType = "monument" | "nature" | "animal" | "journal" | "mountain" | "camp";
+
+export interface InfoPanelSection {
+    sectionId: number;
+    title: string;
+    Icon: IconType;
+    content: SectionContent[]
+}
+
+export interface SectionContent {
+    header: string;
+    content: string;
+}

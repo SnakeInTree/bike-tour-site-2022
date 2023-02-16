@@ -180,7 +180,8 @@ module.exports = {
       contributeborder: "#70D259",
       segmentHoverBg: "#A23D3B",
       titleGrey: "#31312F",
-      infoPanelSectionTitle: "#70D259"
+      infoPanelSectionTitle: "#70D259",
+      infoPanelBg: "#D0CFCD"
     }),
     columns: {
       auto: "auto",
