@@ -1,5 +1,6 @@
 import { Dispatch, SetStateAction, useState } from "react";
-
+import { IconContext, IconType } from "react-icons";
+import { GiInspiration, GiLightBackpack, GiCampingTent, GiMirrorMirror } from "react-icons/gi";
 /**
  * InfoPanel is responsible for showcasing the following:
  * - Highlights
@@ -10,30 +11,31 @@ import { Dispatch, SetStateAction, useState } from "react";
  * - Trail Notes
  */
 interface SectionContent {
-    sectionId: number, 
-    title: string
+    sectionId: number;
+    title: string;
+    Icon: IconType;
 }   
 
 const SectionContentList = [
     {
         sectionId: 0,
-        title: "Inspiration"
+        title: "Inspiration",
+        Icon: GiInspiration
     },
     {
         sectionId: 1,
-        title: "Gear"
+        title: "Req. Gear",
+        Icon: GiLightBackpack
     },
     {
         sectionId: 2,
-        title: "Camping"
-    },
-    {
-        sectionId: 3,
-        title: "Advice"
+        title: "Camping",
+        Icon: GiCampingTent
     },
     {
         sectionId: 4,
-        title: "Reflections"
+        title: "Reflections",
+        Icon: GiMirrorMirror
     }
 ] as SectionContent[];
 
@@ -42,7 +44,7 @@ const InfoPanel = () => {
     
     
     return (
-        <div className="flex flex-col w-full h-4/5">
+        <div className="flex flex-col w-full h-4/5 md:-translate-y-0 lg:-translate-y-48">
             <SectionTitles activeSectionId={activeSectionId} setActiveSectionId={setActiveSectionId} />
         </div> 
     );
@@ -50,7 +52,7 @@ const InfoPanel = () => {
 
 const SectionTitles = ({activeSectionId, setActiveSectionId}: {activeSectionId: number, setActiveSectionId:Dispatch<SetStateAction<number>>}) => {
     return (
-        <div className="flex flex-col w-full h-1/6 align-middle justify-center items-center -translate-y-48 pt-4 bg-tan">
+        <div className="flex flex-col w-full h-1/6 align-middle justify-center items-center pt-8 bg-tan">
             <div className="flex flex-row w-5/6 h-1/12">
                 {SectionContentList.map((content:SectionContent) => <SectionHeader key={content.title} content={content} activeSectionId={activeSectionId} setActiveSectionId={setActiveSectionId}/>)}
             </div>
@@ -59,16 +61,25 @@ const SectionTitles = ({activeSectionId, setActiveSectionId}: {activeSectionId: 
 };
 
 const SectionHeader = ({activeSectionId, setActiveSectionId, content}: {content:SectionContent, activeSectionId: number, setActiveSectionId:Dispatch<SetStateAction<number>>}) => {
-    const before = "before:content-[''] before:border-y-42 before:border-l-24 before:border-l-statblack before:border-y-transparent before:absolute before:rotate-90 before:-translate-y-8";
+    //const before = "before:content-[''] before:border-y-42 before:border-l-24 before:border-l-statgrey before:border-y-transparent before:absolute before:rotate-90 before:-translate-y-8";
     const isActive = activeSectionId === content.sectionId;
 
     const handleClick = () => setActiveSectionId(content.sectionId);
+    const iconProps = {
+        size: "3rem",
+        color: isActive ? "#f2ebeb" : "#A23D3B"
+    };
+
+
 
     return (
-        <div className="flex flex-col w-full items-center cursor-pointer" onClick={handleClick}>
-            <div className="relative p-4 text-center font-mapheader text-lg font-semibold text-segmentHoverBg hover:text-statblack">{content.title.toUpperCase()}</div>
-            {isActive ? <div className={`${before} w-1/5 h-0`}></div> : null}
-        </div>
+        <IconContext.Provider value={iconProps}>
+            <div className="flex flex-col w-full items-center" onClick={handleClick}>
+                <div className={`nil:hidden sm:hidden md:hidden lg:block relative p-4 text-center font-mapheader text-lg ${isActive ? "bg-statgrey text-tan" : "text-segmentHoverBg hover:text-statblack ease-in-out"} font-semibold whitespace-nowrap`}>{content.title.toUpperCase()}</div>
+                <div className={`nil:block sm:block md:block lg:hidden relative p-4 text-center z-450 ${isActive ? "bg-statgrey" : ""}`}><content.Icon /></div>
+            </div>
+        </IconContext.Provider>
+        
     );
 };
 
