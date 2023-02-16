@@ -4,6 +4,7 @@ import Header from "./Header";
 import StatsBlock from "./Stats";
 import SegmentMenu from "./SegmentMenu";
 import Loader from "./Loading";
+import InfoPanel from "./InfoPanel";
 
 import segmentData from "@/data/segments";
 import text from "@/data/text";
@@ -29,6 +30,7 @@ const DefaultContent = () => {
                     <StatsBlock />
                     <IntroParagraph headshotString={data[1]} />
                     <SegmentMenu segments={segmentData} imgStrings={data.slice(2)} />
+                    <InfoPanel />
                 </div>
             }   
         </>
