@@ -138,7 +138,7 @@ const segmentData = [
     color: "#C5EBC3"
   },
   {
-    name: "Montenegro-Albania",
+    name: "Southern Balkans",
     segmentId: 11,
     gpx: south_balkans.gpx as unknown as [LatLngExpression],
     kdTree: south_balkans.kdTree,
