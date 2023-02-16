@@ -19,7 +19,7 @@ const SectionContentList = [
     },
     {
         sectionId: 1,
-        title: "Gear List"
+        title: "Gear"
     },
     {
         sectionId: 2,
@@ -45,15 +45,22 @@ const InfoPanel = () => {
 
 const SectionTitles = () => {
     return (
-        <div className="flex flex-row w-full h-1/6 -translate-y-48 py-8 bg-tan">
-            {SectionContentList.map((content:SectionContent) => <SectionHeader key={content.title} content={content} />)}
+        <div className="flex flex-col w-full h-1/6 align-middle justify-center items-center -translate-y-48 pt-4 bg-tan">
+            <div className="flex flex-row w-5/6 h-1/12">
+                {SectionContentList.map((content:SectionContent) => <SectionHeader key={content.title} content={content} />)}
+            </div>
         </div>
     );
 };
 
 const SectionHeader = ({content}: {content:SectionContent}) => {
+    const before = "before:content-[''] before:border-y-42 before:border-l-24 before:border-l-statblack before:border-y-transparent before:absolute before:rotate-90 before:-translate-y-8";
+
     return (
-        <div className="p-4 w-1/6 cursor-pointer text-center font-mapheader text-lg font-semibold text-segmentHoverBg hover:text-statblack">{content.title.toUpperCase()}</div>
+        <div className="flex flex-col w-full items-center">
+            <div className="relative p-4 cursor-pointer text-center font-mapheader text-lg font-semibold text-segmentHoverBg hover:text-statblack">{content.title.toUpperCase()}</div>
+            <div className={`${before} w-1/5 h-0`}></div>
+        </div>
     );
 };
 
