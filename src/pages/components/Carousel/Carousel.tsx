@@ -11,7 +11,7 @@ import segmentData from "@/data/segments";
 import { Poi } from "@/store/models";
 import { RootState } from "@/store/store";
 import { toggleCarouselDisplay } from "@/store/reducers/uiDisplay";
-import config from "../../../config/default.json";
+import config from "@/config/default.json";
 
 const CarouselContainer = () => {
     

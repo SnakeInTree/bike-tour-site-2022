@@ -8,7 +8,7 @@
  * Show desc on hover && zoom to spot on map
  */
 import { Segment } from "@/store/models";
-import config from "../../../config/default.json";
+import config from "@/config/default.json";
 
 const SegmentMenu = ({segments, imgStrings}: {segments: Segment[], imgStrings: string[]}) => {
 

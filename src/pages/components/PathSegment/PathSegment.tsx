@@ -9,7 +9,7 @@ import { RootState } from "@/store/store";
 import { Segment } from "@/store/models";
 import { updateActiveSegment, updateHoverSegment } from "../../../store/reducers/segmentList";
 
-import config from "../../../config/default.json";
+import config from "@/config/default.json";
 
 const PathSegment = ({ segment } : { segment: Segment }) => {
     
