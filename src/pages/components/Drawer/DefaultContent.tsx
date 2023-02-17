@@ -46,9 +46,10 @@ const IntroParagraph = ({ headshotString }: { headshotString:string }) => {
                     <HeadshotChevron headshotString={headshotString} />
                 </div>
                 <p className="text-lg font-playfair mb-10">{text.intro.para2}</p>
-                <h1 className="text-3xl font-semibold mb-10">SEGMENTS</h1>
-                <p className="text-lg font-playfair">{text.intro.para3}</p>
-
+                <p className="text-lg font-playfair mb-10">{text.intro.para3}</p>
+                <p className="text-lg font-playfair mb-10">{text.intro.para4}</p>
+                <p className="text-lg font-playfair mb-10">{text.intro.post}</p>
+                <h1 className="text-3xl font-semibold">SEGMENTS</h1>
             </div>
         </div>
     );

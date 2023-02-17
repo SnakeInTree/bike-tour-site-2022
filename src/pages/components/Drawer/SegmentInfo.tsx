@@ -27,11 +27,24 @@ const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
                     <img className="relative" src={config.HTML_IMG_BUFFER_TAG + data[0]}/>
                     <Chevron location={segment.location} />
                     <Title text={segment.displayTitle} activeSegmentId={activeSegmentId} />
+                    <CondensedHeader displayTitle={segment.displayTitle} location={segment.location} />
                 </div>
             }   
         </>
 
     );        
+};
+
+const CondensedHeader = ({displayTitle, location}: {displayTitle: string, location:string}) => {
+    return (
+        <div className="sm:flex md:flex lg:hidden xl:hidden 2xl:hidden p-8 justify-evenly flex-col w-full bg-titleGrey text-tan font-mapheader">
+            <div className="flex flex-row items-center mb-0.5">
+                <MdLocationOn />
+                <span>{location.toUpperCase()}</span>
+            </div>
+            <p className="text-5xl font-semibold">{displayTitle.toUpperCase()}</p>
+        </div>
+    );
 };
 
 const Chevron = ({location}: {location:string}) => {
@@ -54,7 +67,7 @@ const styles = [
     "pl-8 -translate-y-36 text-7xl",
     "pl-8 -translate-y-36 text-7xl",
     "pl-8 -translate-y-72 text-7xl",
-    "pl-8 -translate-y-40 text-7xl",
+    "pl-8 -translate-y-36 text-7xl",
     "pl-8 -translate-y-36 text-7xl",
     "pl-8 -translate-y-36 text-7xl",
     "pl-8 -translate-y-36 text-7xl",
