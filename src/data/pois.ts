@@ -105,7 +105,7 @@ const PoiList: Poi[][] = [[
         iconType: "monument"
     },
     {
-        title: "Header",
+        title: "old",
         desc: "",
         locationTown: "",
         locationCountry: "",
@@ -198,7 +198,7 @@ const PoiList: Poi[][] = [[
         iconType: "journal"
     },
     {
-        title: "Header",
+        title: "old",
         desc: "",
         locationTown: "",
         locationCountry: "",
@@ -220,7 +220,7 @@ const PoiList: Poi[][] = [[
         iconType: "journal"
     },
     {
-        title: "Header",
+        title: "old",
         desc: "",
         locationTown: "",
         locationCountry: "",
@@ -244,7 +244,7 @@ const PoiList: Poi[][] = [[
 ],
 [ //Seg 5
     {
-        title: "Header",
+        title: "old",
         desc: "",
         locationTown: "",
         locationCountry: "",
@@ -266,7 +266,7 @@ const PoiList: Poi[][] = [[
         iconType: "journal"
     },
     {
-        title: "Header",
+        title: "old",
         desc: "",
         locationTown: "",
         locationCountry: "",
@@ -288,7 +288,7 @@ const PoiList: Poi[][] = [[
         iconType: "journal"
     },    
     {
-        title: "Header",
+        title: "old",
         desc: "",
         locationTown: "",
         locationCountry: "",
@@ -313,7 +313,7 @@ const PoiList: Poi[][] = [[
 ],
 [ //Seg 9
     {
-        title: "Header",
+        title: "old",
         desc: "",
         locationTown: "",
         locationCountry: "",

@@ -39,7 +39,7 @@ const DefaultContent = () => {
 
 const IntroParagraph = ({ headshotString }: { headshotString:string }) => {
     return (
-        <div className="flex flex-row justify-center w-full py-10 bg-tan md:-translate-y-0 lg:-translate-y-48">
+        <div className="flex flex-row justify-center w-full py-10 bg-tan md:-translate-y-0 lg:-translate-y-48 drop-shadow-top-md">
             <div className="flex flex-col w-10/12">
                 <div className="flex flex-row mb-10">
                     <p className="pl-4 pr-12 w-3/4 text-2xl font-playfair font-semibold border-l-statgreenborder border-l-6">{text.intro.para1}</p>

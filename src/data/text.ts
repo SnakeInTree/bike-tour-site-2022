@@ -8,7 +8,45 @@ const text = {
         para3: "Nevertheless, the idea stuck. In the following years, I'd often close my eyes and imagine what it'd really be like to embark on a multi-month odyssey by bicycle. In 2021, with some newfound \"adult\" money and ready for a break from remote work, I started working on plan to purchase a bike and the requisite supplies for camping. Then in 2022, armed with a steel Fuji Touring Bike, a few thousand dollars in savings and a Google Map marked with every conceivable point of interest, I boarded a flight from Toronto to Amsterdam.", 
         para4: "I've broken up the full account of my journey into 12 sections, each containing a selection of photos and stories from my travels. Each segment writeup also includes a list of resources including campsites, restaurents and bicycle paths for anyone looking to go on their own European excursion.",
         post: "Thanks for reading, and happy trails!"
-    }
+    },
+    segmentText: [
+        { //Segment 1 -- Holland
+            "para1": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
+        },
+        { //Segment 2 -- Belgium
+            "para1": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
+        },
+        { //Segment 3 -- Normandy
+            "para1": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
+        },
+        { //Segment 4 -- Loire
+            "para1": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
+        },
+        { //Segment 5 -- Alsace
+            "para1": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
+        },
+        { //Segment 6 -- Swiss Jura
+            "para1": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
+        },
+        { //Segment 7 -- Swiss Alps
+            "para1": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
+        },
+        { //Segment 8 -- Lombardy
+            "para1": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
+        },
+        { //Segment 9 -- Veneto
+            "para1": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
+        },
+        { //Segment 10 -- Slovenia
+            "para1": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
+        },
+        { //Segment 11 -- Croatia
+            "para1": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
+        },
+        { //Segment 12 -- South Balkans
+            "para1": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
+        }
+    ]
 };
 
 const SectionContentList = [

@@ -272,6 +272,8 @@ module.exports = {
       lg: ["0 10px 8px rgb(0 0 0 / 0.04)", "0 4px 3px rgb(0 0 0 / 0.1)"],
       xl: ["0 20px 13px rgb(0 0 0 / 0.03)", "0 8px 5px rgb(0 0 0 / 0.08)"],
       "2xl": "0 25px 25px rgb(0 0 0 / 0.15)",
+      "top-md": ["0 -4px 6px rgb(0 0 0 / 0.07)", "0 -2px 4px rgb(0 0 0 / 0.06)"],
+      "left-md": ["-8px 0 4px rgb(0 0 0 / 0.15)", "-3px 0 3px rgb(0 0 0 / 0.15)"],
       none: "0 0 #0000",
     },
     fill: ({ theme }) => ({

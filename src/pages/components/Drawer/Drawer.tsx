@@ -11,7 +11,7 @@ const Drawer = () => {
     const activeSegmentId = useSelector((state:RootState) => state.segmentList.activeSegmentId);
 
     return (
-        <div className="absolute top-0 right-0 z-450 h-full w-7/12 bg-statgreen overflow-y-scroll overflow-x-hidden">
+        <div className="absolute top-0 right-0 z-450 h-full w-7/12 bg-statgreen overflow-y-scroll overflow-x-hidden drop-shadow-left-md">
             {activeSegmentId === -1 ? 
                 <DefaultContent /> :
                 <SegmentInfo activeSegmentId={activeSegmentId} />

@@ -4,6 +4,7 @@ import Loader from "./Loading";
 
 import { fetchImages } from "@/apiUtil/cloudflare";
 import segmentData from "@/data/segments";
+import { text } from "@/data/text";
 import { Poi, Segment } from "@/store/models";
 import config from "@/config/default.json";
 import { MdLocationOn } from "react-icons/md";
@@ -53,7 +54,7 @@ const Chevron = ({location}: {location:string}) => {
     const width = location.length > 19 ? "7/12" : "5/12";
     
     return (
-        <div className={`nil:hidden sm:hidden md:hidden -translate-y- lg:flex w-${width} h-8 bg-statblack -translate-y-4 translate-x-6 flex flex-row justify-center items-center ${text} ${before}`}>
+        <div className={`nil:hidden sm:hidden md:hidden -translate-y- lg:flex w-${width} h-8 bg-statblack -translate-y-4 translate-x-6 flex flex-row justify-center items-center drop-shadow-xl ${text} ${before}`}>
             <MdLocationOn />
             <span className="ml-4">{location.toUpperCase()}</span>
         </div>
@@ -80,6 +81,19 @@ const Title = ({text, activeSegmentId}: {text: string, activeSegmentId:number}) 
     return (
         <div className={`nil:hidden sm:hidden md:hidden lg:flex flex-row font-mapheader font-medium text-center text-tan ${styles[activeSegmentId]}`}>
                 {text.toUpperCase()}
+        </div>
+    );
+};
+
+const IntroParagraph = ({segmentText}: {segmentText: any}) => {
+    
+    return (
+        <div className="flex flex-row justify-center w-full py-10 bg-tan md:-translate-y-0 lg:-translate-y-28">
+            <div className="flex flex-col w-10/12">
+                <div className="flex flex-row mb-10">
+                    <p className="pl-4 pr-12 w-3/4 text-2xl font-playfair font-semibold border-l-statgreenborder border-l-6">{segmentText.para1}</p>
+                </div>
+            </div>
         </div>
     );
 };
