@@ -2,13 +2,12 @@
  * Drawer is responsible for showing off any info - SegmentInfo, Poi Info etc. 
  */
 import { RootState } from "@/store/store";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 import DefaultContent from "./DefaultContent";
 import SegmentInfo from "./SegmentInfo";
 
 const Drawer = () => {
-    const dispatch = useDispatch();
     const activeSegmentId = useSelector((state:RootState) => state.segmentList.activeSegmentId);
 
     return (

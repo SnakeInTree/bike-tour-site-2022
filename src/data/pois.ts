@@ -99,6 +99,16 @@ const PoiList: Poi[][] = [[
         desc: "",
         locationTown: "",
         locationCountry: "",
+        cloudflareId: "6d14c828-ab6e-40a9-3aab-6f9d757b0300",
+        position: [52.31, 4.76] as LatLngExpression,
+        date: "7/20/2022",
+        iconType: "monument"
+    },
+    {
+        title: "Header",
+        desc: "",
+        locationTown: "",
+        locationCountry: "",
         cloudflareId: "32ae0cc5-e28e-4843-b473-152481f5eb00",
         position: [52.31, 4.76] as LatLngExpression,
         date: "7/20/2022",
@@ -176,7 +186,17 @@ const PoiList: Poi[][] = [[
         iconType: "journal"
     },
 ],
-[ //Seg Two
+[ //Seg Two 
+    {
+        title: "Header",
+        desc: "",
+        locationTown: "",
+        locationCountry: "",
+        cloudflareId: "e2380ff5-8324-4fc0-dea9-19c9a8beec00",
+        position: [52.31, 4.76] as LatLngExpression,
+        date: "7/20/2022",
+        iconType: "journal"
+    },
     {
         title: "Header",
         desc: "",
@@ -194,11 +214,20 @@ const PoiList: Poi[][] = [[
         desc: "",
         locationTown: "",
         locationCountry: "",
+        cloudflareId: "9b5ca11d-1570-4d09-7a38-afa0baad7900",
+        position: [52.31, 4.76] as LatLngExpression,
+        date: "7/20/2022",
+        iconType: "journal"
+    },
+    {
+        title: "Header",
+        desc: "",
+        locationTown: "",
+        locationCountry: "",
         cloudflareId: "8d27af43-7184-4fe4-3fbc-7299880ef500",
         position: [52.31, 4.76] as LatLngExpression,
         date: "7/20/2022",
         iconType: "journal"
-
     }
 ],
 [ //Seg Four
@@ -211,7 +240,6 @@ const PoiList: Poi[][] = [[
         position: [52.31, 4.76] as LatLngExpression,
         date: "7/20/2022",
         iconType: "journal"
-
     }
 ],
 [ //Seg 5
@@ -224,10 +252,19 @@ const PoiList: Poi[][] = [[
         position: [52.31, 4.76] as LatLngExpression,
         date: "7/20/2022",
         iconType: "journal"
-
     }
 ],
-[ //Seg 6
+[ //Seg 6 
+    {
+        title: "Header",
+        desc: "",
+        locationTown: "",
+        locationCountry: "",
+        cloudflareId: "00a8818a-b6e3-4f04-5bc6-f026ce2b6800",
+        position: [52.31, 4.76] as LatLngExpression,
+        date: "7/20/2022",
+        iconType: "journal"
+    },
     {
         title: "Header",
         desc: "",
@@ -237,10 +274,19 @@ const PoiList: Poi[][] = [[
         position: [52.31, 4.76] as LatLngExpression,
         date: "7/20/2022",
         iconType: "journal"
-
     }
 ],
 [ //Seg 7
+    {
+        title: "Header",
+        desc: "",
+        locationTown: "",
+        locationCountry: "",
+        cloudflareId: "d317827a-6f44-4c7e-1e6c-3b212a181200",
+        position: [52.31, 4.76] as LatLngExpression,
+        date: "7/20/2022",
+        iconType: "journal"
+    },    
     {
         title: "Header",
         desc: "",
@@ -250,7 +296,6 @@ const PoiList: Poi[][] = [[
         position: [52.31, 4.76] as LatLngExpression,
         date: "7/20/2022",
         iconType: "journal"
-
     }
 ],
 [ //Seg 8
@@ -272,7 +317,7 @@ const PoiList: Poi[][] = [[
         desc: "",
         locationTown: "",
         locationCountry: "",
-        cloudflareId: "08f819cd-8f71-4e10-3d44-d6ea0af5c100",
+        cloudflareId: "46f25b16-ac46-4ba4-4172-f17ecc11b900",
         position: [52.31, 4.76] as LatLngExpression,
         date: "7/20/2022",
         iconType: "journal"

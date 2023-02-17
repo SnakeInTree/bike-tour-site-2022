@@ -25,7 +25,9 @@ const segmentData = [
     zoomCoords: [[50.79, 1.26], [52.74, 8.28]] as LatLngBoundsExpression,
     pois: poiList[0],
     stats: { elevGain: holland.elevGain, elevLost: holland.elevLost, totalDist: holland.totalDist} as SegmentStats,
-    color: "#A52A2A"
+    color: "#A52A2A",
+    location: "South Holland / Zeeland, the Netherlands",
+    displayTitle: "The Low Sky",
   },
   {
     name: "Belgium",
@@ -36,7 +38,9 @@ const segmentData = [
     desc: "temp",
     pois: poiList[1],
     stats: { elevGain: belgium.elevGain, elevLost: belgium.elevLost, totalDist: belgium.totalDist} as SegmentStats,
-    color: "#231C07"
+    color: "#231C07",
+    location: "Flanders, Belgium",
+    displayTitle: "Biking by Belfries",
   },
   {
     name: "Normandie",
@@ -47,7 +51,9 @@ const segmentData = [
     desc: "temp",
     pois: poiList[2],
     stats: { elevGain: normandy.elevGain, elevLost: normandy.elevLost, totalDist: normandy.totalDist} as SegmentStats,
-    color: "#F78764"
+    color: "#F78764",
+    location: "Hautes-de-France / Normandy, France",
+    displayTitle: "Pilgrimage",
   },
   {
     name: "Pays de la Loire",
@@ -58,7 +64,9 @@ const segmentData = [
     desc: "temp",
     pois: poiList[3],
     stats: { elevGain: loire.elevGain, elevLost: loire.elevLost, totalDist: loire.totalDist} as SegmentStats,
-    color: "#7E8D85"
+    color: "#7E8D85",
+    location: "Pays de la Loire, France",
+    displayTitle: "Valley of Kings",
   },
   {
     name: "Alsace",
@@ -69,7 +77,9 @@ const segmentData = [
     desc: "temp",
     pois: poiList[4],
     stats: { elevGain: alsace.elevGain, elevLost: alsace.elevLost, totalDist: alsace.totalDist} as SegmentStats,
-    color: "#083D77"
+    color: "#083D77",
+    location: "Grand-Est / Franche-Comté, France",
+    displayTitle: "Woods",
   },
   {
     name: "Bernese Lowlands",
@@ -80,7 +90,9 @@ const segmentData = [
     desc: "temp",
     pois: poiList[5],
     stats: { elevGain: forest_switzerland.elevGain, elevLost: forest_switzerland.elevLost, totalDist: forest_switzerland.totalDist} as SegmentStats,
-    color: "#EADAA2"
+    color: "#EADAA2",
+    location: "Jura / Bern, Switzerland",
+    displayTitle: "Jura Explorer",
   },
   {
     name: "Alpine Switzerland",
@@ -91,7 +103,9 @@ const segmentData = [
     desc: "temp",
     pois: poiList[6],
     stats: { elevGain: alpine_switzerland.elevGain, elevLost: alpine_switzerland.elevLost, totalDist: alpine_switzerland.totalDist} as SegmentStats,
-    color: "#F78764"
+    color: "#F78764",
+    location: "Bernese Highlands / Ticino, Switzerland",
+    displayTitle: "Alpine Crossing",
  },
   {
     name: "Lombardy",
@@ -102,7 +116,9 @@ const segmentData = [
     desc: "temp",
     pois: poiList[7],
     stats: { elevGain: lombardy.elevGain, elevLost: lombardy.elevLost, totalDist: lombardy.totalDist} as SegmentStats,
-    color: "#A52A2A"
+    color: "#A52A2A",
+    location: "Lombardy, Italy",
+    displayTitle: "Dolomiti",
   },
   {
     name: "Veneto",
@@ -113,7 +129,9 @@ const segmentData = [
     desc: "temp",
     pois: poiList[8],
     stats: { elevGain: veneto.elevGain, elevLost: veneto.elevLost, totalDist: veneto.totalDist} as SegmentStats,
-    color: "#071013"
+    color: "#071013",
+    location: "Veneto, Italy",
+    displayTitle: "The Most Serene",
   },
   {
     name: "Slovenia",
@@ -124,7 +142,9 @@ const segmentData = [
     desc: "temp",
     pois: poiList[9],
     stats: { elevGain: slovenia.elevGain, elevLost: slovenia.elevLost, totalDist: slovenia.totalDist} as SegmentStats,
-    color: "#00A676"
+    color: "#00A676",
+    location: "Primorska / Gorenjska, Slovenia",
+    displayTitle: "A Realm Unto Itself",
   },
   {
     name: "Croatia",
@@ -135,7 +155,9 @@ const segmentData = [
     desc: "temp",
     pois: poiList[10],
     stats: { elevGain: croatia.elevGain, elevLost: croatia.elevLost, totalDist: croatia.totalDist} as SegmentStats,
-    color: "#C5EBC3"
+    color: "#C5EBC3",
+    location: "Kvarner / Dalmatia, Croatia",
+    displayTitle: "Karstic Coast",
   },
   {
     name: "Southern Balkans",
@@ -146,7 +168,9 @@ const segmentData = [
     desc: "temp",
     pois: poiList[11],
     stats: { elevGain: south_balkans.elevGain, elevLost: south_balkans.elevLost, totalDist: south_balkans.totalDist} as SegmentStats,
-    color: "#FFD046"
+    color: "#FFD046",
+    location: "Coastal Montenegro/Albania, Epirus, Greece",
+    displayTitle: "Tour's End",
   }
 ] as Segment[];
 

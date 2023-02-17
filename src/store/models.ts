@@ -26,6 +26,8 @@ export interface Segment {
     pois: Poi[];
     stats: SegmentStats;
     color: string;
+    location: string;
+    displayTitle: string;
 }
 
 export interface SegmentStats {

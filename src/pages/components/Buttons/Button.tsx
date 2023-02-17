@@ -5,6 +5,7 @@ import { GrSettingsOption } from "react-icons/gr";
 import Link from "next/link";
 
 import { toggleDrawerDisplay } from "@/store/reducers/uiDisplay";
+import { updateActiveSegment } from "@/store/reducers/segmentList";
 
 type handleClickFn = () => void;
 
@@ -22,9 +23,10 @@ const Button = ({Icon, iconSize, position, handleClick}: {Icon: IconType,iconSiz
 const HomeButton = () => {
   const position = "top-3 left-3";
   const iconSize = 4.5;
-  const handleClick = () => null;
+  const dispatch = useDispatch();
+  const handleClick = () => dispatch(updateActiveSegment(-1));  
   return (
-    <Link href={"/"}>
+    <Link href={""}>
       <Button Icon={GiDutchBike} iconSize={iconSize} position={position} handleClick={handleClick} />
     </Link>
   );
