@@ -60,3 +60,9 @@ export interface SectionContent {
     header: string;
     content: string;
 }
+
+export interface Statistic {
+    name: string;
+    value: string;
+    icon: IconType;
+}

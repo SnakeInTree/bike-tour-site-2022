@@ -7,6 +7,7 @@ import Loader from "./Loading";
 import InfoPanel from "./InfoPanel";
 
 import segmentData from "@/data/segments";
+import { introStats } from "@/data/stats";
 import { text } from "@/data/text";
 import { Segment } from "@/store/models";
 import { fetchImages } from "@/apiUtil/cloudflare";
@@ -27,7 +28,7 @@ const DefaultContent = () => {
                 <div>
                     <img className="relative" src={config.HTML_IMG_BUFFER_TAG + data[0]}/>
                     <Header />
-                    <StatsBlock />
+                    <StatsBlock statList={introStats} isMain={true} />
                     <IntroParagraph headshotString={data[1]} />
                     <SegmentMenu segments={segmentData} imgStrings={data.slice(2)} />
                     <InfoPanel />
@@ -59,7 +60,7 @@ const HeadshotChevron = ({ headshotString }: { headshotString:string }) => {
     return (
         <div className="flex flex-col justify-center align-middle text-center w-1/4 bg-tan p-4">
             <span className="text-statblack font-bold border-b-4 border-b-contributeborder pb-1">CONTRIBUTED BY</span>
-            <img className="max-w-xxs max-h-40 my-4" src={config.HTML_IMG_BUFFER_TAG + headshotString} />
+            <img className="max-w-xxs max-h-40 my-4 drop-shadow-xl" src={config.HTML_IMG_BUFFER_TAG + headshotString} />
             <span className="text-statblack font-bold text-xl">KEES VANDENBERG</span>
         </div>
     );

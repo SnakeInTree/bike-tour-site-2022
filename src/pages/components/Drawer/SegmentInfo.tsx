@@ -1,13 +1,15 @@
 import { useQuery } from "react-query";
+import { MdLocationOn } from "react-icons/md";
 
 import Loader from "./Loading";
+import StatsBlock from "./Stats";
 
 import { fetchImages } from "@/apiUtil/cloudflare";
 import segmentData from "@/data/segments";
+import { segmentStats } from "@/data/stats";
 import { text } from "@/data/text";
 import { Poi, Segment } from "@/store/models";
 import config from "@/config/default.json";
-import { MdLocationOn } from "react-icons/md";
 
 const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
     
@@ -29,6 +31,7 @@ const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
                     <Chevron location={segment.location} />
                     <Title text={segment.displayTitle} activeSegmentId={activeSegmentId} />
                     <CondensedHeader displayTitle={segment.displayTitle} location={segment.location} />
+                    <StatsBlock statList={segmentStats[activeSegmentId]} isMain={false} />
                 </div>
             }   
         </>
@@ -54,7 +57,7 @@ const Chevron = ({location}: {location:string}) => {
     const width = location.length > 19 ? "7/12" : "5/12";
     
     return (
-        <div className={`nil:hidden sm:hidden md:hidden -translate-y- lg:flex w-${width} h-8 bg-statblack -translate-y-4 translate-x-6 flex flex-row justify-center items-center drop-shadow-xl ${text} ${before}`}>
+        <div className={`nil:hidden sm:hidden md:hidden -translate-y- lg:flex w-${width} h-8 bg-statblack -translate-y-4 translate-x-6 flex flex-row justify-center items-center drop-shadow-md ${text} ${before}`}>
             <MdLocationOn />
             <span className="ml-4">{location.toUpperCase()}</span>
         </div>
@@ -64,7 +67,7 @@ const Chevron = ({location}: {location:string}) => {
 //TO-DO: Refactor this plz
 const styles = [
     "pl-8 -translate-y-36 text-7xl",
-    "pl-10 -translate-y-36 text-6xl",
+    "pl-10 -translate-y-36 text-7xl",
     "pl-8 -translate-y-36 text-7xl",
     "pl-8 -translate-y-36 text-7xl",
     "pl-8 -translate-y-72 text-7xl",
@@ -72,7 +75,7 @@ const styles = [
     "pl-8 -translate-y-36 text-7xl",
     "pl-8 -translate-y-36 text-7xl",
     "pl-8 -translate-y-36 text-7xl",
-    "pl-8 -translate-y-36 text-6xl",
+    "pl-8 -translate-y-36 text-7xl",
     "pl-8 -translate-y-44 text-7xl",
     "pl-8 -translate-y-36 text-7xl"
 ];
