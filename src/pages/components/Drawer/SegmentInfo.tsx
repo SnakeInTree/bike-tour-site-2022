@@ -3,6 +3,8 @@ import { MdLocationOn } from "react-icons/md";
 
 import Loader from "./Loading";
 import StatsBlock from "./Stats";
+import PhotoGallery from "./PhotoGallery";
+import InfoPanel from "./InfoPanel";
 
 import { fetchImages } from "@/apiUtil/cloudflare";
 import segmentData from "@/data/segments";
@@ -32,6 +34,8 @@ const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
                     <Title text={segment.displayTitle} activeSegmentId={activeSegmentId} />
                     <CondensedHeader displayTitle={segment.displayTitle} location={segment.location} />
                     <StatsBlock statList={segmentStats[activeSegmentId]} isMain={false} />
+                    <IntroParagraph segmentText={text.segmentText[segment.segmentId]} />
+                    <PhotoGallery poiList={segment.pois} images={data} />
                 </div>
             }   
         </>
@@ -91,11 +95,12 @@ const Title = ({text, activeSegmentId}: {text: string, activeSegmentId:number}) 
 const IntroParagraph = ({segmentText}: {segmentText: any}) => {
     
     return (
-        <div className="flex flex-row justify-center w-full py-10 bg-tan md:-translate-y-0 lg:-translate-y-28">
+        <div className="flex flex-row justify-center w-full py-8 bg-tan md:-translate-y-0 lg:-translate-y-16">
             <div className="flex flex-col w-10/12">
                 <div className="flex flex-row mb-10">
                     <p className="pl-4 pr-12 w-3/4 text-2xl font-playfair font-semibold border-l-statgreenborder border-l-6">{segmentText.para1}</p>
                 </div>
+                <p className="text-lg font-playfair mb-10">{text.intro.para1}</p>
             </div>
         </div>
     );

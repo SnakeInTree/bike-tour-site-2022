@@ -40,8 +40,7 @@ export interface Poi {
     title: string;
     desc: string;
     date: string;
-    locationTown: string;
-    locationCountry: string;
+    location: string;
     cloudflareId: string;
     position: LatLngExpression;
     iconType: iconType;
