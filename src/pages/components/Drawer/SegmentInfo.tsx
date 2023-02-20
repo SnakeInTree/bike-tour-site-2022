@@ -95,7 +95,7 @@ const Title = ({text, activeSegmentId}: {text: string, activeSegmentId:number}) 
 const IntroParagraph = ({segmentText}: {segmentText: any}) => {
     
     return (
-        <div className="flex flex-row justify-center w-full py-8 bg-tan md:-translate-y-0 lg:-translate-y-16">
+        <div className="flex flex-row justify-center w-full py-10 bg-tan sm:translate-y-24 md:translate-y-24 lg:-translate-y-16">
             <div className="flex flex-col w-10/12">
                 <div className="flex flex-row mb-10">
                     <p className="pl-4 pr-12 w-3/4 text-2xl font-playfair font-semibold border-l-statgreenborder border-l-6">{segmentText.para1}</p>
