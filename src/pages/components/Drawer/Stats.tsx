@@ -4,7 +4,7 @@ import { Statistic } from "@/store/models";
 const StatsBlock = ({statList}: {statList: Statistic[]}) => {
     return (
         <IconContext.Provider value={{size: "3.5rem", color: "#fff5f5"}}>
-            <div className="w-10/12 inline-flex flex-wrap justify-evenly">
+            <div className="w-10/12 inline-flex flex-wrap justify-evenly sm:py-4 md:py-4 lg:py-0">
                 {statList.map((stat: Statistic) => <Stat key={stat.name} statType={stat} />)}
             </div>
         </IconContext.Provider>

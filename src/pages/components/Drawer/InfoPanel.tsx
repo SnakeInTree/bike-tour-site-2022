@@ -55,7 +55,7 @@ const SectionInfoHeader = ({ content }: { content:SectionContent }) => {
 
 const SectionTitles = ({activeSectionId, setActiveSectionId}: {activeSectionId: number, setActiveSectionId:Dispatch<SetStateAction<number>>}) => {
     return (
-        <div className="flex flex-col w-full h-1/6 align-middle justify-center items-center pt-8 bg-tan drop-shadow-md">
+        <div className="flex flex-col w-full h-1/6 align-middle justify-center items-center pt-12 bg-tan drop-shadow-md">
             <div className="flex flex-row w-5/6 h-1/12">
                 {SectionContentList.map((content:InfoPanelSection) => <SectionHeader key={content.title} content={content} activeSectionId={activeSectionId} setActiveSectionId={setActiveSectionId}/>)}
             </div>
