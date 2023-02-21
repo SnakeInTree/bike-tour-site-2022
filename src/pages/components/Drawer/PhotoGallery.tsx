@@ -15,7 +15,7 @@ const PhotoGallery = ({poiList, images}: {poiList: Poi[], images: string[]}) => 
     const handleCarouselTrigger = () => dispatch(toggleCarouselDisplay(true));
 
     return (
-        <div className="relative w-12/12 h-102 flex flex-col items-center pt-10 pb-8 bg-titleGrey drop-shadow-lg sm:translate-y-24 md:translate-y-24 lg:-translate-y-24">
+        <div className="relative w-12/12 h-102 flex flex-col items-center py-10 bg-titleGrey drop-shadow-lg sm:translate-y-24 md:translate-y-24 lg:-translate-y-24">
             <IconContext.Provider value={{ size: "2rem"}}>
                 <div className="absolute z-450 top-1/3 right-0 m-8 cursor-pointer text-white" onClick={handleIncreasePoiIndex}><AiOutlineRight /></div>
                 <div className="absolute z-450 top-1/3 left-0 m-8 cursor-pointer text-white" onClick={handleDecreasePoiIndex}><AiOutlineLeft /></div>

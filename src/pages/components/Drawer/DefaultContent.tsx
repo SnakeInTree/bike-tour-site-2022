@@ -33,7 +33,9 @@ const DefaultContent = () => {
                     </div>
                     <IntroParagraph headshotString={data[1]} />
                     <SegmentMenu segments={segmentData} imgStrings={data.slice(2)} />
-                    <InfoPanel />
+                    <div className="md:-translate-y-0 lg:-translate-y-48 bg-tan">
+                        <InfoPanel />
+                    </div>
                 </div>
             }   
         </>

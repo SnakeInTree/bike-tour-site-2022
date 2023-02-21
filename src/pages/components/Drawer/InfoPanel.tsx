@@ -18,7 +18,7 @@ const InfoPanel = () => {
     const [activeSectionId, setActiveSectionId] = useState<number>(0);
     
     return (
-        <div className="flex flex-col w-full h-4/5 md:-translate-y-0 lg:-translate-y-48">
+        <div className="flex flex-col w-full h-4/5">
             <SectionTitles activeSectionId={activeSectionId} setActiveSectionId={setActiveSectionId} />
             <SectionInfo activeSectionId={activeSectionId} />
         </div> 

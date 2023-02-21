@@ -38,7 +38,9 @@ const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
                     </div>  
                     <IntroParagraph segmentText={text.segmentText[segment.segmentId]} />
                     <PhotoGallery poiList={segment.pois} images={data} />
-                    <InfoPanel />
+                    <div className="md:translate-y-24 lg:-translate-y-24">
+                        <InfoPanel />
+                    </div>
                 </div>
             }   
         </>
