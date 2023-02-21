@@ -10,7 +10,7 @@ import { fetchImages } from "@/apiUtil/cloudflare";
 import segmentData from "@/data/segments";
 import { segmentStats } from "@/data/stats";
 import { text } from "@/data/text";
-import { Poi, Segment } from "@/store/models";
+import { Poi, Segment, SegmentText } from "@/store/models";
 import config from "@/config/default.json";
 
 const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
@@ -36,7 +36,7 @@ const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
                     <div className="w-full bg-statgreen flex flex-row justify-center items-center sm:translate-y-4 md:translate-y-16 lg:-translate-y-16">
                         <StatsBlock statList={segmentStats[activeSegmentId]} />
                     </div>  
-                    <IntroParagraph segmentText={text.segmentText[segment.segmentId]} />
+                    <Paragraphs segmentText={text.segmentText[segment.segmentId]} />
                     <PhotoGallery poiList={segment.pois} images={data} />
                     <div className="md:translate-y-24 lg:-translate-y-24">
                         <InfoPanel />
@@ -97,15 +97,14 @@ const Title = ({text, activeSegmentId}: {text: string, activeSegmentId:number}) 
     );
 };
 
-const IntroParagraph = ({segmentText}: {segmentText: any}) => {
-    
+const Paragraphs = ({segmentText}: {segmentText: SegmentText}) => {
     return (
         <div className="flex flex-row justify-center w-full py-10 bg-tan sm:translate-y-24 md:translate-y-24 lg:-translate-y-16">
             <div className="flex flex-col w-10/12">
                 <div className="flex flex-row mb-10">
-                    <p className="pl-4 pr-12 w-3/4 text-2xl font-playfair font-semibold border-l-statgreenborder border-l-6">{segmentText.para1}</p>
+                    <p className="pl-4 pr-12 w-3/4 text-2xl font-playfair font-semibold border-l-statgreenborder border-l-6">{segmentText.header}</p>
                 </div>
-                <p className="text-lg font-playfair mb-10">{text.intro.para1}</p>
+                {segmentText.paragraphs.map((para: string) => <p className="text-lg font-playfair mb-10">{para}</p> )}
             </div>
         </div>
     );

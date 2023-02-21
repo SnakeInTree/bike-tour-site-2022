@@ -65,3 +65,8 @@ export interface Statistic {
     value: string;
     icon: IconType;
 }
+
+export interface SegmentText {
+    header: string;
+    paragraphs: string[];
+}

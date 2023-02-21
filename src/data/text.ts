@@ -1,5 +1,5 @@
 import {GiPhotoCamera, GiInspiration, GiLightBackpack, GiCampingTent, GiMirrorMirror } from "react-icons/gi";
-import { InfoPanelSection, SectionContent } from "@/store/models";
+import { InfoPanelSection, SectionContent, SegmentText } from "@/store/models";
 
 const text = {
     intro: {
@@ -61,7 +61,7 @@ const text = {
             "header": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
             "paragraphs": []
         }
-    ]
+    ] as SegmentText[]
 };
 
 const SectionContentList = [
