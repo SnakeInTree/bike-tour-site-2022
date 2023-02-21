@@ -33,9 +33,12 @@ const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
                     <Chevron location={segment.location} />
                     <Title text={segment.displayTitle} activeSegmentId={activeSegmentId} />
                     <CondensedHeader displayTitle={segment.displayTitle} location={segment.location} />
-                    <StatsBlock statList={segmentStats[activeSegmentId]} isMain={false} />
+                    <div className="w-full bg-statgreen flex flex-row justify-center items-center sm:translate-y-4 md:translate-y-16 lg:-translate-y-16">
+                        <StatsBlock statList={segmentStats[activeSegmentId]} />
+                    </div>  
                     <IntroParagraph segmentText={text.segmentText[segment.segmentId]} />
                     <PhotoGallery poiList={segment.pois} images={data} />
+                    <InfoPanel />
                 </div>
             }   
         </>

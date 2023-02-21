@@ -1,13 +1,11 @@
 import { IconContext } from "react-icons";
 import { Statistic } from "@/store/models";
 
-const StatsBlock = ({statList, isMain}: {statList: Statistic[], isMain: boolean}) => {
+const StatsBlock = ({statList}: {statList: Statistic[]}) => {
     return (
         <IconContext.Provider value={{size: "3.5rem", color: "#fff5f5"}}>
-            <div className={`w-full bg-statgreen flex flex-row justify-center items-center sm:translate-y-4 md:translate-y-16 lg:-translate-y-${isMain ? "52" : "16"}`}>
-                <div className="w-10/12 inline-flex flex-wrap justify-evenly">
-                    {statList.map((stat: Statistic) => <Stat key={stat.name} statType={stat} />)}
-                </div>
+            <div className="w-10/12 inline-flex flex-wrap justify-evenly">
+                {statList.map((stat: Statistic) => <Stat key={stat.name} statType={stat} />)}
             </div>
         </IconContext.Provider>
     );

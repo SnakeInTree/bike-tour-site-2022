@@ -28,7 +28,9 @@ const DefaultContent = () => {
                 <div>
                     <img className="relative" src={config.HTML_IMG_BUFFER_TAG + data[0]}/>
                     <Header />
-                    <StatsBlock statList={introStats} isMain={true} />
+                    <div className="w-full bg-statgreen flex flex-row justify-center items-center sm:translate-y-4 md:translate-y-16 lg:-translate-y-52">
+                        <StatsBlock statList={introStats} />
+                    </div>
                     <IntroParagraph headshotString={data[1]} />
                     <SegmentMenu segments={segmentData} imgStrings={data.slice(2)} />
                     <InfoPanel />
