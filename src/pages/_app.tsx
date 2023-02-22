@@ -8,6 +8,7 @@ import "@/styles/globals.css";
 import "@/styles/cyclist.css";
 import "@/styles/leaflet_overrides.css";
 import "leaflet/dist/leaflet.css";
+import "react-leaflet-markercluster/dist/styles.min.css";
 
 const queryClient = new QueryClient();
 

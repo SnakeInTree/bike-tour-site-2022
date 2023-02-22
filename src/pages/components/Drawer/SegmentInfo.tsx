@@ -104,7 +104,7 @@ const Paragraphs = ({segmentText}: {segmentText: SegmentText}) => {
                 <div className="flex flex-row mb-10">
                     <p className="pl-4 pr-12 w-3/4 text-2xl font-playfair font-semibold border-l-statgreenborder border-l-6">{segmentText.header}</p>
                 </div>
-                {segmentText.paragraphs.map((para: string) => <p className="text-lg font-playfair mb-10">{para}</p> )}
+                {segmentText.paragraphs.map((para: string, index: number) => <p key={index} className="text-lg font-playfair mb-10">{para}</p> )}
             </div>
         </div>
     );

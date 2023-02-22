@@ -1,6 +1,7 @@
 import { Icon } from "leaflet";
 import { Marker } from "react-leaflet";
-
+// @ts-expect-error Missing type definitions
+import MarkerClusterGroup from "@changey/react-leaflet-markercluster";
 import { Poi } from "@/store/models";
 
 const icons = {
@@ -44,9 +45,9 @@ const icons = {
 
 const Pois = ({pois} : {pois: Poi[]}) => {
     return (
-        <>
+        <MarkerClusterGroup showCoverageOnHover={false}>
             {pois.map((poi: Poi) => <Marker key={poi.title} position={poi.position} icon={icons[poi.iconType]} />)}
-        </>
+        </MarkerClusterGroup>
     );
 };
 
