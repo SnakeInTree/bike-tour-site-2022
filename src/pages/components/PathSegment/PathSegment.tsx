@@ -63,7 +63,7 @@ const PathSegment = ({ segment } : { segment: Segment }) => {
     return (
         <>
             <Polyline positions={segment.gpx} pathOptions={polyLineOptions} eventHandlers={eventHandlers} >
-                <Tooltip sticky>{tooltipText}</Tooltip>
+                {!isActiveSegment && <Tooltip sticky>{tooltipText}</Tooltip>}
             </Polyline>
             {isActiveSegment ? <Pois pois={segment.pois} /> : null}
         </>
