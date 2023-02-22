@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {LeafletEventHandlerFnMap} from "leaflet";
+import {LeafletEventHandlerFnMap, LatLng} from "leaflet";
 import { Polyline, Tooltip, useMap } from "react-leaflet";
 
 import Pois from "./Pois";
@@ -16,6 +16,7 @@ const PathSegment = ({ segment } : { segment: Segment }) => {
     const map = useMap();
     const dispatch = useDispatch();
     const activeSegmentId = useSelector((state:RootState) => state.segmentList.activeSegmentId);
+    const activePoiId = useSelector((state:RootState) => state.segmentList.activePoiId);
     const hoverSegmentId = useSelector((state:RootState) => state.segmentList.hoverSegmentId);
     
     const isActiveSegment: boolean = segment.segmentId === activeSegmentId;
@@ -45,6 +46,13 @@ const PathSegment = ({ segment } : { segment: Segment }) => {
         }
         else if (!isActiveSegment) setSegmentOpacity(config.SEGMENT_SETTINGS.INACTIVE_OPACITY);
     }
+
+    useEffect(() => {
+        if (isActiveSegment && segment.pois[activePoiId]) {
+            const activePoiPosition = segment.pois[activePoiId].position as LatLng;
+            map.flyTo(activePoiPosition, 10);
+        }
+    }, [map, segment.pois, activePoiId, isActiveSegment]);
 
     const eventHandlers = {
         mouseover: () => dispatch(updateHoverSegment(segment.segmentId)),
