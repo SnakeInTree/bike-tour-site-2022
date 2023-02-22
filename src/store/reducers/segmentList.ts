@@ -13,7 +13,7 @@ export const segmentSlice = createSlice({
   initialState,
   reducers: {
     updateActiveSegment: (state: SegmentList, action: PayloadAction<number>) => {
-      return {...state, activeSegmentId: action.payload};
+      return {...state, activeSegmentId: action.payload, activePoiId: 0};
     },
     updateHoverSegment: (state: SegmentList, action: PayloadAction<number>) => {
       return {...state, hoverSegmentId: action.payload};

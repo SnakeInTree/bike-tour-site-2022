@@ -1,8 +1,10 @@
-import { Icon, divIcon, point } from "leaflet";
+import { LeafletEventHandlerFnMap, Icon, divIcon, point } from "leaflet";
 import { Marker } from "react-leaflet";
 // @ts-expect-error Missing type definitions
 import MarkerClusterGroup from "@changey/react-leaflet-markercluster";
 import { Poi } from "@/store/models";
+import { useDispatch } from "react-redux";
+import { updateActivePoiId } from "@/store/reducers/segmentList";
 
 const icons = {
     "animal": new Icon({
@@ -44,10 +46,23 @@ const icons = {
 };
 
 const Pois = ({pois} : {pois: Poi[]}) => {
+
     return (
         <MarkerClusterGroup showCoverageOnHover={false} iconCreateFunction={createClusterCustomIcon}>
-            {pois.map((poi: Poi) => <Marker key={poi.title} position={poi.position} icon={icons[poi.iconType]} />)}
+            {pois.map((poi: Poi, index: number) => <PoiMarker key={poi.title} poi={poi} index={index} />)}
         </MarkerClusterGroup>
+    );
+};
+
+const PoiMarker = ({poi, index}: {poi:Poi, index:number}) => {
+    
+    const dispatch = useDispatch();
+    const eventHandlers = {       
+        click: () => dispatch(updateActivePoiId(index))
+    } as LeafletEventHandlerFnMap;
+
+    return (
+        <Marker position={poi.position} icon={icons[poi.iconType]} eventHandlers={eventHandlers} />
     );
 };
 
