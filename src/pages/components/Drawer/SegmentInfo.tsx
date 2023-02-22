@@ -37,7 +37,7 @@ const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
                         <StatsBlock statList={segmentStats[activeSegmentId]} />
                     </div>  
                     <Paragraphs segmentText={text.segmentText[segment.segmentId]} />
-                    <PhotoGallery poiList={segment.pois} images={data} />
+                    <PhotoGallery poiList={segment.pois.slice(1)} images={data.slice(1)} />
                     <div className="md:translate-y-24 lg:-translate-y-24">
                         <InfoPanel />
                     </div>

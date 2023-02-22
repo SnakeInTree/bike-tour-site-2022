@@ -23,10 +23,22 @@ const PhotoGallery = ({poiList, images}: {poiList: Poi[], images: string[]}) => 
             </IconContext.Provider>
             <TitleChevron />
             <img className="h-fit h-min-50 max-h-120 pointer-events-none" src={config.HTML_IMG_BUFFER_TAG + images[activePoiId]} />
-            <p className="text-tan font-playfair text-lg p-8 h-20 w-10/12"><strong>{poiList[activePoiId].date}</strong> - {poiList[activePoiId].location} - {poiList[activePoiId].desc}</p>
+            <ImgCaption poi={poiList[activePoiId]} />
             <div className="absolute bottom-4 h-4 flex flex-row justify-between w-3/5">
                 {poiList.map((poi: Poi, index: number) => <CarouselDot key={poi.title} index={index} activePoiId={activePoiId} setActivePoiId={setActivePoiId} /> )}
             </div>
+        </div>
+    );
+};
+
+const ImgCaption = ({poi}: {poi:Poi}) => {
+    return (
+        <div className="flex flex-col w-9/12 h-28 px-6 mt-6 text-tan font-playfair overflow-y-scroll">
+            <div className="flex flex-row space-around justify-between text-xl font-semibold pb-2">
+                <span>{poi.title}</span>
+                <span>{poi.location}</span>
+            </div>
+            <p>{poi.desc}</p>
         </div>
     );
 };
