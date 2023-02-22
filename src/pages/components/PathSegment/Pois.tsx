@@ -58,7 +58,11 @@ const PoiMarker = ({poi, index}: {poi:Poi, index:number}) => {
     
     const dispatch = useDispatch();
     const eventHandlers = {       
-        click: () => dispatch(updateActivePoiId(index))
+        click: () => {
+            dispatch(updateActivePoiId(index));
+            const element = document.getElementById("poi_chevron");
+            if (element) element.scrollIntoView({ behavior: "smooth" });
+        }
     } as LeafletEventHandlerFnMap;
 
     return (

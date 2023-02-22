@@ -59,7 +59,7 @@ const TitleChevron = () => {
     const text = "font-mapheader text-slate-50"; 
     
     return (
-        <div className={`absolute top-0 w-1/3 h-11 bg-statblack -translate-x-0.5 -translate-y-5.5 flex flex-row justify-center items-center drop-shadow-md ${text} ${before} ${after}`}>
+        <div id="poi_chevron" className={`absolute top-0 w-1/3 h-11 bg-statblack -translate-x-0.5 -translate-y-5.5 flex flex-row justify-center items-center drop-shadow-md ${text} ${before} ${after}`}>
             <span className="text-lg">POINTS OF INTEREST</span>
         </div>
     );
