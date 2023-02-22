@@ -8,6 +8,7 @@ export interface UIDisplay {
 
 export interface SegmentList {
     activeSegmentId: number;
+    activePoiId: number;
     hoverSegmentId: number;
 }
 
@@ -28,6 +29,7 @@ export interface Segment {
     color: string;
     location: string;
     displayTitle: string;
+    headerImageIndex: number;
 }
 
 export interface SegmentStats {

@@ -1,17 +1,18 @@
-import { Dispatch, SetStateAction, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { IconContext } from "react-icons";
 import {AiOutlineLeft, AiOutlineRight, AiOutlineFullscreen} from "react-icons/ai";
-import { Poi } from "@/store/models";
 import config from "@/config/default.json";
+import { Poi } from "@/store/models";
+import { RootState } from "@/store/store";
 import { toggleCarouselDisplay } from "@/store/reducers/uiDisplay";
+import { updateActivePoiId } from "@/store/reducers/segmentList";
 
 const PhotoGallery = ({poiList, images}: {poiList: Poi[], images: string[]}) => {
 
     const dispatch = useDispatch();
-    const [activePoiId, setActivePoiId] = useState<number>(0);
-    const handleIncreasePoiIndex = () => (activePoiId === poiList.length - 1) ? null : setActivePoiId(activePoiId + 1);
-    const handleDecreasePoiIndex = () => (activePoiId === 0) ? null : setActivePoiId(activePoiId - 1);
+    const activePoiId = useSelector((state:RootState) => state.segmentList.activePoiId);
+    const handleIncreasePoiIndex = () => (activePoiId === poiList.length - 1) ? null : dispatch(updateActivePoiId(activePoiId + 1));
+    const handleDecreasePoiIndex = () => (activePoiId === 0) ? null : dispatch(updateActivePoiId(activePoiId - 1));
     const handleCarouselTrigger = () => dispatch(toggleCarouselDisplay(true));
 
     return (
@@ -25,7 +26,7 @@ const PhotoGallery = ({poiList, images}: {poiList: Poi[], images: string[]}) => 
             <img className="h-fit h-min-50 max-h-120 pointer-events-none" src={config.HTML_IMG_BUFFER_TAG + images[activePoiId]} />
             <ImgCaption poi={poiList[activePoiId]} />
             <div className="absolute bottom-4 h-4 flex flex-row justify-between w-3/5">
-                {poiList.map((poi: Poi, index: number) => <CarouselDot key={poi.title} index={index} activePoiId={activePoiId} setActivePoiId={setActivePoiId} /> )}
+                {poiList.map((poi: Poi, index: number) => <CarouselDot key={poi.title} index={index} activePoiId={activePoiId} /> )}
             </div>
         </div>
     );
@@ -43,9 +44,10 @@ const ImgCaption = ({poi}: {poi:Poi}) => {
     );
 };
 
-const CarouselDot = ({ index, activePoiId, setActivePoiId}: { index: number, activePoiId: number, setActivePoiId: Dispatch<SetStateAction<number>>}) => {
+const CarouselDot = ({ index, activePoiId}: { index: number, activePoiId: number,}) => {
+    const dispatch = useDispatch();
     const bgColor = (index === activePoiId) ? "bg-blue-500" : "bg-gray-300";
-    const handleClick = () => (index !== activePoiId) ? setActivePoiId(index) : null;
+    const handleClick = () => (index !== activePoiId) ? dispatch(updateActivePoiId(index)) : null;
     return (
         <div className={`w-3 h-3 rounded-full cursor-pointer ${bgColor}`} onClick={handleClick}></div>
     );

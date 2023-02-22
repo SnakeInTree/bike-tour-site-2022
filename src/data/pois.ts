@@ -3,15 +3,6 @@ import { Poi } from "@/store/models";
 
 const PoiList: Poi[][] = [[
     {
-        title: "Header",
-        desc: "The Schermerhorn Windmills, built in the 17th century to drain the peat bogs of northern Holland.",
-        location: "",
-        cloudflareId: "fbf8b0ef-1628-4a22-4de8-c2060ce8c100",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
-        iconType: "monument"
-    },
-    {
         title: "Building the Bike",
         desc: "After landing, I retreived my bike and put it together in my hotel room. There was some surface damage to a headset bearing, but nothing trip-stopping.",
         location: "citizenM Hotel outside Schipol Airport, Holland",
@@ -45,6 +36,15 @@ const PoiList: Poi[][] = [[
         position: [52.61, 4.62] as LatLngExpression,
         date: "7/23",
         cloudflareId: "ad1ccf6c-a42a-4f02-a624-0ee753135b00",
+        iconType: "monument"
+    },
+    {
+        title: "The Schermerhorn Windmills",
+        desc: "Built in the 17th century to drain the peat bogs of northern Holland.",
+        location: "Schermerhorn, Holland",
+        cloudflareId: "fbf8b0ef-1628-4a22-4de8-c2060ce8c100",
+        position: [52.31, 4.76] as LatLngExpression,
+        date: "7/20",
         iconType: "monument"
     },
     {

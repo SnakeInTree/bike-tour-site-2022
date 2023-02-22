@@ -12,7 +12,7 @@ import { text } from "@/data/text";
 import { Segment } from "@/store/models";
 import { fetchImages } from "@/apiUtil/cloudflare";
 import config from "@/config/default.json";
-const headerCloudflareIds = [config.IMAGES.HEADER_IMG_ID, config.IMAGES.HEADSHOT, ...segmentData.map((segment: Segment) => segment.pois[0].cloudflareId)];
+const headerCloudflareIds = [config.IMAGES.HEADER_IMG_ID, config.IMAGES.HEADSHOT, ...segmentData.map((segment: Segment) => segment.pois[segment.headerImageIndex].cloudflareId)];
 
 const DefaultContent = () => {
     

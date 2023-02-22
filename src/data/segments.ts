@@ -28,6 +28,7 @@ const segmentData = [
     color: "#A52A2A",
     location: "South Holland / Zeeland, the Netherlands",
     displayTitle: "The Low Sky",
+    headerImageIndex: 4
   },
   {
     name: "Belgium",
@@ -41,6 +42,7 @@ const segmentData = [
     color: "#231C07",
     location: "Flanders, Belgium",
     displayTitle: "Biking by Belfries",
+    headerImageIndex: 0
   },
   {
     name: "Normandie",
@@ -54,6 +56,7 @@ const segmentData = [
     color: "#F78764",
     location: "Hautes-de-France / Normandy, France",
     displayTitle: "Pilgrimage",
+    headerImageIndex: 0
   },
   {
     name: "Pays de la Loire",
@@ -67,6 +70,7 @@ const segmentData = [
     color: "#7E8D85",
     location: "Pays de la Loire, France",
     displayTitle: "Valley of Kings",
+    headerImageIndex: 0
   },
   {
     name: "Alsace",
@@ -80,6 +84,7 @@ const segmentData = [
     color: "#083D77",
     location: "Grand-Est / Franche-Comté, France",
     displayTitle: "Woods",
+    headerImageIndex: 0
   },
   {
     name: "Bernese Lowlands",
@@ -93,6 +98,7 @@ const segmentData = [
     color: "#EADAA2",
     location: "Jura / Bern, Switzerland",
     displayTitle: "Jura Explorer",
+    headerImageIndex: 0
   },
   {
     name: "Alpine Switzerland",
@@ -106,6 +112,7 @@ const segmentData = [
     color: "#F78764",
     location: "Bernese Highlands / Ticino, Switzerland",
     displayTitle: "Alpine Crossing",
+    headerImageIndex: 0
  },
   {
     name: "Lombardy",
@@ -119,6 +126,7 @@ const segmentData = [
     color: "#A52A2A",
     location: "Lombardy, Italy",
     displayTitle: "Dolomiti",
+    headerImageIndex: 0
   },
   {
     name: "Veneto",
@@ -132,6 +140,7 @@ const segmentData = [
     color: "#071013",
     location: "Veneto, Italy",
     displayTitle: "The Most Serene",
+    headerImageIndex: 0
   },
   {
     name: "Slovenia",
@@ -145,6 +154,7 @@ const segmentData = [
     color: "#00A676",
     location: "Primorska / Gorenjska, Slovenia",
     displayTitle: "A Realm Unto Itself",
+    headerImageIndex: 0
   },
   {
     name: "Croatia",
@@ -158,6 +168,7 @@ const segmentData = [
     color: "#C5EBC3",
     location: "Kvarner / Dalmatia, Croatia",
     displayTitle: "Karstic Coast",
+    headerImageIndex: 0
   },
   {
     name: "Southern Balkans",
@@ -171,6 +182,7 @@ const segmentData = [
     color: "#FFD046",
     location: "Coastal Montenegro/Albania, Epirus, Greece",
     displayTitle: "Tour's End",
+    headerImageIndex: 0
   }
 ] as Segment[];
 

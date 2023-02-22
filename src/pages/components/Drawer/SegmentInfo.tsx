@@ -29,7 +29,7 @@ const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
                 <Loader />
                 :
                 <div>
-                    <img className="relative" src={config.HTML_IMG_BUFFER_TAG + data[0]}/>
+                    <img className="relative" src={config.HTML_IMG_BUFFER_TAG + data[segment.headerImageIndex]}/>
                     <Chevron location={segment.location} />
                     <Title text={segment.displayTitle} activeSegmentId={activeSegmentId} />
                     <CondensedHeader displayTitle={segment.displayTitle} location={segment.location} />
@@ -37,7 +37,7 @@ const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
                         <StatsBlock statList={segmentStats[activeSegmentId]} />
                     </div>  
                     <Paragraphs segmentText={text.segmentText[segment.segmentId]} />
-                    <PhotoGallery poiList={segment.pois.slice(1)} images={data.slice(1)} />
+                    <PhotoGallery poiList={segment.pois} images={data} />
                     <div className="md:translate-y-24 lg:-translate-y-24">
                         <InfoPanel />
                     </div>
