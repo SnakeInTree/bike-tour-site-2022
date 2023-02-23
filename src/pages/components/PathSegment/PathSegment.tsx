@@ -48,7 +48,7 @@ const PathSegment = ({ segment } : { segment: Segment }) => {
     }
 
     useEffect(() => {
-        if (isActiveSegment && segment.pois[activePoiId]) {
+        if (isActiveSegment && activePoiId !== 0 && segment.pois[activePoiId]) {
             const activePoiPosition = segment.pois[activePoiId].position as LatLng;
             map.flyTo(activePoiPosition, 10);
         }

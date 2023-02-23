@@ -1,5 +1,5 @@
 import { LeafletEventHandlerFnMap, Icon, divIcon, point } from "leaflet";
-import { Marker } from "react-leaflet";
+import { Marker, Tooltip} from "react-leaflet";
 // @ts-expect-error Missing type definitions
 import MarkerClusterGroup from "@changey/react-leaflet-markercluster";
 import { Poi } from "@/store/models";
@@ -66,7 +66,9 @@ const PoiMarker = ({poi, index}: {poi:Poi, index:number}) => {
     } as LeafletEventHandlerFnMap;
 
     return (
-        <Marker position={poi.position} icon={icons[poi.iconType]} eventHandlers={eventHandlers} />
+        <Marker position={poi.position} icon={icons[poi.iconType]} eventHandlers={eventHandlers}>
+            <Tooltip direction="bottom">{poi.title}</Tooltip>
+        </Marker>
     );
 };
 

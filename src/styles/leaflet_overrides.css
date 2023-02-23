@@ -1,7 +1,7 @@
 .leaflet-tooltip-pane {
     font-size: 1rem;
-  }
+}
 
-  .leaflet-interactive:focus {
-    outline: 0;
-  }
+.leaflet-interactive:focus {
+  outline: 0;
+}
