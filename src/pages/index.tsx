@@ -1,5 +1,5 @@
 import Head from "next/head";
-import LandingPage from "./components/Intro/LandingPage";
+import LandingPage from "@/components/LandingPage/LandingPage";
 
 const Home = () => {
     

@@ -7,7 +7,7 @@ import Pois from "./Pois";
 
 import { RootState } from "@/store/store";
 import { Segment } from "@/store/models";
-import { updateActiveSegment, updateHoverSegment } from "../../../store/reducers/segmentList";
+import { updateActiveSegment, updateHoverSegment } from "../../store/reducers/segmentList";
 
 import config from "@/config/default.json";
 
