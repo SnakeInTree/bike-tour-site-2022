@@ -6,7 +6,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { UIDisplay } from "../models";
 
 const initialState : UIDisplay = {
-    showDrawer: false,
+    showDrawer: true,
     showCarousel: false
 };
   

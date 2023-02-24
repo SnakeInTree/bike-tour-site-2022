@@ -110,7 +110,16 @@ module.exports = {
       0: "0px",
       2: "2px",
       4: "4px",
+      6: "6px",
       8: "8px",
+      12: "12px",
+      16: "16px",
+      18: "18px",
+      20: "20px",
+      22: "22px",
+      24: "24px",
+      42: "42px",
+      70: "70px"
     },
     boxShadow: {
       sm: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
@@ -165,6 +174,17 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      tan: "#f2ebeb",
+      statgreen: "#BED3CA",
+      statgrey: "#848581",
+      statblack: "#1A1C18",
+      statgreenborder: "#a9b69c",
+      headshotChevronBg: "#DDDEDA",
+      contributeborder: "#70D259",
+      segmentHoverBg: "#A23D3B",
+      titleGrey: "#31312F",
+      infoPanelSectionTitle: "#70D259",
+      infoPanelBg: "#D0CFCD"
     }),
     columns: {
       auto: "auto",
@@ -255,6 +275,8 @@ module.exports = {
       lg: ["0 10px 8px rgb(0 0 0 / 0.04)", "0 4px 3px rgb(0 0 0 / 0.1)"],
       xl: ["0 20px 13px rgb(0 0 0 / 0.03)", "0 8px 5px rgb(0 0 0 / 0.08)"],
       "2xl": "0 25px 25px rgb(0 0 0 / 0.15)",
+      "top-md": ["0 -4px 6px rgb(0 0 0 / 0.07)", "0 -2px 4px rgb(0 0 0 / 0.06)"],
+      "left-md": ["-8px 0 4px rgb(0 0 0 / 0.15)", "-3px 0 3px rgb(0 0 0 / 0.15)"],
       none: "0 0 #0000",
     },
     fill: ({ theme }) => ({
@@ -273,6 +295,8 @@ module.exports = {
       "1/2": "50%",
       "1/3": "33.333333%",
       "2/3": "66.666667%",
+      "13/100": "13%",
+      "3/20": "15%",
       "1/4": "25%",
       "2/4": "50%",
       "3/4": "75%",
@@ -337,6 +361,12 @@ module.exports = {
       ],
       cursive: [
         "Caveat", "cursive"
+      ],
+      mapheader: [
+        "Inter", "sans-serif"
+      ],
+      playfair: [
+        "Playfair Display", "serif"
       ]
     },
     fontSize: {
@@ -641,6 +671,7 @@ module.exports = {
     maxWidth: ({ theme, breakpoints }) => ({
       none: "none",
       0: "0rem",
+      xxs: "10rem",
       xs: "20rem",
       sm: "24rem",
       md: "28rem",
@@ -661,6 +692,7 @@ module.exports = {
     }),
     minHeight: {
       0: "0px",
+      20: "20%",
       50: "50%",
       full: "100%",
       screen: "100vh",
@@ -794,9 +826,10 @@ module.exports = {
       150: "1.5",
     },
     screens: {
+      nil: "0px",
       sm: "640px",
       md: "768px",
-      lg: "1024px",
+      lg: "1150px",
       xl: "1280px",
       "2xl": "1536px",
     },
@@ -831,6 +864,7 @@ module.exports = {
       3.5: "0.875rem",
       4: "1rem",
       5: "1.25rem",
+      5.5: "1.35rem",
       6: "1.5rem",
       7: "1.75rem",
       8: "2rem",
@@ -841,6 +875,7 @@ module.exports = {
       14: "3.5rem",
       16: "4rem",
       20: "5rem",
+      22: "5.5rem",
       24: "6rem",
       28: "7rem",
       32: "8rem",
@@ -855,6 +890,8 @@ module.exports = {
       72: "18rem",
       80: "20rem",
       96: "24rem",
+      112: "28rem",
+      120: "30rem",
       102: "40rem",
       160: "42rem",
       172: "43rem",
@@ -971,6 +1008,7 @@ module.exports = {
       "2/5": "40%",
       "3/5": "60%",
       "4/5": "80%",
+      "3/20": "13%",
       "1/6": "16.666667%",
       "2/6": "33.333333%",
       "3/6": "50%",

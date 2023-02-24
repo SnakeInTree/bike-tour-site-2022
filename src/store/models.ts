@@ -1,4 +1,5 @@
 import { LatLngBoundsExpression, LatLngExpression } from "leaflet";
+import { IconType } from "react-icons";
 
 export interface UIDisplay {
     showDrawer: boolean;
@@ -7,6 +8,8 @@ export interface UIDisplay {
 
 export interface SegmentList {
     activeSegmentId: number;
+    activePoiId: number;
+    hoverSegmentId: number;
 }
 
 export interface KDTree {
@@ -23,6 +26,10 @@ export interface Segment {
     kdTree: KDTree;
     pois: Poi[];
     stats: SegmentStats;
+    color: string;
+    location: string;
+    displayTitle: string;
+    headerImageIndex: number;
 }
 
 export interface SegmentStats {
@@ -35,8 +42,33 @@ export interface Poi {
     title: string;
     desc: string;
     date: string;
-    locationTown: string;
-    locationCountry: string;
+    location: string;
     cloudflareId: string;
     position: LatLngExpression;
+    iconType: iconType;
+}
+
+type iconType = "monument" | "nature" | "animal" | "journal" | "mountain" | "camp";
+
+export interface InfoPanelSection {
+    sectionId: number;
+    title: string;
+    Icon: IconType;
+    content: SectionContent[]
+}
+
+export interface SectionContent {
+    header: string;
+    content: string;
+}
+
+export interface Statistic {
+    name: string;
+    value: string;
+    icon: IconType;
+}
+
+export interface SegmentText {
+    header: string;
+    paragraphs: string[];
 }

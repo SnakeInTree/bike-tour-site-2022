@@ -1,6 +1,6 @@
 import {Buffer} from "buffer";
 import axios, {AxiosRequestConfig} from "axios";
-import cloudFlareConfig from "../config/testEnv.json";
+import cloudFlareConfig from "@/config/testEnv.json";
 
 export const fetchImages = async (cloudFlareIds:string[] | null | undefined) => {
     if (!cloudFlareIds) return;

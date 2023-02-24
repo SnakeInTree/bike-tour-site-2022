@@ -1,19 +1,21 @@
 {
     "MAP_SETTINGS": {
-        "START_LAT_LNG": [48.864716, 2.349],
-        "START_ZOOM": 6,
-        "MAX_ZOOM": 10,
-        "MIN_ZOOM": 5
+        "START_LAT_LNG": [45.51, 9.35],
+        "START_ZOOM": 4
     },    
     "SEGMENT_SETTINGS": {
         "DEFAULT_WIDTH": 5,
         "HOVER_WIDTH": 7,
-        "DEFAULT_OPACITY": 0.5,
+        "INACTIVE_OPACITY": 0.7,
         "ACTIVE_OPACITY": 1
     },
     "DEFAULT_TEXT": {
-        "drawerHeaderText": "Trip Segments"
+        "drawerHeaderText": "Euro Bike Tour 2022"
     },
     "TILE_LAYER_URL": "https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}'",
-    "HTML_IMG_BUFFER_TAG": "data:image/jpeg;base64,"
+    "HTML_IMG_BUFFER_TAG": "data:image/jpeg;base64,",
+    "IMAGES": {
+        "HEADER_IMG_ID": "c9193996-4068-4f8c-2b89-01d9b1b5e500",
+        "HEADSHOT": "fbfa23d8-8d19-44ad-f780-b7e6d7e97400"
+    }
 }

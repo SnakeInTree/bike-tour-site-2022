@@ -24,7 +24,11 @@ const segmentData = [
     kdTree: holland.kdTree,
     zoomCoords: [[50.79, 1.26], [52.74, 8.28]] as LatLngBoundsExpression,
     pois: poiList[0],
-    stats: { elevGain: holland.elevGain, elevLost: holland.elevLost, totalDist: holland.totalDist} as SegmentStats
+    stats: { elevGain: holland.elevGain, elevLost: holland.elevLost, totalDist: holland.totalDist} as SegmentStats,
+    color: "#A52A2A",
+    location: "South Holland / Zeeland, the Netherlands",
+    displayTitle: "The Low Sky",
+    headerImageIndex: 4
   },
   {
     name: "Belgium",
@@ -34,7 +38,11 @@ const segmentData = [
     zoomCoords: [[51.39, 2.62], [50.72, 4.62]] as LatLngBoundsExpression,
     desc: "temp",
     pois: poiList[1],
-    stats: { elevGain: belgium.elevGain, elevLost: belgium.elevLost, totalDist: belgium.totalDist} as SegmentStats
+    stats: { elevGain: belgium.elevGain, elevLost: belgium.elevLost, totalDist: belgium.totalDist} as SegmentStats,
+    color: "#231C07",
+    location: "Flanders, Belgium",
+    displayTitle: "Biking by Belfries",
+    headerImageIndex: 0
   },
   {
     name: "Normandie",
@@ -44,7 +52,11 @@ const segmentData = [
     zoomCoords: [[50.74, -2.46], [48.61, 4.95]] as LatLngBoundsExpression,
     desc: "temp",
     pois: poiList[2],
-    stats: { elevGain: normandy.elevGain, elevLost: normandy.elevLost, totalDist: normandy.totalDist} as SegmentStats
+    stats: { elevGain: normandy.elevGain, elevLost: normandy.elevLost, totalDist: normandy.totalDist} as SegmentStats,
+    color: "#F78764",
+    location: "Hautes-de-France / Normandy, France",
+    displayTitle: "Pilgrimage",
+    headerImageIndex: 0
   },
   {
     name: "Pays de la Loire",
@@ -54,7 +66,11 @@ const segmentData = [
     zoomCoords: [[49.45, -4.24], [47.01, 2.41]] as LatLngBoundsExpression,
     desc: "temp",
     pois: poiList[3],
-    stats: { elevGain: loire.elevGain, elevLost: loire.elevLost, totalDist: loire.totalDist} as SegmentStats
+    stats: { elevGain: loire.elevGain, elevLost: loire.elevLost, totalDist: loire.totalDist} as SegmentStats,
+    color: "#7E8D85",
+    location: "Pays de la Loire, France",
+    displayTitle: "Valley of Kings",
+    headerImageIndex: 0
   },
   {
     name: "Alsace",
@@ -64,7 +80,11 @@ const segmentData = [
     zoomCoords: [[47.00, 6.44], [49.43, 8.14]] as LatLngBoundsExpression,
     desc: "temp",
     pois: poiList[4],
-    stats: { elevGain: alsace.elevGain, elevLost: alsace.elevLost, totalDist: alsace.totalDist} as SegmentStats
+    stats: { elevGain: alsace.elevGain, elevLost: alsace.elevLost, totalDist: alsace.totalDist} as SegmentStats,
+    color: "#083D77",
+    location: "Grand-Est / Franche-Comté, France",
+    displayTitle: "Woods",
+    headerImageIndex: 0
   },
   {
     name: "Bernese Lowlands",
@@ -74,7 +94,11 @@ const segmentData = [
     zoomCoords: [[47.59, 9.37], [46.45, 6.76]] as LatLngBoundsExpression,
     desc: "temp",
     pois: poiList[5],
-    stats: { elevGain: forest_switzerland.elevGain, elevLost: forest_switzerland.elevLost, totalDist: forest_switzerland.totalDist} as SegmentStats
+    stats: { elevGain: forest_switzerland.elevGain, elevLost: forest_switzerland.elevLost, totalDist: forest_switzerland.totalDist} as SegmentStats,
+    color: "#EADAA2",
+    location: "Jura / Bern, Switzerland",
+    displayTitle: "Jura Explorer",
+    headerImageIndex: 0
   },
   {
     name: "Alpine Switzerland",
@@ -84,7 +108,11 @@ const segmentData = [
     zoomCoords: [[46.55, 7.01], [46.17, 9.94]] as LatLngBoundsExpression,
     desc: "temp",
     pois: poiList[6],
-    stats: { elevGain: alpine_switzerland.elevGain, elevLost: alpine_switzerland.elevLost, totalDist: alpine_switzerland.totalDist} as SegmentStats
+    stats: { elevGain: alpine_switzerland.elevGain, elevLost: alpine_switzerland.elevLost, totalDist: alpine_switzerland.totalDist} as SegmentStats,
+    color: "#F78764",
+    location: "Bernese Highlands / Ticino, Switzerland",
+    displayTitle: "Alpine Crossing",
+    headerImageIndex: 0
  },
   {
     name: "Lombardy",
@@ -94,7 +122,11 @@ const segmentData = [
     zoomCoords: [[46.29, 7.98], [45.22, 11.66]] as LatLngBoundsExpression,
     desc: "temp",
     pois: poiList[7],
-    stats: { elevGain: lombardy.elevGain, elevLost: lombardy.elevLost, totalDist: lombardy.totalDist} as SegmentStats
+    stats: { elevGain: lombardy.elevGain, elevLost: lombardy.elevLost, totalDist: lombardy.totalDist} as SegmentStats,
+    color: "#A52A2A",
+    location: "Lombardy, Italy",
+    displayTitle: "Dolomiti",
+    headerImageIndex: 0
   },
   {
     name: "Veneto",
@@ -104,7 +136,11 @@ const segmentData = [
     zoomCoords: [[46.26, 10.50], [44.96, 14.39]] as LatLngBoundsExpression,
     desc: "temp",
     pois: poiList[8],
-    stats: { elevGain: veneto.elevGain, elevLost: veneto.elevLost, totalDist: veneto.totalDist} as SegmentStats
+    stats: { elevGain: veneto.elevGain, elevLost: veneto.elevLost, totalDist: veneto.totalDist} as SegmentStats,
+    color: "#071013",
+    location: "Veneto, Italy",
+    displayTitle: "The Most Serene",
+    headerImageIndex: 0
   },
   {
     name: "Slovenia",
@@ -114,7 +150,11 @@ const segmentData = [
     zoomCoords: [[46.51, 12.18], [45.21, 16.53]] as LatLngBoundsExpression,
     desc: "temp",
     pois: poiList[9],
-    stats: { elevGain: slovenia.elevGain, elevLost: slovenia.elevLost, totalDist: slovenia.totalDist} as SegmentStats
+    stats: { elevGain: slovenia.elevGain, elevLost: slovenia.elevLost, totalDist: slovenia.totalDist} as SegmentStats,
+    color: "#00A676",
+    location: "Primorska / Gorenjska, Slovenia",
+    displayTitle: "A Realm Unto Itself",
+    headerImageIndex: 0
   },
   {
     name: "Croatia",
@@ -124,17 +164,25 @@ const segmentData = [
     zoomCoords: [[45.76, 12.87], [43.24, 19.99]] as LatLngBoundsExpression,
     desc: "temp",
     pois: poiList[10],
-    stats: { elevGain: croatia.elevGain, elevLost: croatia.elevLost, totalDist: croatia.totalDist} as SegmentStats
+    stats: { elevGain: croatia.elevGain, elevLost: croatia.elevLost, totalDist: croatia.totalDist} as SegmentStats,
+    color: "#C5EBC3",
+    location: "Kvarner / Dalmatia, Croatia",
+    displayTitle: "Karstic Coast",
+    headerImageIndex: 0
   },
   {
-    name: "Montenegro and Albania",
+    name: "Southern Balkans",
     segmentId: 11,
     gpx: south_balkans.gpx as unknown as [LatLngExpression],
     kdTree: south_balkans.kdTree,
     zoomCoords: [[43.00, 17.14], [39.26, 25.86]] as LatLngBoundsExpression,
     desc: "temp",
     pois: poiList[11],
-    stats: { elevGain: south_balkans.elevGain, elevLost: south_balkans.elevLost, totalDist: south_balkans.totalDist} as SegmentStats
+    stats: { elevGain: south_balkans.elevGain, elevLost: south_balkans.elevLost, totalDist: south_balkans.totalDist} as SegmentStats,
+    color: "#FFD046",
+    location: "Coastal Montenegro/Albania, Epirus, Greece",
+    displayTitle: "Tour's End",
+    headerImageIndex: 0
   }
 ] as Segment[];
 
