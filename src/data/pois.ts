@@ -86,72 +86,81 @@ const PoiList: Poi[][] = [[
 ],
 [ //Seg 1
     {
-        title: "Header",
-        desc: "",
-        location: "",
-        cloudflareId: "6d14c828-ab6e-40a9-3aab-6f9d757b0300",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
-        iconType: "monument"
-    },
-    {
-        title: "old",
-        desc: "",
-        location: "",
-        cloudflareId: "32ae0cc5-e28e-4843-b473-152481f5eb00",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
-        iconType: "monument"
-    },
-    {
-        title: "Belfry of Bruges",
-        desc: "",
-        location: "Bruges, Belgium",
-        position: [51.208, 3.224] as LatLngExpression,
+        title: "Canalside",
+        desc: "After leaving Holland, my goal was to visit Bruges. Luckily, I wasn't the first one to want a quick route between Southern Holland and Bruges. Napoleon Bonaparte ordered the construction of the canal pictured in 1809, to ensure that the port cities lining the North Sea could be quickly reinforced in case of British incursions. Today, the Damme Canal ferries tourists and pleasure cruisers rather than Napoleonic armies, and provides an excellent through-route for cycle tourists.",
+        location: "Damme, Belgium",
+        cloudflareId: "b3add237-f751-468b-beb2-e9137c981c00",
+        position: [51.277, 3.309] as LatLngExpression,
         date: "7/28",
-        cloudflareId: "41fdf113-d382-4a99-9bc9-85039de16600",
-        iconType: "monument"
+        iconType: "journal"
+    },
+    {
+        title: "Venice of the North",
+        desc: "Bruges is immaculate. Well-kept gardens mirror the secluded pathways as you saunter from sight to sight . You stop to enjoy the view of a picturesque lakeside castle, only for a pair of swans to lazily glide by. You can’t quite accept that the streets are as clean as they are. How do they do it? You half expect that your restaurant’s staff are poised and ready to break into song. Something has to shatter this illusion. Is this place even real?",
+        location: "Bruges, Belgium",
+        cloudflareId: "564f270d-2e7d-4601-541b-94b57e33a400",
+        position: [51.22, 3.23] as LatLngExpression,
+        date: "7/28",
+        iconType: "journal"
+    },
+    {
+        title: "How is this place real?",
+        desc: "Fortunately, Bruges is a real place and not, as I feared, a strange Westworld-like simulation. The gothic architecture isn't aftermarket; it is the product of Bruges' good fortune of not being flattened during the world wars. Cars are kept from the city centre not to promote a themepark-like sterility, but to advocate the supremacy of the pedestrian and the cyclist. Sure, Bruges should not be the destination of the thrill-seeking traveler. But for the person who wants to spend their time visiting somewhere truly beautiful, I don't think you can do better than Bruges.",
+        location: "Bruges, Belgium",
+        cloudflareId: "7a72780e-733c-4ece-62dc-df871b58d800",
+        position: [51.22, 3.23] as LatLngExpression,
+        date: "7/28",
+        iconType: "journal"
     },
     {
         title: "Bike Routes of Belgium",
-        desc: "",
-        location: "Bruges, Belgium",
-        position: [51.242, 3.252] as LatLngExpression,
+        desc: "While most Dutchmen would turn up their noses at the Belgian bicycle infrastructure, I was pleasantly surprised by the routes on offer. The Flemish tourist authority has created 9 separate bike touring routes that criss-cross Flanders, offering low-to-no traffic byways connecting major cities like Antwerp, Brussels, Bruges and Ghent. The gravel path shown is part of the Art Cities route or Kunststedenroute which connects Bruges and Ghent. Find more information on this bike route in the 'Links' section below.",
+        location: "Aalter, Belgium",
+        position: [51.113, 3.399] as LatLngExpression,
         date: "7/28",
         cloudflareId: "f67d9ce2-5a11-4be5-9bbf-effa142c5900",
         iconType: "nature"
     },
     {
-        title: "Zommerbar",
-        desc: "",
+        title: "BBQ Stoppelparty",
+        desc: "Sadly I was 2 weeks too early to attend the Stoppelparty. 'Till next time my stoppelpeople.",
         location: "Vivenkapelle, Belgium",
-        position: [51.232, 3.284] as LatLngExpression,
+        position: [51.093, 3.547] as LatLngExpression,
         date: "7/28",
         cloudflareId: "fe690de5-bebf-436d-ffb6-10b006227c00",
         iconType: "journal"
 
+    }, 
+    {
+        title: "Living City",
+        desc: "It's hard not to compare Ghent to Bruges. They're all of 50 KM apart, both occupy riverfront space and both possess some of the most impressive examples of Gothic architecture in Western Europe. But  Bruges can feel like a diorama. I have a hard time imagining what it'd be like to live there. Ghent, on the other hand, has a pulse. Autos, pedestrians, bikes and tram lines all vie for space within the same cramped cobble roads. University students hustle about between modernist libraries and ancient lecture halls. Ghent feels like it could be home to someone.",
+        location: "Ghent, Belgium",
+        position: [51.057, 3.720] as LatLngExpression,
+        date: "7/28",
+        cloudflareId: "03bab1bc-2770-4ee1-69cc-8f3ae40c6d00",
+        iconType: "journal"
     },
     {
-        title: "Ghent in the Sun",
-        desc: "",
+        title: "Gravensteen - The Castle of the Counts",
+        desc: "The story of Gravensteen is one of great preservation being performed consistently, over centuries. Originally constructed in the 12th century to be the residence of the Counts of Flanders, Gravensteen only served this purpose for two hundred years before the local seat of power was moved elsewhere. This left the citizens of Ghent to figure out what to do with such a property. The castle was used as a private residence, a mint and even a cotton mill before it was rennovated and brought to its current glory in the early 20th century.",
         location: "Ghent, Belgium",
         position: [51.057, 3.720] as LatLngExpression,
         date: "7/29",
-        cloudflareId: "ebd55eb5-f2e2-4702-51cd-b3ade8cd3e00",
+        cloudflareId: "6d14c828-ab6e-40a9-3aab-6f9d757b0300",
         iconType: "monument"
     },
     {
-        title: "Gravenstein - The Castle of the Counts",
-        desc: "",
-        location: "Ghent, Belgium",
-        position: [51.057, 3.720] as LatLngExpression,
+        title: "Sunny Day on the Scheldt",
+        desc: "Leaving Ghent in the mid-afternoon, I started the 100 KM ride to Ypres by following the Scheldt river south. The flat bikeway was quiet, and I didn't see a soul for some hours.",
+        location: "Melden, Belgium",
+        position: [50.840, 3.606] as LatLngExpression,
         date: "7/29",
-        cloudflareId: "caf822a2-a553-4b89-2478-1b42a4981700",
-        iconType: "monument"
+        cloudflareId: "b9866342-428d-4c5b-62ab-1c8a3814f600",
+        iconType: "nature"
     },
     {
         title: "Menenpoort - Gate of Ypres",
-        desc: "",
+        desc: "The Menin Gate, constructed in 1927 to memorialize one of the roads that led soldiers to the frontlines of the Battle of Ypres, during WWI. Each and every night, stretching back to the memorial's creation, volunteers gather at this bridge to perform the Last Post ceremony by playing a  British bugle call meant to signal an end to the day's activities. I was lucky enough to be entering Ypres at the same time the ceremony was beginning, and watched with a crowd of onlookers. This picture was taken after the mass had dispersed.",
         location: "Ypres, Belgium",
         position: [50.85, 2.89] as LatLngExpression,
         date: "7/29",
@@ -160,7 +169,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Belgian Beer",
-        desc: "",
+        desc: "I'm not a massive beer guy. But damn if this isn't some of the best beer I've ever tasted. Brewed in Watou, Belgium for the last hundred years, the St. Bernardus Abt 12 is somehow robust yet light -- complex without seeming indulgent. Even if Belgium's reputation for stupendous brews doesn't interest you, make sure to give this one a try.",
         location: "Menenpoort, Belgium",
         position: [50.85, 2.89] as LatLngExpression,
         date: "7/29",

@@ -42,7 +42,7 @@ const segmentData = [
     color: "#231C07",
     location: "Flanders, Belgium",
     displayTitle: "Biking by Belfries",
-    headerImageIndex: 0
+    headerImageIndex: 6
   },
   {
     name: "Normandie",
