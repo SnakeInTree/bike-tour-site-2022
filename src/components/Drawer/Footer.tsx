@@ -33,7 +33,7 @@ const Footer = ( {activeSegmentId}: {activeSegmentId: number} ) => {
                     activeSegmentId === -1 ? 
                             (
                                 <div className="w-1/2 flex flex-row justify-center items-center">
-                                    <p className="mx-8">THE ADVENTURE BEGINS:</p>
+                                    <p className="mx-8 text-center">THE ADVENTURE BEGINS:</p>
                                 </div>
                             )
                             :
