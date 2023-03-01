@@ -44,7 +44,7 @@ const SectionInfoHeader = ({ content }: { content:SectionContent }) => {
     
     return (
         <IconContext.Provider value={iconProps}>
-            <div className="flex flex-row font-playfair">
+            <div className="flex flex-row font-playfair w-10/12 pb-4 last:pb-0">
                 <div className="mr-4"><CgArrowLongRightR /></div>
                 <p className="inline-block"><strong className="text-lg font-semibold">{content.header}</strong> {content.content}</p>
             </div>

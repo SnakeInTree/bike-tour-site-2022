@@ -73,11 +73,11 @@ const SectionContentList = [
         content: [
             {
                 header: "Slow Travel",
-                content: "by bicycle presents some interesting challenges and opportunities."
+                content: "forces you off the beaten track. Cycling doesn't allow for a \"greatest hits of Europe\" tour the same way interrailing does; you can't fall asleep in Paris and wake up in Berlin. Instead you have to resign yourself to exist in the space between known places. Every person who grew up watching Rick Steves or Anthony Bourdain has a mental image of what it would be like to walk around Paris or Zurich. But what lies in the small towns and natural spaces between these metropolitan areas? Take a bike, rather than a plane, and you'll find out."
             },
             {
                 header: "Balling on a Budget",
-                content: "because why pay for lodging?"
+                content: "is absolutely possible when bike touring. Don't let any fears of flying a bike overseas fool you -- most airlines won't charge any more for a bike than they do for checked baggage, and once you've landed, you have permenant, accessible transportation! After you've built your bike, the benefits keep stacking. Paying for parking? Out of the question. Forking over fistfulls of Euros to access the EU's toll highway network? Not an issue. Many tourism bureaus even subsidize bicycle friendly lodging to allow bicycle tourists discounts on their lodging costs! You're losing money not traveling by bike!"
             }
         ] as SectionContent[]
     },
@@ -92,7 +92,7 @@ const SectionContentList = [
             },
             {
                 header: "How did you come up with this route?",
-                content: ""
+                content: "The route is a product of me picking a few dozen \"must-see\" sights between Amsterdam and Greece, and then connecting the dots while trying to use established bicycle routes and greenways whenever possible. Some must-see sights included Mont-Sainte Michel in Western France, the Swiss Alps and Slovenia's Triglav national park. The hole in central France is the result of a trip to Paris with friends after meeting in the Loire, after which I decided on a change of scenery."
             }
         ] as SectionContent[]
     },
@@ -102,12 +102,12 @@ const SectionContentList = [
         Icon: GiLightBackpack,
         content: [
             {
-                header: "The Bike",
-                content: ""
+                header: "The bike",
+                content: "I used was a 2021 Fuji Touring Bike, with a chromoly steel frame, disk brakes, a Deore 48/36/26T crankset and 11-36T, 10-speed rear cassette. I rode 37mm WTB Riddler tyres for the majority of the trip."
             },
             {
-                header: "Panniers and Bike Trunk",
-                content: ""
+                header: "I used panniers and a bike trunk",
+                content: "made by Frost River, an old-school outdoor supply company based out of Minnesota in the U.S. Their bags are made from a water-resistant waxed canvas that's finished with brass and leather for a classic look."
             }
         ] as SectionContent[]
     },
