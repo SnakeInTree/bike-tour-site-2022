@@ -6,6 +6,7 @@ import StatsBlock from "./Stats";
 import SegmentMenu from "./SegmentMenu";
 import Loader from "./Loading";
 import InfoPanel from "./InfoPanel";
+import Footer from "./Footer";
 
 import segmentData from "@/data/segments";
 import { introStats } from "@/data/stats";
@@ -39,6 +40,7 @@ const DefaultContent = () => {
                     <div className="md:-translate-y-0 lg:-translate-y-48 bg-tan">
                         <InfoPanel />
                     </div>
+                    <Footer activeSegmentId={-1} />
                 </div>
             }   
         </>

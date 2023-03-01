@@ -30,6 +30,7 @@ export interface Segment {
     location: string;
     displayTitle: string;
     headerImageIndex: number;
+    icon: IconType;
 }
 
 export interface SegmentStats {
@@ -48,6 +49,7 @@ export interface Poi {
     iconType: iconType;
 }
 
+//TO DO - refactor this to be named better
 type iconType = "monument" | "nature" | "animal" | "journal" | "mountain" | "camp";
 
 export interface InfoPanelSection {

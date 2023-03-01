@@ -5,6 +5,7 @@ import Loader from "./Loading";
 import StatsBlock from "./Stats";
 import PhotoGallery from "./PhotoGallery";
 import InfoPanel from "./InfoPanel";
+import Footer from "./Footer";
 
 import { fetchImages } from "@/apiUtil/cloudflare";
 import segmentData from "@/data/segments";
@@ -41,6 +42,7 @@ const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
                     <div className="md:translate-y-24 lg:-translate-y-24">
                         <InfoPanel />
                     </div>
+                    <Footer activeSegmentId={activeSegmentId} />
                 </div>
             }   
         </>
