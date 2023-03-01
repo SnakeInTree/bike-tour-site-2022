@@ -133,7 +133,7 @@ const segmentStats = [
         },
         {
             name: "Highest Recorded Temp.",
-            value: "25° C",
+            value: "35° C",
             icon: BsThermometerSun
         }
     ],

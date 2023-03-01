@@ -172,32 +172,140 @@ const PoiList: Poi[][] = [[
         desc: "I'm not a massive beer guy. But damn if this isn't some of the best beer I've ever tasted. Brewed in Watou, Belgium for the last hundred years, the St. Bernardus Abt 12 is somehow robust yet light -- complex without seeming indulgent. Even if Belgium's reputation for stupendous brews doesn't interest you, make sure to give this one a try.",
         location: "Menenpoort, Belgium",
         position: [50.85, 2.89] as LatLngExpression,
-        date: "7/29",
+        date: "7/30",
         cloudflareId: "4e9eaef2-bee4-4b64-5e16-41efc40f8e00",
         iconType: "journal"
     },
-],
-[ //Seg Two 
     {
-        title: "Header",
-        desc: "",
-        location: "",
-        cloudflareId: "e2380ff5-8324-4fc0-dea9-19c9a8beec00",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        title: "Joyeux Noël",
+        desc: "WWI history is inescapable on the border between Belgian and France. Mass graveyards show up every few miles between Ypres and Amiens, alongside monuments to honor the dead. The monument pictured honors the Christmas Truce of 1914, when soldiers on both sides of the trench put down their weapons and came together to spend the night in celebration.",
+        location: "Mesen, Belgium",
+        cloudflareId: "4d75f555-aa5b-448c-dc62-208fe5e54b00",
+        position: [50.761, 2.895] as LatLngExpression,
+        date: "7/31",
+        iconType: "monument"
+    },
+    {
+        title: "War is Over",
+        desc: "Inscription Reads: 'To all those who experienced the small peace during the Great War'.",
+        location: "Mesen, Belgium",
+        cloudflareId: "38d84aca-c1f1-4331-dbe0-c053dbf47200",
+        position: [50.761, 2.895] as LatLngExpression,
+        date: "7/31",
+        iconType: "monument"
+    },
+],
+[ //Normandy 
+    {
+        title: "Entering France",
+        desc: "Leaving Belgium, I entered the Hauts-de-France, France's northernmost administrative region. At first glance, France appeared positively empty compared to Holland and Belgium. I rolled through hayfields and deadly quiet border towns, seeing only a few souls.",
+        location: "Miraumont, France",
+        cloudflareId: "9a96f194-56e0-4aa3-b85c-9c633f9d0000",
+        position: [50.112, 2.712] as LatLngExpression,
+        date: "8/1",
         iconType: "journal"
     },
     {
-        title: "old",
-        desc: "",
-        location: "",
-        cloudflareId: "cbcde6da-ab2b-4362-c108-7b6f38c75d00",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        title: "Amiens Cathedral",
+        desc: "The Amiens Cathedral was first built in the 13th century, and remains largely complete thanks to the nearly millenia-long labor of French believers. Despite being in on the front-line during the closing days of WWI, this relic managed to avoid major damage.",
+        location: "Amiens, France",
+        cloudflareId: "fcb84c3d-fb2d-401a-afa8-c00f58329500",
+        position: [49.892, 2.303] as LatLngExpression,
+        date: "8/1",
+        iconType: "monument"
+    },
+    {
+        title: "Château Gaillard Ruin",
+        desc: "On an embankment overlooking the Seine lies the medieval ruin of Château Gaillard. Built in the 12th century, this stocky fortress saw action during the French effort to conquer Normandy in 1204 and later during the Hundred Years' war in the 15th century. It was destroyed in 1599 by Henry IV, so that future invaders wouldn't benefit from its defensive capabilities.",
+        location: "Les Andleys, France",
+        cloudflareId: "75ae4fb6-da9a-4fa7-a53e-a8056a853c00",
+        position: [49.235, 1.409] as LatLngExpression,
+        date: "8/2",
+        iconType: "monument"
+    }, 
+    {
+        title: "Prix du Pain",
+        desc: "The French bakery is a friend of the bicycle tourist. They are ubiquitous, being found in any town with more than 50 residents. The bread sold there is affordable, with a fresh baguette costing only a Euro. And best of all, as pictured, bread is easily transportable!",
+        location: "Houetteville, France",
+        cloudflareId: "9a059aae-e7bc-44af-d8ef-e4118406ca00",
+        position: [49.12, 1.11] as LatLngExpression,
+        date: "8/2",
         iconType: "journal"
-    }
+    }, 
+    {
+        title: "Baguette-o-matic",
+        desc: "The Baguette of the future, today! These vending machines can be found in some out-of-the-way areas, and are stocked daily (?) with fresh bread. I performed a blind taste test and couldn't tell the difference between a vending machine baguette and one bakery-procured.",
+        location: "Les Baux-de-Breteuil, France",
+        cloudflareId: "86110c7c-4153-4711-4686-30f9467dee00",
+        position: [48.875, 0.798] as LatLngExpression,
+        date: "8/3",
+        iconType: "journal"
+    }, 
+    {
+        title: "Abbey of Saint-Evroul",
+        desc: "",
+        location: "Saint-Evroult-Notre-Dame-du-Bois, France",
+        cloudflareId: "d0062a2c-4158-4ca6-b886-a30e1944bb00",
+        position: [48.791, 0.462] as LatLngExpression,
+        date: "8/4",
+        iconType: "monument"
+    }, 
+    {
+        title: "Château de Carrouges",
+        desc: "",
+        location: "Carrouges, France",
+        cloudflareId: "32d24b71-245f-4bf9-84d1-3095edd2a800",
+        position: [48.561, -0.154] as LatLngExpression,
+        date: "8/6",
+        iconType: "monument"
+    }, 
+    {
+        title: "Roche Torin",
+        desc: "Mont Saint-Michel is visible from many kilometers away thanks to the tidal plains that surround the structure. When the tides recede, local farmers graze sheep on the salty marshland that's revealed. I took a gravel path up the coast to find the main causeway connecting Mont-Saint Michel to the mainland, dodging fellow tourists all the while.",
+        location: "Courtils, France",
+        cloudflareId: "6a2a0aeb-88a9-424e-1564-f1340011f100",
+        position: [48.643, -1.425] as LatLngExpression,
+        date: "8/7",
+        iconType: "nature"
+    }, 
+    {
+        title: "Mont Saint-Michel",
+        desc: "",
+        location: "Mont Saint-Michel, France",
+        cloudflareId: "c87e36b9-f680-499a-d504-23ac9fcef700",
+        position: [48.634, -1.511] as LatLngExpression,
+        date: "8/7",
+        iconType: "monument"
+    }, 
+    {
+        title: "Abbey Streets",
+        desc: "",
+        location: "Mont Saint-Michel, France",
+        cloudflareId: "032a154f-4912-4817-b820-7340e8efd700",
+        position: [48.634, -1.511] as LatLngExpression,
+        date: "8/7",
+        iconType: "journal"
+    }, 
+    {
+        title: "Inland Sea",
+        desc: "",
+        location: "Mont Saint-Michel, France",
+        cloudflareId: "e2380ff5-8324-4fc0-dea9-19c9a8beec00",
+        position: [52.31, 4.76] as LatLngExpression,
+        date: "8/7",
+        iconType: "journal"
+    }, 
 ],
 [ //Seg Three
+    {
+        title: "Wild Camp",
+        desc: "",
+        location: "",
+        cloudflareId: "e9811838-615c-4ee7-2e39-82fd225edd00",
+        position: [48.55, -0.715] as LatLngExpression,
+        date: "8/8",
+        iconType: "nature"
+    },
     {
         title: "Header",
         desc: "",
@@ -218,6 +326,15 @@ const PoiList: Poi[][] = [[
     }
 ],
 [ //Seg Four
+    {
+        title: "Wild Camp",
+        desc: "",
+        location: "",
+        cloudflareId: "e9811838-615c-4ee7-2e39-82fd225edd00",
+        position: [52.31, 4.76] as LatLngExpression,
+        date: "7/20",
+        iconType: "nature"
+    },
     {
         title: "Header",
         desc: "",
