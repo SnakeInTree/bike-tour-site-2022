@@ -16,7 +16,7 @@ const Footer = ( {activeSegmentId}: {activeSegmentId: number} ) => {
 
     return (
         <IconContext.Provider value={{size: "3rem"}}>
-            <div className="flex flex-row h-1/6 w-full text-2xl font-semibold font-mapheader lg:-translate-y-20 ">   
+            <div className="flex flex-row w-full text-2xl font-semibold font-mapheader py-4">   
                 {prevSegment ? 
                     (
                         

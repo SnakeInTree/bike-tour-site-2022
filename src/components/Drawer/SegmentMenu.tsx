@@ -15,7 +15,7 @@ import { updateActiveSegment } from "@/store/reducers/segmentList";
 const SegmentMenu = ({segments, imgStrings}: {segments: Segment[], imgStrings: string[]}) => {
 
     return (    
-        <div className="flex flex-wrap md:-translate-y-0 lg:-translate-y-48">
+        <div className="flex flex-wrap">
             {segments.map((segment: Segment, index: number) => <SegmentSquare key={segment.name} segment={segment} imgString={imgStrings[index]} />)}
         </div>
     );

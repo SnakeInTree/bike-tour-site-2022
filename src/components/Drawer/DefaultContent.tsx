@@ -30,16 +30,11 @@ const DefaultContent = () => {
                 <Loader />
                 :
                 <div>
-                    <img className="relative" src={config.HTML_IMG_BUFFER_TAG + data[0]}/>
-                    <Header />
-                    <div className="w-full bg-statgreen flex flex-row justify-center items-center sm:translate-y-4 md:translate-y-4 lg:-translate-y-52">
-                        <StatsBlock statList={introStats} />
-                    </div>
+                    <Header headerImage={data[0]} />
+                    <StatsBlock statList={introStats} />
                     <IntroParagraph headshotString={data[1]} />
                     <SegmentMenu segments={segmentData} imgStrings={data.slice(2)} />
-                    <div className="md:-translate-y-0 lg:-translate-y-48 bg-tan">
-                        <InfoPanel />
-                    </div>
+                    <InfoPanel />
                     <Footer activeSegmentId={-1} />
                 </div>
             }   
@@ -49,7 +44,7 @@ const DefaultContent = () => {
 
 const IntroParagraph = ({ headshotString }: { headshotString:string }) => {
     return (
-        <div className="flex flex-row justify-center w-full py-10 bg-tan md:-translate-y-0 lg:-translate-y-48 drop-shadow-top-md">
+        <div className="flex flex-row justify-center w-full py-10 bg-tan drop-shadow-top-md">
             <div className="flex flex-col w-10/12">
                 <div className="flex flex-row mb-10 items-center">
                     <p className="pl-4 pr-12 w-3/4 text-2xl font-playfair font-semibold border-l-statgreenborder border-l-6">{text.intro.para1}</p>
