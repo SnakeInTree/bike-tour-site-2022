@@ -32,8 +32,8 @@ const icons = {
         iconAnchor: [35, 70],
     }),
     "mountain": new Icon({
-        iconUrl: "/static/mountain.svg",
-        iconRetinaUrl: "/static/mountain.png",
+        iconUrl: "/static/mtn.svg",
+        iconRetinaUrl: "/static/mtn.svg",
         iconSize: [70, 70],
         iconAnchor: [35, 70],
     }),

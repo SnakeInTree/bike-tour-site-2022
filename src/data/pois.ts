@@ -547,6 +547,87 @@ const PoiList: Poi[][] = [[
 ],
 [ //Seg 6 
     {
+        title: "Grimselpass Ascent",
+        desc: "",
+        location: "Innertkirchen, Switzerland",
+        cloudflareId: "de54e145-c895-4650-60ed-dbbfee1fa700",
+        position: [46.697, 8.236] as LatLngExpression,
+        date: "8/31",
+        iconType: "mountain"
+    },
+    {
+        title: "GrimselPeak",
+        desc: "",
+        location: "Innertkirchen, Switzerland",
+        cloudflareId: "34ae07b6-eb56-4246-da0b-b84396418b00", 
+        position: [46.573, 8.338] as LatLngExpression,
+        date: "9/1",
+        iconType: "mountain"
+    },
+    {
+        title: "FurkaPeak",
+        desc: "",
+        location: "Innertkirchen, Switzerland",
+        cloudflareId: "2d2eeb90-8924-4b15-46e0-3f033e6e5d00", 
+        position: [46.576, 8.388] as LatLngExpression,
+        date: "9/1",
+        iconType: "mountain"
+    },
+    {
+        title: "Furkapass Descent",
+        desc: "",
+        location: "Obergoms, Switzerland",
+        cloudflareId: "abf9caa5-032d-4397-e606-5ab48c029b00",
+        position: [46.573, 8.416] as LatLngExpression,
+        date: "9/1",
+        iconType: "journal"
+    },
+    {
+        title: "Alpine Town",
+        desc: "",
+        location: "Andermatt, Switzerland",
+        cloudflareId: "85d3e412-0684-4d9e-af36-997e518b8900",
+        position: [46.632, 8.593] as LatLngExpression,
+        date: "9/1",
+        iconType: "journal"
+    },
+    {
+        title: "Low Vis",
+        desc: "",
+        location: "Airolo, Switzerland",
+        cloudflareId: "c403bc86-8f4c-44d3-0e7e-a80d51c67100",
+        position: [46.568, 8.557] as LatLngExpression,
+        date: "9/2",
+        iconType: "journal"
+    },
+    {
+        title: "Gottardpass Descent",
+        desc: "",
+        location: "Giornico, Switzerland",
+        cloudflareId: "5828460d-9237-4d08-126d-9a7c36b1be00",
+        position: [46.403, 8.871] as LatLngExpression,
+        date: "9/2",
+        iconType: "mountain"
+    },
+    {
+        title: "Montebello Castle",
+        desc: "",
+        location: "Bellinzona, Switzerland",
+        cloudflareId: "dc3d7897-13ec-448c-9b14-fbbe87077100",
+        position: [46.192, 9.023] as LatLngExpression,
+        date: "9/2",
+        iconType: "monument"
+    },
+    {
+        title: "Rainy Sunday Market",
+        desc: "",
+        location: "Bellinzona, Switzerland",
+        cloudflareId: "003d3fe1-6023-4df2-1db3-e55a51f3d200",
+        position: [46.192, 9.023] as LatLngExpression,
+        date: "9/3",
+        iconType: "journal"
+    },
+    {
         title: "Header",
         desc: "",
         location: "",
