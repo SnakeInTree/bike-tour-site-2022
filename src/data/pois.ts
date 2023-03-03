@@ -390,21 +390,57 @@ const PoiList: Poi[][] = [[
 ],
 [ //Seg Four
     {
-        title: "Wild Camp",
+        title: "Forest Totem",
         desc: "",
-        location: "",
-        cloudflareId: "e9811838-615c-4ee7-2e39-82fd225edd00",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        location: "Reinhardsmunster, France",
+        cloudflareId: "e7770e65-d7ce-45aa-e854-de92e8620100",
+        position: [48.694, 7.311] as LatLngExpression,
+        date: "8/22",
         iconType: "nature"
     },
     {
-        title: "Header",
+        title: "Gravel Grinder",
         desc: "",
         location: "",
         cloudflareId: "23c2066f-c718-4433-9c8e-828cd2007600",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        position: [48.565984, 7.317719] as LatLngExpression,
+        date: "7/22",
+        iconType: "journal"
+    },
+    {
+        title: "Woodland Warning",
+        desc: "",
+        location: "",
+        cloudflareId: "6daacb47-f60b-40a4-e010-92cf6f00ae00",
+        position: [48.565984, 7.317719] as LatLngExpression,
+        date: "7/22",
+        iconType: "journal"
+    },
+    {
+        title: "Woodland Warning V2",
+        desc: "",
+        location: "",
+        cloudflareId: "e5b96999-2088-417b-6538-69026c693c00",
+        position: [48.565984, 7.317719] as LatLngExpression,
+        date: "7/22",
+        iconType: "journal"
+    },
+    {
+        title: "Beers and Views",
+        desc: "",
+        location: "Ottrot, France",
+        cloudflareId: "004dc273-64c5-4f36-ddc5-1514c7adc900",
+        position: [48.464, 7.409] as LatLngExpression,
+        date: "8/22",
+        iconType: "nature"
+    },
+    {
+        title: "Halflog",
+        desc: "",
+        location: "Ottrot, France",
+        cloudflareId: "e0c63e24-4095-4714-e062-7c30e0f6e000",
+        position: [48.464, 7.409] as LatLngExpression,
+        date: "8/23",
         iconType: "journal"
     }
 ],

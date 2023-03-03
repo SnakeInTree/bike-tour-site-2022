@@ -93,7 +93,7 @@ const segmentData = [
     color: "#083D77",
     location: "Grand-Est / Franche-Comté, France",
     displayTitle: "Woods",
-    headerImageIndex: 0,
+    headerImageIndex: 1,
     icon: GiForest
   },
   {
