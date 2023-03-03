@@ -401,27 +401,27 @@ const PoiList: Poi[][] = [[
     {
         title: "Gravel Grinder",
         desc: "",
-        location: "",
+        location: "Oberhaslach, France",
         cloudflareId: "23c2066f-c718-4433-9c8e-828cd2007600",
-        position: [48.565984, 7.317719] as LatLngExpression,
+        position: [48.565, 7.317] as LatLngExpression,
         date: "7/22",
         iconType: "journal"
     },
     {
         title: "Woodland Warning",
         desc: "",
-        location: "",
+        location: "Oberhaslach, France",
         cloudflareId: "6daacb47-f60b-40a4-e010-92cf6f00ae00",
-        position: [48.565984, 7.317719] as LatLngExpression,
+        position: [48.565, 7.317] as LatLngExpression,
         date: "7/22",
         iconType: "journal"
     },
     {
         title: "Woodland Warning V2",
         desc: "",
-        location: "",
+        location: "Oberhaslach, France",
         cloudflareId: "e5b96999-2088-417b-6538-69026c693c00",
-        position: [48.565984, 7.317719] as LatLngExpression,
+        position: [48.565, 7.317] as LatLngExpression,
         date: "7/22",
         iconType: "journal"
     },
@@ -437,23 +437,113 @@ const PoiList: Poi[][] = [[
     {
         title: "Halflog",
         desc: "",
-        location: "Ottrot, France",
+        location: "Sélestat, France",
         cloudflareId: "e0c63e24-4095-4714-e062-7c30e0f6e000",
-        position: [48.464, 7.409] as LatLngExpression,
+        position: [48.251, 7.448] as LatLngExpression, 
+        date: "8/23",
+        iconType: "journal"
+    },
+    {
+        title: "Vineyard",
+        desc: "",
+        location: "Bergheim, France",
+        cloudflareId: "8b14e408-bf2a-4d0b-8aab-1c504bf98000",
+        position: [48.208, 7.407] as LatLngExpression, 
         date: "8/23",
         iconType: "journal"
     }
 ],
 [ //Seg 5
     {
-        title: "old",
+        title: "Gravel Byway",
         desc: "",
-        location: "",
-        cloudflareId: "9d1c95ab-1312-4bb3-d2d1-e8c905ebe800",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        location: "Moutier, Switzerland",
+        cloudflareId: "fb3be411-0d43-4d44-b5de-5c334f0bc700",
+        position:  [47.29, 7.368] as LatLngExpression,
+        date: "8/26",
         iconType: "journal"
-    }
+    },
+    {
+        title: "Cow in the Way",
+        desc: "",
+        location: "Moutier, Switzerland",
+        cloudflareId: "0b54375e-5d42-4895-3569-aca95981a000",
+        position:  [47.29, 7.368] as LatLngExpression,
+        date: "8/26",
+        iconType: "animal"
+    },
+    {
+        title: "Climb Central",
+        desc: "",
+        location: "Sonceboz-Sombeval, Switzerland",
+        cloudflareId: "4959ccc8-3909-4cb6-e44d-d54b42a87e00",
+        position:  [47.188, 7.182] as LatLngExpression,
+        date: "8/27",
+        iconType: "journal"
+    },
+    {
+        title: "Close Calls",
+        desc: "",
+        location: "Biel/Benne, Switzerland",
+        cloudflareId: "338359de-d819-4548-a9da-22f169e61e00",
+        position:  [47.13, 7.158] as LatLngExpression,
+        date: "8/28",
+        iconType: "journal"
+    },
+    {
+        title: "Swiss Signage",
+        desc: "",
+        location: "Lyssach, Switzerland",
+        cloudflareId: "7c967806-4c59-4398-a30a-b050d78e8300",
+        position:  [47.070, 7.566] as LatLngExpression,
+        date: "8/29",
+        iconType: "journal"
+    },
+    {
+        title: "Lost in the Woods",
+        desc: "",
+        location: "Brandiswald, Switzerland",
+        cloudflareId: "55c98c1e-37f5-4ae1-1595-355f439a8b00",
+        position:  [46.977, 7.649] as LatLngExpression,
+        date: "8/30",
+        iconType: "nature"
+    },
+    {
+        title: "Valley Pass",
+        desc: "",
+        location: "Oberdiessbach, Switzerland",
+        cloudflareId: "f909e644-ed1e-4b38-fb87-e4b425d85300",
+        position:  [46.848, 7.620] as LatLngExpression,
+        date: "8/30",
+        iconType: "nature"
+    },
+    {
+        title: "Lake District",
+        desc: "",
+        location: "Interlaken, Switzerland",
+        cloudflareId: "9d1c95ab-1312-4bb3-d2d1-e8c905ebe800",
+        position: [46.662, 7.740] as LatLngExpression,
+        date: "8/30",
+        iconType: "nature"
+    },
+    {
+        title: "Rainbow",
+        desc: "",
+        location: "Brienz, Switzerland",
+        cloudflareId: "870d3f9d-a6fc-43d4-8ad0-6e8a1f96eb00",
+        position:  [46.738, 8.044] as LatLngExpression,
+        date: "8/30",
+        iconType: "nature"
+    },
+    {
+        title: "Grandhotel Giessbach",
+        desc: "",
+        location: "Meiringen, Switzerland",
+        cloudflareId: "df43401c-619c-413a-21fc-927d7ff29600",
+        position:  [46.729, 8.181] as LatLngExpression,
+        date: "8/30",
+        iconType: "monument"
+    },
 ],
 [ //Seg 6 
     {

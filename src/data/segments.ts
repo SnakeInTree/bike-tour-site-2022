@@ -108,7 +108,7 @@ const segmentData = [
     color: "#EADAA2",
     location: "Jura / Bern, Switzerland",
     displayTitle: "Jura Explorer",
-    headerImageIndex: 0,
+    headerImageIndex: 7,
     icon: GiSwitzerland
   },
   {
