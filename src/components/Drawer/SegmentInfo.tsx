@@ -30,23 +30,18 @@ const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
                 <Loader />
                 :
                 <div>
-                    <img className="relative" src={config.HTML_IMG_BUFFER_TAG + data[segment.headerImageIndex]}/>
-                    <Chevron location={segment.location} />
+                    <img src={config.HTML_IMG_BUFFER_TAG + data[segment.headerImageIndex]}/>
                     <Title text={segment.displayTitle} activeSegmentId={activeSegmentId} />
+                    <Chevron location={segment.location} />
                     <CondensedHeader displayTitle={segment.displayTitle} location={segment.location} />
-                    <div className="w-full bg-statgreen flex flex-row justify-center items-center sm:translate-y-4 md:translate-y-16 lg:-translate-y-16">
-                        <StatsBlock statList={segmentStats[activeSegmentId]} />
-                    </div>  
+                    <StatsBlock statList={segmentStats[activeSegmentId]} />
                     <Paragraphs segmentText={text.segmentText[segment.segmentId]} />
                     <PhotoGallery poiList={segment.pois} images={data} />
-                    <div className="md:translate-y-24 lg:-translate-y-24">
-                        <InfoPanel />
-                    </div>
-                    <Footer activeSegmentId={activeSegmentId} />
+                    <InfoPanel />
+                    <Footer activeSegmentId={activeSegmentId} /> 
                 </div>
             }   
         </>
-
     );        
 };
 
@@ -68,32 +63,16 @@ const Chevron = ({location}: {location:string}) => {
     const width = location.length > 19 ? "7/12" : "5/12";
     
     return (
-        <div className={`nil:hidden sm:hidden md:hidden -translate-y- lg:flex w-${width} h-8 bg-statblack -translate-y-4 translate-x-6 flex flex-row justify-center items-center drop-shadow-md ${text} ${before}`}>
+        <div className={`nil:hidden sm:hidden md:hidden lg:flex w-${width} h-8 bg-statblack ml-8 mb-4 flex flex-row justify-center items-center drop-shadow-md ${text} ${before}`}>
             <MdLocationOn />
             <span className="ml-4">{location.toUpperCase()}</span>
         </div>
     );
 };
 
-//TO-DO: Refactor this plz
-const styles = [
-    "pl-8 -translate-y-36 text-7xl",
-    "pl-10 -translate-y-36 text-7xl",
-    "pl-8 -translate-y-36 text-7xl",
-    "pl-8 -translate-y-36 text-7xl",
-    "pl-8 -translate-y-72 text-7xl",
-    "pl-8 -translate-y-36 text-7xl",
-    "pl-8 -translate-y-36 text-7xl",
-    "pl-8 -translate-y-36 text-7xl",
-    "pl-8 -translate-y-36 text-7xl",
-    "pl-8 -translate-y-36 text-7xl",
-    "pl-8 -translate-y-44 text-7xl",
-    "pl-8 -translate-y-36 text-7xl"
-];
-
 const Title = ({text, activeSegmentId}: {text: string, activeSegmentId:number}) => {    
     return (
-        <div className={`nil:hidden sm:hidden md:hidden lg:flex flex-row font-mapheader font-medium text-center text-tan ${styles[activeSegmentId]}`}>
+        <div className="nil:hidden sm:hidden md:hidden lg:flex flex-row font-mapheader font-medium text-center text-tan pl-8 -mt-28 mb-6 text-7xl">
                 {text.toUpperCase()}
         </div>
     );
@@ -101,7 +80,7 @@ const Title = ({text, activeSegmentId}: {text: string, activeSegmentId:number}) 
 
 const Paragraphs = ({segmentText}: {segmentText: SegmentText}) => {
     return (
-        <div className="flex flex-row justify-center w-full py-10 bg-tan sm:translate-y-24 md:translate-y-24 lg:-translate-y-16">
+        <div className="flex flex-row justify-center w-full py-10 bg-tan drop-shadow-top-md">
             <div className="flex flex-col w-10/12">
                 <div className="flex flex-row mb-10">
                     <p className="pl-4 pr-12 w-3/4 text-2xl font-playfair font-semibold border-l-statgreenborder border-l-6">{segmentText.header}</p>

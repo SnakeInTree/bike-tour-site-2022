@@ -88,7 +88,7 @@ const SectionContentList = [
         content: [
             {
                 header: "Why did you want to do this?",
-                content: ""
+                content: "What, you've never wanted to give up all your responsibilities and live life on the road for a while? In all seriousness, I wanted to travel post-COVID, but do so in a way I thought was interesting.",
             },
             {
                 header: "How did you come up with this route?",
