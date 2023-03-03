@@ -45,7 +45,7 @@ const SectionTitle = ({activeSectionId, setActiveSectionId, content}: {content:I
 const SectionInfo = ({activeSectionId}: {activeSectionId: number}) => {
     const activeSection = SectionContentList[activeSectionId];
     return (
-        <div className="w-full h-4/5 bg-headshotChevronBg py-8 pl-12 pr-16">
+        <div className="w-full h-48 bg-headshotChevronBg py-8 pl-12 pr-16">
             {activeSection.content.map((content: SectionContent) => <SectionInfoContent key={content.header} content={content} />)}
         </div>
     );

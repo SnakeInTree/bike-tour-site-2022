@@ -15,6 +15,7 @@ const Map = () => {
         <MapContainer
             center={config.MAP_SETTINGS.START_LAT_LNG as LatLngExpression}
             zoom={config.MAP_SETTINGS.START_ZOOM}
+            maxZoom={config.MAP_SETTINGS.MAX_ZOOM}
             scrollWheelZoom={true}
             style={mapStyle}
             zoomControl={false}

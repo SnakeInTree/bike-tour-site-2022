@@ -291,7 +291,7 @@ const PoiList: Poi[][] = [[
         desc: "",
         location: "Mont Saint-Michel, France",
         cloudflareId: "e2380ff5-8324-4fc0-dea9-19c9a8beec00",
-        position: [52.31, 4.76] as LatLngExpression,
+        position: [48.634, -1.511] as LatLngExpression,
         date: "8/7",
         iconType: "journal"
     }, 
@@ -300,29 +300,92 @@ const PoiList: Poi[][] = [[
     {
         title: "Wild Camp",
         desc: "",
-        location: "",
+        location: "Saint-Mars-d'Égrenne, France",
         cloudflareId: "e9811838-615c-4ee7-2e39-82fd225edd00",
         position: [48.55, -0.715] as LatLngExpression,
-        date: "8/8",
+        date: "8/9",
         iconType: "nature"
     },
     {
-        title: "Header",
+        title: "River District",
         desc: "",
-        location: "",
-        cloudflareId: "9b5ca11d-1570-4d09-7a38-afa0baad7900",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        location: "Mayenne, France",
+        cloudflareId: "bfae1933-b618-456d-28eb-88786d249500",
+        position: [48.302, -0.605] as LatLngExpression,
+        date: "8/9",
         iconType: "journal"
     },
     {
-        title: "old",
+        title: "The Museum of Naïve Art",
         desc: "",
-        location: "",
-        cloudflareId: "8d27af43-7184-4fe4-3fbc-7299880ef500",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
-        iconType: "journal"
+        location: "Laval, France",
+        cloudflareId: "9dd15221-f979-471d-4ba2-97418da9b600",
+        position: [48.0639, -0.767] as LatLngExpression,
+        date: "8/10",
+        iconType: "monument"
+    },
+    {
+        title: "Riverside Brew",
+        desc: "",
+        location: "La Jaille-Yvon, France",
+        cloudflareId: "132f9d86-d7ab-43e1-949f-688240006000",
+        position: [47.718, -0.667] as LatLngExpression,
+        date: "8/10",
+        iconType: "camp"
+    },
+    {
+        title: "Apocalypse Tapestry",
+        desc: "",
+        location: "Angers, France",
+        cloudflareId: "c60c6e7b-7ad3-4c22-eb69-63ed1db86200",
+        position: [47.470, -0.556] as LatLngExpression,
+        date: "8/11",
+        iconType: "monument"
+    },
+    {
+        title: "Galerie David d'Angers",
+        desc: "",
+        location: "Angers, France",
+        cloudflareId: "bb3ede05-fef0-4c8d-faa4-98701e4d9d00",
+        position: [47.470, -0.556] as LatLngExpression,
+        date: "8/11",
+        iconType: "monument"
+    },
+    {
+        title: "Tranquil Garden",
+        desc: "",
+        location: "Angers, France",
+        cloudflareId: "9b5ca11d-1570-4d09-7a38-afa0baad7900",
+        position: [47.470, -0.556] as LatLngExpression,
+        date: "8/11",
+        iconType: "nature"
+    },
+    {
+        title: "Sunset",
+        desc: "",
+        location: "Turquant, France",
+        cloudflareId: "049dd76c-4ebf-4e0a-eef4-a2398f8d8800",
+        position: [47.257, -0.0741] as LatLngExpression,
+        date: "8/11",
+        iconType: "nature"
+    },
+    {
+        title: "Dinner of Champions",
+        desc: "",
+        location: "Montsoreau, France",
+        cloudflareId: "a2290404-7ae1-4475-dbc6-ede28f8cb600",
+        position: [47.211, 0.0811] as LatLngExpression,
+        date: "8/11",
+        iconType: "camp"
+    },
+    {
+        title: "Loire Campsite",
+        desc: "",
+        location: "Montsoreau, France",
+        cloudflareId: "b287469a-d4b5-49d1-8f27-7ddc82aa9d00",
+        position: [47.211, 0.0811] as LatLngExpression,
+        date: "8/11",
+        iconType: "camp"
     }
 ],
 [ //Seg Four

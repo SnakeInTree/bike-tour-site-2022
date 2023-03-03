@@ -1,7 +1,8 @@
 {
     "MAP_SETTINGS": {
         "START_LAT_LNG": [45.51, 9.35],
-        "START_ZOOM": 4
+        "START_ZOOM": 4,
+        "MAX_ZOOM": 12
     },    
     "SEGMENT_SETTINGS": {
         "DEFAULT_WIDTH": 5,

@@ -63,7 +63,7 @@ const segmentData = [
     color: "#F78764",
     location: "Hautes-de-France / Normandy, France",
     displayTitle: "Pilgrimage",
-    headerImageIndex: 0,
+    headerImageIndex: 10,
     icon: GiFrance
   },
   {
@@ -78,7 +78,7 @@ const segmentData = [
     color: "#7E8D85",
     location: "Pays de la Loire, France",
     displayTitle: "Valley of Kings",
-    headerImageIndex: 0,
+    headerImageIndex: 6,
     icon: GiCastle
   },
   {
