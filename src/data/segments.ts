@@ -123,7 +123,7 @@ const segmentData = [
     color: "#F78764",
     location: "Bernese Highlands / Ticino, Switzerland",
     displayTitle: "Alpine Crossing",
-    headerImageIndex: 0,
+    headerImageIndex: 9,
     icon: GiMountainRoad
  },
   {

@@ -632,16 +632,7 @@ const PoiList: Poi[][] = [[
         desc: "",
         location: "",
         cloudflareId: "00a8818a-b6e3-4f04-5bc6-f026ce2b6800",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
-        iconType: "journal"
-    },
-    {
-        title: "old",
-        desc: "",
-        location: "",
-        cloudflareId: "53898331-df1f-451d-d8eb-25c26d669c00",
-        position: [52.31, 4.76] as LatLngExpression,
+        position: [46.568, 8.557] as LatLngExpression,
         date: "7/20",
         iconType: "journal"
     }
