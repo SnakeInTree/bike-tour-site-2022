@@ -3,10 +3,11 @@ import { InfoPanelSection, SectionContent, SegmentText } from "@/store/models";
 
 const text = {
     intro: {
-        para1: "In 2022, I left home to explore Europe by bicycle. Over the course of three months, I cycled alongisde the castles of the Loire, traversed the Swiss Alps, and slept under the stars in five-hundered-year-old Slovenian forests.",
-        para2: "The idea of taking a prolonged bike tour had been bouncing around my head for close to five years before I finally got the money and time together to make my dream a reality. I remember during my University studies in Montreal, being in a library sometime during the frigid midwinter and daydreaming of cycling under the sun alongside French castles. At the time, and for years later I wrote the fantasy off and returned to the business of completing my degree.",
-        para3: "Nevertheless, the idea stuck. In the following years, I'd often close my eyes and imagine what it'd really be like to embark on a multi-month odyssey by bicycle. In 2021, with some newfound \"adult\" money and ready for a break from remote work, I started working on plan to purchase a bike and the requisite supplies for camping. Then in 2022, armed with a steel Fuji Touring Bike, a few thousand dollars in savings and a Google Map marked with every conceivable point of interest, I boarded a flight from Toronto to Amsterdam.", 
-        para4: "I've broken up the full account of my journey into 12 sections, each containing a selection of photos and stories from my travels. Each segment writeup also includes a list of resources including campsites, restaurents and bicycle paths for anyone looking to go on their own European excursion.",
+        para1: "In 2022, I left home to explore Europe by bicycle. Over the course of three months, I cycled alongisde castles in France, crossed the Swiss Alps, and slept under the stars in hundered-year-old forests.",
+        para2: "Most people don't think of bicycles as a good way to travel long distances. There's no built-in radio. There's no wait staff to feed you pretzels. Most bikes don't even have cupholders! How can the modern traveler be expected to cope?",
+        para3: "The truth is that traveling by bicycle (called alternatively bike touring, bikepacking, biketrekking etc.) has been happenning ever since the 1800s when people were introduced to two-wheel travel. You can find magazines from the 1920's that list which Atlantic City hotels will \"accept a man in a bicycle costume into the dining room\". Though the recent surge of cycling products branded as 'bikepacking-ready' is somewhat recent, the practice of strapping a stove and sleeping bag to a bicycle is anything but.", 
+        para4: "With this in mind, my decision to quit my job and embark on a 90 day pedal-powered journey across the European continent was, in fact, quite normal! I had long held a desire to travel, and thought that using a bicycle as my main source of locomotion would give me the chance to really savor the adventure.",
+        para5: "This website is the chronicle of my experience. I've done my best to document all the highlights, along with every mistake and bump in the road I encountered along the way. I've broken up the full account into 12 sections, each containing a selection of photos and stories. I've also made sure to add a list of personal reccommendations for restaurents, campsites, bike routes etc. to each writeup. My sincere hope is that this inspires someone else to embark on their own biking journey -- it can be difficult, but I'm convinced that there's no better way to travel.",
         post: "Thanks for reading, and happy trails!"
     },
     segmentText: [
@@ -72,11 +73,11 @@ const SectionContentList = [
         content: [
             {
                 header: "Slow Travel",
-                content: "by bicycle presents some interesting challenges and opportunities."
+                content: "forces you off the beaten track. Cycling doesn't allow for a \"greatest hits of Europe\" tour the same way interrailing does; you can't fall asleep in Paris and wake up in Berlin. Instead you have to resign yourself to exist in the space between known places. Every person who grew up watching Rick Steves or Anthony Bourdain has a mental image of what it would be like to walk around Paris or Zurich. But what lies in the small towns and natural spaces between these metropolitan areas? Take a bike, rather than a plane, and you'll find out."
             },
             {
                 header: "Balling on a Budget",
-                content: "because why pay for lodging?"
+                content: "is absolutely possible when bike touring. Don't let any fears of flying a bike overseas fool you -- most airlines won't charge any more for a bike than they do for checked baggage, and once you've landed, you have permenant, accessible transportation! After you've built your bike, the benefits keep stacking. Paying for parking? Out of the question. Forking over fistfulls of Euros to access the EU's toll highway network? Not an issue. Many tourism bureaus even subsidize bicycle friendly lodging to allow bicycle tourists discounts on their lodging costs! You're losing money not traveling by bike!"
             }
         ] as SectionContent[]
     },
@@ -87,11 +88,11 @@ const SectionContentList = [
         content: [
             {
                 header: "Why did you want to do this?",
-                content: ""
+                content: "What, you've never wanted to give up all your responsibilities and live life on the road for a while? In all seriousness, I wanted to travel post-COVID, but do so in a way I thought was interesting.",
             },
             {
                 header: "How did you come up with this route?",
-                content: ""
+                content: "The route is a product of me picking a few dozen \"must-see\" sights between Amsterdam and Greece, and then connecting the dots while trying to use established bicycle routes and greenways whenever possible. Some must-see sights included Mont-Sainte Michel in Western France, the Swiss Alps and Slovenia's Triglav national park. The hole in central France is the result of a trip to Paris with friends after meeting in the Loire, after which I decided on a change of scenery."
             }
         ] as SectionContent[]
     },
@@ -101,12 +102,12 @@ const SectionContentList = [
         Icon: GiLightBackpack,
         content: [
             {
-                header: "The Bike",
-                content: ""
+                header: "The bike",
+                content: "I used was a 2021 Fuji Touring Bike, with a chromoly steel frame, disk brakes, a Deore 48/36/26T crankset and 11-36T, 10-speed rear cassette. I rode 37mm WTB Riddler tyres for the majority of the trip."
             },
             {
-                header: "Panniers and Bike Trunk",
-                content: ""
+                header: "I used panniers and a bike trunk",
+                content: "made by Frost River, an old-school outdoor supply company based out of Minnesota in the U.S. Their bags are made from a water-resistant waxed canvas that's finished with brass and leather for a classic look."
             }
         ] as SectionContent[]
     },

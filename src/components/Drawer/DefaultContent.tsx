@@ -1,10 +1,12 @@
 import { useQuery } from "react-query";
+import Image from "next/image";
 
 import Header from "./Header";
 import StatsBlock from "./Stats";
 import SegmentMenu from "./SegmentMenu";
 import Loader from "./Loading";
 import InfoPanel from "./InfoPanel";
+import Footer from "./Footer";
 
 import segmentData from "@/data/segments";
 import { introStats } from "@/data/stats";
@@ -12,6 +14,8 @@ import { text } from "@/data/text";
 import { Segment } from "@/store/models";
 import { fetchImages } from "@/apiUtil/cloudflare";
 import config from "@/config/default.json";
+
+import signature from "../../../public/signature.png";
 const headerCloudflareIds = [config.IMAGES.HEADER_IMG_ID, config.IMAGES.HEADSHOT, ...segmentData.map((segment: Segment) => segment.pois[segment.headerImageIndex].cloudflareId)];
 
 const DefaultContent = () => {
@@ -26,16 +30,12 @@ const DefaultContent = () => {
                 <Loader />
                 :
                 <div>
-                    <img className="relative" src={config.HTML_IMG_BUFFER_TAG + data[0]}/>
-                    <Header />
-                    <div className="w-full bg-statgreen flex flex-row justify-center items-center sm:translate-y-4 md:translate-y-4 lg:-translate-y-52">
-                        <StatsBlock statList={introStats} />
-                    </div>
+                    <Header headerImage={data[0]} />
+                    <StatsBlock statList={introStats} />
                     <IntroParagraph headshotString={data[1]} />
                     <SegmentMenu segments={segmentData} imgStrings={data.slice(2)} />
-                    <div className="md:-translate-y-0 lg:-translate-y-48 bg-tan">
-                        <InfoPanel />
-                    </div>
+                    <InfoPanel />
+                    <Footer activeSegmentId={-1} />
                 </div>
             }   
         </>
@@ -44,7 +44,7 @@ const DefaultContent = () => {
 
 const IntroParagraph = ({ headshotString }: { headshotString:string }) => {
     return (
-        <div className="flex flex-row justify-center w-full py-10 bg-tan md:-translate-y-0 lg:-translate-y-48 drop-shadow-top-md">
+        <div className="flex flex-row justify-center w-full py-10 bg-tan drop-shadow-top-md">
             <div className="flex flex-col w-10/12">
                 <div className="flex flex-row mb-10 items-center">
                     <p className="pl-4 pr-12 w-3/4 text-2xl font-playfair font-semibold border-l-statgreenborder border-l-6">{text.intro.para1}</p>
@@ -53,7 +53,17 @@ const IntroParagraph = ({ headshotString }: { headshotString:string }) => {
                 <p className="text-lg font-playfair mb-10">{text.intro.para2}</p>
                 <p className="text-lg font-playfair mb-10">{text.intro.para3}</p>
                 <p className="text-lg font-playfair mb-10">{text.intro.para4}</p>
-                <p className="text-lg font-playfair mb-28">{text.intro.post}</p>
+                <p className="text-lg font-playfair mb-10">{text.intro.para5}</p>
+                <p className="text-lg font-playfair mb-10">{text.intro.post}</p>
+                <div className="mb-24">
+                    <Image
+                        src={signature}
+                        alt="Kees Signature"
+                        placeholder="blur"
+                        width={150}
+                        height={150}
+                    />
+                </div>
             </div>
             <TitleChevron />
         </div>

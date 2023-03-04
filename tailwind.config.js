@@ -3,7 +3,8 @@
 module.exports = {
   content: [
     "./src/pages/**/*.{ts,tsx,html,js}",
-    "./src/pages/components/**/*.{ts,tsx,html,js}",
+    "./src/components/**/*.{ts,tsx,html,js}",
+    "./src/components/*.{ts,tsx,html,js}",
     "./src/styles/globals.css"
   ],
   theme: {

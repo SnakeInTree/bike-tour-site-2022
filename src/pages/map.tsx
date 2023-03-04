@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux";
 import Head from "next/head";
-import { LazyMap } from "./components/Map/index";
-import Buttons from "./components/Buttons/Button";
-import Drawer from "./components/Drawer/Drawer";
-import Carousel from "./components/Carousel/Carousel";
+import { LazyMap } from "@/components/Map/index";
+import Buttons from "@/components/Buttons/Button";
+import Drawer from "@/components/Drawer/Drawer";
+import Carousel from "@/components/Carousel";
 
 import { RootState } from "@/store/store";
 

@@ -16,11 +16,10 @@ const PhotoGallery = ({poiList, images}: {poiList: Poi[], images: string[]}) => 
     const handleCarouselTrigger = () => dispatch(toggleCarouselDisplay(true));
 
     return (
-        <div className="relative w-12/12 h-102 flex flex-col items-center py-10 bg-titleGrey drop-shadow-lg sm:translate-y-24 md:translate-y-24 lg:-translate-y-24">
+        <div className="relative w-12/12 h-102 flex flex-col items-center py-10 bg-titleGrey drop-shadow-lg">
             <IconContext.Provider value={{ size: "2rem"}}>
                 <div className="absolute z-450 top-1/3 right-0 m-8 cursor-pointer text-white" onClick={handleIncreasePoiIndex}><AiOutlineRight /></div>
                 <div className="absolute z-450 top-1/3 left-0 m-8 cursor-pointer text-white" onClick={handleDecreasePoiIndex}><AiOutlineLeft /></div>
-                <div className="absolute z-450 top-0 right-0 m-4 cursor-pointer text-white" onClick={handleCarouselTrigger}><AiOutlineFullscreen /></div>
             </IconContext.Provider>
             <TitleChevron />
             <img className="h-fit h-min-50 max-h-120 pointer-events-none" src={config.HTML_IMG_BUFFER_TAG + images[activePoiId]} />
@@ -59,7 +58,7 @@ const TitleChevron = () => {
     const text = "font-mapheader text-slate-50"; 
     
     return (
-        <div id="poi_chevron" className={`absolute top-0 w-1/3 h-11 bg-statblack -translate-x-0.5 -translate-y-5.5 flex flex-row justify-center items-center drop-shadow-md ${text} ${before} ${after}`}>
+        <div id="poi_chevron" className={`absolute top-0 w-1/3 h-11 bg-statblack -translate-y-5.5 flex flex-row justify-center items-center drop-shadow-md ${text} ${before} ${after}`}>
             <span className="text-lg">POINTS OF INTEREST</span>
         </div>
     );
