@@ -24,17 +24,17 @@ const LandingPage = () => {
                 {effect ? (<span className={"relative italic text-xl top-96 animate-landingPageLoading"}>{loadingText}</span>) : null}
             </div>
             <div 
-                className={"fixed right-24 top-4 h-160 w-160 flex flex-col justify-center items-center z-30 font-sans bg-red-200 rounded-full " + (effect ? "animate-landingPageBubble" : null)}
+                className={"fixed right-24 top-4 h-160 w-160 flex flex-col justify-center items-center z-30 text-statblack drop-shadow-xl font-mapheader bg-red-200 rounded-full " + (effect ? "animate-landingPageBubble" : null)}
             >
                 <p className="text-5xl font-extrabold">{titlePtOne}</p>
                 <p className="text-5xl font-extrabold">{titlePtTwo}</p>
-                <p className="text-2xl w-10/12 my-12 text-center ">{writeUp}</p>
+                <p className="text-2xl w-10/12 my-12 text-center font-playfair">{writeUp}</p>
                 <Link 
                     href={"/map"} 
-                    className="flex flex-row items-center justify-around text-2xl p-4 rounded-lg transition-colors ease-in-out duration-300 hover:bg-red-300"
+                    className="flex flex-row items-center justify-around text-2xl text-tan bg-statblack p-4 rounded-2xl font-playfair font-bold drop-shadow-xl transition-colors ease-in-out duration-300 hover:bg-gray-800"
                     onClick={handleClick}
                 >
-                    See the Map
+                    Begin
                     <IconContext.Provider value={{size: "2rem"}}><AiOutlineArrowRight /></IconContext.Provider>
                 </Link>
             </div>
