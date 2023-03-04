@@ -16,10 +16,8 @@ Tech Stack:
 
 All images were captured by my unsteady hands. 
 
-[Vid of website progress circa January 2023](https://www.loom.com/share/ac601d7900ec45658d822c8668dc2b10)
-
-[Loading Animation (2/4/2023)](https://www.loom.com/share/02b87235e9d0400babd6f4168b82b97a)
+[Vid of website progress circa March 2023](https://www.loom.com/share/4d2f7c10c66c403d83cb0ad8537bffba)
 
 Upcoming Features:
 - Better Integration of Elevation Graphs
-- Improved Reactivity
+- Improved Reactivity for Mobile
