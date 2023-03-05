@@ -138,7 +138,7 @@ const segmentData = [
     color: "#A52A2A",
     location: "Lombardy, Italy",
     displayTitle: "Dolomiti",
-    headerImageIndex: 0,
+    headerImageIndex: 7,
     icon: GiItalia
   },
   {

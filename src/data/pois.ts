@@ -639,35 +639,214 @@ const PoiList: Poi[][] = [[
 ],
 [ //Seg 7
     {
-        title: "Header",
+        title: "Lake Cruise",
         desc: "",
-        location: "",
-        cloudflareId: "d317827a-6f44-4c7e-1e6c-3b212a181200",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        location: "Varenna, Italy",
+        cloudflareId: "0a136cd7-2445-4f2b-1036-997e76cade00",
+        position: [46.0105, 9.283] as LatLngExpression,
+        date: "9/4",
         iconType: "journal"
+    },      
+    {
+        title: "Riverside Chapel",
+        desc: "",
+        location: "Trezzo sull'Adda, Italy",
+        cloudflareId: "d690fad9-0411-4a78-1851-da43ed582200",
+        position: [45.611, 9.520] as LatLngExpression,
+        date: "9/5",
+        iconType: "monument"
     },    
     {
-        title: "old",
+        title: "Garda",
         desc: "",
-        location: "",
-        cloudflareId: "81f7ba5b-f362-482f-54cc-71a1cca81200",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        location: "Cola, Italy",
+        cloudflareId: "052798fb-aae4-4d60-3de2-d2b71824a200",
+        position: [45.444, 10.673] as LatLngExpression,
+        date: "9/8",
+        iconType: "monument"
+    },    
+    {
+        title: "Grotto",
+        desc: "",
+        location: "Sirmione, Italy",
+        cloudflareId: "1cc5e765-46e0-4ebd-971a-a182f679bd00",
+        position: [45.501, 10.60] as LatLngExpression,
+        date: "9/8",
+        iconType: "monument"
+    },     
+    {
+        title: "Olive Grove",
+        desc: "",
+        location: "Sirmione, Italy",
+        cloudflareId: "1eb28bc5-0f7c-4523-42ff-36cbef1fde00",
+        position: [45.501, 10.60] as LatLngExpression,
+        date: "9/8",
+        iconType: "nature"
+    },     
+    {
+        title: "Drenched",
+        desc: "",
+        location: "Dolcè, Italy",
+        cloudflareId: "957c7ac9-dfcb-4653-bf60-528ef1ca9200",
+        position: [45.543, 10.838] as LatLngExpression,
+        date: "9/9",
         iconType: "journal"
+    },   
+    {
+        title: "Feline Friend?",
+        desc: "",
+        location: "Sant'Anna d'Alfaedo, Italy",
+        cloudflareId: "9ebe487e-50fa-4618-80bd-3c04df5a1c00",
+        position: [45.644, 10.928] as LatLngExpression,
+        date: "9/9",
+        iconType: "journal"
+    },     
+    {
+        title: "Vanity Pic",
+        desc: "",
+        location: "Parco Naturale Regionale della Lessinia, Italy",
+        cloudflareId: "d317827a-6f44-4c7e-1e6c-3b212a181200",
+        position: [45.692, 11.0567] as LatLngExpression,
+        date: "9/9",
+        iconType: "mountain"
+    },
+    {
+        title: "Dinner of Champions",
+        desc: "",
+        location: "Parco Naturale Regionale della Lessinia, Italy",
+        cloudflareId: "1236c670-3b0a-4ef9-d095-5ed7b9848400",
+        position: [45.692, 11.0567] as LatLngExpression,
+        date: "9/9",
+        iconType: "journal"
+    }, 
+    {
+        title: "Trench Line",
+        desc: "",
+        location: "Parco Naturale Regionale della Lessinia, Italy",
+        cloudflareId: "85d6f759-6ecb-416a-e7fe-c51b78c78c00",
+        position: [45.714, 11.055] as LatLngExpression,
+        date: "9/9",
+        iconType: "monument"
+    }, 
+    {
+        title: "Golden Hour",
+        desc: "",
+        location: "Parco Naturale Regionale della Lessinia, Italy",
+        cloudflareId: "4ebc6bf9-4ada-4280-dffb-8627b9c34900",
+        position: [45.714, 11.055] as LatLngExpression,
+        date: "9/9",
+        iconType: "nature"
+    }, 
+    {
+        title: "Marmot!",
+        desc: "",
+        location: "Parco Naturale Regionale della Lessinia, Italy",
+        cloudflareId: "5798563d-f133-43a8-dde6-e100ce68a100",
+        position: [45.709, 11.058] as LatLngExpression,
+        date: "9/9",
+        iconType: "animal"
+    },
+    {
+        title: "Dolomite",
+        desc: "",
+        location: "Parco Naturale Regionale della Lessinia, Italy",
+        cloudflareId: "4314735a-76a5-4a6c-81c1-ed3804a17b00",
+        position: [45.681, 11.066] as LatLngExpression,
+        date: "9/9",
+        iconType: "mountain"
     }
 ],
 [ //Seg 8
     {
-        title: "Header",
+        title: "Plains of Veneto",
         desc: "",
-        location: "",
+        location: "Bedin Paolini, Italy",
         cloudflareId: "241f39a5-a453-448d-ba85-51feebc24f00",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        position: [45.476, 11.484] as LatLngExpression,
+        date: "9/10",
         iconType: "journal"
-
-    }
+    },
+    {
+        title: "Plaza",
+        desc: "",
+        location: "Vicenza, Italy",
+        cloudflareId: "d12bc385-09ff-4dad-d775-b34a5b0c6400",
+        position: [45.537, 11.548] as LatLngExpression,
+        date: "9/11",
+        iconType: "journal"
+    },
+    {
+        title: "Plaza",
+        desc: "",
+        location: "Piazza dei Signori, Padua, Italy",
+        cloudflareId: "48ac5825-8ede-4566-aef8-557c545fbb00",
+        position: [45.407, 11.873] as LatLngExpression,
+        date: "9/11",
+        iconType: "journal"
+    },
+    {
+        title: "Mosquito Coast",
+        desc: "",
+        location: "Lido, Italy",
+        cloudflareId: "f0f51e7a-7241-48f3-ea23-7eddd96efc00",
+        position: [45.416, 12.380] as LatLngExpression,
+        date: "9/13",
+        iconType: "journal"
+    },
+    {
+        title: "Doge's Palace",
+        desc: "",
+        location: "Venice, Italy",
+        cloudflareId: "72f857c4-da66-4d54-79aa-2943bc666a00",
+        position: [45.433, 12.339] as LatLngExpression,
+        date: "9/13",
+        iconType: "monument"
+    },
+    {
+        title: "City",
+        desc: "",
+        location: "Venice, Italy",
+        cloudflareId: "c1735299-3112-40b8-47dd-b285d7b82a00",
+        position: [45.433, 12.339] as LatLngExpression,
+        date: "9/13",
+        iconType: "monument"
+    },
+    {
+        title: "Ferry Ride",
+        desc: "",
+        location: "Venice, Italy",
+        cloudflareId: "2f4ca548-c5b9-4265-35f5-8ec9f7fb9700",
+        position: [45.433, 12.339] as LatLngExpression,
+        date: "9/13",
+        iconType: "monument"
+    },
+    {
+        title: "Vaporettos",
+        desc: "",
+        location: "St. Mark's Plaza, Venice, Italy",
+        cloudflareId: "9256da07-15c5-4cf6-5322-8a8b1c685e00",
+        position: [45.433, 12.339] as LatLngExpression,
+        date: "9/13",
+        iconType: "monument"
+    },
+    {
+        title: "Bike Fit",
+        desc: "",
+        location: "Jesolo, Italy",
+        cloudflareId: "20396f43-33f1-42a3-a793-b92fe09a3600",
+        position: [45.507, 12.647] as LatLngExpression,
+        date: "9/13",
+        iconType: "journal"
+    },
+    {
+        title: "Weedy Campsite",
+        desc: "",
+        location: "Caorle, Italy",
+        cloudflareId: "7f4d7f04-9ba8-40e4-d350-30d3bc36d100",
+        position: [45.626, 12.893] as LatLngExpression,
+        date: "9/14",
+        iconType: "camp"
+    },
 ],
 [ //Seg 9
     {
