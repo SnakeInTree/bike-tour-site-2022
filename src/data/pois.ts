@@ -850,14 +850,103 @@ const PoiList: Poi[][] = [[
 ],
 [ //Seg 9
     {
-        title: "old",
+        title: "Wine & Stay",
         desc: "",
-        location: "",
-        cloudflareId: "46f25b16-ac46-4ba4-4172-f17ecc11b900",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        location: "Gorizia, Italy",
+        cloudflareId: "306b5b11-8e03-4b63-806a-99e0fd9f4e00",
+        position: [45.967, 13.612] as LatLngExpression,
+        date: "9/15",
         iconType: "journal"
-
+    },  
+    {
+        title: "Cloudside Camping",
+        desc: "",
+        location: "Tolmin, Slovenia",
+        cloudflareId: "32d7118c-390e-4991-47b8-2b13d6087b00",
+        position: [46.183, 13.663] as LatLngExpression,
+        date: "9/18",
+        iconType: "camp"
+    },    
+    {
+        title: "Exposure",
+        desc: "",
+        location: "Kobarid, Slovenia",
+        cloudflareId: "38b12e9a-1254-4f10-b2b3-3719df13b900",
+        position: [45.416, 12.380] as LatLngExpression,
+        date: "9/18",
+        iconType: "journal"
+    },    
+    {
+        title: "Vrši",
+        desc: "",
+        location: "Kobarid, Slovenia",
+        cloudflareId: "cefbb5fa-9537-4718-c8fa-20ab7176d800",
+        position: [46.250, 13.496] as LatLngExpression,
+        date: "9/18",
+        iconType: "journal"
+    },   
+    {
+        title: "Dr. Julius Kugy Monument",
+        desc: "",
+        location: "Soča Valley, Slovenia",
+        cloudflareId: "5be9f633-ec7b-4e3c-db09-8f759546c100",
+        position: [46.404, 13.742] as LatLngExpression,
+        date: "9/19",
+        iconType: "monument"
+    },  
+    {
+        title: "Vršič",
+        desc: "",
+        location: "Kranjska Gora, Slovenia",
+        cloudflareId: "e74c7a97-12b5-4c7f-6bba-527a17887f00",
+        position: [46.415, 13.741] as LatLngExpression,
+        date: "9/19",
+        iconType: "mountain"
+    },     
+    {
+        title: "Vršič Pass",
+        desc: "",
+        location: "Kranjska Gora, Slovenia",
+        cloudflareId: "5eafea34-f4e0-4ee0-8df8-56029b033a00",
+        position: [46.441, 13.753] as LatLngExpression,
+        date: "9/19",
+        iconType: "mountain"
+    },    
+    {
+        title: "Sponge Dinner",
+        desc: "",
+        location: "Lake Bled, Slovenia",
+        cloudflareId: "afbe1d1d-d494-4663-ab52-cda4e5f2f100",
+        position: [46.369, 14.083] as LatLngExpression,
+        date: "9/19",
+        iconType: "mountain"
+    },
+    {
+        title: "Island Chapel",
+        desc: "",
+        location: "Lake Bled, Slovenia",
+        cloudflareId: "46f25b16-ac46-4ba4-4172-f17ecc11b900",
+        position: [46.358, 14.088] as LatLngExpression,
+        date: "9/20",
+        iconType: "monument"
+    },
+    {
+        title: "Above the Clouds",
+        desc: "",
+        location: "Medvode, Slovenia",
+        cloudflareId: "86181367-8e08-499f-960a-ce16280ce800",
+        position: [46.123, 14.373] as LatLngExpression,
+        date: "9/21",
+        iconType: "nature"
+    },
+    {
+        title: "Arboaral Respite",
+        desc: "",
+        location: "Medvode, Slovenia",
+        cloudflareId: "b7bf3496-7956-48cb-8bef-0788cef9f000",
+        position: [46.323, 14.192] as LatLngExpression,
+        date: "9/20",
+        iconType: "nature"
     }
 ],
 [ //Seg 10
@@ -886,23 +975,3 @@ const PoiList: Poi[][] = [[
 ]];
 
 export default PoiList;
-/**
-     * Soccer Monument 
-     * Amiens Cathedral
-     * Forest Corridor
-     * Hayfields
-     * Rolling Plains
-     * Les Andleys Castle
-     * Baguette Bike
-     * Baguette-o-matic
-     * Breteiul Forcast
-     * Avg. French Square
-     * Ruined Abbey
-     * Sees Cathedral
-     * Hunting Lodge
-     * Bike Progress Pic (Signpost)
-     * Castle Brigands
-     * Approach to Mont St Michel
-     * The Mont Proper
-     * Views of the Plains
-     */

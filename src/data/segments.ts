@@ -168,7 +168,7 @@ const segmentData = [
     color: "#00A676",
     location: "Primorska / Gorenjska, Slovenia",
     displayTitle: "A Realm Unto Itself",
-    headerImageIndex: 0,
+    headerImageIndex: 8,
     icon: GiMountainClimbing
   },
   {
