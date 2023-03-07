@@ -951,15 +951,113 @@ const PoiList: Poi[][] = [[
 ],
 [ //Seg 10
     {
-        title: "Header",
+        title: "Safe Haven",
         desc: "",
-        location: "",
-        cloudflareId: "5a4842a9-610e-495c-faec-1d8f71946000",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        location: "Slunj, Croatia",
+        cloudflareId: "c3362350-668d-4a3a-1ea3-37f8fb1fea00",
+        position: [45.116, 15.585] as LatLngExpression,
+        date: "9/24",
         iconType: "journal"
-
-    }
+    },
+    {
+        title: "Gloomy Forest",
+        desc: "",
+        location: "Plitvička jezera, Croatia",
+        cloudflareId: "9b10719e-4820-48ea-ff9a-e7709ef75f00",
+        position: [ 44.862, 15.582] as LatLngExpression,
+        date: "9/25",
+        iconType: "nature"
+    },
+    {
+        title: "Nor Glom of Night",
+        desc: "",
+        location: "Ličko Lešće, Croatia",
+        cloudflareId: "9c579ccb-304d-4603-9792-ba9c8e784d00",
+        position: [44.796, 15.330] as LatLngExpression,
+        date: "9/25",
+        iconType: "journal"
+    },
+    {
+        title: "Interior Jungle",
+        desc: "",
+        location: "Otrić, Croatia",
+        cloudflareId: "b855a2b5-50b3-4bf4-d295-f029f488d700",
+        position: [ 44.249, 16.063] as LatLngExpression,
+        date: "9/27",
+        iconType: "mountain"
+    },
+    {
+        title: "Crljivica Archelogical Site",
+        desc: "",
+        location: "Cista Provo, Croatia",
+        cloudflareId: "5a4842a9-610e-495c-faec-1d8f71946000",
+        position: [43.515, 16.928] as LatLngExpression,
+        date: "9/29",
+        iconType: "journal"
+    },
+    {
+        title: "Primeval Man",
+        desc: "",
+        location: "Cista Provo, Croatia",
+        cloudflareId: "d8ebac04-9cec-4b8a-0f4f-365ea7129700",
+        position: [43.515, 16.928] as LatLngExpression,
+        date: "9/29",
+        iconType: "journal"
+    },
+    {
+        title: "Coastal Bliss",
+        desc: "",
+        location: "Zadvarje, Croatia",
+        cloudflareId: "38e25ec0-86d8-419d-df28-6db2375a2100",
+        position: [43.403, 16.889] as LatLngExpression,
+        date: "9/30",
+        iconType: "mountain"
+    },
+    {
+        title: "Close Quarters",
+        desc: "",
+        location: "Baška Voda, Croatia",
+        cloudflareId: "7b43b2f1-5ff7-4f18-de14-8d6db3c2f600",
+        position: [43.355, 16.949] as LatLngExpression,
+        date: "9/30",
+        iconType: "journal"
+    },
+    {
+        title: "Take a Break",
+        desc: "",
+        location: "Makarska, Croatia",
+        cloudflareId: "49eb8287-8128-438a-c79e-594799810500",
+        position: [43.298, 17.015] as LatLngExpression,
+        date: "9/30",
+        iconType: "journal"
+    },
+    {
+        title: "Sunset",
+        desc: "",
+        location: "Baćina, Croatia",
+        cloudflareId: "9c7ab8b5-55ea-495e-7c8a-6d325d6c7e00",
+        position: [43.080, 17.388] as LatLngExpression,
+        date: "10/1",
+        iconType: "nature"
+    },
+    {
+        title: "Gradual Descent",
+        desc: "",
+        location: "Janjina, Croatia",
+        cloudflareId: "7d3a7d35-7cb9-4b11-d030-c51309bfff00",
+        position: [42.946, 17.359] as LatLngExpression,
+        date: "10/2",
+        iconType: "nature"
+    },
+    {
+        title: "City Wall",
+        desc: "",
+        location: "Ston, Croatia",
+        cloudflareId: "56171c54-5cd1-4ff6-b4ca-d80d52b44700",
+        position: [42.839, 17.698] as LatLngExpression,
+        date: "10/2",
+        iconType: "monument"
+    },
 ],
 [ //Seg 11
     {

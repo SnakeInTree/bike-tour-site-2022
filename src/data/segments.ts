@@ -183,7 +183,7 @@ const segmentData = [
     color: "#C5EBC3",
     location: "Kvarner / Dalmatia, Croatia",
     displayTitle: "Karstic Coast",
-    headerImageIndex: 0,
+    headerImageIndex: 4,
     icon: GiBeachBucket
   },
   {
