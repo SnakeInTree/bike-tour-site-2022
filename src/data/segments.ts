@@ -198,7 +198,7 @@ const segmentData = [
     color: "#FFD046",
     location: "Coastal Montenegro/Albania, Epirus, Greece",
     displayTitle: "Tour's End",
-    headerImageIndex: 0,
+    headerImageIndex: 5,
     icon: GiSunset
   }
 ] as Segment[];

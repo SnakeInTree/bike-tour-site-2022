@@ -1061,14 +1061,103 @@ const PoiList: Poi[][] = [[
 ],
 [ //Seg 11
     {
-        title: "Header",
+        title: "Pink",
         desc: "",
-        location: "",
-        cloudflareId: "1601001b-5da8-48fe-a469-076a75071200",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        location: "Herceg Novi, Montenegro",
+        cloudflareId: "04149ed2-32f0-434a-1dc0-3f3bd989d800",
+        position: [ 42.454, 18.5312] as LatLngExpression,
+        date: "10/3",
         iconType: "journal"
-
+    },
+    {
+        title: "Rozafa Castle",
+        desc: "",
+        location: "Shkodër, Albania",
+        cloudflareId: "3ebe06cd-8068-442c-a39b-0d0132bfb600",
+        position: [42.044, 19.490] as LatLngExpression,
+        date: "10/4",
+        iconType: "monument"
+    },
+    {
+        title: "Road Quality",
+        desc: "",
+        location: "Rrogozhine, Albania",
+        cloudflareId: "e9878229-1d1d-4abd-da96-a9b55e1a4b00",
+        position: [41.067, 19.654] as LatLngExpression,
+        date: "10/4",
+        iconType: "journal"
+    },
+    {
+        title: "Hilltop Fortifications",
+        desc: "",
+        location: "Berat, Albania",
+        cloudflareId: "2241c3e5-c21e-465a-48c5-33ca40cf9000",
+        position: [40.709, 19.939] as LatLngExpression,
+        date: "10/7",
+        iconType: "monument"
+    },
+    {
+        title: "Cursed Croissant",
+        desc: "",
+        location: "Berat, Albania",
+        cloudflareId: "6fa2676b-3675-4ec0-f31a-da1ccf700b00",
+        position: [40.709, 19.939] as LatLngExpression,
+        date: "10/7",
+        iconType: "journal"
+    },
+    {
+        title: "Moments Before Disaster",
+        desc: "",
+        location: "Çorovoda, Albania",
+        cloudflareId: "1601001b-5da8-48fe-a469-076a75071200",
+        position: [ 40.504, 20.226] as LatLngExpression,
+        date: "10/8",
+        iconType: "nature"
+    },
+    {
+        title: "Goat Path",
+        desc: "",
+        location: "Muzhakë, Albania",
+        cloudflareId: "1b3598a5-6ad4-4579-fc59-f12753cdbe00",
+        position: [ 40.392, 20.222 ] as LatLngExpression,
+        date: "10/8",
+        iconType: "nature"
+    },
+    {
+        title: "Fading Light",
+        desc: "",
+        location: "Muzhakë, Albania",
+        cloudflareId: "4b2f1fbe-e2cb-4772-72e8-4e07393dd600",
+        position: [ 40.356, 20.167 ] as LatLngExpression,
+        date: "10/8",
+        iconType: "mountain"
+    },
+    {
+        title: "Streets After Rain",
+        desc: "",
+        location: "Ioannina, Greece",
+        cloudflareId: "b8606bac-9169-495f-1d97-05f09de52000",
+        position: [39.670, 20.856] as LatLngExpression,
+        date: "10/11",
+        iconType: "journal"
+    },
+    {
+        title: "End of Tour",
+        desc: "",
+        location: "Ioannina, Greece",
+        cloudflareId: "87181588-1eb8-4498-d186-f45a3ad44e00",
+        position: [39.670, 20.856] as LatLngExpression,
+        date: "10/11",
+        iconType: "journal"
+    },
+    {
+        title: "Packing Up",
+        desc: "",
+        location: "Ioannina, Greece",
+        cloudflareId: "bfb5775d-5e1b-4905-b647-11c5f5733f00",
+        position: [39.670, 20.856] as LatLngExpression,
+        date: "10/12",
+        iconType: "journal"
     }
 ]];
 
