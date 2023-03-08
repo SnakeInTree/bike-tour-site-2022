@@ -639,91 +639,526 @@ const PoiList: Poi[][] = [[
 ],
 [ //Seg 7
     {
-        title: "Header",
+        title: "Lake Cruise",
         desc: "",
-        location: "",
-        cloudflareId: "d317827a-6f44-4c7e-1e6c-3b212a181200",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        location: "Varenna, Italy",
+        cloudflareId: "0a136cd7-2445-4f2b-1036-997e76cade00",
+        position: [46.0105, 9.283] as LatLngExpression,
+        date: "9/4",
         iconType: "journal"
+    },      
+    {
+        title: "Riverside Chapel",
+        desc: "",
+        location: "Trezzo sull'Adda, Italy",
+        cloudflareId: "d690fad9-0411-4a78-1851-da43ed582200",
+        position: [45.611, 9.520] as LatLngExpression,
+        date: "9/5",
+        iconType: "monument"
     },    
     {
-        title: "old",
+        title: "Garda",
         desc: "",
-        location: "",
-        cloudflareId: "81f7ba5b-f362-482f-54cc-71a1cca81200",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        location: "Cola, Italy",
+        cloudflareId: "052798fb-aae4-4d60-3de2-d2b71824a200",
+        position: [45.444, 10.673] as LatLngExpression,
+        date: "9/8",
+        iconType: "monument"
+    },    
+    {
+        title: "Grotto",
+        desc: "",
+        location: "Sirmione, Italy",
+        cloudflareId: "1cc5e765-46e0-4ebd-971a-a182f679bd00",
+        position: [45.501, 10.60] as LatLngExpression,
+        date: "9/8",
+        iconType: "monument"
+    },     
+    {
+        title: "Olive Grove",
+        desc: "",
+        location: "Sirmione, Italy",
+        cloudflareId: "1eb28bc5-0f7c-4523-42ff-36cbef1fde00",
+        position: [45.501, 10.60] as LatLngExpression,
+        date: "9/8",
+        iconType: "nature"
+    },     
+    {
+        title: "Drenched",
+        desc: "",
+        location: "Dolcè, Italy",
+        cloudflareId: "957c7ac9-dfcb-4653-bf60-528ef1ca9200",
+        position: [45.543, 10.838] as LatLngExpression,
+        date: "9/9",
         iconType: "journal"
+    },   
+    {
+        title: "Feline Friend?",
+        desc: "",
+        location: "Sant'Anna d'Alfaedo, Italy",
+        cloudflareId: "9ebe487e-50fa-4618-80bd-3c04df5a1c00",
+        position: [45.644, 10.928] as LatLngExpression,
+        date: "9/9",
+        iconType: "journal"
+    },     
+    {
+        title: "Vanity Pic",
+        desc: "",
+        location: "Parco Naturale Regionale della Lessinia, Italy",
+        cloudflareId: "d317827a-6f44-4c7e-1e6c-3b212a181200",
+        position: [45.692, 11.0567] as LatLngExpression,
+        date: "9/9",
+        iconType: "mountain"
+    },
+    {
+        title: "Dinner of Champions",
+        desc: "",
+        location: "Parco Naturale Regionale della Lessinia, Italy",
+        cloudflareId: "1236c670-3b0a-4ef9-d095-5ed7b9848400",
+        position: [45.692, 11.0567] as LatLngExpression,
+        date: "9/9",
+        iconType: "journal"
+    }, 
+    {
+        title: "Trench Line",
+        desc: "",
+        location: "Parco Naturale Regionale della Lessinia, Italy",
+        cloudflareId: "85d6f759-6ecb-416a-e7fe-c51b78c78c00",
+        position: [45.714, 11.055] as LatLngExpression,
+        date: "9/9",
+        iconType: "monument"
+    }, 
+    {
+        title: "Golden Hour",
+        desc: "",
+        location: "Parco Naturale Regionale della Lessinia, Italy",
+        cloudflareId: "4ebc6bf9-4ada-4280-dffb-8627b9c34900",
+        position: [45.714, 11.055] as LatLngExpression,
+        date: "9/9",
+        iconType: "nature"
+    }, 
+    {
+        title: "Marmot!",
+        desc: "",
+        location: "Parco Naturale Regionale della Lessinia, Italy",
+        cloudflareId: "5798563d-f133-43a8-dde6-e100ce68a100",
+        position: [45.709, 11.058] as LatLngExpression,
+        date: "9/9",
+        iconType: "animal"
+    },
+    {
+        title: "Dolomite",
+        desc: "",
+        location: "Parco Naturale Regionale della Lessinia, Italy",
+        cloudflareId: "4314735a-76a5-4a6c-81c1-ed3804a17b00",
+        position: [45.681, 11.066] as LatLngExpression,
+        date: "9/9",
+        iconType: "mountain"
     }
 ],
 [ //Seg 8
     {
-        title: "Header",
+        title: "Plains of Veneto",
         desc: "",
-        location: "",
+        location: "Bedin Paolini, Italy",
         cloudflareId: "241f39a5-a453-448d-ba85-51feebc24f00",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        position: [45.476, 11.484] as LatLngExpression,
+        date: "9/10",
         iconType: "journal"
-
-    }
+    },
+    {
+        title: "Plaza",
+        desc: "",
+        location: "Vicenza, Italy",
+        cloudflareId: "d12bc385-09ff-4dad-d775-b34a5b0c6400",
+        position: [45.537, 11.548] as LatLngExpression,
+        date: "9/11",
+        iconType: "journal"
+    },
+    {
+        title: "Plaza",
+        desc: "",
+        location: "Piazza dei Signori, Padua, Italy",
+        cloudflareId: "48ac5825-8ede-4566-aef8-557c545fbb00",
+        position: [45.407, 11.873] as LatLngExpression,
+        date: "9/11",
+        iconType: "journal"
+    },
+    {
+        title: "Mosquito Coast",
+        desc: "",
+        location: "Lido, Italy",
+        cloudflareId: "f0f51e7a-7241-48f3-ea23-7eddd96efc00",
+        position: [45.416, 12.380] as LatLngExpression,
+        date: "9/13",
+        iconType: "journal"
+    },
+    {
+        title: "Doge's Palace",
+        desc: "",
+        location: "Venice, Italy",
+        cloudflareId: "72f857c4-da66-4d54-79aa-2943bc666a00",
+        position: [45.433, 12.339] as LatLngExpression,
+        date: "9/13",
+        iconType: "monument"
+    },
+    {
+        title: "City",
+        desc: "",
+        location: "Venice, Italy",
+        cloudflareId: "c1735299-3112-40b8-47dd-b285d7b82a00",
+        position: [45.433, 12.339] as LatLngExpression,
+        date: "9/13",
+        iconType: "monument"
+    },
+    {
+        title: "Ferry Ride",
+        desc: "",
+        location: "Venice, Italy",
+        cloudflareId: "2f4ca548-c5b9-4265-35f5-8ec9f7fb9700",
+        position: [45.433, 12.339] as LatLngExpression,
+        date: "9/13",
+        iconType: "monument"
+    },
+    {
+        title: "Vaporettos",
+        desc: "",
+        location: "St. Mark's Plaza, Venice, Italy",
+        cloudflareId: "9256da07-15c5-4cf6-5322-8a8b1c685e00",
+        position: [45.433, 12.339] as LatLngExpression,
+        date: "9/13",
+        iconType: "monument"
+    },
+    {
+        title: "Bike Fit",
+        desc: "",
+        location: "Jesolo, Italy",
+        cloudflareId: "20396f43-33f1-42a3-a793-b92fe09a3600",
+        position: [45.507, 12.647] as LatLngExpression,
+        date: "9/13",
+        iconType: "journal"
+    },
+    {
+        title: "Weedy Campsite",
+        desc: "",
+        location: "Caorle, Italy",
+        cloudflareId: "7f4d7f04-9ba8-40e4-d350-30d3bc36d100",
+        position: [45.626, 12.893] as LatLngExpression,
+        date: "9/14",
+        iconType: "camp"
+    },
 ],
 [ //Seg 9
     {
-        title: "old",
+        title: "Wine & Stay",
         desc: "",
-        location: "",
-        cloudflareId: "46f25b16-ac46-4ba4-4172-f17ecc11b900",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        location: "Gorizia, Italy",
+        cloudflareId: "306b5b11-8e03-4b63-806a-99e0fd9f4e00",
+        position: [45.967, 13.612] as LatLngExpression,
+        date: "9/15",
         iconType: "journal"
-
+    },  
+    {
+        title: "Cloudside Camping",
+        desc: "",
+        location: "Tolmin, Slovenia",
+        cloudflareId: "32d7118c-390e-4991-47b8-2b13d6087b00",
+        position: [46.183, 13.663] as LatLngExpression,
+        date: "9/18",
+        iconType: "camp"
+    },    
+    {
+        title: "Exposure",
+        desc: "",
+        location: "Kobarid, Slovenia",
+        cloudflareId: "38b12e9a-1254-4f10-b2b3-3719df13b900",
+        position: [45.416, 12.380] as LatLngExpression,
+        date: "9/18",
+        iconType: "journal"
+    },    
+    {
+        title: "Vrši",
+        desc: "",
+        location: "Kobarid, Slovenia",
+        cloudflareId: "cefbb5fa-9537-4718-c8fa-20ab7176d800",
+        position: [46.250, 13.496] as LatLngExpression,
+        date: "9/18",
+        iconType: "journal"
+    },   
+    {
+        title: "Dr. Julius Kugy Monument",
+        desc: "",
+        location: "Soča Valley, Slovenia",
+        cloudflareId: "5be9f633-ec7b-4e3c-db09-8f759546c100",
+        position: [46.404, 13.742] as LatLngExpression,
+        date: "9/19",
+        iconType: "monument"
+    },  
+    {
+        title: "Vršič",
+        desc: "",
+        location: "Kranjska Gora, Slovenia",
+        cloudflareId: "e74c7a97-12b5-4c7f-6bba-527a17887f00",
+        position: [46.415, 13.741] as LatLngExpression,
+        date: "9/19",
+        iconType: "mountain"
+    },     
+    {
+        title: "Vršič Pass",
+        desc: "",
+        location: "Kranjska Gora, Slovenia",
+        cloudflareId: "5eafea34-f4e0-4ee0-8df8-56029b033a00",
+        position: [46.441, 13.753] as LatLngExpression,
+        date: "9/19",
+        iconType: "mountain"
+    },    
+    {
+        title: "Sponge Dinner",
+        desc: "",
+        location: "Lake Bled, Slovenia",
+        cloudflareId: "afbe1d1d-d494-4663-ab52-cda4e5f2f100",
+        position: [46.369, 14.083] as LatLngExpression,
+        date: "9/19",
+        iconType: "mountain"
+    },
+    {
+        title: "Island Chapel",
+        desc: "",
+        location: "Lake Bled, Slovenia",
+        cloudflareId: "46f25b16-ac46-4ba4-4172-f17ecc11b900",
+        position: [46.358, 14.088] as LatLngExpression,
+        date: "9/20",
+        iconType: "monument"
+    },
+    {
+        title: "Above the Clouds",
+        desc: "",
+        location: "Medvode, Slovenia",
+        cloudflareId: "86181367-8e08-499f-960a-ce16280ce800",
+        position: [46.123, 14.373] as LatLngExpression,
+        date: "9/21",
+        iconType: "nature"
+    },
+    {
+        title: "Arboaral Respite",
+        desc: "",
+        location: "Medvode, Slovenia",
+        cloudflareId: "b7bf3496-7956-48cb-8bef-0788cef9f000",
+        position: [46.323, 14.192] as LatLngExpression,
+        date: "9/20",
+        iconType: "nature"
     }
 ],
 [ //Seg 10
     {
-        title: "Header",
+        title: "Safe Haven",
         desc: "",
-        location: "",
-        cloudflareId: "5a4842a9-610e-495c-faec-1d8f71946000",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        location: "Slunj, Croatia",
+        cloudflareId: "c3362350-668d-4a3a-1ea3-37f8fb1fea00",
+        position: [45.116, 15.585] as LatLngExpression,
+        date: "9/24",
         iconType: "journal"
-
-    }
+    },
+    {
+        title: "Gloomy Forest",
+        desc: "",
+        location: "Plitvička jezera, Croatia",
+        cloudflareId: "9b10719e-4820-48ea-ff9a-e7709ef75f00",
+        position: [ 44.862, 15.582] as LatLngExpression,
+        date: "9/25",
+        iconType: "nature"
+    },
+    {
+        title: "Nor Glom of Night",
+        desc: "",
+        location: "Ličko Lešće, Croatia",
+        cloudflareId: "9c579ccb-304d-4603-9792-ba9c8e784d00",
+        position: [44.796, 15.330] as LatLngExpression,
+        date: "9/25",
+        iconType: "journal"
+    },
+    {
+        title: "Interior Jungle",
+        desc: "",
+        location: "Otrić, Croatia",
+        cloudflareId: "b855a2b5-50b3-4bf4-d295-f029f488d700",
+        position: [ 44.249, 16.063] as LatLngExpression,
+        date: "9/27",
+        iconType: "mountain"
+    },
+    {
+        title: "Crljivica Archelogical Site",
+        desc: "",
+        location: "Cista Provo, Croatia",
+        cloudflareId: "5a4842a9-610e-495c-faec-1d8f71946000",
+        position: [43.515, 16.928] as LatLngExpression,
+        date: "9/29",
+        iconType: "journal"
+    },
+    {
+        title: "Primeval Man",
+        desc: "",
+        location: "Cista Provo, Croatia",
+        cloudflareId: "d8ebac04-9cec-4b8a-0f4f-365ea7129700",
+        position: [43.515, 16.928] as LatLngExpression,
+        date: "9/29",
+        iconType: "journal"
+    },
+    {
+        title: "Coastal Bliss",
+        desc: "",
+        location: "Zadvarje, Croatia",
+        cloudflareId: "38e25ec0-86d8-419d-df28-6db2375a2100",
+        position: [43.403, 16.889] as LatLngExpression,
+        date: "9/30",
+        iconType: "mountain"
+    },
+    {
+        title: "Close Quarters",
+        desc: "",
+        location: "Baška Voda, Croatia",
+        cloudflareId: "7b43b2f1-5ff7-4f18-de14-8d6db3c2f600",
+        position: [43.355, 16.949] as LatLngExpression,
+        date: "9/30",
+        iconType: "journal"
+    },
+    {
+        title: "Take a Break",
+        desc: "",
+        location: "Makarska, Croatia",
+        cloudflareId: "49eb8287-8128-438a-c79e-594799810500",
+        position: [43.298, 17.015] as LatLngExpression,
+        date: "9/30",
+        iconType: "journal"
+    },
+    {
+        title: "Sunset",
+        desc: "",
+        location: "Baćina, Croatia",
+        cloudflareId: "9c7ab8b5-55ea-495e-7c8a-6d325d6c7e00",
+        position: [43.080, 17.388] as LatLngExpression,
+        date: "10/1",
+        iconType: "nature"
+    },
+    {
+        title: "Gradual Descent",
+        desc: "",
+        location: "Janjina, Croatia",
+        cloudflareId: "7d3a7d35-7cb9-4b11-d030-c51309bfff00",
+        position: [42.946, 17.359] as LatLngExpression,
+        date: "10/2",
+        iconType: "nature"
+    },
+    {
+        title: "City Wall",
+        desc: "",
+        location: "Ston, Croatia",
+        cloudflareId: "56171c54-5cd1-4ff6-b4ca-d80d52b44700",
+        position: [42.839, 17.698] as LatLngExpression,
+        date: "10/2",
+        iconType: "monument"
+    },
 ],
 [ //Seg 11
     {
-        title: "Header",
+        title: "Pink",
         desc: "",
-        location: "",
-        cloudflareId: "1601001b-5da8-48fe-a469-076a75071200",
-        position: [52.31, 4.76] as LatLngExpression,
-        date: "7/20",
+        location: "Herceg Novi, Montenegro",
+        cloudflareId: "04149ed2-32f0-434a-1dc0-3f3bd989d800",
+        position: [ 42.454, 18.5312] as LatLngExpression,
+        date: "10/3",
         iconType: "journal"
-
+    },
+    {
+        title: "Rozafa Castle",
+        desc: "",
+        location: "Shkodër, Albania",
+        cloudflareId: "3ebe06cd-8068-442c-a39b-0d0132bfb600",
+        position: [42.044, 19.490] as LatLngExpression,
+        date: "10/4",
+        iconType: "monument"
+    },
+    {
+        title: "Road Quality",
+        desc: "",
+        location: "Rrogozhine, Albania",
+        cloudflareId: "e9878229-1d1d-4abd-da96-a9b55e1a4b00",
+        position: [41.067, 19.654] as LatLngExpression,
+        date: "10/4",
+        iconType: "journal"
+    },
+    {
+        title: "Hilltop Fortifications",
+        desc: "",
+        location: "Berat, Albania",
+        cloudflareId: "2241c3e5-c21e-465a-48c5-33ca40cf9000",
+        position: [40.709, 19.939] as LatLngExpression,
+        date: "10/7",
+        iconType: "monument"
+    },
+    {
+        title: "Cursed Croissant",
+        desc: "",
+        location: "Berat, Albania",
+        cloudflareId: "6fa2676b-3675-4ec0-f31a-da1ccf700b00",
+        position: [40.709, 19.939] as LatLngExpression,
+        date: "10/7",
+        iconType: "journal"
+    },
+    {
+        title: "Moments Before Disaster",
+        desc: "",
+        location: "Çorovoda, Albania",
+        cloudflareId: "1601001b-5da8-48fe-a469-076a75071200",
+        position: [ 40.504, 20.226] as LatLngExpression,
+        date: "10/8",
+        iconType: "nature"
+    },
+    {
+        title: "Goat Path",
+        desc: "",
+        location: "Muzhakë, Albania",
+        cloudflareId: "1b3598a5-6ad4-4579-fc59-f12753cdbe00",
+        position: [ 40.392, 20.222 ] as LatLngExpression,
+        date: "10/8",
+        iconType: "nature"
+    },
+    {
+        title: "Fading Light",
+        desc: "",
+        location: "Muzhakë, Albania",
+        cloudflareId: "4b2f1fbe-e2cb-4772-72e8-4e07393dd600",
+        position: [ 40.356, 20.167 ] as LatLngExpression,
+        date: "10/8",
+        iconType: "mountain"
+    },
+    {
+        title: "Streets After Rain",
+        desc: "",
+        location: "Ioannina, Greece",
+        cloudflareId: "b8606bac-9169-495f-1d97-05f09de52000",
+        position: [39.670, 20.856] as LatLngExpression,
+        date: "10/11",
+        iconType: "journal"
+    },
+    {
+        title: "End of Tour",
+        desc: "",
+        location: "Ioannina, Greece",
+        cloudflareId: "87181588-1eb8-4498-d186-f45a3ad44e00",
+        position: [39.670, 20.856] as LatLngExpression,
+        date: "10/11",
+        iconType: "journal"
+    },
+    {
+        title: "Packing Up",
+        desc: "",
+        location: "Ioannina, Greece",
+        cloudflareId: "bfb5775d-5e1b-4905-b647-11c5f5733f00",
+        position: [39.670, 20.856] as LatLngExpression,
+        date: "10/12",
+        iconType: "journal"
     }
 ]];
 
 export default PoiList;
-/**
-     * Soccer Monument 
-     * Amiens Cathedral
-     * Forest Corridor
-     * Hayfields
-     * Rolling Plains
-     * Les Andleys Castle
-     * Baguette Bike
-     * Baguette-o-matic
-     * Breteiul Forcast
-     * Avg. French Square
-     * Ruined Abbey
-     * Sees Cathedral
-     * Hunting Lodge
-     * Bike Progress Pic (Signpost)
-     * Castle Brigands
-     * Approach to Mont St Michel
-     * The Mont Proper
-     * Views of the Plains
-     */

@@ -138,7 +138,7 @@ const segmentData = [
     color: "#A52A2A",
     location: "Lombardy, Italy",
     displayTitle: "Dolomiti",
-    headerImageIndex: 0,
+    headerImageIndex: 7,
     icon: GiItalia
   },
   {
@@ -168,7 +168,7 @@ const segmentData = [
     color: "#00A676",
     location: "Primorska / Gorenjska, Slovenia",
     displayTitle: "A Realm Unto Itself",
-    headerImageIndex: 0,
+    headerImageIndex: 8,
     icon: GiMountainClimbing
   },
   {
@@ -183,7 +183,7 @@ const segmentData = [
     color: "#C5EBC3",
     location: "Kvarner / Dalmatia, Croatia",
     displayTitle: "Karstic Coast",
-    headerImageIndex: 0,
+    headerImageIndex: 4,
     icon: GiBeachBucket
   },
   {
@@ -198,7 +198,7 @@ const segmentData = [
     color: "#FFD046",
     location: "Coastal Montenegro/Albania, Epirus, Greece",
     displayTitle: "Tour's End",
-    headerImageIndex: 0,
+    headerImageIndex: 5,
     icon: GiSunset
   }
 ] as Segment[];
