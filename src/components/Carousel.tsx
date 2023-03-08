@@ -56,7 +56,7 @@ const Carousel = ({pois, imageData}: {pois: Poi[], imageData: string[]}) => {
 
     return (
         <>
-            <IconContext.Provider value={{ size: "2rem"}}>
+            <IconContext.Provider value={{ size: "1em"}}>
                 <div className="absolute z-450 top-0 right-0 m-8 cursor-pointer text-white" onClick={handleClose}><AiOutlineClose /></div>
                 <div className="absolute z-450 top-2/5 right-0 m-8 cursor-pointer text-white" onClick={handleIncreasePoiIndex} ><AiOutlineRight /></div>
                 <div className="absolute z-450 top-2/5 left-0 m-8 cursor-pointer text-white" onClick={handleDecreasePoiIndex} ><AiOutlineLeft /></div>

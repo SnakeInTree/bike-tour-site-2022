@@ -15,7 +15,7 @@ const Footer = ( {activeSegmentId}: {activeSegmentId: number} ) => {
     const regressSegmentId = () => activeSegmentId > -1 ? dispatch(updateActiveSegment(activeSegmentId - 1)) : null;
 
     return (
-        <IconContext.Provider value={{size: "3rem"}}>
+        <IconContext.Provider value={{size: "3em"}}>
             <div className="flex flex-row w-full text-2xl font-semibold font-mapheader py-4">   
                 {prevSegment ? 
                     (

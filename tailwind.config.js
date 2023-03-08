@@ -18,8 +18,10 @@ module.exports = {
       ping: "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite",
       pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       bounce: "bounce 1s infinite",
+      landingPageInfoSmall: "landingPageInfoSmall 2s ease-in-out forwards",
       landingPageBubble: "landingPageBubble 2s ease-in-out forwards",
       landingPageBikeRotate: "landingPageBikeRotate 2s ease-in-out forwards",
+      landingPageBikeRotateSmall: "landingPageBikeRotateSmall 2s ease-in-out forwards",
       landingPageBikeRide: "landingPageBikeRide 1s linear infinite",
       landingPageLoading: "landingPageLoading 2s ease-in-out forwards"
     },
@@ -600,6 +602,14 @@ module.exports = {
           right: "-45rem"
         }
       },
+      landingPageInfoSmall: {
+        from: {
+          bottom: "0rem"
+        },
+        to: {
+          bottom: "-20rem"
+        }
+      },
       landingPageBikeRotate: {
         from: {
           transform: "rotate(0deg)",
@@ -609,6 +619,18 @@ module.exports = {
         to: {
           transform: "rotate(-12deg)",
           top: "-5rem",
+          left: "0rem"
+        }
+      },
+      landingPageBikeRotateSmall: {
+        from: {
+          transform: "rotate(0deg)",
+          top: "-3rem",
+          left: "1rem"
+        },
+        to: {
+          transform: "rotate(-12deg)",
+          top: "-3rem",
           left: "0rem"
         }
       },
