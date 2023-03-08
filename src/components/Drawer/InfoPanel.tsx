@@ -27,7 +27,7 @@ const SectionTitle = ({activeSectionId, setActiveSectionId, content}: {content:I
     const isActive = activeSectionId === content.sectionId;
     const handleClick = () => setActiveSectionId(content.sectionId);
     const iconProps = {
-        size: "3rem",
+        size: "3em",
         color: isActive ? "#f2ebeb" : "#A23D3B"
     };
 
@@ -53,7 +53,7 @@ const SectionInfo = ({activeSectionId}: {activeSectionId: number}) => {
 
 const SectionInfoContent = ({ content }: { content:SectionContent }) => {
     const iconProps = {
-        size: "2rem",
+        size: "1em",
         color: "#A23D3B"
     };
     return (

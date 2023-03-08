@@ -10,7 +10,7 @@ import { updateActiveSegment } from "@/store/reducers/segmentList";
 type handleClickFn = () => void;
 
 const Button = ({Icon, iconSize, position, handleClick}: {Icon: IconType,iconSize: number, position: string, handleClick: handleClickFn }) => {
-    const size = {size: `${iconSize}rem`};
+    const size = {size: `${iconSize}em`};
     return (
         <IconContext.Provider value={size}>
             <div className={`fixed ${position} p-2 z-450 cursor-pointer rounded-xl transition-colors ease-in-out duration-300 hover:bg-red-100`}>

@@ -35,7 +35,7 @@ const LandingPage = () => {
                     onClick={handleClick}
                 >
                     Begin
-                    <IconContext.Provider value={{size: "2rem"}}><AiOutlineArrowRight /></IconContext.Provider>
+                    <IconContext.Provider value={{size: "1em"}}><AiOutlineArrowRight /></IconContext.Provider>
                 </Link>
             </div>
         </>

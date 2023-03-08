@@ -17,7 +17,7 @@ const PhotoGallery = ({poiList, images}: {poiList: Poi[], images: string[]}) => 
 
     return (
         <div className="relative w-12/12 h-102 flex flex-col items-center py-10 bg-titleGrey drop-shadow-lg">
-            <IconContext.Provider value={{ size: "2rem"}}>
+            <IconContext.Provider value={{ size: "1em"}}>
                 <div className="absolute z-450 top-1/3 right-0 m-8 cursor-pointer text-white" onClick={handleIncreasePoiIndex}><AiOutlineRight /></div>
                 <div className="absolute z-450 top-1/3 left-0 m-8 cursor-pointer text-white" onClick={handleDecreasePoiIndex}><AiOutlineLeft /></div>
             </IconContext.Provider>
