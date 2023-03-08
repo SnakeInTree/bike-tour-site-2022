@@ -13,14 +13,14 @@ const LandingPage = () => {
     const handleClick = () => setEffect(true);
 
     return (
-        <div className="relative w-screen h-screen overflow-x-hidden bg-green-200">
+        <div className="relative w-screen h-screen overflow-hidden bg-green-200">
             <NamePlate />
             <div className="flex flex-col h-full justify-center items-center">
                 <TitleSmall />
-                <div className={"relative " + (effect ? "animate-landingPageBikeRotate" : "animate-landingPageBikeRide nil:-top-12 nil:left-4 lg:top-12 lg:-left-80")}>
+                <div className={"relative " + (effect ? "lg:animate-landingPageBikeRotate nil:animate-landingPageBikeRotateSmall" : "animate-landingPageBikeRide nil:-top-12 nil:left-4 lg:top-12 lg:-left-80")}>
                     <Animations />
                 </div>
-                <InfoSmall handleClick={handleClick} />
+                <InfoSmall effect={effect} handleClick={handleClick} />
                 {effect ? (<span className={"relative italic text-xl top-96 animate-landingPageLoading"}>{loadingText}</span>) : null}
             </div>
             <InfoBubble effect={effect} handleClick={handleClick} />
@@ -40,10 +40,10 @@ const TitleSmall = () => {
     );
 };
 
-const InfoSmall = ({handleClick}:{handleClick:any}) => {
+const InfoSmall = ({effect, handleClick}:{effect:boolean, handleClick:any}) => {
     const writeUp = "In the Summer of 2022, I bicycled over 4000 kilometers between Holland and Greece.\nIn the process, I visited 10 countries, climed over 30,000 meters of elevation, and ate countless baguettes.";
     return (
-        <div className="lg:hidden nil:flex absolute nil:ml-4 md:ml-0 nil:bottom-4 md:-bottom-4 w-3/4 text-xl font-playfair justify-around items-center">
+        <div className={"lg:hidden nil:flex absolute nil:ml-4 md:ml-0 nil:bottom-4 md:-bottom-4 w-3/4 text-xl font-playfair justify-around items-center " + (effect ? "animate-landingPageInfoSmall" : null)}>
             <p className="my-12 text-center w-2/3 nil:hidden md:block">{writeUp}</p>
             <Link 
                 href={"/"} 
@@ -67,16 +67,18 @@ const InfoBubble = ({effect, handleClick}: {effect:boolean, handleClick: any}) =
         <div 
             className={"fixed right-24 top-4 h-160 w-160 nil:hidden lg:flex flex-col justify-center items-center z-30 text-statblack drop-shadow-xl font-mapheader bg-red-200 rounded-full " + (effect ? "animate-landingPageBubble" : null)}
         >
-            <p className="text-5xl font-extrabold">{titlePtOne}</p>
+            <p className="text-5xl font-extrabold mt-10">{titlePtOne}</p>
             <p className="text-5xl font-extrabold">{titlePtTwo}</p>
             <p className="text-2xl w-10/12 my-12 text-center font-playfair">{writeUp}</p>
             <Link 
                 href={"/"} 
-                className="flex flex-row items-center justify-around text-2xl text-tan bg-statblack p-4 rounded-2xl font-playfair font-bold drop-shadow-xl transition-colors ease-in-out duration-300 hover:bg-gray-800"
+                className="w-32 h-32 font-playfair text-xl flex flex-row items-center justify-center rounded-full transition-all ease-in-out duration-300 border-2 hover:drop-shadow-lg hover:bg-green-200"
                 onClick={handleClick}
             >
                 Begin
-                <IconContext.Provider value={{size: "1em"}}><AiOutlineArrowRight /></IconContext.Provider>
+                <span className="mt-0.5 ml-4 transition-all ease-in-out duration-300">
+                    <IconContext.Provider value={{size: "1em"}}><AiOutlineArrowRight /></IconContext.Provider>
+                </span>
             </Link>
         </div>
     );
