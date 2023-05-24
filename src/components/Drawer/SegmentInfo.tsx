@@ -10,6 +10,7 @@ import Footer from "./Footer";
 import { fetchImages } from "@/apiUtil/cloudflare";
 import segmentData from "@/data/segments";
 import { segmentStats } from "@/data/stats";
+import { SegmentSectionContentList } from "@/data/segmentText";
 import { text } from "@/data/text";
 import { Poi, Segment, SegmentText } from "@/store/models";
 import config from "@/config/default.json";
@@ -37,7 +38,7 @@ const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
                     <StatsBlock statList={segmentStats[activeSegmentId]} />
                     <Paragraphs segmentText={text.segmentText[segment.segmentId]} />
                     <PhotoGallery poiList={segment.pois} images={data} />
-                    <InfoPanel />
+                    <InfoPanel infoPanelText={SegmentSectionContentList[activeSegmentId]} />
                     <Footer activeSegmentId={activeSegmentId} /> 
                 </div>
             }   

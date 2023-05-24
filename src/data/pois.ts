@@ -243,7 +243,7 @@ const PoiList: Poi[][] = [[
     }, 
     {
         title: "Abbey of Saint-Evroul",
-        desc: "",
+        desc: "This former Benedictine Abbey was once a grand estate. Sketches from the 17th century show a palatial commune, with a towering cathedral accompanied by dormitories and surrounding farmland. Unfortunately, following the French Revolution, the Abbey was seized and subsequently had its roof and riches carried away. Today, only a few columns and entryways still stand.",
         location: "Saint-Evroult-Notre-Dame-du-Bois, France",
         cloudflareId: "d0062a2c-4158-4ca6-b886-a30e1944bb00",
         position: [48.791, 0.462] as LatLngExpression,
@@ -252,7 +252,7 @@ const PoiList: Poi[][] = [[
     }, 
     {
         title: "Château de Carrouges",
-        desc: "",
+        desc: "This castle was originally built as a defensive structure (moat and all) before being turned into a comfortable estate. It was later used as a hunting lodge; the lower floor showcases unique decorative pins which were created each year by the aristocrats who used the lodge as a summer retreat. ",
         location: "Carrouges, France",
         cloudflareId: "32d24b71-245f-4bf9-84d1-3095edd2a800",
         position: [48.561, -0.154] as LatLngExpression,
@@ -270,7 +270,7 @@ const PoiList: Poi[][] = [[
     }, 
     {
         title: "Mont Saint-Michel",
-        desc: "",
+        desc: "The abbey looks impossible, like something from fantasy. The closer I stepped, the more I felt that I was following in the footsteps of generations of pilgrims who had visited this site during journeys of their own. ",
         location: "Mont Saint-Michel, France",
         cloudflareId: "c87e36b9-f680-499a-d504-23ac9fcef700",
         position: [48.634, -1.511] as LatLngExpression,
@@ -279,7 +279,7 @@ const PoiList: Poi[][] = [[
     }, 
     {
         title: "Abbey Streets",
-        desc: "",
+        desc: "The streets are cramped and crowded with shoppers and stalls; less Rivendell, more Coney Island. The Abbey is aware of the chaos that goes on beneath them -- placards scattered about inform summer visitors that the tiny commune has always been crowded during the warmer months, complete with drawings of 16th century pilgrims bumping shoulders. In this sense, the claustrophobia is all part of an authentic pilgrimage!",
         location: "Mont Saint-Michel, France",
         cloudflareId: "032a154f-4912-4817-b820-7340e8efd700",
         position: [48.634, -1.511] as LatLngExpression,
@@ -287,8 +287,8 @@ const PoiList: Poi[][] = [[
         iconType: "journal"
     }, 
     {
-        title: "Inland Sea",
-        desc: "",
+        title: "Inland Desert",
+        desc: "The low tide leaves miles of barren sands standing between the Abbey and the sea. I could look down and see picnic blankets and umbrellas being set out by adventurous tourists.",
         location: "Mont Saint-Michel, France",
         cloudflareId: "e2380ff5-8324-4fc0-dea9-19c9a8beec00",
         position: [48.634, -1.511] as LatLngExpression,
@@ -299,7 +299,7 @@ const PoiList: Poi[][] = [[
 [ //Seg Three
     {
         title: "Wild Camp",
-        desc: "",
+        desc: "This forest just south of Domfront was my first time wild camping. At dusk, I left the bike path and wandered into the woods to find a flat patch of ground. The night was peaceful, but I awoke to a frightening sight -- dozens of daddy-long-leg spiders, hanging on the other side of the tent mesh, inches from my face. I brushed them off, and was on my way.",
         location: "Saint-Mars-d'Égrenne, France",
         cloudflareId: "e9811838-615c-4ee7-2e39-82fd225edd00",
         position: [48.55, -0.715] as LatLngExpression,
@@ -308,7 +308,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "River District",
-        desc: "",
+        desc: "A well-signed gravel path follows the Mayenne river from Domfront to Laval, and, in my opinion, is one of the best places to cycle in France. Small kiosks on the river bank offer coffee, water and pastries to passing cyclists. Stately hotels and quiet campsites abound. Life doesn’t get much better than this. ",
         location: "Mayenne, France",
         cloudflareId: "bfae1933-b618-456d-28eb-88786d249500",
         position: [48.302, -0.605] as LatLngExpression,
@@ -317,7 +317,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "The Museum of Naïve Art",
-        desc: "",
+        desc: "In Laval I stopped by a museum showcasing artwork deemed \"unclassifiable\", on account of its creator's originality. The results are kooky but engaging -- one of my favorite pieces was this lineup of lizard men lining up for kiosks run by grimacing clerks. The museum is free, and offered a great respite from the boiling heat.",
         location: "Laval, France",
         cloudflareId: "9dd15221-f979-471d-4ba2-97418da9b600",
         position: [48.0639, -0.767] as LatLngExpression,
@@ -326,7 +326,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Riverside Brew",
-        desc: "",
+        desc: "It was mid-August, and the evenings were warm. My lack of reservation resulted in a nearby restaurant turning me away, but I was able to buy a few beers before shoving off. I dipped my feet in the water and watched the clouds go by.",
         location: "La Jaille-Yvon, France",
         cloudflareId: "132f9d86-d7ab-43e1-949f-688240006000",
         position: [47.718, -0.667] as LatLngExpression,
@@ -335,7 +335,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Apocalypse Tapestry",
-        desc: "",
+        desc: "This set of tapestries was commissioned in the late 14th century by Louis I. The artwork, depicting the events of the Book of Revelation, is massive, totaling six meters high and one hundred and forty meters long in total. Myself not being versed in the good book, I had a hard time deciphering the piece, but I still enjoyed seeing such richly-preserved art. The panel shown above depicts the battle between Saint Michael (here taking the form of a many-headed lion) and the 7-headed Beast of the Apocalypse.",
         location: "Angers, France",
         cloudflareId: "c60c6e7b-7ad3-4c22-eb69-63ed1db86200",
         position: [47.470, -0.556] as LatLngExpression,
@@ -344,7 +344,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Galerie David d'Angers",
-        desc: "",
+        desc: " Pierre-Jean David, known as David d'Angers, was a prolific sculptor active during the early 19th century famous for his works depicting heroes of myth and (then) modern science. The museum shown is a nearly complete collection of his works, storing either an original or mold of each of his many statues, busts and carvings.",
         location: "Angers, France",
         cloudflareId: "bb3ede05-fef0-4c8d-faa4-98701e4d9d00",
         position: [47.470, -0.556] as LatLngExpression,
@@ -353,7 +353,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Tranquil Garden",
-        desc: "",
+        desc: "Angers is a major French city, but it's not hard to find a quiet spot. I sat outside this urban garden and enjoyed a croissant while bumblebees lazily flew about.",
         location: "Angers, France",
         cloudflareId: "9b5ca11d-1570-4d09-7a38-afa0baad7900",
         position: [47.470, -0.556] as LatLngExpression,
@@ -362,7 +362,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Sunset",
-        desc: "",
+        desc: "The Loire was low this year, with massive patches of sand breaching the middle of this vital waterway. Still, the French made the most of it. I passed a number of picnic goers and people camped out on the banks. It was Friday night, and I could already hear sounds of revelry from celebrants further down the river. ",
         location: "Turquant, France",
         cloudflareId: "049dd76c-4ebf-4e0a-eef4-a2398f8d8800",
         position: [47.257, -0.0741] as LatLngExpression,
@@ -371,7 +371,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Dinner of Champions",
-        desc: "",
+        desc: "I didn't go dancing, but I enjoyed myself all the same. I walked by some French youths passed out in hammocks on my way to the riverbank where I set up camp and watched the sunset.",
         location: "Montsoreau, France",
         cloudflareId: "a2290404-7ae1-4475-dbc6-ede28f8cb600",
         position: [47.211, 0.0811] as LatLngExpression,
@@ -380,7 +380,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Loire Campsite",
-        desc: "",
+        desc: "This wildcamping spot was a little more exposed than I was used to, but some fallen trees made for good cover.",
         location: "Montsoreau, France",
         cloudflareId: "b287469a-d4b5-49d1-8f27-7ddc82aa9d00",
         position: [47.211, 0.0811] as LatLngExpression,
@@ -391,7 +391,7 @@ const PoiList: Poi[][] = [[
 [ //Seg Four
     {
         title: "Forest Totem",
-        desc: "",
+        desc: "Upon entering the woods, I came across this Owl Totem, roosting in a hollow stump. I gave a greeting, asked that he forgive my trespass in the forest, and was on my way.",
         location: "Reinhardsmunster, France",
         cloudflareId: "e7770e65-d7ce-45aa-e854-de92e8620100",
         position: [48.694, 7.311] as LatLngExpression,
@@ -400,7 +400,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Gravel Grinder",
-        desc: "",
+        desc: "The Traversée du Massif Vosgien is mostly gravel, and goes through the spine of the Vosges Mountians which make up France's eastern border with Germany. The cycling is sublime, but watch out for deerflies -- I was swarmed during several climbs.",
         location: "Oberhaslach, France",
         cloudflareId: "23c2066f-c718-4433-9c8e-828cd2007600",
         position: [48.565, 7.317] as LatLngExpression,
@@ -409,7 +409,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Woodland Warning",
-        desc: "",
+        desc: "At several points during the TMV, I came across these rustic signs. I love the suggestion that dangerous bobcats and friendly (?) badgers await you, should you venture left.",
         location: "Oberhaslach, France",
         cloudflareId: "6daacb47-f60b-40a4-e010-92cf6f00ae00",
         position: [48.565, 7.317] as LatLngExpression,
@@ -418,7 +418,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Woodland Warning V2",
-        desc: "",
+        desc: "Dangerous bobcats and stags on the right; butterflies (?) sharks (?); the wolf pack holds court somewhere to the east; the friendly hedgehog awaits you, no matter what direction you take.",
         location: "Oberhaslach, France",
         cloudflareId: "e5b96999-2088-417b-6538-69026c693c00",
         position: [48.565, 7.317] as LatLngExpression,
@@ -427,16 +427,16 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Beers and Views",
-        desc: "",
+        desc: "I camped out atop a ridge overlooking a small town. As I set up my tent, I saw a fox quickly cross an open pass between stands of trees. I was worried that the swarm of flies that had been shadowing me during the afternoon would re-appear, but the evening air was quiet and calm. I drank my beer in peace.",
         location: "Ottrot, France",
         cloudflareId: "004dc273-64c5-4f36-ddc5-1514c7adc900",
         position: [48.464, 7.409] as LatLngExpression,
         date: "8/22",
-        iconType: "nature"
+        iconType: "camp"
     },
     {
-        title: "Halflog",
-        desc: "",
+        title: "Half-Timber",
+        desc: "The picturesque forests covering Alsace have given rise to a unique kind of timber frame architecture that's common in the region. Squint, and you might end up thinking you're occupying a German fairy tale.",
         location: "Sélestat, France",
         cloudflareId: "e0c63e24-4095-4714-e062-7c30e0f6e000",
         position: [48.251, 7.448] as LatLngExpression, 
@@ -445,7 +445,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Vineyard",
-        desc: "",
+        desc: "Vineyards are abundant between Colmar and Mulhouse. Refreshingly sweet blue-purple grapes with tough skins and sour seeds made for the perfect mid-ride snack.",
         location: "Bergheim, France",
         cloudflareId: "8b14e408-bf2a-4d0b-8aab-1c504bf98000",
         position: [48.208, 7.407] as LatLngExpression, 
@@ -456,7 +456,7 @@ const PoiList: Poi[][] = [[
 [ //Seg 5
     {
         title: "Gravel Byway",
-        desc: "",
+        desc: "The transition into the Jura Region of north-eastern Switzerland is dramatic. The flat plains outside Mulhouse give way to rolling hills speckled with working farms. An extremely well-signed network of bike paths and gravel trails leads over the horizon.",
         location: "Moutier, Switzerland",
         cloudflareId: "fb3be411-0d43-4d44-b5de-5c334f0bc700",
         position:  [47.29, 7.368] as LatLngExpression,
@@ -465,7 +465,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Cow in the Way",
-        desc: "",
+        desc: "Cattle are ubiquitous in Switzerland, and are often given free reign to explore their immediate environment. Each cow is equipped with their own bell, so that the animals can be easily located and rounded up, come nightfall. Their sound is ceaseless -- bring some earplugs or you'll be listening to their gentle chimes all through the night.",
         location: "Moutier, Switzerland",
         cloudflareId: "0b54375e-5d42-4895-3569-aca95981a000",
         position:  [47.29, 7.368] as LatLngExpression,
@@ -474,7 +474,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Climb Central",
-        desc: "",
+        desc: "The route thus far has been fairly approachable. Outside of the Vosges mountains in Alsace, there weren't many days where I climbed over 3000 ft. This changed in Switzerland. Any bike route that doesn't follow a body of water will unfailingly contain several heavy climbs.",
         location: "Sonceboz-Sombeval, Switzerland",
         cloudflareId: "4959ccc8-3909-4cb6-e44d-d54b42a87e00",
         position:  [47.188, 7.182] as LatLngExpression,
@@ -483,7 +483,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Close Calls",
-        desc: "",
+        desc: "The Swiss Jura Explorer Route is a gravel loop that provides a great way to traverse north-western Switzerland. Dense forests with well-kept trails are available to any willing to tackle the punishing climbs.",
         location: "Biel/Benne, Switzerland",
         cloudflareId: "338359de-d819-4548-a9da-22f169e61e00",
         position:  [47.13, 7.158] as LatLngExpression,
@@ -492,7 +492,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Swiss Signage",
-        desc: "",
+        desc: "The Swiss cycling network is one of the best I found outside of Holland. Just about every spot in the country is accessible without sharing the road, especially for those willing to tackle some gnarly forested routes. This makes wild camping a cinch, since you're never too far from an off-road pathway.",
         location: "Lyssach, Switzerland",
         cloudflareId: "7c967806-4c59-4398-a30a-b050d78e8300",
         position:  [47.070, 7.566] as LatLngExpression,
@@ -501,7 +501,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Lost in the Woods",
-        desc: "",
+        desc: "I tried to find the Emmental (Sweet and Sour With Cheese) route, but ended up getting lost after my gps ran out of battery. ",
         location: "Brandiswald, Switzerland",
         cloudflareId: "55c98c1e-37f5-4ae1-1595-355f439a8b00",
         position:  [46.977, 7.649] as LatLngExpression,
@@ -510,7 +510,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Valley Pass",
-        desc: "",
+        desc: "Switzerland is an exceedingly peaceful country. All the farms I visited were quiet, and well-kept. The towns were sedate, save for a bit of bustle. The roads were immaculate. The air smelled good and the water was delicious. This is probably where I was happiest.",
         location: "Oberdiessbach, Switzerland",
         cloudflareId: "f909e644-ed1e-4b38-fb87-e4b425d85300",
         position:  [46.848, 7.620] as LatLngExpression,
@@ -519,7 +519,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Lake District",
-        desc: "",
+        desc: "Two Alpine Lakes, the Brienzersee and the Thunersee make up one of the most popular tourist attractions in Switzerland. Glacial runoff from the nearby mountains provides a consistent water source for these beauties, and is the cause of the distinctive blue coloring. Free parks and docks surround the lakes, inviting visitors to take a dip.",
         location: "Interlaken, Switzerland",
         cloudflareId: "9d1c95ab-1312-4bb3-d2d1-e8c905ebe800",
         position: [46.662, 7.740] as LatLngExpression,
@@ -528,16 +528,16 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Rainbow",
-        desc: "",
+        desc: "I was caught in a storm at the tail end of the day, but kept dry by hiding under a lawyer's office awning. The storm lasted about an hour, but on my departure I was met with a beautiful rainbow.",
         location: "Brienz, Switzerland",
         cloudflareId: "870d3f9d-a6fc-43d4-8ad0-6e8a1f96eb00",
-        position:  [46.738, 8.044] as LatLngExpression,
+        position:  [46.738, 8.044] as LatLngExpression,       
         date: "8/30",
         iconType: "nature"
     },
     {
         title: "Grandhotel Giessbach",
-        desc: "",
+        desc: "This picture-perfect alpine hotel looks straight out of a Wes Anderson picture. Many relics, like the building pictured, harken back to the \"Golden Age of Alpinism\" during the late 19th century when many peaks were first being summited.",
         location: "Meiringen, Switzerland",
         cloudflareId: "df43401c-619c-413a-21fc-927d7ff29600",
         position:  [46.729, 8.181] as LatLngExpression,
@@ -547,8 +547,8 @@ const PoiList: Poi[][] = [[
 ],
 [ //Seg 6 
     {
-        title: "Grimselpass Ascent",
-        desc: "",
+        title: "Grimsel Pass Ascent",
+        desc: "The Grimsel Pass is a beautiful road that leads up and over the Bernese Alps. It's one of the only ways to get from Switzerland to Milan, and is a definite challenge, gaining over 5000 feet of elevation over 15 or so miles. You'll be climbing for over an hour, but the views will be worth it.",
         location: "Innertkirchen, Switzerland",
         cloudflareId: "de54e145-c895-4650-60ed-dbbfee1fa700",
         position: [46.697, 8.236] as LatLngExpression,
@@ -556,17 +556,26 @@ const PoiList: Poi[][] = [[
         iconType: "mountain"
     },
     {
-        title: "GrimselPeak",
-        desc: "",
+        title: "Grimsel Peak",
+        desc: "Reach the top of the first peak, and revel in the superiority of having cycled there, rather than driven. The mountains are a tourist hotspot, so there are plenty of places to refill on snacks and water before continuing the ascent.",
         location: "Innertkirchen, Switzerland",
         cloudflareId: "34ae07b6-eb56-4246-da0b-b84396418b00", 
         position: [46.573, 8.338] as LatLngExpression,
-        date: "9/1",
+        date: "8/31",
         iconType: "mountain"
     },
     {
-        title: "FurkaPeak",
+        title: "Alpine Bliss",
         desc: "",
+        location: "Oberwald, Switzerland",
+        cloudflareId: "00a8818a-b6e3-4f04-5bc6-f026ce2b6800",
+        position:  [46.561, 8.346] as LatLngExpression,
+        date: "8/31",
+        iconType: "journal"
+    },
+    {
+        title: "Furka Peak",
+        desc: "After Grimsel comes Furka, another mountainous pass. You won't lose all the elevation you've gained thus far, but be prepared for some punchy 1-2k climbs up sharp switchbacks.  ",
         location: "Innertkirchen, Switzerland",
         cloudflareId: "2d2eeb90-8924-4b15-46e0-3f033e6e5d00", 
         position: [46.576, 8.388] as LatLngExpression,
@@ -574,8 +583,8 @@ const PoiList: Poi[][] = [[
         iconType: "mountain"
     },
     {
-        title: "Furkapass Descent",
-        desc: "",
+        title: "Furka Pass Descent",
+        desc: "The pavement that constitutes the Furka Pass looks languid, like Dali's melting clocks. A 3k ft descent is followed immediately by a 3k ascent -- give and take, all the way through.",
         location: "Obergoms, Switzerland",
         cloudflareId: "abf9caa5-032d-4397-e606-5ab48c029b00",
         position: [46.573, 8.416] as LatLngExpression,
@@ -584,7 +593,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Alpine Town",
-        desc: "",
+        desc: "The charming town of Andermatt is mostly known for being a world-class ski destination, but it has summer charms as well. Green fields and hiking trails snake off in all directions, inviting the intrepid to explore the fantastical landscape. Clear, freezing water flows through the center of the town; runoff from the nearby Rhone glacier. I slept a tiny hostel and tried to be unbothered by the pain in my quads.",
         location: "Andermatt, Switzerland",
         cloudflareId: "85d3e412-0684-4d9e-af36-997e518b8900",
         position: [46.632, 8.593] as LatLngExpression,
@@ -593,7 +602,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Low Vis",
-        desc: "",
+        desc: "I awoke to find the air a split-pea-soup-like consistency. Normally I have no issue with diving into the unknown, but slick cobblestones combined with the threat of hidden switchbacks made me hug my brake levers. ",
         location: "Airolo, Switzerland",
         cloudflareId: "c403bc86-8f4c-44d3-0e7e-a80d51c67100",
         position: [46.568, 8.557] as LatLngExpression,
@@ -602,7 +611,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Gottardpass Descent",
-        desc: "",
+        desc: "The final mountain pass of my trip through Switzerland, on my way to Switzerland's southern-most province of Ticino.",
         location: "Giornico, Switzerland",
         cloudflareId: "5828460d-9237-4d08-126d-9a7c36b1be00",
         position: [46.403, 8.871] as LatLngExpression,
@@ -626,21 +635,12 @@ const PoiList: Poi[][] = [[
         position: [46.192, 9.023] as LatLngExpression,
         date: "9/3",
         iconType: "journal"
-    },
-    {
-        title: "Header",
-        desc: "",
-        location: "",
-        cloudflareId: "00a8818a-b6e3-4f04-5bc6-f026ce2b6800",
-        position: [46.568, 8.557] as LatLngExpression,
-        date: "7/20",
-        iconType: "journal"
     }
 ],
 [ //Seg 7
     {
         title: "Lake Cruise",
-        desc: "",
+        desc: "Lake Como is not like the lakes of Switzerland. There are no relaxed bike paths here -- prepare to share space with speeding cars on narrow roadways. Try to balance your desire to enjoy the lake's beauty with your desire to stay alive.",
         location: "Varenna, Italy",
         cloudflareId: "0a136cd7-2445-4f2b-1036-997e76cade00",
         position: [46.0105, 9.283] as LatLngExpression,
@@ -649,7 +649,7 @@ const PoiList: Poi[][] = [[
     },      
     {
         title: "Riverside Chapel",
-        desc: "",
+        desc: "That's not to say there's no respite to be found in Italy. In between dusty industrial roads you'll find some gems, like the small towns bordering the Adda River on the outskirts of Milan.",
         location: "Trezzo sull'Adda, Italy",
         cloudflareId: "d690fad9-0411-4a78-1851-da43ed582200",
         position: [45.611, 9.520] as LatLngExpression,
@@ -658,7 +658,7 @@ const PoiList: Poi[][] = [[
     },    
     {
         title: "Garda",
-        desc: "",
+        desc: "There's evidence of humans occupying the land around Lake Garda stretching back thousands of years. Millenia-old stilts have been found in the silt that rests on the perimeter of the lake, used to support rustic abodes. Detritus from the conflicts between Rome and Germanic tribes can be found scattered deep in the earth. Even Italy's foremost poet, Dante makes mention of the beautiful lake that is Garda.        ",
         location: "Cola, Italy",
         cloudflareId: "052798fb-aae4-4d60-3de2-d2b71824a200",
         position: [45.444, 10.673] as LatLngExpression,
@@ -666,8 +666,8 @@ const PoiList: Poi[][] = [[
         iconType: "monument"
     },    
     {
-        title: "Grotto",
-        desc: "",
+        title: "Grottoes of Catullus",
+        desc: "The vacation homes of today don't have anything on those of the past. Pictured is an ancient Roman villa who's construction dates back to the late Roman Republic. Cycling through the picturesque idyll, it's hard to believe that anyone would leave this place to subjugate the Gauls. The size of the estate is prodigious. It doesn't take much imagination to dream of the vaulted ceilings and sun-drenched patios that once stood here. ",
         location: "Sirmione, Italy",
         cloudflareId: "1cc5e765-46e0-4ebd-971a-a182f679bd00",
         position: [45.501, 10.60] as LatLngExpression,
@@ -676,7 +676,7 @@ const PoiList: Poi[][] = [[
     },     
     {
         title: "Olive Grove",
-        desc: "",
+        desc: "Olive trees do not possess a common beauty. Gnarled bark curls in on itself, giving the plant's outer texture an unsettling look, as if a mess of concentric circles. And yet, the olive tree carries a strong position in Italian folklore, as well as within the Italian economy. Though these trees lack the millenia-old history enjoyed by other Italian olive groves, one can still imagine the Romans of old having worked here.        ",
         location: "Sirmione, Italy",
         cloudflareId: "1eb28bc5-0f7c-4523-42ff-36cbef1fde00",
         position: [45.501, 10.60] as LatLngExpression,
@@ -685,7 +685,7 @@ const PoiList: Poi[][] = [[
     },     
     {
         title: "Drenched",
-        desc: "",
+        desc: "Through my trip, I had been lucky enough to avoid being caught out in the open during rainfall. The streak ended here. While climbing through a wooded thicket, I was caught in a microburst that soaked me to my socks. Grin and bear it, indeed!        ",
         location: "Dolcè, Italy",
         cloudflareId: "957c7ac9-dfcb-4653-bf60-528ef1ca9200",
         position: [45.543, 10.838] as LatLngExpression,
@@ -694,17 +694,17 @@ const PoiList: Poi[][] = [[
     },   
     {
         title: "Feline Friend?",
-        desc: "",
+        desc: "I stopped next to a church to wring out my shirt. There I met the church's owner, a cantankerous small cat who wasted no time with introductions. Her aggressive display didn't keep her from keeping me company while I enjoyed a (slightly damp) lunch.        ",
         location: "Sant'Anna d'Alfaedo, Italy",
         cloudflareId: "9ebe487e-50fa-4618-80bd-3c04df5a1c00",
         position: [45.644, 10.928] as LatLngExpression,
         date: "9/9",
-        iconType: "journal"
+        iconType: "animal"
     },     
     {
-        title: "Vanity Pic",
-        desc: "",
-        location: "Parco Naturale Regionale della Lessinia, Italy",
+        title: "A Long Long Way to Bike",
+        desc: "After a brutal ~5000ft climb, I arrived in Lessinia Park, aka, prime Sound of Music territory. Called a 'pre-alpine' environment, this Park sits at the foot of the Dolomites, and consists of rolling meadows and gentle valleys. This region is calm and peaceful -- a 180 from the hectic nature of Como and the greater Po River Valley.",
+        location: "Parco della Lessinia, Italy",
         cloudflareId: "d317827a-6f44-4c7e-1e6c-3b212a181200",
         position: [45.692, 11.0567] as LatLngExpression,
         date: "9/9",
@@ -712,8 +712,8 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Dinner of Champions",
-        desc: "",
-        location: "Parco Naturale Regionale della Lessinia, Italy",
+        desc: "I found that I had left Lake Garda inadequately prepared. After the day's massive climb, finding a secluded mountainside cafe was like finding an oasis in the desert. Dinner that night was two anonymous Italian beers, and 3 salami sandwiches on white bread. It was the best-tasting food I ate in Italy.        ",
+        location: "Parco della Lessinia, Italy",
         cloudflareId: "1236c670-3b0a-4ef9-d095-5ed7b9848400",
         position: [45.692, 11.0567] as LatLngExpression,
         date: "9/9",
@@ -721,8 +721,8 @@ const PoiList: Poi[][] = [[
     }, 
     {
         title: "Trench Line",
-        desc: "",
-        location: "Parco Naturale Regionale della Lessinia, Italy",
+        desc: "Amazingly, this alpine landscape was made a battleground during WWI, when Austrian and Italian soldiers clashed near Italy's northern border. Today, the scars of Italian trench lines are still visible, having been hewn through solid rock into the earth. One can hardly imagine the effort required to complete such a feat.        ",
+        location: "Parco della Lessinia, Italy",
         cloudflareId: "85d6f759-6ecb-416a-e7fe-c51b78c78c00",
         position: [45.714, 11.055] as LatLngExpression,
         date: "9/9",
@@ -730,8 +730,8 @@ const PoiList: Poi[][] = [[
     }, 
     {
         title: "Golden Hour",
-        desc: "",
-        location: "Parco Naturale Regionale della Lessinia, Italy",
+        desc: "Lessina is not a massive park, but I took all day to traverse it, soaking in each view of the rolling green hills that stretched into the horizon. Quiet gravel paths with gentle slopes guided me forward.",
+        location: "Parco della Lessinia, Italy",
         cloudflareId: "4ebc6bf9-4ada-4280-dffb-8627b9c34900",
         position: [45.714, 11.055] as LatLngExpression,
         date: "9/9",
@@ -739,8 +739,8 @@ const PoiList: Poi[][] = [[
     }, 
     {
         title: "Marmot!",
-        desc: "",
-        location: "Parco Naturale Regionale della Lessinia, Italy",
+        desc: "Introducing the Alpine Marmot. About the size of your average housecat, I caught this little guy enjoying the sunset. He let me approach before scurrying along, back to his abode.        ",
+        location: "Parco della Lessinia, Italy",
         cloudflareId: "5798563d-f133-43a8-dde6-e100ce68a100",
         position: [45.709, 11.058] as LatLngExpression,
         date: "9/9",
@@ -748,8 +748,8 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Dolomite",
-        desc: "",
-        location: "Parco Naturale Regionale della Lessinia, Italy",
+        desc: "I truly cannot recommend a visit to this region of Italy enough. Though the trek to get there is anything but straightforward, this region lacks the bustle that made the rest of Italy so tiring to me. If quiet roads and bucolic landscapes are more your thing, be sure to check the Prealps out.        ",
+        location: "Parco della Lessinia, Italy",
         cloudflareId: "4314735a-76a5-4a6c-81c1-ed3804a17b00",
         position: [45.681, 11.066] as LatLngExpression,
         date: "9/9",
@@ -759,7 +759,7 @@ const PoiList: Poi[][] = [[
 [ //Seg 8
     {
         title: "Plains of Veneto",
-        desc: "",
+        desc: "Following the loss of my spare bike tyres, I was forced to descend from the prealps and venture back into the Po River Valley. While the roads before me were more of the paved, high-traffic variety, they weren't without this beautiful view of the farms and small townships outside of Vicenza.        ",
         location: "Bedin Paolini, Italy",
         cloudflareId: "241f39a5-a453-448d-ba85-51feebc24f00",
         position: [45.476, 11.484] as LatLngExpression,
@@ -767,8 +767,8 @@ const PoiList: Poi[][] = [[
         iconType: "journal"
     },
     {
-        title: "Plaza",
-        desc: "",
+        title: "Monte Berico Stairways",
+        desc: "This ornate covered path leads to the Basilica of Monte Berico, where the blessed virgin is said to have been witnessed by a humble working man in the fifteenth century. There's not much of consequence to see, but to climb and descent alongside an ornate marble pathway is surely unique.         ",
         location: "Vicenza, Italy",
         cloudflareId: "d12bc385-09ff-4dad-d775-b34a5b0c6400",
         position: [45.537, 11.548] as LatLngExpression,
@@ -776,9 +776,9 @@ const PoiList: Poi[][] = [[
         iconType: "journal"
     },
     {
-        title: "Plaza",
-        desc: "",
-        location: "Piazza dei Signori, Padua, Italy",
+        title: "Piazza dei Signori",
+        desc: "Just like the way a beautiful woman sucks the air out of a room, the string of mid-sized Italian cities between Milan and Venice suck the air and money out of Northern Italy. This region, also known as the Po River Valley, is anathema to bike tourists like myself who 'want to see the places inbetween'. Because the places between Vicenza and Padua are boring. Dusty, flat, industrial landscape with no good through-route for cyclists leads to hours of boring, uneventful riding. But, if you play your cards right, you can spend your evenings having the time of your life in the Italian cities.",
+        location: "Padua, Italy",
         cloudflareId: "48ac5825-8ede-4566-aef8-557c545fbb00",
         position: [45.407, 11.873] as LatLngExpression,
         date: "9/11",
@@ -786,7 +786,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Mosquito Coast",
-        desc: "",
+        desc: "I slept on a beach outside of Venice, rather than pay the exorbitant price for Venice hotels. I was greeted by a gorgeous sunrise, followed by an encounter with more mosquitos than I've ever laid eyes on. The Venetian Lagoon is famous for surprising tourists with this feature, and though I've experienced my share of buggy seasons, the hoards of Venice were nothing short of biblical. Still, I swam in the ocean to start my day before sprinting back to my tent.        ",
         location: "Lido, Italy",
         cloudflareId: "f0f51e7a-7241-48f3-ea23-7eddd96efc00",
         position: [45.416, 12.380] as LatLngExpression,
@@ -794,8 +794,8 @@ const PoiList: Poi[][] = [[
         iconType: "journal"
     },
     {
-        title: "Doge's Palace",
-        desc: "",
+        title: "Dogal Spendor",
+        desc: "The Doge's Palace is a relic of The Most Serene Venetian Republic that ruled over the lagoon for over a thousand years. The wealth of the former Italian city-state is on full display in the Doge's palace. Paintings from Titian and Veronese adorn the walls and ceiling. Vast collections of ornamental weapons, jewelry and other lavish goods are displayed inside. Physical artifacts give an understanding of the complexity of Venetian politics, like the meeting rooms for the Signoria, the Collegio and the council of ten.        ",
         location: "Venice, Italy",
         cloudflareId: "72f857c4-da66-4d54-79aa-2943bc666a00",
         position: [45.433, 12.339] as LatLngExpression,
@@ -803,8 +803,8 @@ const PoiList: Poi[][] = [[
         iconType: "monument"
     },
     {
-        title: "City",
-        desc: "",
+        title: "Love in the Air",
+        desc: "I couldn't help but love Venice. Yes, the restaurants and shops feel like tourist traps. Yes, everything is ludicrously expensive. Yes, it can feel a bit disney-ish at times. But beneath that is a fascinating city with an extremely unique history. My favorite part of the day was riding around in the ferries that shuttle tourists to and fro, and taking the time to appreciate the strange romance of this floating city.        ",
         location: "Venice, Italy",
         cloudflareId: "c1735299-3112-40b8-47dd-b285d7b82a00",
         position: [45.433, 12.339] as LatLngExpression,
@@ -812,17 +812,8 @@ const PoiList: Poi[][] = [[
         iconType: "monument"
     },
     {
-        title: "Ferry Ride",
-        desc: "",
-        location: "Venice, Italy",
-        cloudflareId: "2f4ca548-c5b9-4265-35f5-8ec9f7fb9700",
-        position: [45.433, 12.339] as LatLngExpression,
-        date: "9/13",
-        iconType: "monument"
-    },
-    {
-        title: "Vaporettos",
-        desc: "",
+        title: "Gondola",
+        desc: "The only way to get around town.",
         location: "St. Mark's Plaza, Venice, Italy",
         cloudflareId: "9256da07-15c5-4cf6-5322-8a8b1c685e00",
         position: [45.433, 12.339] as LatLngExpression,
@@ -830,17 +821,8 @@ const PoiList: Poi[][] = [[
         iconType: "monument"
     },
     {
-        title: "Bike Fit",
-        desc: "",
-        location: "Jesolo, Italy",
-        cloudflareId: "20396f43-33f1-42a3-a793-b92fe09a3600",
-        position: [45.507, 12.647] as LatLngExpression,
-        date: "9/13",
-        iconType: "journal"
-    },
-    {
         title: "Weedy Campsite",
-        desc: "",
+        desc: "A note to any prospective Venetian wild campers -- it's very hard to find a good place to sleep anywhere near the city. This is true really anytime you're trying to find a good campsite near the coast. Luckily I found this little depression that gave me time to get a peaceful rest, but it was the product of a little over two hours of evening searching.        ",
         location: "Caorle, Italy",
         cloudflareId: "7f4d7f04-9ba8-40e4-d350-30d3bc36d100",
         position: [45.626, 12.893] as LatLngExpression,
@@ -851,7 +833,7 @@ const PoiList: Poi[][] = [[
 [ //Seg 9
     {
         title: "Wine & Stay",
-        desc: "",
+        desc: "I was greeted by rain upon entering Slovenia. Luckily I found a Wine & Stay, a lovely hotel on the outskirts of a border town called Gorizia. I spent a day drinking, moving inside and out to avoid the showers.        ",
         location: "Gorizia, Italy",
         cloudflareId: "306b5b11-8e03-4b63-806a-99e0fd9f4e00",
         position: [45.967, 13.612] as LatLngExpression,
@@ -860,7 +842,7 @@ const PoiList: Poi[][] = [[
     },  
     {
         title: "Cloudside Camping",
-        desc: "",
+        desc: "One of my favorite wild camping spots. Tired from a day of climbing, I walked off the road and into a grassy meadow, filled with sparse trees and patchy grass.",
         location: "Tolmin, Slovenia",
         cloudflareId: "32d7118c-390e-4991-47b8-2b13d6087b00",
         position: [46.183, 13.663] as LatLngExpression,
@@ -869,16 +851,16 @@ const PoiList: Poi[][] = [[
     },    
     {
         title: "Exposure",
-        desc: "",
+        desc: "The Slovenia West Loop is a gravel path with some serious climbs. Expect switchback upon switchback, but revel in the views you'll experience. Mountain meets sky in the distance.        ",
         location: "Kobarid, Slovenia",
         cloudflareId: "38b12e9a-1254-4f10-b2b3-3719df13b900",
-        position: [45.416, 12.380] as LatLngExpression,
+        position: [46.249, 13.54] as LatLngExpression,
         date: "9/18",
         iconType: "journal"
     },    
     {
         title: "Vrši",
-        desc: "",
+        desc: "Traversing Slovenia's north-eastern corridor means climbing the insane Vršič Pass (not pictured). This entails navigating over 50 hairpin switchbacks, and wearing out yet another set of brake pads. Rather than be assaulted by more mountainous views, enjoy this picturesque view of turquoise mountainous water.        ",
         location: "Kobarid, Slovenia",
         cloudflareId: "cefbb5fa-9537-4718-c8fa-20ab7176d800",
         position: [46.250, 13.496] as LatLngExpression,
@@ -887,7 +869,7 @@ const PoiList: Poi[][] = [[
     },   
     {
         title: "Dr. Julius Kugy Monument",
-        desc: "",
+        desc: "Mountaineer and advocate for peace between the bellicose populations of ethnic Austrians, Germans and Slovenians, Kugy is venerated today for his role in exploring the Julian Alps. He rests there still, looking out over the forested peaks from a quiet spot off the Vršič Pass.        ",
         location: "Soča Valley, Slovenia",
         cloudflareId: "5be9f633-ec7b-4e3c-db09-8f759546c100",
         position: [46.404, 13.742] as LatLngExpression,
@@ -895,8 +877,8 @@ const PoiList: Poi[][] = [[
         iconType: "monument"
     },  
     {
-        title: "Vršič",
-        desc: "",
+        title: "Rest",
+        desc: "It's like a different realm up there. Times like this, it really struck me how far I'd come. A long way from Holland's flat hills, indeed!        ",
         location: "Kranjska Gora, Slovenia",
         cloudflareId: "e74c7a97-12b5-4c7f-6bba-527a17887f00",
         position: [46.415, 13.741] as LatLngExpression,
@@ -904,8 +886,8 @@ const PoiList: Poi[][] = [[
         iconType: "mountain"
     },     
     {
-        title: "Vršič Pass",
-        desc: "",
+        title: "Mountain Sound",
+        desc: "It took me a few hours of steady climbing to conquer Vršič. I couldn't have asked for a better day in the saddle. The sun streamed down, the elevation ticked up, and even the German camper vans were polite in transit.        ",
         location: "Kranjska Gora, Slovenia",
         cloudflareId: "5eafea34-f4e0-4ee0-8df8-56029b033a00",
         position: [46.441, 13.753] as LatLngExpression,
@@ -914,7 +896,7 @@ const PoiList: Poi[][] = [[
     },    
     {
         title: "Sponge Dinner",
-        desc: "",
+        desc: "My prize after a day of climbing: an array of sponges! I kid -- there were several courses after this pictured, but it stands out as one of the better formal meals I had while in Europe. You just can't beat good bread and wine.        ",
         location: "Lake Bled, Slovenia",
         cloudflareId: "afbe1d1d-d494-4663-ab52-cda4e5f2f100",
         position: [46.369, 14.083] as LatLngExpression,
@@ -923,7 +905,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Island Chapel",
-        desc: "",
+        desc: "Not to let Mont St. Michel have all the fun, Slovenia has its own island of worship in the center of Lake Bled. Like the French castle, the pictured chapel was erected on a small island partially for the defensive advantage that a lake-sized moat provides.        ",
         location: "Lake Bled, Slovenia",
         cloudflareId: "46f25b16-ac46-4ba4-4172-f17ecc11b900",
         position: [46.358, 14.088] as LatLngExpression,
@@ -931,28 +913,28 @@ const PoiList: Poi[][] = [[
         iconType: "monument"
     },
     {
-        title: "Above the Clouds",
-        desc: "",
-        location: "Medvode, Slovenia",
-        cloudflareId: "86181367-8e08-499f-960a-ce16280ce800",
-        position: [46.123, 14.373] as LatLngExpression,
-        date: "9/21",
-        iconType: "nature"
-    },
-    {
-        title: "Arboaral Respite",
-        desc: "",
+        title: "Arboreal Respite",
+        desc: "East of Bled, the Slovenia West Loop starts to wind down. Most of the major climbs have passed at this point, and the dramatic alpine vistas give way to serene forest scenes. This broken-down picnic table gave me the perfect place to enjoy a peanut-butter sandwich beside an empty gravel byway.",
         location: "Medvode, Slovenia",
         cloudflareId: "b7bf3496-7956-48cb-8bef-0788cef9f000",
         position: [46.323, 14.192] as LatLngExpression,
         date: "9/20",
+        iconType: "nature"
+    },
+    {
+        title: "Above the Clouds",
+        desc: "You might notice that all my photos from Slovenia are from the first half of my journey through the country. This is largely due to the Slovenia West Loop directing me towards dramatic vistas and bicycle-friendly gravel routes that provided ample opportunity for solid photos. The second half of the trip was a far more subdued journey though small Balkan towns on my way to Croatia. Still, I will never forget the sights of Triglav.        ",
+        location: "Medvode, Slovenia",
+        cloudflareId: "86181367-8e08-499f-960a-ce16280ce800",
+        position: [46.123, 14.373] as LatLngExpression,
+        date: "9/21",
         iconType: "nature"
     }
 ],
 [ //Seg 10
     {
         title: "Safe Haven",
-        desc: "",
+        desc: "I arrived at my lodging for my first night in Croatia after twelve hours of straight riding. Luckily, after sleeping off a chilly-late night arrival, I awoke to the soft sounds of a running stream. While I ate my morning eggs, I watched tiny fish dart between the rocks in the riverbed.        ",
         location: "Slunj, Croatia",
         cloudflareId: "c3362350-668d-4a3a-1ea3-37f8fb1fea00",
         position: [45.116, 15.585] as LatLngExpression,
@@ -961,7 +943,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Gloomy Forest",
-        desc: "",
+        desc: "Plitvice Lakes National Park is renowned for its crystal clear waters, but I'm here to advocate for its relatively clean gravel byways.        ",
         location: "Plitvička jezera, Croatia",
         cloudflareId: "9b10719e-4820-48ea-ff9a-e7709ef75f00",
         position: [ 44.862, 15.582] as LatLngExpression,
@@ -970,7 +952,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Nor Glom of Night",
-        desc: "",
+        desc: "I hit my first heavy rain in Croatia. Up to this point, I had largely been able to avoid getting wet through proper planning and hiding from the occasional surprise shower. The consistent showers in early October made this impossible, and I ended up getting soaked repeatedly as I trudged on to the coastline.",
         location: "Ličko Lešće, Croatia",
         cloudflareId: "9c579ccb-304d-4603-9792-ba9c8e784d00",
         position: [44.796, 15.330] as LatLngExpression,
@@ -979,7 +961,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Interior Jungle",
-        desc: "",
+        desc: "The interior of Croatia is often overlooked compared to the more developed coast, but inland has charms all its own. Here you'll find smaller towns and cozy accommodations, along with quintessential Balkan hospitality. The overflowing homemade breakfast buffets were well appreciated when it came time to conquer some hills.        ",
         location: "Otrić, Croatia",
         cloudflareId: "b855a2b5-50b3-4bf4-d295-f029f488d700",
         position: [ 44.249, 16.063] as LatLngExpression,
@@ -988,7 +970,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Crljivica Archelogical Site",
-        desc: "",
+        desc: "An ancient necropolis rests beside a nondescript highway, with so few markings that one could easily drive right by it, and not know they were missing an archaeological site dating back to the Middle Ages. This site is home to a series of ancient mounds, wells and gravestones that tell the story of millenia of continuous human habitation.",
         location: "Cista Provo, Croatia",
         cloudflareId: "5a4842a9-610e-495c-faec-1d8f71946000",
         position: [43.515, 16.928] as LatLngExpression,
@@ -997,7 +979,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Primeval Man",
-        desc: "",
+        desc: "Dozens of gravestones, or 'Stećci', can be found at Cista Provo, each adorned with unique iconography. Crosses, flowers and groups of people are present alongside Keith Herring-like stick figures. I found myself drawn to these depictions more than the average gravestone. Who was this person, who was remembered, not by name, but for their horse-rearing ability? What kind of life did they lead?        ",
         location: "Cista Provo, Croatia",
         cloudflareId: "d8ebac04-9cec-4b8a-0f4f-365ea7129700",
         position: [43.515, 16.928] as LatLngExpression,
@@ -1006,7 +988,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Coastal Bliss",
-        desc: "",
+        desc: "After a week of soggy inland traveling, I finally hit the coast alongside some sun. One main highway, Route 8, hugs the clifftop, while a string of seaside towns can be accessed by those brave enough to descend the steep switchbacks. Hats off to the road's engineers -- the mile or so between the road and the sea allows each town to feel like its own secluded piece of paradise.        ",
         location: "Zadvarje, Croatia",
         cloudflareId: "38e25ec0-86d8-419d-df28-6db2375a2100",
         position: [43.403, 16.889] as LatLngExpression,
@@ -1015,7 +997,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Close Quarters",
-        desc: "",
+        desc: "I found the bike routes in Croatia to be troubling. Eurovelo 8, which promises a continuous route around the Mediterranean, consistently pointed me to sandy beach passes, like the one pictured. While this could work on an unoccupied beach, the reality of trying to weave a loaded bike around fellow beachgoers while on sand is that I ended up doing a lot of walking.        ",
         location: "Baška Voda, Croatia",
         cloudflareId: "7b43b2f1-5ff7-4f18-de14-8d6db3c2f600",
         position: [43.355, 16.949] as LatLngExpression,
@@ -1024,7 +1006,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Take a Break",
-        desc: "",
+        desc: "In Makarska, I got two subsequent flat tyres. Then I found out my last spare tube had a hole in it. And that I had lost my patch kit somewhere in the last 1,000 km. This bothered me for a bit, as I was in a tiny town, and none of the residents I bothered had a fresh tube to sell. I calmed down though when I took a minute to enjoy the ocean view from my accommodation's rooftop. I felt foolish -- how could I be angry with a view like this?        ",
         location: "Makarska, Croatia",
         cloudflareId: "49eb8287-8128-438a-c79e-594799810500",
         position: [43.298, 17.015] as LatLngExpression,
@@ -1033,7 +1015,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Sunset",
-        desc: "",
+        desc: "There's a magic to racing along the coastline in Croatia that's hard to replicate elsewhere. Islands rise lazily out of the horizon.",
         location: "Baćina, Croatia",
         cloudflareId: "9c7ab8b5-55ea-495e-7c8a-6d325d6c7e00",
         position: [43.080, 17.388] as LatLngExpression,
@@ -1042,7 +1024,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Gradual Descent",
-        desc: "",
+        desc: "In order to avoid the double border crossing that would be required if I had headed straight down the coast, I took a ferry to the long skinny island of Hvar. Here, the Karstic landscape of exposed rock and stout shrubbery is augmented by the presence of lush pine forests and quintessential vistas.        ",
         location: "Janjina, Croatia",
         cloudflareId: "7d3a7d35-7cb9-4b11-d030-c51309bfff00",
         position: [42.946, 17.359] as LatLngExpression,
@@ -1051,7 +1033,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "City Wall",
-        desc: "",
+        desc: "Originally built by the Republic of Dubrovnik in the 14th century, (but completed by the expansionist Venetian Republic in the 16th century), the Walls of Ston are a surprisingly well-preserved example of medieval fortification. I didn't enter myself, but I enjoyed watching my fellow tourists ascend the 1000 step staircases that extend into the surrounding hills.        ",
         location: "Ston, Croatia",
         cloudflareId: "56171c54-5cd1-4ff6-b4ca-d80d52b44700",
         position: [42.839, 17.698] as LatLngExpression,
@@ -1062,7 +1044,7 @@ const PoiList: Poi[][] = [[
 [ //Seg 11
     {
         title: "Pink",
-        desc: "",
+        desc: "The scenic views around Kotor Bay continued to offer that unique sense of Adriatic charm. The profusion of regional tourist activity have treated the surrounding area well, resulting in an abundance of well-kept homes and small hotels. The greenery is lush, and I get to enjoy another sunset as I navigate through the tight provincial streets.         ",
         location: "Herceg Novi, Montenegro",
         cloudflareId: "04149ed2-32f0-434a-1dc0-3f3bd989d800",
         position: [ 42.454, 18.5312] as LatLngExpression,
@@ -1079,8 +1061,8 @@ const PoiList: Poi[][] = [[
         iconType: "monument"
     },
     {
-        title: "Road Quality",
-        desc: "",
+        title: "Public Works",
+        desc: "The road quality in Albania can be hit or miss. I was pleasantly surprised by the main roads in Albania that hug the coastline: nothing but smooth asphalt, and wide shoulders that roused my American envy. Off the main roads, it's a different story.",
         location: "Rrogozhine, Albania",
         cloudflareId: "e9878229-1d1d-4abd-da96-a9b55e1a4b00",
         position: [41.067, 19.654] as LatLngExpression,
@@ -1098,7 +1080,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Cursed Croissant",
-        desc: "",
+        desc: "The last meal I remember enjoying on my Bike Trip was an individually weapped, store bought chocolate croissant. It was a far cry from those produced by the pastry wizards of Western Europe, but I am not one to look down upon sugar and carbs. Following my departure from Berat, I developed a case of giardia, a relatively benign (if uncomfortable) gut infection that greatly reduced my enthusiasm for spending multiple hours a day far from a working restroom. ",
         location: "Berat, Albania",
         cloudflareId: "6fa2676b-3675-4ec0-f31a-da1ccf700b00",
         position: [40.709, 19.939] as LatLngExpression,
@@ -1107,7 +1089,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Moments Before Disaster",
-        desc: "",
+        desc: "Despite my physical state, I was convinced that I had to make it to Greece. My birthday was approaching, and I wanted to spend it in Ioannina, a city in Northern Greece. Ignoring my stomach cramps, and inability to retain water, I made a two-day route between Berat and Ioannina. I brought this plan up with my accomodation's hotelier, who  rebuked me, stating 'there's no road between Berat and Përmet'. I scoffed at this. Why let good advice get in the way of beautiful delusion?        ",
         location: "Çorovoda, Albania",
         cloudflareId: "1601001b-5da8-48fe-a469-076a75071200",
         position: [ 40.504, 20.226] as LatLngExpression,
@@ -1116,7 +1098,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Goat Path",
-        desc: "",
+        desc: "The hotelier was correct. There is no road between Berat and Përmet. Or, if there is, I didn't find it. Instead I found mile after mile of sandy, thorn-ridden goat track -- unrideable with my touring setup. I settled in for six hours of hike-a-bike. The hills were largely uninhabited. I passed one old woman who was minding a pair of donkeys tied up outside an old dwelling. We made eye contact, and she seemed surprised to see me, but we didn't exchange any words.        ",
         location: "Muzhakë, Albania",
         cloudflareId: "1b3598a5-6ad4-4579-fc59-f12753cdbe00",
         position: [ 40.392, 20.222 ] as LatLngExpression,
@@ -1125,7 +1107,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Fading Light",
-        desc: "",
+        desc: "Once the sun started to set, I began to descend from the mountain range I had unwittingly found myself crossing. The mountain-side was made up from large-panels of loosely-connected rock slabs -- making for a bone jarring descent as I re-mounted my bike. I reached my accommodation late in the night -- cold and sore and frazzled from a sketchy after-dusk gravel descent. Getting myself to Përmet (and to a working restroom) was one of the hardest things I've ever done.        ",
         location: "Muzhakë, Albania",
         cloudflareId: "4b2f1fbe-e2cb-4772-72e8-4e07393dd600",
         position: [ 40.356, 20.167 ] as LatLngExpression,
@@ -1134,7 +1116,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Streets After Rain",
-        desc: "",
+        desc: "Lying on the edge of a lake, tucked into the mountains of Northern Greece, lies the small city of Ioannina. Rings of tight streets surround a bustling city centre, bolstered with activity from a nearby university. I decided to end the journey shortly after arriving here. My stomach bug was sapping all of my enthusiasm for riding, and I knew I wouldn't be able to enjoy Greece to its fullest extent. I booked a bus ticket to Athens, and spent a few days recuperating and wandering through the cobbled streets.        ",
         location: "Ioannina, Greece",
         cloudflareId: "b8606bac-9169-495f-1d97-05f09de52000",
         position: [39.670, 20.856] as LatLngExpression,
@@ -1143,20 +1125,11 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "End of Tour",
-        desc: "",
+        desc: "What a journey! From Holland to Greece, almost entirely by bicycle. ",
         location: "Ioannina, Greece",
         cloudflareId: "87181588-1eb8-4498-d186-f45a3ad44e00",
         position: [39.670, 20.856] as LatLngExpression,
         date: "10/11",
-        iconType: "journal"
-    },
-    {
-        title: "Packing Up",
-        desc: "",
-        location: "Ioannina, Greece",
-        cloudflareId: "bfb5775d-5e1b-4905-b647-11c5f5733f00",
-        position: [39.670, 20.856] as LatLngExpression,
-        date: "10/12",
         iconType: "journal"
     }
 ]];

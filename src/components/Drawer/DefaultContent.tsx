@@ -11,6 +11,7 @@ import Footer from "./Footer";
 import segmentData from "@/data/segments";
 import { introStats } from "@/data/stats";
 import { text } from "@/data/text";
+import { HomeScreenSectionContent } from "@/data/segmentText";
 import { Segment } from "@/store/models";
 import { fetchImages } from "@/apiUtil/cloudflare";
 import config from "@/config/default.json";
@@ -34,7 +35,7 @@ const DefaultContent = () => {
                     <StatsBlock statList={introStats} />
                     <IntroParagraph headshotString={data[1]} />
                     <SegmentMenu segments={segmentData} imgStrings={data.slice(2)} />
-                    <InfoPanel />
+                    <InfoPanel infoPanelText={HomeScreenSectionContent} />
                     <Footer activeSegmentId={-1} />
                 </div>
             }   

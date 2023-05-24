@@ -2,23 +2,22 @@ import { Dispatch, SetStateAction, useState } from "react";
 import { IconContext } from "react-icons";
 import { CgArrowLongRightR } from "react-icons/cg";
 
-import { SectionContentList } from "@/data/text";
 import { InfoPanelSection, SectionContent } from "@/store/models";
 
-const InfoPanel = () => {
+const InfoPanel = ({infoPanelText}: {infoPanelText:InfoPanelSection[]}) => {
     const [activeSectionId, setActiveSectionId] = useState<number>(0);
     return (
         <div className="flex flex-col">
-            <SectionTitles activeSectionId={activeSectionId} setActiveSectionId={setActiveSectionId} />
-            <SectionInfo activeSectionId={activeSectionId} />
+            <SectionTitles infoPanelText={infoPanelText} activeSectionId={activeSectionId} setActiveSectionId={setActiveSectionId} />
+            <SectionInfo infoPanelText={infoPanelText} activeSectionId={activeSectionId} />
         </div> 
     );
 };
 
-const SectionTitles = ({activeSectionId, setActiveSectionId}: {activeSectionId: number, setActiveSectionId:Dispatch<SetStateAction<number>>}) => {
+const SectionTitles = ({infoPanelText, activeSectionId, setActiveSectionId}: {infoPanelText: InfoPanelSection[], activeSectionId: number, setActiveSectionId:Dispatch<SetStateAction<number>>}) => {
     return (
         <div className="flex flex-row align-middle sm:justify-around md:justify-around lg:justify-center items-center pt-12 bg-tan drop-shadow-md">
-            {SectionContentList.map((content:InfoPanelSection) => <SectionTitle key={content.title} content={content} activeSectionId={activeSectionId} setActiveSectionId={setActiveSectionId}/>)}
+            {infoPanelText.map((content:InfoPanelSection) => <SectionTitle key={content.title} content={content} activeSectionId={activeSectionId} setActiveSectionId={setActiveSectionId}/>)}
         </div>
     );
 };
@@ -42,8 +41,8 @@ const SectionTitle = ({activeSectionId, setActiveSectionId, content}: {content:I
     );
 };
 
-const SectionInfo = ({activeSectionId}: {activeSectionId: number}) => {
-    const activeSection = SectionContentList[activeSectionId];
+const SectionInfo = ({infoPanelText, activeSectionId}: {infoPanelText:InfoPanelSection[], activeSectionId: number}) => {
+    const activeSection = infoPanelText[activeSectionId];
     return (
         <div className="w-full bg-headshotChevronBg py-8 pl-12 pr-16">
             {activeSection.content.map((content: SectionContent) => <SectionInfoContent key={content.header} content={content} />)}

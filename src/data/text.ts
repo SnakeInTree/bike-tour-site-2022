@@ -12,138 +12,100 @@ const text = {
     },
     segmentText: [
         { //Segment 1 -- Holland
-            "header": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
+            "header": "Holland is the perfect place to begin a bike tour, as it pairs flat terrain with world-class cycling infrastructure. My route took me to the historic maritime cities of Haarlem and Rotterdam, and through the quiet beachside villages of Zeeland on my journey south.",
             "paragraphs": [
                 "For the car-phobic cyclists among us, there's no better destination than Holland. Nearly every road, no matter how minor, has an adjacent cyclepath beside it that provides a high degree of separation between bikes and motorized vehicles. Better yet, many cyclepaths possess yet another adjacent path for walking, thus avoiding any potential crossing of the streams. On warm summer days, these roadways become a pedestrian paradise -- allowing Dutchies of all ages equitable access to their surroundings.",
                 "This being said, be warned! These lands will not test your climbing legs, nor will they challenge your aerobic engine. Attempts to speed through the beautiful streets of tight-knit Dutch towns will result in near collisions with the ubiquitious outdoor Dutch child. In my experience, your best bet is to let your competitive streak take a backseat and vibe out to cycling by the beautiful Dutch landscape.",
+                "Between urban centres and quaint towns, you'll be treated to long, loping rides through a flat landscape replete with fields and canals. But don't let these occasional moments of quiet fool you: Holland is densely populated, and you're not likely to find much time to yourself. Keep this in mind if you're planning on wild camping!                "
             ]
         },
         { //Segment 2 -- Belgium
-            "header": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
-            "paragraphs": []
+            "header": "Come for the belfries, stay for the beer abbeys. During my short time in Belgium, I toured the historic cities of Bruges, Ghent and Liege while meandering down the English Channel astride Belgium's network of cycling routes.",
+            "paragraphs": ["At first blush, Belgium's northern province, Flanders, seems similar to Holland. The official language is a variant of Dutch, and the flat, coastal landscape that's held in common between the two small nations could trick the unaware traveler into thinking that they had never crossed a border.",
+            "These similarities are deceptive. In my opinion, Belgium lacks the 'unbuttoned' nature that makes the lifestyles practiced by its northern neighbor's residents so alluring. This is nowhere more clear than in the sudden switch in cycling culture -- goodbye summer clothes and steel cruisers, hello lycra and carbon fibre.", "This being said, as a vacation destination Belgium is certainly serviceable. The medieval trading cities of Bruges and Ghent are world-class examples of architectural preservation, whose methods should be recorded in textbooks and studied as guides for our developing world. While touring Gravensteen, I felt my inner child come alive as tales of castles and knights took shape before my eyes.",
+            "Also, this is the home of the best beer in Europe, which more or less makes up for any of the country’s other shortcomings."]
         },
         { //Segment 3 -- Normandy
-            "header": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
-            "paragraphs": []
+            "header": "Cycling through Northern France was a lesson in scale. The density of Holland and Belgium was gone, replaced by agrarian townships and provincial sites. As I headed west, en route to Mont. Saint Michel, I thought about the generations of pilgrims past who had embarked on much the same route as I, and felt that, despite my solitude, I was in good company.",
+            "paragraphs": ["The church seems to loom large in Northern France, due perhaps to its relatively sparse population, or to my route which intentionally avoided major cities like Lille, Douai and Paris. The municipalities left over in the Hauts de France region were bare, often offering little more than a bar and a church to augment a collection of small homes and farmhouses.",
+            "The land developed as I picked my way West. Dusty fields gave way to small forests, giving me much-needed cover from the unrelenting August sun. Relics from history seemed to rise out of the midday haze -- more than once I was surprised by a castle or cathedral that dated back almost a millenia. Once I learned to look a little closer, everywhere I looked I was able to see signs of a culture that had been developing, entrenched, for generations.",
+            "There were very few other times on this trip that I felt as strongly that I was experiencing another culture, as I did in Northern France. Part of this was helped by the language -- my distance from major tourist centers forced me to rely on my pidgin French to communicate, rather than use the tourist-crutch of ubiquitous 'business' English.",
+            "My journey paid off in a visit to Mont. Saint Michel, the uber-popular island monastery that captured my imagination from the moment I began to plan this trip. The experience of cycling to this monument can't be overstated. As you ride down the coast, the ramparts will rise from the sea and surf, white stone on blue sky with spires reaching towards black stars."]
         },
         { //Segment 4 -- Loire
-            "header": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
-            "paragraphs": []
+            "header": "The Loire Valley is a land of providence and plenty. Cities bursting with art and history lie dotted along a network of lazy rivers that gently guided me south. In the August heat, cycling past verdant flowerbeds and forests glowing in the evening sun, I could almost believe that the summer would last forever.",
+            "paragraphs": ["If Normandy put me into the mindset of a pious traveller, the Loire Valley made me feel as though I'd been whisked away by a doting royal, to a land of fairytale. Gone was the unrelenting force of the midday summer sun, replaced by gentle light drifting down from the forest canopy above. In place of the ruined castles that served a genuine defensive purpose during the wars with the English, I rode past the summer homes of last century's elite -- castles in name only.",
+                "In short, riding alongside the Loire is the best way to fulfil every expectation that comes to mind when one fantasises about biking through France. The improved bicycle infrastructure aids this conception. The Velosenic and the Velo Francette are two bike routes that offer signposted, car-free transit between the region's main cities like Le Mans, Laval and Angers. After a week charting my own course, it was refreshing to hand off the responsibility.", 
+                "Much of the route south is directed by the whims of the Mayenne river, whose languid southerly flow was my constant companion between Domfront and Angers. Life on the river seemed nothing short of idyllic. Each day I passed small groups of fishermen, wading up to their knees and casting their rods into the middle of the brown river. Campers and families on picnic were common as well. Small lochs were manned by teenagers, who, upon catching sight of an approaching pleasure cruiser, would jump into action to clear their path. More than once I treated myself to a riverside beer or iced coffee that was sold by a riverside vendor. I followed the fishermen's example, and waded into the river, and asked myself how I'd become so fortunate.",
+                "The Mayenne met the Loire at Angers, a historic city speckled with museums and art installations. The Loire was low when I visited; a victim of a brutal heatwave that wreaked havoc on a number of European rivers during my visit. One night in August, I was able to setup a tent and camp right on the enlarged riverbank -- taking cover behind a fallen tree."
+            ]
         },
         { //Segment 5 -- Alsace
-            "header": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
-            "paragraphs": []
+            "header": "I came to Alsace from Paris, looking to detox from a week of castles, museums and wine tastings. I succeeded in avoiding two of the three (turns out they have wine in Alsace too), and was treated to a few days of glorious gravel riding along the TMV heading south to Switzerland.",
+            "paragraphs": ["I came to Alsace from Paris, looking to detox from a week of castles, museums and wine tastings. I succeeded in avoiding two of the three (turns out they have wine in Alsace too), and was treated to a few days of glorious gravel riding along the TMV heading south to Switzerland.",
+            "My ride through the Grand-Est, the regional conglomerate that consists of Alsace, Lorraine and Champagne-Ardenne, did not feel like the France I had been visiting for the better part of a month. Some of this can be chalked up to the terrain. The Vosges Mountain Range hug France's eastern border with Germany, and provide some much needed variety in elevation.",
+            "The Traversée du Massif Vosgien bike route was the perfect way to experience this region. Mile after mile of dirt and gravel path that dipped into mature forests and wooded valleys, before ejecting weary riders back into civilization to resupply. While my touring bicycle and 37mm tyres occasionally balked at being asked to climb the TMV's loose, shifty soil, I found the route to be largely manageable. I found the real test to be the deerflies, who, lacking any compassion for my beleaguered and under-geared state, used any moments of rest as opportunities to attack.",
+            "After dipping out of the TMV near the medieval canal city of Colmar, I made a beeline for the Swiss Border, forgoing sightseeing in order to try and stick to my three-month itinerary. I regret this somewhat -- my next trip to France will certainly include a slower-paced tour of the German-French border towns and a tour of the Rhine. At the time, I was content to ride south, pilfering fresh grapes from the local vineyards as I completed my first month of travel by bicycle."]
         },
         { //Segment 6 -- Swiss Jura
-            "header": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
-            "paragraphs": []
+            "header": "I entered Switzerland with a simple plan: cross the Jura mountains, make a beeline for Interlaken, and sprint over the Alps before this famously expensive country had a chance to suck my bank account dry. What I didn't consider was that, over the course of a week, I'd fall in love with a country that offers the pinnacle of outdoor beauty, and excellence in civic design.",
+            "paragraphs": ["Switzerland presents itself as a relaxing place, but in reality it's quite dramatic. Like a beautiful woman hiding from the police after murdering her no-good husband, but who can't help but attract attention wherever she goes. This tiny country just can't help but be a bit extra.",
+            "So Switzerland doesn't just have a network of signposted bike trails. It has an intricate web of biking, mountain biking, hiking and cross-country skiing trails, and by following the intuitive signs and well-placed map, you can cross between any two areas of the nation while minimising time spent next to cars. You also have a built-in network of wild camping spots. Just follow the nearest hiking route signs to find yourself in pristine, wooded wilderness.",
+            "The terrain is next-level as well. The French-Speaking regions of Jura and Bern consist largely of bucolic landscapes and rolling green hills that will test even the hardiest of climbers. In-between upward treks, I rolled through hoards of roaming sheep and cattle, and camped in secluded glens nestled within the landscape.",
+            "I was consistently impressed with the level of care the Swiss appeared to show to the landscape. Rare was the farm I saw that wasn't perfectly manicured, with clean fences demarcating the boundaries between different properties, and giving structure to the otherwise wild terrain. It looked as though humans and nature had found some way to co-exist here."]
         },
         { //Segment 7 -- Swiss Alps
-            "header": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
-            "paragraphs": []
+            "header": "The Alps are tall. And steep. And require several days of climbing to scale, even with the assistance of vittles from mountainside cafes. Still, there was no better place to test my quad strength, and the descent from peaks of this famous range rank among my most exhilarating moments seated on a bicycle.            ",
+            "paragraphs": ["The stretch between Interlaken and the Swiss Border town of Lugano is marked by three challenging climbs: the Grimselpass, the Furkapass and the Gotthardpass. Conquering these peaks was no small feat. There's rarely a stretch of pavement where the grade dips below 6%, and I was either crawling along in my easiest gears, or leaning on the brakes as I descended around dangerously sharp switchbacks.",
+            "Luckily, the gorgeous vistas distracted me from the pain in my legs. Each new corner I rounded showed off a fresh view of the Alps in all their glory, and I never tired of seeing the snow-tipped peaks meet the sky. Back on the ground, my route also took me past a number of charming skiing villages, complete with historic hotels each claiming a slice of alpine history for themselves.",
+            "I stayed overnight in one famous lodging, the Hotel Grimsel Hospiz, which boasted having provided shelter for the early wave of alpine tourists, who came to scale Switzerland's peaks in the early 1930s. In the foyer, burry black-and-white photos show squadrons of heavily-bundled hikers standing in knee-deep snow, waiting for their chance to nab a peak.",
+            "The small towns atop the mountain range had a sort of mystical, out-of-time quality to them. Maybe I was simply romanticising my journey, or perhaps it was the pervasive fog that gathered in the evenings and early mornings, obscuring my sight and forcing me to slowly crawl along the shrouded cobblestone roads. The quiet nature of that place only made the cultural shift feel more dramatic as I headed south, away from the German-speaking regions of Switzerland and into the Italian-influenced canton of Ticino.",
+            "It's in Ticino where the occasionally stiff Swiss culture finally lets its hair down. The laid-back attitude is exemplified by the regional capital of Bellinzona, a medieval town characterised by tight, claustrophobic streets surrounded by a network of defensive castles. I was lucky enough to cycle through on a market day, and relished the opportunity to sample the local pastry craft alongside throngs of socialising locals.        "
+        ]
         },
         { //Segment 8 -- Lombardy
-            "header": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
-            "paragraphs": []
+            "header": "If you're looking for variety, come to Lombardy. From the luxury lake district of Como, to the dusty passes of the Po River Valley, on to the peaks of the Venetian Prealps, this diverse region never ran out of ways to surprise me.",
+            "paragraphs": ["It took some time for Italy's charms to reveal themselves to me. Perhaps I didn't take the loss of Switzerland's tranquil mountainsides well. Instead of luxuriating on the banks of the famous Lake Como, I found myself dodging cars on tight streets, and pedaling furiously to shorten my stints in claustrophobic tunneled roads.",
+            "My enlightenment remained elusive even after departing the land of rental yachts and leased ferraris. Stretching across northern Italy lies the Po River Valley, essential in antiquity for providing arable land and a means of local transport. Today, much of this area (or perhaps just the region I traversed between Milan and Verona), is a barren, industrial landscape, characterized by small towns occasionally poking up from scrubby grass and stands of trees. The dusty visage wasn't helped by the persistent drought that has been ongoing in the area.",
+            "Things looked up a bit after reaching Lake Garda, Italy's largest lake which lies directly west of Verona. Here, in order to heal my increasingly onerous mood, I sentenced myself to three days of mandatory sightseeing while basing myself out of the tiny lakeside town of Cola. For whatever reason, Garda appeared far less bustling than the western lakes, and I had no issue cycling between my accommodations and various museums and historical sites.",
+            "In the interest of perpetuating my good mood, I pointed my wheel north into the mountains, in order to attempt the Veneto Divide gravel biking route. The Venetian Prealps are certainly less famous than the Alps proper and the Dolomites, but the foothills north of Verona certainly provide enough in the way of a challenge for a cyclist looking to climb.",
+            "It was riding through the chalky white gravel trails in the Parco della Lessinia that I really began to fall in love with the regions. This natural zone was all rolling hills and stunning views, accompanied by a pervasive sense of calm that I'd been missing ever since leaving Switzerland. The sunset was glorious as I rode alongside miles of preserved trenchline that the Italian and Austrian armies had carved into the exposed rocky earth during the first world war."]
         },
         { //Segment 9 -- Veneto
-            "header": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
-            "paragraphs": []
+            "header": "The Italy of yore was more than just Romans. While cycling through this eastern province, you'll be riding over the remnants of one of the most fascinating naval mercantile empires ever to control the high seas -- the once mighty Venetian Republic.",
+            "paragraphs": ["Going to Venice wasn't originally part of my plans. The canal-lined city has gotten something of a bad rap in the last few years, and I was wary of going out of my way to visit what I feared could end up a pricey and underwhelming urban excursion. Still, while riding through the surrounding hinterlands of Veneto, I felt myself getting drawn into the floating city's orbit.",
+            "It didn't help that much of central Veneto, at least the parts outside of the main cities, is dreadfully dull. The pervasive decay of the Po River Valley sadly strikes again here, rendering each day in the saddle something of a doldrum. Luckily, the major towns I visited, Vicenza and Padova, made up for the boredom on approach by providing excellent food and lodging.",
+            "Still, by the time I was leaving the raucous open squares of Padova, I was ready to be out of Italy. I longed for a return to the forests and hills of France and Switzerland, and hoped that Slovenia would offer more excitement. I can't say what drew me south to Venice, but I hatched a plan to ride around the dead-flat Venetian Lagoon by cutting through the southern peninsula of Chioggia. From there, all it took was one missed ferry to strand me on a nearby beach for the night. At daybreak, after fending off a hoard of the lagoon's infamous mosquitos, I decided to venture into the famous city.",
+            "Venice is stunning. Don't let the naysayers fool you, this is absolutely one of the most romantic cities in the world. Sure, you'll be in extremely close quarters with tourists of all stripes. And you'll be hard pressed to find a decent meal. But there's almost nowhere else on earth you can take hours of circuitous ferry rides around a floating city, and admire mile after mile of waterside architecture.",
+            "I was in something of a stupor while exploring the city, half due to the grandeur and half thanks to breaking camp at 5AM. Straight from the blue-green sea rises multi-story cathedrals, hotels and domiciles. Stop to explore, and you'll find apartment doors with water gently lapping at the bottom, alongside stairs leading straight into the briny deep."]
         },
         { //Segment 10 -- Slovenia
-            "header": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
-            "paragraphs": []
+            "header": "Somehow, despite being home to awe-inspiring mountains, crystal-clear waters and millennia-old forests, Slovenia all too often slips under the radar of foreign tourists. Guided by the West Loop bike route that promised to guide me to Slovenia's hidden treasures, I embarked on a lengthy journey to explore this tranquil land.",
+            "paragraphs": ["The Slovenia West Loop is a long-distance gravel route that connects many of the most popular tourist destinations in the region's mountainous north-western region. After taking a break in the Italian border town of Nova Gorizia to dodge some storms, I pointed my wheel north and began to climb.",
+            "This region of the country was a paradise to cycle in. My ideal biking conditions are recurring swells and dips -- I like to break out my climbing gears, without feeling like I've entered into a fight to the death with the mountainside. The road between Nova Goriza and the alpine peaks of Triglav National Park exemplified this notion, always keeping me on my toes without making me feel as though I was in over my head.",
+            "There were certainly some death climbs to be had though. Most famous is the Vršič Pass, a 5000 ft climb over the Julian Alps that required hours of slow progress up interminable switchbacks. It's lucky that, like the mountain passess of Switzerland, the scenic views are consistently impressive, as are the small roadside cafes offering drinks and danishes.",
+            "After touring Triglav, the Slovenia West Loop winds down through the famous Lake Bled, with its island church and into Ljubljana, Slovenia's capital. Returning to a decidedly urban landscape after spending a week in natural idyll was difficult, but the city bustle had its charm. Chief among them was the chance to do some shopping. By this point in mid-September, the evening temperature was dipping into the low forties, and the pervasive chill forced me to invest in a new hoodie.",
+            "From Ljubljana, I set out for the Croatian border. In hopes of returning to quieter environs, I planned on travelling to the central Croatian province of Kvarner, where I hoped I would be able to cycle in peace and dodge crowds. South-eastern Slovenia unfortunately lacks the charm of the north. Much of the land is low and marshy, and there was little in the way of mountains, lakes, or other attractions. It was on a diet of bread and honey that I lived upon as I ventured into the Balkans."
+            ]
         },
         { //Segment 11 -- Croatia
             "header": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
-            "paragraphs": []
+            "paragraphs": ["My initial entrance to Croatia was difficult. In September 2022, Croatia was still a few months away from entering the Schengen Zone, meaning that leaving Slovenia would require me to cross my first 'hard' border since entering Iceland. Unfortunately, the border officials were a bit too excited by the prospect of entering the Eurozone proper, and cut the power to their station in celebration. Without power, they refused to allow me into the country, instead pointing me to an alternative crossing 30 miles to the North. I arrived in Croatia in the middle of the night, and was overjoyed to find that the host of my pre-booked accommodation had waited for me, and quickly shepherded me into a warm room.",
+            "This level of hospitality was consistent throughout Croatia, and in the Balkans in general. By this point I had largely abandoned camping, due to dropping fall temperatures and an abundance of affordable, humble lodgings. My spending increased slightly, but I found myself warmed by the conversations I shared with the hoteliers, who were all too happy to chat and discuss life and regional delicacies over an espresso, or, occasionally, a glass of stiff local liquor. I often found myself sad to leave these warm environs, as the wide-open moors of central Croatia offered little protection from the wet mid-September weather.",
+            "In the first half of my journey, Croatia espoused a sort of Gothic-Balkan character that made for depressing cycling beneath a solid grey sky. The small towns of Gravac and Knin failed to make a strong impression, and I eventually resolved to head south towards the coast in search of more scenic environs.",
+            "This was the right call -- south of Split, I joined Route 8, a major roadway that snakes down the Adriatic coastline leading straight into Albania. The views were sublime -- gentle waves and sunsets were my constant companions for the rest of the trip south. This tranquility was probably only possible because it was the shoulder season -- I shudder to think of the traffic produced by the high summer months.",
+            "All the same, the Croatian coast seemed to possess a kind of easy calm that the north lacked. I chalk this up to solid road planning. In many countries, major roads are placed right alongside the coast, allowing for impressive development at the cost of disturbing the small towns already stationed on the seaside. Instead, Route 8 rests a few miles off the coastline, and usually is a few hundred metres above sea level. As a result, if you're looking for the beach, all one has to do is hop off the highway, coast down some hills, and throw on your sandals. But be forewarned -- often the climb back to the main thoroughfare is so steep that you'll start looking for excuses to spend just one more day in the sun."]
         },
         { //Segment 12 -- South Balkans
-            "header": "Holland provides an exceptionally easy start point for a bike tour, thanks to its flat terrain and world-class cycling infrastructure. If the safe cycling conditions don't win you over, then the sandy dunes that blanket the low country's western seaboard will, by providing ample opportunity for some fun in the sun.",
-            "paragraphs": []
+            "header": "On my way south through the Balkans, Montenegro and Albania mark the final stops on my lengthy voyage. A part of me doesn't want to stop -- there's always another mountain range! But this whole thing is getting rather long in the tooth, so it's about time to bring it all to an end.",
+            "paragraphs": ["The coastal Balkans are not often thought of as the 'highlight' of a continental bike trip. There are no bike lanes to direct cycle tourists away from busy roadways. There are attractions, to be sure, but the squat fortifications rising from dusty hills are raw, and a far cry from the manicured experiences offered by Western Europe.",
+            "Still, the charm of the Balkans can be seen in the differences between itself and the West. Immediately upon entering Montenegro, I was struck by the difference in social characteristics. Everyone wanted to talk -- from the shopkeepers, to the hoteliers, to old men walking down empty streets, with whom I could communicate with only a few words of broken English. The attitude of schoolchildren was most surprising. Each time I rode past a group of kids I was met with a wave of shouts -- greetings and invitations, arms waving through the air at me.",
+            "This level of openness was surprising. I'm not someone who gets lonely easily, but I was beginning to tire of having my only conversations being whether I'd pay with cash or credit. This wasn't an issue in the Balkans. I spent one afternoon in a hotel bar in Montenegro, hearing about a boy who'd moved away at birth and returned, only to be made fun of over the fact that he hadn't learned to fish with the other Montenegrin youths. I talked with a grocer about his hopes that his young boy would someday take over the business he had started a decade ago. I talked to a kid about his dreams of visiting the US someday.",
+            "I was in something of a haze by the time I was in central Albania. Somewhere south of Berat, I lost my appetite, and water began to pass straight through me. I had nausea and stomach cramps. I had been careful with my water sources, but I believe I had contracted giardia. Rather than making the smart decision to rest up, I biked for three more days though southern Albania into Ioannina, Greece before calling it quits."]
         }
     ] as SegmentText[]
 };
 
-const SectionContentList = [
-    {
-        sectionId: 0,
-        title: "Highlights",
-        Icon: GiPhotoCamera,
-        content: [
-            {
-                header: "Slow Travel",
-                content: "forces you off the beaten track. Cycling doesn't allow for a \"greatest hits of Europe\" tour the same way interrailing does; you can't fall asleep in Paris and wake up in Berlin. Instead you have to resign yourself to exist in the space between known places. Every person who grew up watching Rick Steves or Anthony Bourdain has a mental image of what it would be like to walk around Paris or Zurich. But what lies in the small towns and natural spaces between these metropolitan areas? Take a bike, rather than a plane, and you'll find out."
-            },
-            {
-                header: "Balling on a Budget",
-                content: "is absolutely possible when bike touring. Don't let any fears of flying a bike overseas fool you -- most airlines won't charge any more for a bike than they do for checked baggage, and once you've landed, you have permenant, accessible transportation! After you've built your bike, the benefits keep stacking. Paying for parking? Out of the question. Forking over fistfulls of Euros to access the EU's toll highway network? Not an issue. Many tourism bureaus even subsidize bicycle friendly lodging to allow bicycle tourists discounts on their lodging costs! You're losing money not traveling by bike!"
-            }
-        ] as SectionContent[]
-    },
-    {
-        sectionId: 1,
-        title: "Inspiration",
-        Icon: GiInspiration,
-        content: [
-            {
-                header: "Why did you want to do this?",
-                content: "What, you've never wanted to give up all your responsibilities and live life on the road for a while? In all seriousness, I wanted to travel post-COVID, but do so in a way I thought was interesting.",
-            },
-            {
-                header: "How did you come up with this route?",
-                content: "The route is a product of me picking a few dozen \"must-see\" sights between Amsterdam and Greece, and then connecting the dots while trying to use established bicycle routes and greenways whenever possible. Some must-see sights included Mont-Sainte Michel in Western France, the Swiss Alps and Slovenia's Triglav national park. The hole in central France is the result of a trip to Paris with friends after meeting in the Loire, after which I decided on a change of scenery."
-            }
-        ] as SectionContent[]
-    },
-    {
-        sectionId: 2,
-        title: "Req. Gear",
-        Icon: GiLightBackpack,
-        content: [
-            {
-                header: "The bike",
-                content: "I used was a 2021 Fuji Touring Bike, with a chromoly steel frame, disk brakes, a Deore 48/36/26T crankset and 11-36T, 10-speed rear cassette. I rode 37mm WTB Riddler tyres for the majority of the trip."
-            },
-            {
-                header: "I used panniers and a bike trunk",
-                content: "made by Frost River, an old-school outdoor supply company based out of Minnesota in the U.S. Their bags are made from a water-resistant waxed canvas that's finished with brass and leather for a classic look."
-            }
-        ] as SectionContent[]
-    },
-    {
-        sectionId: 3,
-        title: "Sleeping",
-        Icon: GiCampingTent,
-        content: [
-            {
-                header: "Did you camp the whole time?",
-                content: ""
-            },
-            {
-                header: "What are some tips for wild camping?",
-                content: ""
-            }
-        ] as SectionContent[]
-    },
-    {
-        sectionId: 4,
-        title: "Reflections",
-        Icon: GiMirrorMirror,
-        content: [
-            {
-                header: "Was it hard?",
-                content: ""
-            },
-            {
-                header: "Was it worth it?",
-                content: ""
-            }
-        ] as SectionContent[]
-    }
-] as InfoPanelSection[];
-
 export {
-    SectionContentList,
     text
 };
