@@ -21,3 +21,8 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+
+@font-face {
+  font-family: "Bob's Burgers";
+  src: url('/fonts/bob.ttf');
+}

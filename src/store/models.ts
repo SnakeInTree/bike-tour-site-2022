@@ -31,6 +31,8 @@ export interface Segment {
     displayTitle: string;
     headerImageIndex: number;
     icon: IconType;
+    elevation: number[];
+    dist: number[];
 }
 
 export interface SegmentStats {

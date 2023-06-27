@@ -34,7 +34,9 @@ const segmentData = [
     location: "South Holland / Zeeland, the Netherlands",
     displayTitle: "The Low Sky",
     headerImageIndex: 4,
-    icon: GiWindmill
+    icon: GiWindmill,
+    elevation: holland.elevation,
+    dist: holland.dist,
   },
   {
     name: "Belgium",
@@ -49,7 +51,9 @@ const segmentData = [
     location: "Flanders, Belgium",
     displayTitle: "Biking by Belfries",
     headerImageIndex: 6,
-    icon: GiBelgium
+    icon: GiBelgium,
+    elevation: belgium.elevation,
+    dist: belgium.dist,
   },
   {
     name: "Normandie",
@@ -64,7 +68,9 @@ const segmentData = [
     location: "Hautes-de-France / Normandy, France",
     displayTitle: "Pilgrimage",
     headerImageIndex: 10,
-    icon: GiFrance
+    icon: GiFrance,
+    elevation: normandy.elevation,
+    dist: normandy.dist,
   },
   {
     name: "Pays de la Loire",
@@ -79,7 +85,9 @@ const segmentData = [
     location: "Pays de la Loire, France",
     displayTitle: "Valley of Kings",
     headerImageIndex: 6,
-    icon: GiCastle
+    icon: GiCastle,
+    elevation: loire.elevation,
+    dist: loire.dist,
   },
   {
     name: "Alsace",
@@ -94,7 +102,9 @@ const segmentData = [
     location: "Grand-Est / Franche-Comté, France",
     displayTitle: "Woods",
     headerImageIndex: 1,
-    icon: GiForest
+    icon: GiForest,
+    elevation: alsace.elevation,
+    dist: alsace.dist,
   },
   {
     name: "Bernese Lowlands",
@@ -109,7 +119,9 @@ const segmentData = [
     location: "Jura / Bern, Switzerland",
     displayTitle: "Jura Explorer",
     headerImageIndex: 7,
-    icon: GiSwitzerland
+    icon: GiSwitzerland,
+    elevation: forest_switzerland.elevation,
+    dist: forest_switzerland.dist,
   },
   {
     name: "Alpine Switzerland",
@@ -124,7 +136,9 @@ const segmentData = [
     location: "Bernese Highlands / Ticino, Switzerland",
     displayTitle: "Alpine Crossing",
     headerImageIndex: 2,
-    icon: GiMountainRoad
+    icon: GiMountainRoad,
+    elevation: alpine_switzerland.elevation,
+    dist: alpine_switzerland.dist,
  },
   {
     name: "Lombardy",
@@ -139,7 +153,9 @@ const segmentData = [
     location: "Lombardy, Italy",
     displayTitle: "Dolomiti",
     headerImageIndex: 7,
-    icon: GiItalia
+    icon: GiItalia,
+    elevation: lombardy.elevation,
+    dist: lombardy.dist,
   },
   {
     name: "Veneto",
@@ -154,7 +170,9 @@ const segmentData = [
     location: "Veneto, Italy",
     displayTitle: "The Most Serene",
     headerImageIndex: 0,
-    icon: GiSailboat
+    icon: GiSailboat,
+    elevation: veneto.elevation,
+    dist: veneto.dist,
   },
   {
     name: "Slovenia",
@@ -169,7 +187,9 @@ const segmentData = [
     location: "Primorska / Gorenjska, Slovenia",
     displayTitle: "A Realm Unto Itself",
     headerImageIndex: 8,
-    icon: GiMountainClimbing
+    icon: GiMountainClimbing,
+    elevation: slovenia.elevation,
+    dist: slovenia.dist,
   },
   {
     name: "Croatia",
@@ -184,7 +204,9 @@ const segmentData = [
     location: "Kvarner / Dalmatia, Croatia",
     displayTitle: "Karstic Coast",
     headerImageIndex: 4,
-    icon: GiBeachBucket
+    icon: GiBeachBucket,
+    elevation: croatia.elevation,
+    dist: croatia.dist,
   },
   {
     name: "Southern Balkans",
@@ -199,7 +221,9 @@ const segmentData = [
     location: "Coastal Montenegro/Albania, Epirus, Greece",
     displayTitle: "Tour's End",
     headerImageIndex: 5,
-    icon: GiSunset
+    icon: GiSunset,
+    elevation: south_balkans.elevation,
+    dist: south_balkans.dist,
   }
 ] as Segment[];
 

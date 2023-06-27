@@ -61,7 +61,7 @@ const InfoBubble = ({effect, handleClick, writeUp, titlePtOne, titlePtTwo}: {eff
     
     return (
         <div 
-            className={"fixed right-24 top-4 h-160 w-160 nil:hidden lg:flex flex-col justify-center items-center z-30 text-statblack drop-shadow-xl font-mapheader bg-red-200 rounded-full " + (effect ? "animate-landingPageBubble" : null)}
+            className={"fixed right-24 top-0 h-160 w-160 nil:hidden lg:flex flex-col justify-center items-center z-30 text-statblack drop-shadow-xl font-mapheader bg-red-200 rounded-full " + (effect ? "animate-landingPageBubble" : null)}
         >
             <p className="text-5xl font-extrabold mt-10">{titlePtOne}</p>
             <p className="text-5xl font-extrabold">{titlePtTwo}</p>

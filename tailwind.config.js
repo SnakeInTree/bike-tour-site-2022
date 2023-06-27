@@ -23,7 +23,9 @@ module.exports = {
       landingPageBikeRotate: "landingPageBikeRotate 2s ease-in-out forwards",
       landingPageBikeRotateSmall: "landingPageBikeRotateSmall 2s ease-in-out forwards",
       landingPageBikeRide: "landingPageBikeRide 1s linear infinite",
-      landingPageLoading: "landingPageLoading 2s ease-in-out forwards"
+      landingPageLoading: "landingPageLoading 2s ease-in-out forwards",
+      homeButtonMove: "homeButtonMove 0.75s ease-in-out forwards",
+      buttonExpand: "buttonExpand 0.1s ease-in forwards"
     },
     aria: {
       checked: "checked=\"true\"",
@@ -60,6 +62,9 @@ module.exports = {
       "gradient-to-bl": "linear-gradient(to bottom left, var(--tw-gradient-stops))",
       "gradient-to-l": "linear-gradient(to left, var(--tw-gradient-stops))",
       "gradient-to-tl": "linear-gradient(to top left, var(--tw-gradient-stops))",
+      "segment-tracks": "url('/static/seg_tracks13.png')",
+      "tracks": "url('/static/tracks1.png')",
+      "info-section": "url('/static/info_bg.png')",
     },
     backgroundOpacity: ({ theme }) => theme("opacity"),
     backgroundPosition: {
@@ -77,6 +82,7 @@ module.exports = {
       auto: "auto",
       cover: "cover",
       contain: "contain",
+      adjust: "100% auto"
     },
     blur: {
       0: "0",
@@ -184,7 +190,7 @@ module.exports = {
       statgreenborder: "#a9b69c",
       headshotChevronBg: "#DDDEDA",
       contributeborder: "#70D259",
-      segmentHoverBg: "#A23D3B",
+      segmentHoverBg: "#A23D3B", 
       titleGrey: "#31312F",
       infoPanelSectionTitle: "#70D259",
       infoPanelBg: "#D0CFCD"
@@ -370,7 +376,13 @@ module.exports = {
       ],
       playfair: [
         "Playfair Display", "serif"
-      ]
+      ],
+      bobs: [
+        "\"Bob's Burgers\"", "sans-serif"
+      ],
+      otherBobs: [
+        "\"Bob's Burgers 2\"", "sans-serif"
+      ],
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
@@ -379,12 +391,15 @@ module.exports = {
       lg: ["1.125rem", { lineHeight: "1.75rem" }],
       xl: ["1.25rem", { lineHeight: "1.75rem" }],
       "2xl": ["1.5rem", { lineHeight: "2rem" }],
+      "2.5xl": ["1.65rem", { lineHeight: "2.15rem" }],
       "3xl": ["1.875rem", { lineHeight: "2.25rem" }],
+      "3.5xl": ["2rem", { lineHeight: "2.37rem" }],
       "4xl": ["2.25rem", { lineHeight: "2.5rem" }],
       "5xl": ["3rem", { lineHeight: "1" }],
       "6xl": ["3.75rem", { lineHeight: "1" }],
       "7xl": ["4.5rem", { lineHeight: "1" }],
       "8xl": ["6rem", { lineHeight: "1" }],
+      "8.5xl": ["7rem", { lineHeight: "1" }],
       "9xl": ["8rem", { lineHeight: "1" }],
     },
     fontWeight: {
@@ -561,6 +576,7 @@ module.exports = {
       "2/4": "50%",
       "3/4": "75%",
       "2/5": "40%",
+      "3/25": "12%",
       full: "100%",
     }),
     invert: {
@@ -647,6 +663,22 @@ module.exports = {
         },
         to: {
           top: "12rem"
+        }
+      },
+      homeButtonMove: {
+        from: {
+          width: "5rem"
+        },
+        to: {
+          width: "20rem"
+        }
+      },
+      buttonExpand: {
+        from: {
+          width: "0rem"
+        },
+        to: {
+          width: "7rem"
         }
       }
     },
@@ -828,6 +860,7 @@ module.exports = {
       45: "45deg",
       90: "90deg",
       180: "180deg",
+      neg45: "-45deg"
     },
     saturate: {
       0: "0",
@@ -900,9 +933,12 @@ module.exports = {
       20: "5rem",
       22: "5.5rem",
       24: "6rem",
+      26: "6.35rem",
       28: "7rem",
       32: "8rem",
+      34: "8.75rem",
       36: "9rem",
+      38: "9.5rem",
       40: "10rem",
       44: "11rem",
       48: "12rem",
@@ -912,6 +948,7 @@ module.exports = {
       64: "16rem",
       72: "18rem",
       80: "20rem",
+      92: "23rem",
       96: "24rem",
       112: "28rem",
       120: "30rem",
@@ -919,7 +956,9 @@ module.exports = {
       160: "42rem",
       172: "43rem",
       180: "45rem",
-      200: "50rem"
+      164: "48rem",
+      200: "50rem",
+      424: "106rem"
     },
     stroke: ({ theme }) => ({
       none: "none",
@@ -1011,6 +1050,7 @@ module.exports = {
       "1/2": "50%",
       "1/3": "33.333333%",
       "2/3": "66.666667%",
+      "3/25": "12%", 
       "1/4": "25%",
       "2/4": "50%",
       "3/4": "75%",
@@ -1048,6 +1088,8 @@ module.exports = {
       "9/12": "75%",
       "10/12": "83.333333%",
       "11/12": "91.666667%",
+      "28": "28%",
+      "temp": "6%",
       full: "100%",
       screen: "100vw",
       min: "min-content",

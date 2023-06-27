@@ -1,64 +1,21 @@
-import { useDispatch } from "react-redux";
-import { IconContext, IconType } from "react-icons";
-import { GiDutchBike, GiHamburgerMenu } from "react-icons/gi";
-import { GrSettingsOption } from "react-icons/gr";
-import Link from "next/link";
-
-import { toggleDrawerDisplay } from "@/store/reducers/uiDisplay";
-import { updateActiveSegment } from "@/store/reducers/segmentList";
-
-type handleClickFn = () => void;
-
-const Button = ({Icon, iconSize, position, handleClick}: {Icon: IconType,iconSize: number, position: string, handleClick: handleClickFn }) => {
-    const size = {size: `${iconSize}em`};
-    return (
-        <IconContext.Provider value={size}>
-            <div className={`fixed ${position} p-2 z-450 cursor-pointer rounded-xl transition-colors ease-in-out duration-300 hover:bg-red-100`}>
-                <Icon onClick={handleClick}/>
-            </div>
-        </IconContext.Provider>  
-    );
-};
-
-const HomeButton = () => {
-  const position = "top-3 left-3";
-  const iconSize = 4.5;
-  const dispatch = useDispatch();
-  const handleClick = () => dispatch(updateActiveSegment(-1));  
-  return (
-    <Link href={""}>
-      <Button Icon={GiDutchBike} iconSize={iconSize} position={position} handleClick={handleClick} />
-    </Link>
-  );
-};
-
-const DrawerButton = () => {
-  const dispatch = useDispatch();
-  const handleClick = () => dispatch(toggleDrawerDisplay(true));
-  
-  const position = "top-6 right-6";
-  const iconSize = 3;
-  return (
-    <Button Icon={GiHamburgerMenu} iconSize={iconSize} position={position} handleClick={handleClick} />
-  );
-};
-
-const SettingsButton = () => {
-  const position = "bottom-6 left-6";
-  const iconSize = 3;
-  const handleClick = () => null;
-  return (
-    <Button Icon={GrSettingsOption} iconSize={iconSize} position={position} handleClick={handleClick} />
-  );
-};
+import { IconContext } from "react-icons";
+import { GiDutchBike } from "react-icons/gi";
+import { useState } from "react";
+import HomeButton from "./HomeButton";
+import AboutButton from "./AboutButton";
 
 const Buttons = () => {
+  const [hover, setHover] = useState<boolean>(false);
   return (
-    <>
-      <HomeButton />
-      <DrawerButton />
-    </>
+      <IconContext.Provider value={{size: "4.5em"}}>
+        <div className={`fixed flex flex-row justify-around top-3 left-3 w-20  p-2 z-450 rounded-xl transition-colors ease-in-out duration-300 align-center hover:animate-homeButtonMove`} 
+          onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+          <HomeButton menuHover={hover} />
+          <AboutButton menuHover={hover} />
+          <GiDutchBike className="self-center"/>
+        </div>
+      </IconContext.Provider>  
   );
-};
+}
 
 export default Buttons;
