@@ -21,7 +21,7 @@ const Home = () => {
       </Head>
       <main>
         <Buttons />
-        {!showCarousel ?  <LazyMap /> : null}
+        {!showCarousel ? <LazyMap /> : null}
         {showDrawer ? <Drawer /> : null}
         {showCarousel ? <Carousel /> : null}
       </main>

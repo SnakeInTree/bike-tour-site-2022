@@ -15,7 +15,7 @@ const SVGComponent = ({menuHover}: {menuHover:boolean}) => {
       viewBox="0 0 940 788"
       xmlSpace="preserve"
       className={`block w-0 delay-700 overflow-hidden cursor-pointer ${menuHover ? "animate-buttonExpand" : ""}`}
-    ><g  onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+    ><g onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
       <g transform="matrix(10.668 0 0 10.668 467.2783 393.9996)" id="Layer_1" >
         <path
           style={{

@@ -44,4 +44,4 @@ export const SegmentBoundaryMarkers = ({startLatLng, endLatLng} : {startLatLng: 
             </Marker>
         </>
     );
-}
+};

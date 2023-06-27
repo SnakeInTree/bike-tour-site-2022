@@ -1,5 +1,4 @@
-import {GiPhotoCamera, GiInspiration, GiLightBackpack, GiCampingTent, GiMirrorMirror } from "react-icons/gi";
-import { InfoPanelSection, SectionContent, SegmentText } from "@/store/models";
+import { SegmentText } from "@/store/models";
 
 const text = {
     intro: {

@@ -17,14 +17,14 @@ const CarouselContainer = () => {
     const pois = segmentData[activeSegmentId].pois;
     const cloudflareImageIDs = pois.map((poi: Poi) => poi.cloudflareId);
 
-    const { isLoading, isError, data } = useQuery({
+    const resp = useQuery({
         queryKey: ["fetchImages", cloudflareImageIDs],
         queryFn: () => fetchImages(cloudflareImageIDs)
     });
 
     return (
         <div className="fixed top-0 left-0 w-full h-full z-450 flex flex-col items-center align-middle bg-black select-none">
-            {(isLoading || !data) ? 
+            {(resp.isLoading || !resp.data) ? 
                 (<Oval 
                     height={80}
                     width={80}
@@ -37,7 +37,7 @@ const CarouselContainer = () => {
                     strokeWidth={2}
                     strokeWidthSecondary={2}
                 />) :
-                (<Carousel pois={pois} imageData={data} />)
+                (<Carousel pois={pois} imageData={resp.data} />)
             }
         </div>
     );

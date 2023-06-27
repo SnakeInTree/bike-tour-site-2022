@@ -10,7 +10,6 @@ import config from "@/config/default.json";
 import { RootState } from "@/store/store";
 import { Segment } from "@/store/models";
 import segmentData from "@/data/segments";
-import { updateActiveSegment } from "@/store/reducers/segmentList";
 
 //Handle all map movement (zoom, fitToBounds etc)
 const MapController = ({ defaultMapZoom }:{ defaultMapZoom: number }) => {
@@ -25,7 +24,7 @@ const MapController = ({ defaultMapZoom }:{ defaultMapZoom: number }) => {
     return (
         <span className="hidden"></span>
     );
-}
+};
 const Map = () => {    
 
     const mapStyle = { height: "100vh", width: "41.666666%" }; //MapContainer needs an explicitly defined height
