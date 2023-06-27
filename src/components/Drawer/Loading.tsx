@@ -2,8 +2,8 @@ import { Oval } from "react-loader-spinner";
 
 const Loader = () => {
     return (
-        <div className="fixed top-1/3 h-1/2 w-inherit flex flex-row justify-center overflow-x-hidden overflow-y-scroll">
-            <div className="h-full flex flex-col justify-center align-middle ">
+        <div className="w-full h-full flex flex-row justify-center overflow-x-hidden overflow-y-scroll">
+            <div className="h-full flex flex-col justify-center align-center ">
                 <Oval 
                     height={80}
                     width={80}

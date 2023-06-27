@@ -15,7 +15,7 @@ const Chevron = () => {
 
 const Title = () => {
     return (
-        <div className="nil:hidden sm:hidden md:hidden lg:flex flex-col text-7xl font-mapheader font-medium text-center text-tan ml-80 -mt-72 mb-14">
+        <div className="nil:hidden sm:hidden md:hidden lg:flex flex-col text-8.5xl font-bobs font-medium text-center text-tan ml-92 -mt-92 mb-4">
             <span>BIKE</span>
             <span>TOUR</span>
             <span>2022</span>

@@ -16,7 +16,7 @@ const InfoPanel = ({infoPanelText}: {infoPanelText:InfoPanelSection[]}) => {
 
 const SectionTitles = ({infoPanelText, activeSectionId, setActiveSectionId}: {infoPanelText: InfoPanelSection[], activeSectionId: number, setActiveSectionId:Dispatch<SetStateAction<number>>}) => {
     return (
-        <div className="flex flex-row align-middle sm:justify-around md:justify-around lg:justify-center items-center pt-12 bg-tan drop-shadow-md">
+        <div className="flex flex-row align-middle sm:justify-around md:justify-around lg:justify-around items-center pt-4 bg-tan drop-shadow-md">
             {infoPanelText.map((content:InfoPanelSection) => <SectionTitle key={content.title} content={content} activeSectionId={activeSectionId} setActiveSectionId={setActiveSectionId}/>)}
         </div>
     );
@@ -52,7 +52,7 @@ const SectionInfo = ({infoPanelText, activeSectionId}: {infoPanelText:InfoPanelS
 
 const SectionInfoContent = ({ content }: { content:SectionContent }) => {
     const iconProps = {
-        size: "1em",
+        size: "2em",
         color: "#A23D3B"
     };
     return (

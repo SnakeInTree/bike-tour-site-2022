@@ -17,9 +17,10 @@ const PhotoGallery = ({poiList, images}: {poiList: Poi[], images: string[]}) => 
 
     return (
         <div className="relative w-12/12 h-102 flex flex-col items-center py-10 bg-titleGrey drop-shadow-lg">
-            <IconContext.Provider value={{ size: "1em"}}>
+            <IconContext.Provider value={{ size: "2em"}}>
                 <div className="absolute z-450 top-1/3 right-0 m-8 cursor-pointer text-white" onClick={handleIncreasePoiIndex}><AiOutlineRight /></div>
                 <div className="absolute z-450 top-1/3 left-0 m-8 cursor-pointer text-white" onClick={handleDecreasePoiIndex}><AiOutlineLeft /></div>
+                <div className="absolute z-450 top-0 right-0 m-8 cursor-pointer text-white" onClick={handleCarouselTrigger}><AiOutlineFullscreen /></div>
             </IconContext.Provider>
             <TitleChevron />
             <img className="h-fit h-min-50 max-h-120 pointer-events-none" src={config.HTML_IMG_BUFFER_TAG + images[activePoiId]} />

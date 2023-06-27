@@ -1,3 +1,4 @@
+import { LegacyRef, MutableRefObject } from "react";
 import { useQuery } from "react-query";
 import { MdLocationOn } from "react-icons/md";
 
@@ -6,6 +7,7 @@ import StatsBlock from "./Stats";
 import PhotoGallery from "./PhotoGallery";
 import InfoPanel from "./InfoPanel";
 import Footer from "./Footer";
+import ElevationGraph from "./ElevationGraph";
 
 import { fetchImages } from "@/apiUtil/cloudflare";
 import segmentData from "@/data/segments";
@@ -15,7 +17,7 @@ import { text } from "@/data/text";
 import { Poi, Segment, SegmentText } from "@/store/models";
 import config from "@/config/default.json";
 
-const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
+const SegmentInfo = ({activeSegmentId, topOfDrawerRef}: {activeSegmentId: number, topOfDrawerRef: MutableRefObject<HTMLImageElement | null>}) => {
     
     const segment:Segment = segmentData[activeSegmentId];
     const cloudflareIds = segment.pois.map((poi:Poi) => poi.cloudflareId);
@@ -31,7 +33,7 @@ const SegmentInfo = ({activeSegmentId}: {activeSegmentId: number}) => {
                 <Loader />
                 :
                 <div>
-                    <img src={config.HTML_IMG_BUFFER_TAG + data[segment.headerImageIndex]}/>
+                    <img src={config.HTML_IMG_BUFFER_TAG + data[segment.headerImageIndex]} ref={topOfDrawerRef as LegacyRef<HTMLImageElement>} />
                     <Title text={segment.displayTitle} activeSegmentId={activeSegmentId} />
                     <Chevron location={segment.location} />
                     <CondensedHeader displayTitle={segment.displayTitle} location={segment.location} />
@@ -73,7 +75,7 @@ const Chevron = ({location}: {location:string}) => {
 
 const Title = ({text, activeSegmentId}: {text: string, activeSegmentId:number}) => {    
     return (
-        <div className="nil:hidden sm:hidden md:hidden lg:flex flex-row font-mapheader font-medium text-center text-tan pl-8 -mt-28 mb-6 text-7xl">
+        <div className="nil:hidden sm:hidden md:hidden lg:flex flex-row font-bobs font-medium text-center text-tan pl-8 -mt-38 mb-6 text-8.5xl">
                 {text.toUpperCase()}
         </div>
     );

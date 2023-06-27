@@ -3,8 +3,6 @@ import {useQuery} from "react-query";
 import { Oval } from "react-loader-spinner";
 import { IconContext } from "react-icons";
 import {AiOutlineLeft, AiOutlineRight, AiOutlineClose} from "react-icons/ai";
-
-
 import { fetchImages } from "@/apiUtil/cloudflare";
 import segmentData from "@/data/segments";
 import { Poi } from "@/store/models";
@@ -56,7 +54,7 @@ const Carousel = ({pois, imageData}: {pois: Poi[], imageData: string[]}) => {
 
     return (
         <>
-            <IconContext.Provider value={{ size: "1em"}}>
+            <IconContext.Provider value={{ size: "1.5em"}}>
                 <div className="absolute z-450 top-0 right-0 m-8 cursor-pointer text-white" onClick={handleClose}><AiOutlineClose /></div>
                 <div className="absolute z-450 top-2/5 right-0 m-8 cursor-pointer text-white" onClick={handleIncreasePoiIndex} ><AiOutlineRight /></div>
                 <div className="absolute z-450 top-2/5 left-0 m-8 cursor-pointer text-white" onClick={handleDecreasePoiIndex} ><AiOutlineLeft /></div>

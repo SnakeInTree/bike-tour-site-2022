@@ -4,6 +4,7 @@ import {LeafletEventHandlerFnMap, LatLng} from "leaflet";
 import { Polyline, Tooltip, useMap } from "react-leaflet";
 
 import Pois from "./Pois";
+import { SegmentBoundaryMarkers } from "../common/Icons";
 
 import { RootState } from "@/store/store";
 import { Segment } from "@/store/models";
@@ -33,7 +34,7 @@ const PathSegment = ({ segment } : { segment: Segment }) => {
         setPrevActiveSegment(activeSegmentId);
         if (isActiveSegment) {
             setSegmentOpacity(config.SEGMENT_SETTINGS.ACTIVE_OPACITY);
-            map.fitBounds(segment.zoomCoords);
+            map.flyToBounds(segment.zoomCoords);
         }
         else setSegmentOpacity(config.SEGMENT_SETTINGS.ACTIVE_OPACITY);
     }
@@ -72,8 +73,10 @@ const PathSegment = ({ segment } : { segment: Segment }) => {
         <>
             <Polyline positions={segment.gpx} pathOptions={polyLineOptions} eventHandlers={eventHandlers} >
                 {!isActiveSegment && <Tooltip sticky>{tooltipText}</Tooltip>}
+                {isHoverSegment ? <Tooltip sticky permanent>{tooltipText}</Tooltip> : null}
             </Polyline>
             {isActiveSegment ? <Pois pois={segment.pois} /> : null}
+            {isActiveSegment ? <SegmentBoundaryMarkers startLatLng={segment.gpx[0]} endLatLng={segment.gpx.slice(segment.gpx.length - 1)[0]} /> : null}
         </>
     );
 };
