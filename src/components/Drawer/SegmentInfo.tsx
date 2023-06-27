@@ -7,7 +7,6 @@ import StatsBlock from "./Stats";
 import PhotoGallery from "./PhotoGallery";
 import InfoPanel from "./InfoPanel";
 import Footer from "./Footer";
-import ElevationGraph from "./ElevationGraph";
 
 import { fetchImages } from "@/apiUtil/cloudflare";
 import segmentData from "@/data/segments";
@@ -22,24 +21,24 @@ const SegmentInfo = ({activeSegmentId, topOfDrawerRef}: {activeSegmentId: number
     const segment:Segment = segmentData[activeSegmentId];
     const cloudflareIds = segment.pois.map((poi:Poi) => poi.cloudflareId);
 
-    const { isLoading, isError, data } = useQuery({
+    const resp = useQuery({
         queryKey: ["fetchImages", cloudflareIds],
         queryFn: () => fetchImages(cloudflareIds)
     });
 
     return (
         <>
-            {(isLoading || !data) ? 
+            {(resp.isLoading || !resp.data) ? 
                 <Loader />
                 :
                 <div>
-                    <img src={config.HTML_IMG_BUFFER_TAG + data[segment.headerImageIndex]} ref={topOfDrawerRef as LegacyRef<HTMLImageElement>} />
-                    <Title text={segment.displayTitle} activeSegmentId={activeSegmentId} />
+                    <img src={config.HTML_IMG_BUFFER_TAG + resp.data[segment.headerImageIndex]} ref={topOfDrawerRef as LegacyRef<HTMLImageElement>} />
+                    <Title text={segment.displayTitle} />
                     <Chevron location={segment.location} />
                     <CondensedHeader displayTitle={segment.displayTitle} location={segment.location} />
                     <StatsBlock statList={segmentStats[activeSegmentId]} />
                     <Paragraphs segmentText={text.segmentText[segment.segmentId]} />
-                    <PhotoGallery poiList={segment.pois} images={data} />
+                    <PhotoGallery poiList={segment.pois} images={resp.data} />
                     <InfoPanel infoPanelText={SegmentSectionContentList[activeSegmentId]} />
                     <Footer activeSegmentId={activeSegmentId} /> 
                 </div>
@@ -73,7 +72,7 @@ const Chevron = ({location}: {location:string}) => {
     );
 };
 
-const Title = ({text, activeSegmentId}: {text: string, activeSegmentId:number}) => {    
+const Title = ({text}: {text: string}) => {    
     return (
         <div className="nil:hidden sm:hidden md:hidden lg:flex flex-row font-bobs font-medium text-center text-tan pl-8 -mt-38 mb-6 text-8.5xl">
                 {text.toUpperCase()}

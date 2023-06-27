@@ -3,7 +3,6 @@ import Image from "next/image";
 
 import Header from "./Header";
 import StatsBlock from "./Stats";
-import SegmentMenu from "./SegmentMenu";
 import Loader from "./Loading";
 import InfoPanel from "./InfoPanel";
 import Footer from "./Footer";
@@ -22,19 +21,19 @@ const headerCloudflareIds = [config.IMAGES.HEADER_IMG_ID, config.IMAGES.HEADSHOT
 
 const DefaultContent = () => {
     
-    const { isLoading, isError, data } = useQuery({
+    const resp = useQuery({
         queryKey: ["fetchImages", headerCloudflareIds],
         queryFn: () => fetchImages(headerCloudflareIds)
     });
     return (
         <>
-            {(isLoading || !data) ? 
+            {(resp.isLoading || !resp.data) ? 
                 <Loader />
                 :
                 <div>
-                    <Header headerImage={data[0]} />
+                    <Header headerImage={resp.data[0]} />
                     <StatsBlock statList={introStats} />
-                    <IntroParagraph headshotString={data[1]} />
+                    <IntroParagraph headshotString={resp.data[1]} />
                     <BreadcrumbMenu segments={segmentData} />
                     <InfoPanel infoPanelText={HomeScreenSectionContent} />
                     <Footer activeSegmentId={-1} />

@@ -23,12 +23,12 @@ const Breadcrumb = ({segment, top}: {segment: Segment, top:boolean}) => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <div className={"h-1/4 text-center " +  (segment.segmentId === 0 ? "pl-8" : "")}>{top ? <span className={labelStyle}>{segment.name}</span> : null}</div>
+            <div className={"h-1/4 text-center " + (segment.segmentId === 0 ? "pl-8" : "")}>{top ? <span className={labelStyle}>{segment.name}</span> : null}</div>
             <div className={"h-1/2 flex items-center"}><BsFillRecordCircleFill /></div>
             <div className={"h-1/4 text-center " + (segment.segmentId === 11 ? "pr-8" : "")}>{top ? null : <span className={labelStyle}>{segment.name}</span>}</div>
         </li>
     );
-}
+};
 
 const BreadcrumbMenu = ({segments}: {segments: Segment[]}) => {
     return (    
