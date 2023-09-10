@@ -34,7 +34,7 @@ const PathSegment = ({ segment } : { segment: Segment }) => {
         setPrevActiveSegment(activeSegmentId);
         if (isActiveSegment) {
             setSegmentOpacity(config.SEGMENT_SETTINGS.ACTIVE_OPACITY);
-            map.flyToBounds(segment.zoomCoords);
+            map.flyTo(segment.zoomCoords, segment.zoomLevel);
         }
         else setSegmentOpacity(config.SEGMENT_SETTINGS.ACTIVE_OPACITY);
     }

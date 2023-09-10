@@ -4,34 +4,25 @@ import { Poi } from "@/store/models";
 const PoiList: Poi[][] = [[
     {
         title: "Building the Bike",
-        desc: "After landing, I retreived my bike and put it together in my hotel room. There was some surface damage to a headset bearing, but nothing trip-stopping.",
-        location: "citizenM Hotel outside Schipol Airport, Holland",
+        desc: "After landing, I retrieved my bike and put it together in my hotel room. There was some surface damage to a headset bearing, but nothing trip-stopping.",
+        location: "Schipol Airport, Holland",
         cloudflareId: "ae250e5f-801d-4976-21ac-030eb867cc00",
-        position: [52.31, 4.76] as LatLngExpression,
+        position: [52.377671, 4.747822] as LatLngExpression,
         date: "7/20",
         iconType: "journal"
     },
     {
-        title: "Share the Road!",
-        desc: "On the bike paths from Amsterdam to Alkmaar, it was common to come across some organic barriers. Farm animals are everywhere in Holland, even in suburban areas, so it's only right that they get to use public infrastructure as well.",
-        location: "Hoofddorp, Holland",
-        position: [52.30, 4.67] as LatLngExpression,
-        date: "7/21",
-        cloudflareId: "ead8a2d7-8582-4f96-fe04-c9b4c5e69200",
-        iconType: "animal"
-    },
-    {
-        title: "Cable Ferry",
-        desc: "I love these little guys. They're very whimsical and a hundred times more fun than a bridge. Check out the heron relaxing next to the riverbank. Does someone pull them out during the winter?",
-        location: "Hoofddorp, Holland",
-        position: [52.30, 4.67] as LatLngExpression,
-        date: "7/21",
-        cloudflareId: "1ca1cb22-d592-4c97-c599-da2176c1ef00",
+        title: "Bike Safes",
+        desc: "Need to catch a train, but don't want your bike left out in the rain? No problem! Own a decent bike but not a matching D-Lock? No problem! These safes are beautiful and I wish they were more normalized.",
+        location: "Uitgeest, Holland",
+        position: [52.468, 4.646] as LatLngExpression,
+        date: "7/24",
+        cloudflareId: "89eb3f3a-3b68-44db-8e42-528cdef65b00",
         iconType: "journal"
     },
     {
         title: "Beachfront Fortifications",
-        desc: "Remnants of the Nazi Occupation of Holland (1940-45) are plentiful on Holland's coastline. Today, bunkers and trench lines bear plaques of rememberance and offer blank canvases for those interested in leaving a mark.",
+        desc: "Remnants of the Nazi occupation of Holland are plentiful along the North Sea. Built as part of the Atlantic Wall, defensive bunkers and pillboxes litter the sand, and today you can still crawl through the cramped corridors that soldiers once occupied. No serious engagements took place on this coastline, so most of the fortifications remain eerily preserved in the surf.         ",
         location: "Egmond aan Zee, Holland",
         position: [52.61, 4.62] as LatLngExpression,
         date: "7/23",
@@ -39,26 +30,17 @@ const PoiList: Poi[][] = [[
         iconType: "monument"
     },
     {
-        title: "The Schermerhorn Windmills",
-        desc: "Built in the 17th century to drain the peat bogs of northern Holland.",
+        title: "Schermerhorn Windmills",
+        desc: "You just can’t go to Holland without seeing some windmills. They’re not just for show either -- the specimens pictured are well-preserved relics from the seventeenth century that were instrumental in draining Holland’s peat bogs and converting them into arable land. ",
         location: "Schermerhorn, Holland",
         cloudflareId: "fbf8b0ef-1628-4a22-4de8-c2060ce8c100",
-        position: [52.31, 4.76] as LatLngExpression,
+        position: [52.604383, 4.903742] as LatLngExpression,
         date: "7/20",
         iconType: "monument"
     },
     {
-        title: "Bike Safes",
-        desc: "Need to catch a train, but don't want your bike left out in the rain? No problem! Own a decent bike but not a matching D-Lock? No problem! These safes are beautiful and I wish they were the norm outside public transit.",
-        location: "Uitgeest, Holland",
-        position: [52.61, 4.62] as LatLngExpression,
-        date: "7/24",
-        cloudflareId: "89eb3f3a-3b68-44db-8e42-528cdef65b00",
-        iconType: "journal"
-    },
-    {
-        title: "Boat Tour!",
-        desc: "Haarlem is the perfect place to take a lazy summer cruise. A main canal rings the city, with watery tendrils snaking their way to the interior, allowing a savvy helmsman access to any number of riverside bars. Find a friend with a boat and enjoy.",        
+        title: "Lazy River Cruise",
+        desc: "No, it’s not a Monet painting, it’s a scene from one of the many canals that snake through the idyllic Dutch town of Haarlem. From a central thoroughfare that rings the city, watery pathways give the savvy helmsman access to any number of riverside bars.",        
         location: "Haarlem, Holland",
         position: [52.37, 4.63] as LatLngExpression,
         date: "7/24",
@@ -67,16 +49,52 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Bike Check",
-        desc: "After a quiet night at a local campground, my trip began in earnest. The bike pictured is a 2021 Fuji Touring Bike, with a Chromoly Steel frame, Deore groupset and Disc brakes. I traveled light -- all of my clothing and camping gear I stored in my panniers, besides my tent that I strapped to my handlebars.",
+        desc: "After spending much of my first week in Holland meeting with family and friends, my trip begins in earnest. The bike pictured is a 2021 Fuji Touring Bike, with a Chromoly Steel frame, Shimano Deore groupset and Disc brakes. I travelled light, with all of my clothing and camping gear stuffed into my panniers. Some local Dutch kids clowned on my bike choice, but I guess that comes with the station. ",
         location: "Noordwijk, Holland",
         position: [52.24, 4.44] as LatLngExpression,
         date: "7/25",
         cloudflareId: "e0798968-83ec-494b-cd09-13373be67900",
-        iconType: "camp"
+        iconType: "journal"
+    },
+    {
+        title: "Coastal Memorial",
+        desc: "The beaches outside the small fishing town of Katwijk are lined with lonely statues. Nearby, the Katwijk Museum tells the story of the Dutch fishing industry, while also paying tribute to those hundreds lost at sea over the years. Is the statue meant to depict those on the coast, whose loved ones have failed to return? Or is it to memorialise the hardy inhabitants of this sand-ridden spot?         ",
+        location: "Katwijk aan Zee, Holland",
+        position: [52.19, 4.386] as LatLngExpression,
+        date: "7/25",
+        cloudflareId: "dae732ea-90af-4dc9-27d2-2af9c6819900",
+        iconType: "monument"
+    },
+    {
+        title: "The Dunes",
+        desc: "A bike path stretches across the dunes, and into the horizon.         ",
+        location: "Bollenstreek, Holland",
+        position: [52.158, 4.374] as LatLngExpression,
+        date: "7/25",
+        cloudflareId: "5b170afa-ae12-45c0-6820-bb2602bd4300",
+        iconType: "nature"
+    },
+    {
+        title: "Cable Ferry",
+        desc: "Canals are constants in the Netherlands, and sometimes I was lucky enough to find one of these fun ferries to take me across, rather than a bridge. The floating platform is just large enough for two humans (or one human with a bike), to enter and haul themselves across. They’re super fun to use, and I always got a kick out of seeing them on the side of the bicycle paths.         ",
+        location: "Hoofddorp, Holland",
+        position: [51.940526, 4.246605] as LatLngExpression,
+        date: "7/21",
+        cloudflareId: "1ca1cb22-d592-4c97-c599-da2176c1ef00",
+        iconType: "journal"
+    },
+    {
+        title: "Share the Road!",
+        desc: "While cycling from Amsterdam to Alkmaar, I came across a number of organic barriers. One of the most surprising things I found about Holland, is the widespread presence of farm animals, often not far from urban centres. No spit of land was too small to house a goat, or several chickens. And who would I be to deny them access to public infrastructure?        ",
+        location: "Hoofddorp, Holland",
+        position: [51.849881, 4.07151] as LatLngExpression,
+        date: "7/21",
+        cloudflareId: "ead8a2d7-8582-4f96-fe04-c9b4c5e69200",
+        iconType: "animal"
     },
     {
         title: "Plompe Toren",
-        desc: "In Dutch Legend, this tower is the last remnant of a drowned town. There's little else to know about this out-of-the-way oddity.",
+        desc: "This is a great example of one of those spots I only stumbled across because I biked right by it. In Dutch legend, this tower is the last remnant of a drowned town that lost the centuries-old fight against the waves, and was swept away by the sea.",
         location: "Haamstede, Holland",
         position: [51.68, 3.77] as LatLngExpression,
         date: "7/27",
@@ -87,7 +105,7 @@ const PoiList: Poi[][] = [[
 [ //Seg 1
     {
         title: "Canalside",
-        desc: "After leaving Holland, my goal was to visit Bruges. Luckily, I wasn't the first one to want a quick route between Southern Holland and Bruges. Napoleon Bonaparte ordered the construction of the canal pictured in 1809, to ensure that the port cities lining the North Sea could be quickly reinforced in case of British incursions. Today, the Damme Canal ferries tourists and pleasure cruisers rather than Napoleonic armies, and provides an excellent through-route for cycle tourists.",
+        desc: "After leaving Holland, my goal was to visit Bruges. Luckily, I wasn't the first one to want a quick route between Southern Holland and Bruges. Napoleon ordered the construction of the canal pictured in 1809, to ensure that the port cities lining the North Sea could be quickly reinforced in the event of British invasion. Today, the Damme Canal ferries pleasure cruisers rather than soldiers, and provides an excellent through-route for cycle tourists.",
         location: "Damme, Belgium",
         cloudflareId: "b3add237-f751-468b-beb2-e9137c981c00",
         position: [51.277, 3.309] as LatLngExpression,
@@ -96,7 +114,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Venice of the North",
-        desc: "Bruges is immaculate. Well-kept gardens mirror the secluded pathways as you saunter from sight to sight . You stop to enjoy the view of a picturesque lakeside castle, only for a pair of swans to lazily glide by. You can’t quite accept that the streets are as clean as they are. How do they do it? You half expect that your restaurant’s staff are poised and ready to break into song. Something has to shatter this illusion. Is this place even real?",
+        desc: "Bruges is immaculate. Corridors of well-kept gardens swept alongside the quiet roads that carried me from sight to sight . Pairs of swans glided by lazily, as I stopped to enjoy the view of a picturesque lakeside castle. The streets are clean -- immaculate even. How do they do it? I started to worry that the sharply dressed restaurant staff were about to burst into song. Mickey Mouse was thankfully absent, but I worried that I’d turn a corner and be met with his frightening visage. ",
         location: "Bruges, Belgium",
         cloudflareId: "564f270d-2e7d-4601-541b-94b57e33a400",
         position: [51.22, 3.23] as LatLngExpression,
@@ -105,7 +123,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "How is this place real?",
-        desc: "Fortunately, Bruges is a real place and not, as I feared, a strange Westworld-like simulation. The gothic architecture isn't aftermarket; it is the product of Bruges' good fortune of not being flattened during the world wars. Cars are kept from the city centre not to promote a themepark-like sterility, but to advocate the supremacy of the pedestrian and the cyclist. Sure, Bruges should not be the destination of the thrill-seeking traveler. But for the person who wants to spend their time visiting somewhere truly beautiful, I don't think you can do better than Bruges.",
+        desc: "Fortunately, Bruges is a real place and not some Westworld-like simulation. The gothic architecture isn't aftermarket; it is the product of Bruges' good fortune of not being flattened during the world wars. Cars are kept from the city centre not to promote a themepark-like sterility, but to advocate the supremacy of the pedestrian and the cyclist. Sure, Bruges should not be the destination of the thrill-seeking traveller. But for the person who wants to spend their time visiting somewhere truly beautiful, I don't think you can do better than Bruges.",
         location: "Bruges, Belgium",
         cloudflareId: "7a72780e-733c-4ece-62dc-df871b58d800",
         position: [51.22, 3.23] as LatLngExpression,
@@ -114,7 +132,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Bike Routes of Belgium",
-        desc: "While most Dutchmen would turn up their noses at the Belgian bicycle infrastructure, I was pleasantly surprised by the routes on offer. The Flemish tourist authority has created 9 separate bike touring routes that criss-cross Flanders, offering low-to-no traffic byways connecting major cities like Antwerp, Brussels, Bruges and Ghent. The gravel path shown is part of the Art Cities route or Kunststedenroute which connects Bruges and Ghent. Find more information on this bike route in the 'Links' section below.",
+        desc: "While most Dutchmen would turn up their noses at the Belgian bicycle infrastructure, I was pleasantly surprised by the routes on offer. The Flemish tourist authority has created 9 distinct bike touring routes that criss-cross Flanders, offering low-to-no traffic byways connecting major cities like Antwerp, Brussels, Bruges and Ghent. The gravel path shown is part of the Art Cities route or Kunststedenroute, which connects Bruges and Ghent. Find more information on this bike route in the 'Links' section below.",
         location: "Aalter, Belgium",
         position: [51.113, 3.399] as LatLngExpression,
         date: "7/28",
@@ -133,7 +151,7 @@ const PoiList: Poi[][] = [[
     }, 
     {
         title: "Living City",
-        desc: "It's hard not to compare Ghent to Bruges. They're all of 50 KM apart, both occupy riverfront space and both possess some of the most impressive examples of Gothic architecture in Western Europe. But  Bruges can feel like a diorama. I have a hard time imagining what it'd be like to live there. Ghent, on the other hand, has a pulse. Autos, pedestrians, bikes and tram lines all vie for space within the same cramped cobble roads. University students hustle about between modernist libraries and ancient lecture halls. Ghent feels like it could be home to someone.",
+        desc: "It's hard not to compare Ghent to Bruges. They're all of 50km apart, a slow-flowing river winds its way through both cities and they both possess some of the most impressive examples of Gothic architecture in Western Europe. But Bruges can feel like a diorama. I have a hard time imagining what it'd be like to live there. Ghent, on the other hand, has a pulse. Cars, pedestrians, bikes and tram lines all vie for space within the same cramped cobble roads. University students hustle about between modernist libraries and ancient lecture halls. Ghent feels like it could be home to someone.",
         location: "Ghent, Belgium",
         position: [51.057, 3.720] as LatLngExpression,
         date: "7/28",
@@ -142,7 +160,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Gravensteen - The Castle of the Counts",
-        desc: "The story of Gravensteen is one of great preservation being performed consistently, over centuries. Originally constructed in the 12th century to be the residence of the Counts of Flanders, Gravensteen only served this purpose for two hundred years before the local seat of power was moved elsewhere. This left the citizens of Ghent to figure out what to do with such a property. The castle was used as a private residence, a mint and even a cotton mill before it was rennovated and brought to its current glory in the early 20th century.",
+        desc: "Gravensteen Castle is an imposing structure, satisfying the touristic desire for European castles that look straight out of King Arthur’s court. Originally constructed in the 12th century to be the residence of the Counts of Flanders, Gravensteen served this purpose for two hundred years before the local seat of power was moved elsewhere. This left the citizens of Ghent to figure out what to do with such a property. The castle was used as a private residence, a mint and even a cotton mill before it was renovated and brought to its current glory in the early 20th century.",
         location: "Ghent, Belgium",
         position: [51.057, 3.720] as LatLngExpression,
         date: "7/29",
@@ -151,7 +169,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Sunny Day on the Scheldt",
-        desc: "Leaving Ghent in the mid-afternoon, I started the 100 KM ride to Ypres by following the Scheldt river south. The flat bikeway was quiet, and I didn't see a soul for some hours.",
+        desc: "Leaving Ghent in the mid-afternoon, I started the 100km ride to Ypres by following the Scheldt river south. The flat bikeway was quiet, and I didn't see a soul for many hours.",
         location: "Melden, Belgium",
         position: [50.840, 3.606] as LatLngExpression,
         date: "7/29",
@@ -160,7 +178,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Menenpoort - Gate of Ypres",
-        desc: "The Menin Gate, constructed in 1927 to memorialize one of the roads that led soldiers to the frontlines of the Battle of Ypres, during WWI. Each and every night, stretching back to the memorial's creation, volunteers gather at this bridge to perform the Last Post ceremony by playing a  British bugle call meant to signal an end to the day's activities. I was lucky enough to be entering Ypres at the same time the ceremony was beginning, and watched with a crowd of onlookers. This picture was taken after the mass had dispersed.",
+        desc: "The Menin Gate was constructed in 1927 to memorialise the road that led soldiers to the frontlines of the Battle of Ypres, during WWI. Each night, stretching back to the memorial's creation, volunteers gather at this bridge to perform the Last Post ceremony by playing a British bugle call meant to signal an end to the day's activities. I happened to be entering Ypres at the same time the ceremony was beginning, and watched with a crowd of onlookers. This picture was taken after the mass had dispersed.",
         location: "Ypres, Belgium",
         position: [50.85, 2.89] as LatLngExpression,
         date: "7/29",
@@ -169,7 +187,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Belgian Beer",
-        desc: "I'm not a massive beer guy. But damn if this isn't some of the best beer I've ever tasted. Brewed in Watou, Belgium for the last hundred years, the St. Bernardus Abt 12 is somehow robust yet light -- complex without seeming indulgent. Even if Belgium's reputation for stupendous brews doesn't interest you, make sure to give this one a try.",
+        desc: "I'm not a massive beer guy. But damn -- this is some of the best beer I've ever tasted. Brewed in Watou, Belgium for the last hundred years, the St. Bernardus Abt. 12 is simply wonderful. Even if Belgium's reputation for stupendous brews doesn't interest you, give this one a try if you spot it.",
         location: "Menenpoort, Belgium",
         position: [50.85, 2.89] as LatLngExpression,
         date: "7/30",
@@ -178,7 +196,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Joyeux Noël",
-        desc: "WWI history is inescapable on the border between Belgian and France. Mass graveyards show up every few miles between Ypres and Amiens, alongside monuments to honor the dead. The monument pictured honors the Christmas Truce of 1914, when soldiers on both sides of the trench put down their weapons and came together to spend the night in celebration.",
+        desc: "WWI history is inescapable on the border between Belgium and France. Mass graveyards show up every few miles between Ypres and Amiens. The monument pictured honours the Christmas Truce of 1914, when soldiers on both sides of the trench put down their weapons and came together to spend the night in celebration.        ",
         location: "Mesen, Belgium",
         cloudflareId: "4d75f555-aa5b-448c-dc62-208fe5e54b00",
         position: [50.761, 2.895] as LatLngExpression,
@@ -187,7 +205,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "War is Over",
-        desc: "Inscription Reads: 'To all those who experienced the small peace during the Great War'.",
+        desc: "A monument to the soccer match played between belligerent forces during the Christmas Truce. The inscription reads: 'To all those who experienced the small peace during the Great War'.        ",
         location: "Mesen, Belgium",
         cloudflareId: "38d84aca-c1f1-4331-dbe0-c053dbf47200",
         position: [50.761, 2.895] as LatLngExpression,
@@ -207,7 +225,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Amiens Cathedral",
-        desc: "The Amiens Cathedral was first built in the 13th century, and remains largely complete thanks to the nearly millenia-long labor of French believers. Despite being in on the front-line during the closing days of WWI, this relic managed to avoid major damage.",
+        desc: "The Amiens Cathedral was first built in the 13th century, and remains largely complete thanks to the nearly millenia-long labour of French believers. Luckily, this relic managed to avoid major damage during the world wars, despite standing between Paris and encroaching armies.         ",
         location: "Amiens, France",
         cloudflareId: "fcb84c3d-fb2d-401a-afa8-c00f58329500",
         position: [49.892, 2.303] as LatLngExpression,
@@ -216,7 +234,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Château Gaillard Ruin",
-        desc: "On an embankment overlooking the Seine lies the medieval ruin of Château Gaillard. Built in the 12th century, this stocky fortress saw action during the French effort to conquer Normandy in 1204 and later during the Hundred Years' war in the 15th century. It was destroyed in 1599 by Henry IV, so that future invaders wouldn't benefit from its defensive capabilities.",
+        desc: "The mediaeval ruin of Château Gaillard lies on an embankment overlooking the Seine river. Built in the 12th century, this stocky fortress saw action during the French effort to conquer Normandy in 1204 and later during the Hundred Years' war in the 15th century. It was destroyed in 1599 by Henry IV, so that future invaders wouldn't benefit from its defensive capabilities.        ",
         location: "Les Andleys, France",
         cloudflareId: "75ae4fb6-da9a-4fa7-a53e-a8056a853c00",
         position: [49.235, 1.409] as LatLngExpression,
@@ -225,7 +243,7 @@ const PoiList: Poi[][] = [[
     }, 
     {
         title: "Prix du Pain",
-        desc: "The French bakery is a friend of the bicycle tourist. They are ubiquitous, being found in any town with more than 50 residents. The bread sold there is affordable, with a fresh baguette costing only a Euro. And best of all, as pictured, bread is easily transportable!",
+        desc: "The French bakery is a friend of the bicycle tourist. These businesses are ubiquitous, affordable, and open early in the morning. Best of all, bread is easily transportable!        ",
         location: "Houetteville, France",
         cloudflareId: "9a059aae-e7bc-44af-d8ef-e4118406ca00",
         position: [49.12, 1.11] as LatLngExpression,
@@ -234,7 +252,7 @@ const PoiList: Poi[][] = [[
     }, 
     {
         title: "Baguette-o-matic",
-        desc: "The Baguette of the future, today! These vending machines can be found in some out-of-the-way areas, and are stocked daily (?) with fresh bread. I performed a blind taste test and couldn't tell the difference between a vending machine baguette and one bakery-procured.",
+        desc: "The Baguette of the future, today! These vending machines can be found in some out-of-the-way areas, and are stocked daily with fresh bread. I performed a blind taste test and couldn't tell the difference between a vending machine baguette and one bakery-procured.",
         location: "Les Baux-de-Breteuil, France",
         cloudflareId: "86110c7c-4153-4711-4686-30f9467dee00",
         position: [48.875, 0.798] as LatLngExpression,
@@ -243,7 +261,7 @@ const PoiList: Poi[][] = [[
     }, 
     {
         title: "Abbey of Saint-Evroul",
-        desc: "This former Benedictine Abbey was once a grand estate. Sketches from the 17th century show a palatial commune, with a towering cathedral accompanied by dormitories and surrounding farmland. Unfortunately, following the French Revolution, the Abbey was seized and subsequently had its roof and riches carried away. Today, only a few columns and entryways still stand.",
+        desc: "This former Benedictine Abbey was once a grand estate. Sketches from the 17th century show a palatial commune, with a towering cathedral accompanied by dormitories and surrounding structures. Unfortunately, following the French Revolution, the Abbey was seized and subsequently had its roof and riches carried away. Today, only a few columns and entryways still stand.        ",
         location: "Saint-Evroult-Notre-Dame-du-Bois, France",
         cloudflareId: "d0062a2c-4158-4ca6-b886-a30e1944bb00",
         position: [48.791, 0.462] as LatLngExpression,
@@ -261,7 +279,7 @@ const PoiList: Poi[][] = [[
     }, 
     {
         title: "Roche Torin",
-        desc: "Mont Saint-Michel is visible from many kilometers away thanks to the tidal plains that surround the structure. When the tides recede, local farmers graze sheep on the salty marshland that's revealed. I took a gravel path up the coast to find the main causeway connecting Mont-Saint Michel to the mainland, dodging fellow tourists all the while.",
+        desc: "Mont Saint-Michel is visible from many kilometres away thanks to the tidal plains that surround the structure. When the tides recede, local farmers graze sheep on the salty marshland that's revealed. I took a gravel path up the coast to find the main causeway connecting Mont Saint-Michel to the mainland, dodging fellow tourists all the while.        ",
         location: "Courtils, France",
         cloudflareId: "6a2a0aeb-88a9-424e-1564-f1340011f100",
         position: [48.643, -1.425] as LatLngExpression,
@@ -288,7 +306,7 @@ const PoiList: Poi[][] = [[
     }, 
     {
         title: "Inland Desert",
-        desc: "The low tide leaves miles of barren sands standing between the Abbey and the sea. I could look down and see picnic blankets and umbrellas being set out by adventurous tourists.",
+        desc: "The low tide leaves miles of barren sand standing between the Abbey and the sea. I could look down and see picnic blankets and umbrellas being set out by adventurous tourists.",
         location: "Mont Saint-Michel, France",
         cloudflareId: "e2380ff5-8324-4fc0-dea9-19c9a8beec00",
         position: [48.634, -1.511] as LatLngExpression,
@@ -299,7 +317,7 @@ const PoiList: Poi[][] = [[
 [ //Seg Three
     {
         title: "Wild Camp",
-        desc: "This forest just south of Domfront was my first time wild camping. At dusk, I left the bike path and wandered into the woods to find a flat patch of ground. The night was peaceful, but I awoke to a frightening sight -- dozens of daddy-long-leg spiders, hanging on the other side of the tent mesh, inches from my face. I brushed them off, and was on my way.",
+        desc: "This forest just south of Domfront was my first time wild camping. At dusk, I left the bike path and wandered into the woods to find a flat patch of ground. The night was peaceful, but I awoke to the sight of dozens of daddy-long-leg spiders, hanging on the other side of the tent mesh. I brushed them off, and was on my way.        ",
         location: "Saint-Mars-d'Égrenne, France",
         cloudflareId: "e9811838-615c-4ee7-2e39-82fd225edd00",
         position: [48.55, -0.715] as LatLngExpression,
@@ -317,7 +335,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "The Museum of Naïve Art",
-        desc: "In Laval I stopped by a museum showcasing artwork deemed \"unclassifiable\", on account of its creator's originality. The results are kooky but engaging -- one of my favorite pieces was this lineup of lizard men lining up for kiosks run by grimacing clerks. The museum is free, and offered a great respite from the boiling heat.",
+        desc: "In Laval I stopped by a museum showcasing artwork deemed \"unclassifiable\", on account of its creator's originality. The results are kooky but engaging -- one of my favorite pieces was this lineup of lizard men lining up for kiosks run by grimacing clerks. The museum is free, and offered respite from the boiling heat.",
         location: "Laval, France",
         cloudflareId: "9dd15221-f979-471d-4ba2-97418da9b600",
         position: [48.0639, -0.767] as LatLngExpression,
@@ -326,7 +344,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Riverside Brew",
-        desc: "It was mid-August, and the evenings were warm. My lack of reservation resulted in a nearby restaurant turning me away, but I was able to buy a few beers before shoving off. I dipped my feet in the water and watched the clouds go by.",
+        desc: "It was mid-August, and the evenings were warm. At one campsite, I failed to make a dinner reservation in time and was turned away. Some friendly fellow campers offered me a consolation beer, and I took it and dipped my feet in the water and watched the clouds go by.        ",
         location: "La Jaille-Yvon, France",
         cloudflareId: "132f9d86-d7ab-43e1-949f-688240006000",
         position: [47.718, -0.667] as LatLngExpression,
@@ -344,7 +362,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Galerie David d'Angers",
-        desc: " Pierre-Jean David, known as David d'Angers, was a prolific sculptor active during the early 19th century famous for his works depicting heroes of myth and (then) modern science. The museum shown is a nearly complete collection of his works, storing either an original or mold of each of his many statues, busts and carvings.",
+        desc: " Pierre-Jean David, known as David d'Angers, was a prolific sculptor active during the early 19th century famous for his works depicting heroes of myth and (then) modern science. The museum shown is a nearly complete collection of his works, storing either an original or a mold of each of his many statues, busts and carvings.",
         location: "Angers, France",
         cloudflareId: "bb3ede05-fef0-4c8d-faa4-98701e4d9d00",
         position: [47.470, -0.556] as LatLngExpression,
@@ -353,7 +371,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Tranquil Garden",
-        desc: "Angers is a major French city, but it's not hard to find a quiet spot. I sat outside this urban garden and enjoyed a croissant while bumblebees lazily flew about.",
+        desc: "Angers is a major French city, but it's not hard to find a quiet spot to sit and enjoy a rustic lunch. I sat outside this urban garden and devoured a croissant while bumblebees lazily flew about.        ",
         location: "Angers, France",
         cloudflareId: "9b5ca11d-1570-4d09-7a38-afa0baad7900",
         position: [47.470, -0.556] as LatLngExpression,
@@ -362,7 +380,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Sunset",
-        desc: "The Loire was low this year, with massive patches of sand breaching the middle of this vital waterway. Still, the French made the most of it. I passed a number of picnic goers and people camped out on the banks. It was Friday night, and I could already hear sounds of revelry from celebrants further down the river. ",
+        desc: "The Loire was low this year, with bare patches of sand breaching the middle of this vital waterway. Still, the French made the most of it. I passed a number of picnic goers and people camped out on the banks. It was Friday night, and I could already hear sounds of revelry from celebrants further down the river.        ",
         location: "Turquant, France",
         cloudflareId: "049dd76c-4ebf-4e0a-eef4-a2398f8d8800",
         position: [47.257, -0.0741] as LatLngExpression,
@@ -380,7 +398,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Loire Campsite",
-        desc: "This wildcamping spot was a little more exposed than I was used to, but some fallen trees made for good cover.",
+        desc: "This wild camping spot was a little more exposed than I was used to, but some fallen trees made for good cover.",
         location: "Montsoreau, France",
         cloudflareId: "b287469a-d4b5-49d1-8f27-7ddc82aa9d00",
         position: [47.211, 0.0811] as LatLngExpression,
@@ -391,7 +409,7 @@ const PoiList: Poi[][] = [[
 [ //Seg Four
     {
         title: "Forest Totem",
-        desc: "Upon entering the woods, I came across this Owl Totem, roosting in a hollow stump. I gave a greeting, asked that he forgive my trespass in the forest, and was on my way.",
+        desc: "Upon entering the woods, I came across this owl totem, roosting in a hollow stump. I gave a greeting, and asked that he forgive my trespass in the forest. He stared out at me. I nodded my head, agreeing, and went on my way.         ",
         location: "Reinhardsmunster, France",
         cloudflareId: "e7770e65-d7ce-45aa-e854-de92e8620100",
         position: [48.694, 7.311] as LatLngExpression,
@@ -400,7 +418,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Gravel Grinder",
-        desc: "The Traversée du Massif Vosgien is mostly gravel, and goes through the spine of the Vosges Mountians which make up France's eastern border with Germany. The cycling is sublime, but watch out for deerflies -- I was swarmed during several climbs.",
+        desc: "The Traversée du Massif Vosgien is a gravel route that winds across the spine of the Vosges Mountains. The cycling is sublime, but watch out for deerflies -- I was swarmed during several climbs.",
         location: "Oberhaslach, France",
         cloudflareId: "23c2066f-c718-4433-9c8e-828cd2007600",
         position: [48.565, 7.317] as LatLngExpression,
@@ -409,7 +427,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Woodland Warning",
-        desc: "At several points during the TMV, I came across these rustic signs. I love the suggestion that dangerous bobcats and friendly (?) badgers await you, should you venture left.",
+        desc: "Ah, rustic signage -- how to decode this? Badgers = friends, bobcats = unfriendly? Cockatrice to the left of me? ",
         location: "Oberhaslach, France",
         cloudflareId: "6daacb47-f60b-40a4-e010-92cf6f00ae00",
         position: [48.565, 7.317] as LatLngExpression,
@@ -418,7 +436,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Woodland Warning V2",
-        desc: "Dangerous bobcats and stags on the right; butterflies (?) sharks (?); the wolf pack holds court somewhere to the east; the friendly hedgehog awaits you, no matter what direction you take.",
+        desc: "Now things are getting ridiculous. Wolves? Bi-directional hedgehogs?         ",
         location: "Oberhaslach, France",
         cloudflareId: "e5b96999-2088-417b-6538-69026c693c00",
         position: [48.565, 7.317] as LatLngExpression,
@@ -427,7 +445,7 @@ const PoiList: Poi[][] = [[
     },
     {
         title: "Beers and Views",
-        desc: "I camped out atop a ridge overlooking a small town. As I set up my tent, I saw a fox quickly cross an open pass between stands of trees. I was worried that the swarm of flies that had been shadowing me during the afternoon would re-appear, but the evening air was quiet and calm. I drank my beer in peace.",
+        desc: "The TMV has ample space for wild-camping, if you’re willing to do some scouting off-trail. In this case, I found a flat patch of ground a few hundred feet from the gravel forest service path I was riding. I fished a warm beer out from my bag, along with a day-old baguette, and watched the sunset. ",
         location: "Ottrot, France",
         cloudflareId: "004dc273-64c5-4f36-ddc5-1514c7adc900",
         position: [48.464, 7.409] as LatLngExpression,
@@ -435,20 +453,29 @@ const PoiList: Poi[][] = [[
         iconType: "camp"
     },
     {
+        title: "The Bad Way",
+        desc: "When the road forks, which path do you follow? If you’re looking to complete the TMV, you won’t have a choice. Tackle the climb with a smile -- you’re not out of the woods yet. ",
+        location: "Neubois, France",
+        cloudflareId: "68043c43-963f-4224-c65c-37adc2fc4500",
+        position: [48.289414, 7.325213] as LatLngExpression,
+        date: "8/22",
+        iconType: "nature"
+    },
+    {
         title: "Half-Timber",
-        desc: "The picturesque forests covering Alsace have given rise to a unique kind of timber frame architecture that's common in the region. Squint, and you might end up thinking you're occupying a German fairy tale.",
-        location: "Sélestat, France",
+        desc: "The surrounding woodlands give Alsace’s architecture a decidedly Grimm’s Brother’s vibe. Picturesque timber frame townhouses line the tidy boulevards of many towns near France’s eastern border.",
+        location: "Colmar, France",
         cloudflareId: "e0c63e24-4095-4714-e062-7c30e0f6e000",
-        position: [48.251, 7.448] as LatLngExpression, 
+        position: [48.058768, 7.362536] as LatLngExpression, 
         date: "8/23",
         iconType: "journal"
     },
     {
         title: "Vineyard",
-        desc: "Vineyards are abundant between Colmar and Mulhouse. Refreshingly sweet blue-purple grapes with tough skins and sour seeds made for the perfect mid-ride snack.",
-        location: "Bergheim, France",
+        desc: "The sweet grapes in the vineyards south of Mulhouse introduced me to a life of crime. I didn’t want to become a grape rustler, but once I plucked one of these succulent delights right from the vine, it was hard to contain my inner foraging bear.         ",
+        location: "Altkirch, France",
         cloudflareId: "8b14e408-bf2a-4d0b-8aab-1c504bf98000",
-        position: [48.208, 7.407] as LatLngExpression, 
+        position: [47.630669, 7.266928] as LatLngExpression, 
         date: "8/23",
         iconType: "journal"
     }
