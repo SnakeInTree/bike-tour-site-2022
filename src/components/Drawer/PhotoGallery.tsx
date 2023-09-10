@@ -16,16 +16,18 @@ const PhotoGallery = ({poiList, images}: {poiList: Poi[], images: string[]}) => 
     const handleCarouselTrigger = () => dispatch(toggleCarouselDisplay(true));
 
     return (
-        <div className="relative w-12/12 h-102 flex flex-col items-center py-10 bg-titleGrey drop-shadow-lg">
+        <div className="w-full flex flex-col items-center bg-titleGrey drop-shadow-lg">
             <IconContext.Provider value={{ size: "2em"}}>
                 <div className="absolute z-450 top-1/3 right-0 m-8 cursor-pointer text-white" onClick={handleIncreasePoiIndex}><AiOutlineRight /></div>
                 <div className="absolute z-450 top-1/3 left-0 m-8 cursor-pointer text-white" onClick={handleDecreasePoiIndex}><AiOutlineLeft /></div>
                 <div className="absolute z-450 top-0 right-0 m-8 cursor-pointer text-white" onClick={handleCarouselTrigger}><AiOutlineFullscreen /></div>
             </IconContext.Provider>
             <TitleChevron />
-            <img className="h-fit h-min-50 max-h-120 pointer-events-none" src={config.HTML_IMG_BUFFER_TAG + images[activePoiId]} />
+            <div className="p-8">
+                <img src={config.HTML_IMG_BUFFER_TAG + images[activePoiId]} />
+            </div>
             <ImgCaption poi={poiList[activePoiId]} />
-            <div className="absolute bottom-4 h-4 flex flex-row justify-between w-3/5">
+            <div className="flex flex-row justify-between w-3/5 py-6">
                 {poiList.map((poi: Poi, index: number) => <CarouselDot key={poi.title} index={index} activePoiId={activePoiId} /> )}
             </div>
         </div>
@@ -34,7 +36,7 @@ const PhotoGallery = ({poiList, images}: {poiList: Poi[], images: string[]}) => 
 
 const ImgCaption = ({poi}: {poi:Poi}) => {
     return (
-        <div className="flex flex-col w-9/12 h-28 px-6 mt-6 text-tan font-playfair overflow-y-scroll">
+        <div className="flex flex-col w-9/12 px-6 text-tan font-playfair overflow-y-scroll">
             <div className="flex flex-row space-around justify-between text-xl font-semibold pb-2">
                 <span>{poi.title}</span>
                 <span>{poi.location}</span>
