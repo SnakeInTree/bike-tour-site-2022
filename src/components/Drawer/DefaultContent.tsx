@@ -17,7 +17,7 @@ import config from "@/config/default.json";
 
 import signature from "src/data/signature.png";
 import BreadcrumbMenu from "./BreadcrumbMenu";
-const headerCloudflareIds = [config.IMAGES.HEADER_IMG_ID, config.IMAGES.HEADSHOT, ...segmentData.map((segment: Segment) => segment.pois[segment.headerImageIndex].cloudflareId)];
+const headerCloudflareIds = [config.IMAGES.HEADER_IMG_ID, config.IMAGES.HEADSHOT, config.IMAGES.SIG, ...segmentData.map((segment: Segment) => segment.pois[segment.headerImageIndex].cloudflareId)];
 
 const DefaultContent = () => {
     
@@ -33,7 +33,7 @@ const DefaultContent = () => {
                 <div>
                     <Header headerImage={resp.data[0]} />
                     <StatsBlock statList={introStats} />
-                    <IntroParagraph headshotString={resp.data[1]} />
+                    <IntroParagraph headshotString={resp.data[1]} sigString={resp.data[2]} />
                     <BreadcrumbMenu segments={segmentData} />
                     <InfoPanel infoPanelText={HomeScreenSectionContent} />
                     <Footer activeSegmentId={-1} />
@@ -43,7 +43,7 @@ const DefaultContent = () => {
     );
 };
 
-const IntroParagraph = ({ headshotString }: { headshotString:string }) => {
+const IntroParagraph = ({ headshotString, sigString }: { headshotString:string, sigString: string }) => {
     return (
         <div className="flex flex-row justify-center w-full py-10 bg-tan drop-shadow-top-md">
             <div className="flex flex-col w-10/12">
@@ -57,12 +57,10 @@ const IntroParagraph = ({ headshotString }: { headshotString:string }) => {
                 <p className="text-lg font-playfair mb-10">{text.intro.para5}</p>
                 <p className="text-lg font-playfair mb-10">{text.intro.post}</p>
                 <div className="mb-24">
-                    <Image
-                        src={signature}
+                    <img
+                        src={config.HTML_IMG_BUFFER_TAG + sigString}
                         alt="Kees Signature"
                         placeholder="blur"
-                        width={150}
-                        height={150}
                     />
                 </div>
             </div>
