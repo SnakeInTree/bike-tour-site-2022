@@ -15,7 +15,7 @@ import { Segment } from "@/store/models";
 import { fetchImages } from "@/apiUtil/cloudflare";
 import config from "@/config/default.json";
 
-import signature from "../../../public/signature.png";
+import signature from "public/signature.png";
 import BreadcrumbMenu from "./BreadcrumbMenu";
 const headerCloudflareIds = [config.IMAGES.HEADER_IMG_ID, config.IMAGES.HEADSHOT, ...segmentData.map((segment: Segment) => segment.pois[segment.headerImageIndex].cloudflareId)];
 
