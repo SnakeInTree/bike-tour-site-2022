@@ -11,9 +11,9 @@ export const SegmentBoundaryMarkers = ({startLatLng, endLatLng} : {startLatLng: 
     const activeSegmentId = useSelector((state:RootState) => state.segmentList.activeSegmentId);
     const icons = {
         "start": new Icon({
-            iconUrl: "/static/start5.svg",
-            iconRetinaUrl: "/static/start5.svg",
-            iconSize: [75, 120],
+            iconUrl: "/static/start8.svg",
+            iconRetinaUrl: "/static/start8.svg",
+            iconSize: [40, 40],
         }),
         "end": new Icon({
             iconUrl: "/static/end2.svg",

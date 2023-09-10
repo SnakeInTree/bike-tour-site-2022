@@ -22,7 +22,7 @@ export interface Segment {
     desc: string;
     segmentId: number;
     gpx: [LatLngExpression];
-    zoomCoords: LatLngBoundsExpression,
+    zoomCoords: LatLngExpression,
     kdTree: KDTree;
     pois: Poi[];
     stats: SegmentStats;
@@ -33,6 +33,7 @@ export interface Segment {
     icon: IconType;
     elevation: number[];
     dist: number[];
+    zoomLevel: number;
 }
 
 export interface SegmentStats {

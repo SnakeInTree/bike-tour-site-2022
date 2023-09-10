@@ -10,7 +10,7 @@ const HomeScreenSectionContent = [
         content: [
             {
                 header: "Slow Travel",
-                content: "forces you off the beaten track. Cycling doesn't allow for a \"greatest hits of Europe\" tour the same way interrailing does; you can't fall asleep in Paris and wake up in Berlin. Instead you have to resign yourself to exist in the space between known places. Every person who grew up watching Rick Steves or Anthony Bourdain has a mental image of what it would be like to walk around Paris or Zurich. But what lies in the small towns and natural spaces between these metropolitan areas? Take a bike, rather than a plane, and you'll find out."
+                content: "forces you off the beaten track. Cycling doesn't allow for an unbroken ‘greatest hits of Europe’ tour the same way interrailing does; you can't fall asleep in Paris and wake up in Berlin. Instead, commit yourself to finding the hidden attractions that exist between popular spots. Europe is uniquely well suited for this type of wandering travel. You can’t go more than a couple dozen kilometres without tripping over a site of some interest, often complete with English signage."
             },
             {
                 header: "Balling on a Budget",
@@ -101,14 +101,14 @@ const SegmentSectionContentList = [
             content: [
                 {
                     header: "The world-famous Dutch bike paths",
-                    content: "mean you'll never have to share space with cars. Look out for the LF Routes, Holland's long-distance bicycle route network that highlights the country's most senic rides."
+                    content: "mean you'll never have to share space with cars. Look out for the LF Routes, Holland's long-distance bicycle route network that highlights the country's most scenic rides."
                 },
                 {
                     header: "Haarlem and Rotterdam",
-                    content: "are first-rate tourist destinations with excellent food and museums, alongside their charming systems of canals."
+                    content: "are first-rate tourist destinations with excellent food and museums. The canal systems are boatloads of fun to explore too.                     "
                 },
                 {
-                    header: "Dutch seafood is sorely underappreciated.",
+                    header: "Dutch seafood is sorely underloved.",
                     content: "Bring an appreciation for briney tastes and find some salted herring -- a historic delicacy in the Low Countries!"
                 },
                 {
@@ -124,7 +124,7 @@ const SegmentSectionContentList = [
             content: [
                 {
                     header: "A national network of campsites",
-                    content: "is available through  Natuurkampeerterreinen (lit. Nature Camping Grounds). These campsites are scattered all over the country and offer a consistent level of amenity for a decent price. Prices vary per campsite, I paid between 5-15 Euro."
+                    content: "is available through  Natuurkampeerterreinen (lit. Nature Camping Grounds). These campsites are scattered all over the country and offer a consistent level of amenity for a decent price. Prices vary per campsite. I paid 5-15 Euro per night. "
                 },
                 {
                     header: "The coast is densely populated",
@@ -132,7 +132,7 @@ const SegmentSectionContentList = [
                 },
                 {
                     header: "Most mid-size Dutch cities are replete with hostels",
-                    content: "providing affordable dorm-style lodging. I stayed at Hostel ROOM Rotterdam and had a blast, high marks."
+                    content: "providing affordable dorm-style lodging. I stayed at Hostel ROOM Rotterdam and had a blast."
                 }
             ] as SectionContent[]
         },
@@ -176,7 +176,7 @@ const SegmentSectionContentList = [
             content: [
                 {
                     header: "Bruges and Ghent,",
-                    content: "are two world-class tourist destinations. Don't let Colin Farrell's negative reviews of the Belgian countryside turn you away without exploring these tidy sights."
+                    content: "are two world-class tourist destinations. Don't let Colin Farrell's negative reviews of the Belgian countryside turn you away."
                 },
                 {
                     header: "The legacy of the Great War",
@@ -199,7 +199,7 @@ const SegmentSectionContentList = [
                 },
                 {
                     header: "Hostel Uppelink", 
-                    content: "has a beautiful location in central Ghent, and was largely clean and quiet. I slept in a dorm with a dozen other people, and had a lovely time."
+                    content: "has a beautiful location in central Ghent, and was clean and quiet. I slept in a dorm with a dozen other people, and had a lovely time."
                 },
             ] as SectionContent[]
         },
@@ -234,20 +234,20 @@ const SegmentSectionContentList = [
             Icon: GiPhotoCamera,
             content: [
                 {
-                    header: "Enjoy some crumbly, crusty castles",
-                    content: "in Domfront and Les Andleys. No, not the kind of castle that the marquis lived in and thought about human nature. The type of castle that Philip II hung out in the twelfth century while plotting against the English dogs. The kind that you'll be amazed is still standing."
+                    header: "Enjoy some crumbly castles",
+                    content: "in Domfront and Les Andleys. No, not the kind of castle that the marquis lived in and thought about human nature. The type of castle that Philip II hung out in during the twelfth century while plotting against the English dogs. The kind that you'll be amazed is still standing."
                 },
                 {
                     header: "French bakeries",
-                    content: "are just the best. Cheap and ubiquitous, the presence of the French bakery in just about every small town guarantees that you can get by on a > 10 Euro peasant diet. Just don't expect to be able to get a coffee with your croissant. In France, especially in the countryside, the bakery and the café occupy unrelated niches of gastronomy."
+                    content: "are just the best. Cheap and ubiquitous, the presence of the French bakery in just about every small town guarantees that you can get by on an >10 Euro peasant diet. Just don't expect to be able to get a coffee with your croissant. In France, especially in the countryside, the bakery and the café occupy unrelated niches of gastronomy."
                 },
                 {
                     header: "Mont Saint-Michel",
-                    content: "is gorgeous and absolutely worth your time. Go early, beat the crowds, and, if needed, find somewhere off the medieval streets to duck into and miss the overwhelming tourist crunch that develops as the sun reaches its zenith."
+                    content: "s gorgeous and absolutely worth your time. Go early, beat the crowds, and, if needed, find somewhere off the mediaeval streets to duck into and avoid the tourist crunch that develops as the sun reaches its zenith."
                 },
                 {
                     header: "Normandy is replete with charming small towns,",
-                    content: "in which, if you visit, I guarantee you'll be the only tourist. These towns may only have a single sight to see, and the only restaurant might close at 6 PM, but I appreciated exiting the sightseeing tourist stream, if only for a short while. "
+                    content: "in which, if you visit, I guarantee you'll be the only tourist. These towns may only have a single sight to see, and the only restaurant might close at 6PM, but I appreciated getting off the beaten path, if only for a short while. "
                 },
             ] as SectionContent[]
         },
@@ -258,15 +258,15 @@ const SegmentSectionContentList = [
             content: [
                 {
                     header: "B&B Hotels",
-                    content: "are cheap budget hotels that I hid out in during rainy nights. I was generally pleased with the value provided, and with the morning buffet that allowed me to stuff my bags with as many breakfast rolls as I felt comfortable stealing. "
+                    content: "are cheap budget hotels that I hid out in during rainy nights. I was generally pleased with the provided value, as was I with the breakfast buffet. Thanks to B&B Hotel’s generosity, I often began my day with bike bags stuffed with leftover unwanted breakfast rolls. "
                 },
                 {
                     header: "Flower Camping",
-                    content: "offers a network of French campsites, while charging generally higher costs that I liked paying. The sites themselves were largely oriented towards families and RVs, but the facilities were well-kept and always situated close to the nearest town."
+                    content: "is a network of upscale French campsites which came equipped with pools and large concession stands. The price was often higher than I would have liked, but the facilities were well-kept and always situated close to the nearest town."
                 },
                 {
                     header: "Le Balcon de la Baie Campsite,",
-                    content: "near Mont Saint-Michel was lovely and offered a magnificent cliff top view of the abbey. I was also surprised with a mussel and fry dinner upon arrival!"
+                    content: "near Mont Saint-Michel was lovely and offered a magnificent cliff top view of the abbey. I was surprised with an offer of a dinner of mussels and fries upon my arrival. "
                 },
             ] as SectionContent[]
         },
@@ -306,19 +306,19 @@ const SegmentSectionContentList = [
             content: [
                 {
                     header: "Cycling on established bike routes,",
-                    content: "like the VeloSenic and the Francette, make all the difference. Enjoy a peaceful meander south through shady, forest covered byways that connect the best tourist attractions in the Pays de la Loire."
+                    content: "like the Veloscenic and the Francette, makes all the difference. Enjoy a peaceful meander south through shady, forest covered byways that connect the best tourist attractions in the Pays de la Loire."
                 },
                 {
                     header: "Wild camping",
-                    content: "is simple when following bike paths that lead through forests and rural areas. Often I was able to follow the trail to a forested region and quickly find a spot to sleep a few hundred feet from the route."
+                    content: "is simple, thanks to bike paths that run through forests and rural areas. Often I was able to follow the trail to a forested region and quickly find a spot to sleep a few hundred feet from the route."
                 },
                 {
                     header: "Cosmopolitan cities,",
-                    content: "like Laval and Angers are the flavor of the day in the valley. Enjoy a preponderance of museums, fine dining spots and elegant urban garden squares."
+                    content: "like Laval and Angers are the flavor of the day. Enjoy a preponderance of museums, fine dining spots and elegant urban gardens."
                 },
                 {
-                    header: "Goodbye cramped castles, hello castle-flavored ostentatious estates.",
-                    content: "The Loire Valley is home to some of the most famous French castles including Chambord, Angers and Villandry. I recommend you see the crumbling castles of Normandy first, because it might be hard to go back."
+                    header: "Goodbye cramped castles, hello ostentatious estates.",
+                    content: "The Loire Valley is home to some of the most recognizable French castles including Chambord, Angers and Villandry. I recommend you see the crumbling castles of Normandy first, because it might be hard to go back."
                 },
             ] as SectionContent[]
         },
@@ -333,7 +333,7 @@ const SegmentSectionContentList = [
                 },
                 {
                     header: "I don't recall paying for camping",
-                    content: "anywhere in the Loire. Campsites in the woods, and next to the low river, were easily found. I was also blessed with phenomenal mid-August weather for sleeping outdoors."
+                    content: "anywhere in the Loire. I found wild camping spots easily in the woods, and on riverbanks. I was also blessed with phenomenal mid-August weather for sleeping outdoors."
                 },
             ] as SectionContent[]
         },
