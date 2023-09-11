@@ -18,9 +18,9 @@ const PhotoGallery = ({poiList, images}: {poiList: Poi[], images: string[]}) => 
     return (
         <div className="w-full flex flex-col items-center bg-titleGrey drop-shadow-lg">
             <IconContext.Provider value={{ size: "2em"}}>
-                <div className="absolute z-450 top-1/3 right-0 m-8 cursor-pointer text-white" onClick={handleIncreasePoiIndex}><AiOutlineRight /></div>
-                <div className="absolute z-450 top-1/3 left-0 m-8 cursor-pointer text-white" onClick={handleDecreasePoiIndex}><AiOutlineLeft /></div>
-                <div className="absolute z-450 top-0 right-0 m-8 cursor-pointer text-white" onClick={handleCarouselTrigger}><AiOutlineFullscreen /></div>
+                <div className="absolute z-450 top-88 right-0 m-12 cursor-pointer text-white" onClick={handleIncreasePoiIndex}><AiOutlineRight /></div>
+                <div className="absolute z-450 top-88 left-0 m-12 cursor-pointer text-white" onClick={handleDecreasePoiIndex}><AiOutlineLeft /></div>
+                <div className="absolute z-450 top-0 right-0 m-12 cursor-pointer text-white" onClick={handleCarouselTrigger}><AiOutlineFullscreen /></div>
             </IconContext.Provider>
             <TitleChevron />
             <div className="p-8">
