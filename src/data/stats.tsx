@@ -1,11 +1,13 @@
 import { Statistic } from "@/store/models";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { BiCookie } from "react-icons/bi";
-import { BsSignpostSplit, BsThermometerSun } from "react-icons/bs";
-import { GiBread, GiPathDistance, GiCastle, GiBeerStein } from "react-icons/gi";
+import { BsSignpostSplit, BsThermometerSun, BsFillCloudRainHeavyFill } from "react-icons/bs";
+import { FaStroopwafel, FaSwimmer, FaBell, FaMountain, FaCarCrash, FaWineGlass } from "react-icons/fa";
+import { GiBread, GiPathDistance, GiCastle, GiBeerStein, GiCastleRuins, GiFly, GiTreasureMap, GiCroissant, GiFlatTire, GiGrapes, GiSmokeBomb, GiCruiser, GiWaveCrest, GiForestCamp, GiCroissantsPupil } from "react-icons/gi";
 import { RxPinBottom } from "react-icons/rx";
 import { TbStairsUp, TbMountain } from "react-icons/tb";
-
+import {IoMdBeer} from "react-icons/io";
+import {MdSick} from "react-icons/md";
 
 const introStats = [
     {
@@ -85,9 +87,9 @@ const segmentStats = [
             icon: AiOutlineClockCircle
         },
         {
-            name: "Low Point",
-            value: "6 M.",
-            icon: RxPinBottom
+            name: "Beverages imbibed",
+            value: "++",
+            icon: IoMdBeer
         },
         {
             name: "TOTAL ASCENT",
@@ -100,9 +102,9 @@ const segmentStats = [
             icon: TbMountain
         },
         {
-            name: "Cookies enjoyed daily",
-            value: "1 - 2",
-            icon: BiCookie
+            name: "Waffles devoured",
+            value: "> 10",
+            icon: FaStroopwafel
         }
     ],
     [ //Normandy Stats
@@ -117,9 +119,9 @@ const segmentStats = [
             icon: AiOutlineClockCircle
         },
         {
-            name: "Low Point",
-            value: "6 M.",
-            icon: RxPinBottom
+            name: "Ruins Visited",
+            value: "8",
+            icon: GiCastleRuins
         },
         {
             name: "TOTAL ASCENT",
@@ -181,9 +183,9 @@ const segmentStats = [
             icon: AiOutlineClockCircle
         },
         {
-            name: "Low Point",
-            value: "6 M.",
-            icon: RxPinBottom
+            name: "Bunches of Grapes Rustled",
+            value: "> 15",
+            icon: GiGrapes
         },
         {
             name: "TOTAL ASCENT",
@@ -196,9 +198,9 @@ const segmentStats = [
             icon: TbMountain
         },
         {
-            name: "# of Cookies",
-            value: "1 - 2",
-            icon: BiCookie
+            name: "# of Deerflies Encountered",
+            value: "14k (approx.)",
+            icon: GiFly
         }
     ],
     [ //Bern Stats
@@ -213,9 +215,9 @@ const segmentStats = [
             icon: AiOutlineClockCircle
         },
         {
-            name: "Low Point",
-            value: "6 M.",
-            icon: RxPinBottom
+            name: "Cow's Favorite Instrument?",
+            value: "BELL",
+            icon: FaBell
         },
         {
             name: "TOTAL ASCENT",
@@ -228,9 +230,9 @@ const segmentStats = [
             icon: TbMountain
         },
         {
-            name: "# of Cookies",
-            value: "1 - 2",
-            icon: BiCookie
+            name: "Lakeside Swims",
+            value: "3",
+            icon: FaSwimmer
         }
     ],
     [ //Alps Stats
@@ -245,9 +247,9 @@ const segmentStats = [
             icon: AiOutlineClockCircle
         },
         {
-            name: "Low Point",
-            value: "6 M.",
-            icon: RxPinBottom
+            name: "Mountain Passes Climbed",
+            value: "3",
+            icon: FaMountain
         },
         {
             name: "TOTAL ASCENT",
@@ -260,9 +262,9 @@ const segmentStats = [
             icon: TbMountain
         },
         {
-            name: "# of Cookies",
-            value: "1 - 2",
-            icon: BiCookie
+            name: "Brake Pads Worn Out",
+            value: "2",
+            icon: GiSmokeBomb
         }
     ],
     [ //Lombardy Stats
@@ -277,9 +279,9 @@ const segmentStats = [
             icon: AiOutlineClockCircle
         },
         {
-            name: "Low Point",
-            value: "6 M.",
-            icon: RxPinBottom
+            name: "# of Lake Cruises",
+            value: "3",
+            icon: GiCruiser
         },
         {
             name: "TOTAL ASCENT",
@@ -292,9 +294,9 @@ const segmentStats = [
             icon: TbMountain
         },
         {
-            name: "# of Cookies",
-            value: "1 - 2",
-            icon: BiCookie
+            name: "# of Near Misses",
+            value: "TOO MANY",
+            icon: FaCarCrash
         }
     ],
     [ //Veneto Stats
@@ -309,9 +311,9 @@ const segmentStats = [
             icon: AiOutlineClockCircle
         },
         {
-            name: "Low Point",
-            value: "6 M.",
-            icon: RxPinBottom
+            name: "Fine Wines Enjoyed ",
+            value: "> 10",
+            icon: FaWineGlass
         },
         {
             name: "TOTAL ASCENT",
@@ -324,9 +326,9 @@ const segmentStats = [
             icon: TbMountain
         },
         {
-            name: "# of Cookies",
-            value: "1 - 2",
-            icon: BiCookie
+            name: "# of Dips in the Sea",
+            value: "1",
+            icon: GiWaveCrest
         }
     ],
     [ //Slovenia Stats
@@ -341,9 +343,9 @@ const segmentStats = [
             icon: AiOutlineClockCircle
         },
         {
-            name: "Low Point",
-            value: "6 M.",
-            icon: RxPinBottom
+            name: "Nights under the Stars",
+            value: "7",
+            icon: GiForestCamp
         },
         {
             name: "TOTAL ASCENT",
@@ -356,9 +358,9 @@ const segmentStats = [
             icon: TbMountain
         },
         {
-            name: "# of Cookies",
-            value: "1 - 2",
-            icon: BiCookie
+            name: "Böreks Enjoyed",
+            value: "> 15",
+            icon: GiCroissant
         }
     ],
     [ //Croatia Stats
@@ -373,9 +375,9 @@ const segmentStats = [
             icon: AiOutlineClockCircle
         },
         {
-            name: "Low Point",
-            value: "6 M.",
-            icon: RxPinBottom
+            name: "# of Rainy Days",
+            value: "6",
+            icon: BsFillCloudRainHeavyFill
         },
         {
             name: "TOTAL ASCENT",
@@ -388,9 +390,9 @@ const segmentStats = [
             icon: TbMountain
         },
         {
-            name: "# of Cookies",
-            value: "1 - 2",
-            icon: BiCookie
+            name: "Flat Tyres",
+            value: "4",
+            icon: GiFlatTire
         }
     ],
     [ //South Balkans Stats
@@ -405,9 +407,9 @@ const segmentStats = [
             icon: AiOutlineClockCircle
         },
         {
-            name: "Low Point",
-            value: "6 M.",
-            icon: RxPinBottom
+            name: "Days Spent Ill",
+            value: "7",
+            icon: MdSick
         },
         {
             name: "TOTAL ASCENT",
@@ -420,9 +422,9 @@ const segmentStats = [
             icon: TbMountain
         },
         {
-            name: "# of Cookies",
-            value: "1 - 2",
-            icon: BiCookie
+            name: "Hours Spent Lost",
+            value: "6 ",
+            icon: GiTreasureMap
         }
     ],
 ] as Statistic[][];
