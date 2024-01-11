@@ -1,5 +1,7 @@
 # Bike Tour Showcase Project
 
+Project is Live 😎 --> https://kees-vandenberg-bike-tour.pages.dev/
+
 ![Header Pic](/util/readMePic.jpg)
 
 In Summer 2022, I went on a solo bicycle tour of Europe. Between August and November, I cycled over 2600 miles (the length of the continental United States!), visited 10 countries and consumed an innumerable number of baguettes.
