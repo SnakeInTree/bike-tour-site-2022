@@ -20,7 +20,7 @@ const PhotoGallery = ({poiList, images}: {poiList: Poi[], images: string[]}) => 
             <IconContext.Provider value={{ size: "2em"}}>
                 <div className="absolute z-450 top-88 right-0 m-12 cursor-pointer text-white" onClick={handleIncreasePoiIndex}><AiOutlineRight /></div>
                 <div className="absolute z-450 top-88 left-0 m-12 cursor-pointer text-white" onClick={handleDecreasePoiIndex}><AiOutlineLeft /></div>
-                <div className="absolute z-450 top-0 right-0 m-12 cursor-pointer text-white" onClick={handleCarouselTrigger}><AiOutlineFullscreen /></div>
+                <div className="absolute z-450 top-0 right-0 m-16 cursor-pointer text-white" onClick={handleCarouselTrigger}><AiOutlineFullscreen /></div>
             </IconContext.Provider>
             <TitleChevron />
             <div className="p-8">

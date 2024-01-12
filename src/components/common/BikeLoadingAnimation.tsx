@@ -6,7 +6,7 @@ const BikeLoadingAnimation = () => {
             <div className={"relative animate-landingPageBikeRide -top-12 left-4 "}>
                 <Animations />
             </div>
-            <div className="relative top-20 text-xl font-playfair italic">
+            <div className="relative top-20 text-xl font-playfair italic left-4">
                 Loading...
             </div>
         </div>
