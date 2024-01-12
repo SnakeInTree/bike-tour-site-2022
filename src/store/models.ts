@@ -1,4 +1,4 @@
-import { LatLngBoundsExpression, LatLngExpression } from "leaflet";
+import { LatLngExpression } from "leaflet";
 import { IconType } from "react-icons";
 
 export interface UIDisplay {

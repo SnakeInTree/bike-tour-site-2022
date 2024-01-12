@@ -2,7 +2,7 @@ import { LegacyRef, MutableRefObject } from "react";
 import { useQuery } from "react-query";
 import { MdLocationOn } from "react-icons/md";
 
-import Loader from "./Loading";
+import BikeLoadingAnimation from "../common/BikeLoadingAnimation";
 import StatsBlock from "./Stats";
 import PhotoGallery from "./PhotoGallery";
 import InfoPanel from "./InfoPanel";
@@ -29,7 +29,7 @@ const SegmentInfo = ({activeSegmentId, topOfDrawerRef}: {activeSegmentId: number
     return (
         <>
             {(resp.isLoading || !resp.data) ? 
-                <Loader />
+                <BikeLoadingAnimation />
                 :
                 <div>
                     <img src={config.HTML_IMG_BUFFER_TAG + resp.data[segment.headerImageIndex]} ref={topOfDrawerRef as LegacyRef<HTMLImageElement>} />

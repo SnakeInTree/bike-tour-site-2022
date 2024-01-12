@@ -3,7 +3,7 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 import { BiCookie } from "react-icons/bi";
 import { BsSignpostSplit, BsThermometerSun, BsFillCloudRainHeavyFill } from "react-icons/bs";
 import { FaStroopwafel, FaSwimmer, FaBell, FaMountain, FaCarCrash, FaWineGlass } from "react-icons/fa";
-import { GiBread, GiPathDistance, GiCastle, GiBeerStein, GiCastleRuins, GiFly, GiTreasureMap, GiCroissant, GiFlatTire, GiGrapes, GiSmokeBomb, GiCruiser, GiWaveCrest, GiForestCamp, GiCroissantsPupil } from "react-icons/gi";
+import { GiBread, GiPathDistance, GiCastle, GiBeerStein, GiCastleRuins, GiFly, GiTreasureMap, GiCroissant, GiFlatTire, GiGrapes, GiSmokeBomb, GiCruiser, GiWaveCrest, GiForestCamp } from "react-icons/gi";
 import { RxPinBottom } from "react-icons/rx";
 import { TbStairsUp, TbMountain } from "react-icons/tb";
 import {IoMdBeer} from "react-icons/io";

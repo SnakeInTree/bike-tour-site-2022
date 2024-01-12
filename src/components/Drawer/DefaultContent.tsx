@@ -1,11 +1,11 @@
 import { useQuery } from "react-query";
-import Image from "next/image";
 
-import Header from "./Header";
-import StatsBlock from "./Stats";
-import Loader from "./Loading";
-import InfoPanel from "./InfoPanel";
+import BreadcrumbMenu from "./BreadcrumbMenu";
 import Footer from "./Footer";
+import Header from "./Header";
+import InfoPanel from "./InfoPanel";
+import StatsBlock from "./Stats";
+import BikeLoadingAnimation from "../common/BikeLoadingAnimation";
 
 import segmentData from "@/data/segments";
 import { introStats } from "@/data/stats";
@@ -15,8 +15,8 @@ import { Segment } from "@/store/models";
 import { fetchImages } from "@/apiUtil/cloudflare";
 import config from "@/config/default.json";
 
-import BreadcrumbMenu from "./BreadcrumbMenu";
-const headerCloudflareIds = [config.IMAGES.HEADER_IMG_ID, config.IMAGES.HEADSHOT, config.IMAGES.SIG, ...segmentData.map((segment: Segment) => segment.pois[segment.headerImageIndex].cloudflareId)];
+const headerCloudflareIds = [config.IMAGES.HEADER_IMG_ID, config.IMAGES.HEADSHOT, config.IMAGES.SIG, 
+    ...segmentData.map((segment: Segment) => segment.pois[segment.headerImageIndex].cloudflareId)];
 
 const DefaultContent = () => {
     
@@ -27,7 +27,7 @@ const DefaultContent = () => {
     return (
         <>
             {(resp.isLoading || !resp.data) ? 
-                <Loader />
+                <BikeLoadingAnimation />
                 :
                 <div>
                     <Header headerImage={resp.data[0]} />
