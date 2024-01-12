@@ -1,4 +1,4 @@
-import { LatLngBoundsExpression, LatLngExpression } from "leaflet";
+import { LatLngExpression } from "leaflet";
 import {
   GiWindmill, GiBelgium, GiFrance, GiCastle, GiForest, GiSwitzerland, 
   GiMountainRoad, GiItalia, GiSailboat, GiMountainClimbing, GiBeachBucket, GiSunset

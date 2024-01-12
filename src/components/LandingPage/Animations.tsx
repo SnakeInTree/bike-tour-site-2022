@@ -1,6 +1,6 @@
 const Animations = () => {
     return (
-        <>
+        <div className="cyclistMain">
             <div className="topTube"></div>
             <div className="seatpost"></div>
             <div className="leftTyre">
@@ -26,7 +26,7 @@ const Animations = () => {
             <div className="trunk"></div>
             <div className="trunkClasp"></div>
             <div className="shadow"></div>
-        </>
+        </div>
     );
 };
 
